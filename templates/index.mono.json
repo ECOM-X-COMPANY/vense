@@ -1,0 +1,644 @@
+{
+  "sections": {
+    "1663242381f7b5d4e3": {
+      "type": "countdown-banner",
+      "settings": {
+        "section_width": "full-width-row-full",
+        "section_layout": "vertical",
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "bg_image": "",
+        "subheading": "ANOTHER DEAL",
+        "heading": "Black Friday Sale",
+        "heading_size": "h1-xlarge",
+        "content": "Find the best deals and discounts.",
+        "content_size": "small",
+        "button_text": "Shop Sale",
+        "button_link": "",
+        "timer_year": 2023,
+        "timer_month": "01",
+        "timer_day": "01",
+        "timer_hour": "00",
+        "timer_minute": "00",
+        "color_bg": "#151515",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663243751c32d9c6e": {
+      "type": "gallery",
+      "blocks": {
+        "1663243751cfe91345-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "Limited Edition",
+            "title": "Everyday Backpacks",
+            "text": "",
+            "link_label": "Shop Backpacks",
+            "link": "",
+            "use_text_button": false
+          }
+        },
+        "1663243751cfe91345-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "Just For You",
+            "title": "Leather Essentials",
+            "text": "",
+            "link_label": "Shop Accessories",
+            "link": "",
+            "use_text_button": false
+          }
+        }
+      },
+      "block_order": [
+        "1663243751cfe91345-0",
+        "1663243751cfe91345-1"
+      ],
+      "settings": {
+        "columns_desktop": 2,
+        "section_width": "full-width-row-full",
+        "mobile_swipe": false,
+        "image_ratio": "landscape",
+        "content_position": "top-left",
+        "text_alignment": "left",
+        "column_spacing": "none",
+        "heading_size": "h1",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "166324375991a6dcc8": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Weekly Bestsellers",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "collection": "frontpage",
+        "display_type": "grid",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663403879b9156643": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 70,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "166340269288f5f38b": {
+      "type": "scrolling-text",
+      "blocks": {
+        "16634026915a17e45d-0": {
+          "type": "text",
+          "settings": {
+            "text": "LEATHER INSPIRED BY LOVE",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "16634026915a17e45d-1": {
+          "type": "text",
+          "settings": {
+            "text": "SHINING LEATHER FOR YOU",
+            "link": "",
+            "outline_text": true
+          }
+        },
+        "16634026915a17e45d-2": {
+          "type": "text",
+          "settings": {
+            "text": "AFFORDABLE LUXURY",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "77d7119a-5042-4593-ab6f-ee2d69e533c7": {
+          "type": "text",
+          "settings": {
+            "text": "HAPPEN YOUR PERFECTIONS",
+            "link": "",
+            "outline_text": true
+          }
+        }
+      },
+      "block_order": [
+        "16634026915a17e45d-0",
+        "16634026915a17e45d-1",
+        "16634026915a17e45d-2",
+        "77d7119a-5042-4593-ab6f-ee2d69e533c7"
+      ],
+      "settings": {
+        "bg_image": "",
+        "height": "height-300",
+        "direction": "left",
+        "speed": "30s",
+        "text_size": 64,
+        "image_size": "large",
+        "color_bg": "#f5f3ef",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "166340388133dcb5fb": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Shop by Category",
+        "heading_left": false,
+        "description": "<p>All leather goods available on Mono<\/p>",
+        "full_width": false,
+        "collection_list": [
+          "backpacks",
+          "leather-goods",
+          "wallets",
+          "bags",
+          "frontpage"
+        ],
+        "image_ratio": "square",
+        "layout": "carousel",
+        "style": "style2",
+        "columns_desktop": 3,
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "166348577765b9524c": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-350",
+        "full_width": true,
+        "subheading": "OUR SHOWREEL",
+        "heading": "Mono Premium Leather Goods 2022",
+        "text": "",
+        "lightbox_button": true,
+        "video": "https:\/\/www.youtube.com\/watch?v=Xs2IL070G2Q",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663500896dc1b521f": {
+      "type": "scrolling-text",
+      "blocks": {
+        "1663500896567c26a9-0": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "d3f99e13-b27c-4133-8d8c-33d3c5a5516b": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "f70ce5d8-ab39-4629-b56d-c4e96bf77708": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "85535f71-fe35-47a7-ba81-878f4e1fb900": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "2aa00199-01a1-41e0-83bf-a827e782e0dc": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "1663500896567c26a9-0",
+        "d3f99e13-b27c-4133-8d8c-33d3c5a5516b",
+        "f70ce5d8-ab39-4629-b56d-c4e96bf77708",
+        "85535f71-fe35-47a7-ba81-878f4e1fb900",
+        "2aa00199-01a1-41e0-83bf-a827e782e0dc"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "direction": "left",
+        "speed": "30s",
+        "text_size": 24,
+        "image_size": "medium",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663501700a28a4fd9": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 0,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "1663500833d48bf0c4": {
+      "type": "rich-text",
+      "blocks": {
+        "166350083378c3e1d5-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "OUR VISION"
+          }
+        },
+        "166350083378c3e1d5-1": {
+          "type": "heading",
+          "settings": {
+            "text": "We lovingly hand-make each piece using the best methods, leathers, and materials we know.",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "166350083378c3e1d5-0",
+        "166350083378c3e1d5-1"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663503689ebdd9380": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 50,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1663503961bbcc7ba9": {
+      "type": "multicolumn",
+      "blocks": {
+        "1663503961e144143c-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>Maintenance and repairs are free up to 1 year after purchase. Repairs are done in-house by our craftsmen.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1663503961e144143c-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>All our products can be exchanged or returned for a refund within 365 days after shipping.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "1663503961e144143c-2": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>Vegan leather is often made from polyurethane, a polymer that can be made to order for any designer's whim.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1663503961e144143c-0",
+        "1663503961e144143c-1",
+        "1663503961e144143c-2"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663743419b71e7bec": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16636944959cf8b978": {
+      "type": "timeline",
+      "blocks": {
+        "166369449557cbd46a-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "subheading": "1928",
+            "heading": "ESTB. 1928",
+            "text": "<p>Since launching in April 1928, Mono has established itself as a global fashion destination to busy fast paced woman with a strong sense of fashion.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "166369449557cbd46a-2": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "subheading": "1940",
+            "heading": "Premium Leather",
+            "text": "<p>Rsvp is a design studio whose practice explores the beauty of modern craft. We apply our design practice to the creation of the finest leather accessories.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "6df77226-7a05-4d9d-ab26-0ce8cdf88354": {
+          "type": "column",
+          "settings": {
+            "subheading": "1962",
+            "heading": "1962",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "166369449557cbd46a-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "subheading": "1986",
+            "heading": "Vegan Leather",
+            "text": "<p>Vegan leather is often made from polyurethane, a polymer that can be made to order for any designer's whim. It can also be made from innovative.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "281ab44e-c825-485c-811d-e2fdc10dfaa0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "subheading": "2001",
+            "heading": "Product of the year",
+            "text": "<p>Because a well-maintained leather product can have many lives, here are some tips to take care of yours.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "25bfc67f-ced6-47a7-8b9f-7a19d58a5787": {
+          "type": "column",
+          "settings": {
+            "subheading": "2023",
+            "heading": "Munchkin Bag",
+            "text": "<p>It’s also the only one with a handle. Though very compact, it’s still roomy enough to fit a big-screen smartphone.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166369449557cbd46a-1",
+        "166369449557cbd46a-2",
+        "6df77226-7a05-4d9d-ab26-0ce8cdf88354",
+        "166369449557cbd46a-0",
+        "281ab44e-c825-485c-811d-e2fdc10dfaa0",
+        "25bfc67f-ced6-47a7-8b9f-7a19d58a5787"
+      ],
+      "settings": {
+        "heading": "Our Journey",
+        "heading_left": false,
+        "description": "<p>Add a short description for this section<\/p>",
+        "full_width": true,
+        "text_alignment": "left",
+        "show_progress_bar": true,
+        "color_bg": "#1d1c1b",
+        "color_text": "#ffffff",
+        "color_bg_box": "#302e2c",
+        "color_text_box": "#d9d9d9",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16635044396c0ba532": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest Stories",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "image_ratio": "landscape",
+        "show_date": true,
+        "show_excerpt": true,
+        "show_view_all": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663578445881f299c": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16635821760b5b1cbc": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "16635821764111b3b8-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "SINCE YOUR DREAMS"
+          }
+        },
+        "16635821764111b3b8-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Making you have faith in yourself",
+            "heading_size": "h1"
+          }
+        },
+        "88965b72-0ec8-4f38-949b-3210d942b191": {
+          "type": "space",
+          "settings": {
+            "height": 20
+          }
+        },
+        "16635821764111b3b8-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "Our Story",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "16635821764111b3b8-0",
+        "16635821764111b3b8-1",
+        "88965b72-0ec8-4f38-949b-3210d942b191",
+        "16635821764111b3b8-3"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "",
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-350",
+        "content_width": "medium",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 30,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663504540921d3a1f": {
+      "type": "text-with-icons",
+      "blocks": {
+        "1663504539840ad171-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "Customer Support",
+            "text": "<p>Mon - Sat, 10am - 9pm<\/p>"
+          }
+        },
+        "1663504539840ad171-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "Easy Returns",
+            "text": "<p>Returns extended to 60 days<\/p>"
+          }
+        },
+        "1663504539840ad171-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "Gift Package",
+            "text": "<p>Unique packages for you<\/p>"
+          }
+        },
+        "86c52570-4080-4c69-bcd2-af0194ed52fe": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "One-year Warranty",
+            "text": "<p>Pair text with an image<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "1663504539840ad171-0",
+        "1663504539840ad171-1",
+        "1663504539840ad171-2",
+        "86c52570-4080-4c69-bcd2-af0194ed52fe"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "icon_position": "left",
+        "icon_size": "large",
+        "heading_size": "medium",
+        "mobile_swipe": true,
+        "color_bg": "#e7e7e7",
+        "color_heading": "#846144",
+        "color_text": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "1663242381f7b5d4e3",
+    "1663243751c32d9c6e",
+    "166324375991a6dcc8",
+    "1663403879b9156643",
+    "166340269288f5f38b",
+    "166340388133dcb5fb",
+    "166348577765b9524c",
+    "1663500896dc1b521f",
+    "1663501700a28a4fd9",
+    "1663500833d48bf0c4",
+    "1663503689ebdd9380",
+    "1663503961bbcc7ba9",
+    "1663743419b71e7bec",
+    "16636944959cf8b978",
+    "16635044396c0ba532",
+    "1663578445881f299c",
+    "16635821760b5b1cbc",
+    "1663504540921d3a1f"
+  ]
+}

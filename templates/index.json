@@ -1,0 +1,221 @@
+{
+  "sections": {
+    "16479477632637c9a7": {
+      "type": "slideshow",
+      "blocks": {
+        "164794776393e76b8e-2": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "subheading": "Subheading",
+            "heading": "LULLED BY THE WIND: Exquisite Garden Design for Your Natural Paradise",
+            "heading_size": "h1",
+            "content": "LET US ASSIST YOU IN CREATING A GARDEN WHERE NATURE BECOMES YOUR TRUE ALLY IN RELAXATION AND REJUVENATION.",
+            "description_size": "small",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "large",
+            "overlay_color": "#000000",
+            "overlay_opacity": 58,
+            "overlay_gradient": "linear-gradient(349deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 69%)",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "164794776393e76b8e-0": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "Gently cooked and RAW collections",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 35,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "Shop now",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "164794776393e76b8e-1": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "Like 5-STARS restaurant",
+            "heading_size": "h1-xlarge",
+            "content": "Tasty\nHealthy\nRecommended",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 45,
+            "overlay_gradient": "",
+            "button_1_text": "Shop NOW",
+            "button_1_link": "",
+            "button_1_outline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "164794776393e76b8e-2",
+        "164794776393e76b8e-0",
+        "164794776393e76b8e-1"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-full",
+        "mobile_height": "mobile-height-500",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 6,
+        "transition": "swipe",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "46322c5c-3347-49a0-b4b9-a5f2ad634b2c": {
+      "type": "collection-tabs",
+      "blocks": {
+        "template--20690466865451__46322c5c-3347-49a0-b4b9-a5f2ad634b2c-collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "bestsellers"
+          }
+        },
+        "template--20690466865451__46322c5c-3347-49a0-b4b9-a5f2ad634b2c-collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "new-arrivals"
+          }
+        }
+      },
+      "block_order": [
+        "template--20690466865451__46322c5c-3347-49a0-b4b9-a5f2ad634b2c-collection-1",
+        "template--20690466865451__46322c5c-3347-49a0-b4b9-a5f2ad634b2c-collection-2"
+      ],
+      "custom_css": [
+        ".h3 {display: none;}"
+      ],
+      "settings": {
+        "heading": ".",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "collection_list_FaLtCA": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "Explore Products by Category",
+        "heading_left": false,
+        "description": "<p>Discover a curated selection of top-quality products as you explore our diverse categories. <\/p>",
+        "full_width": true,
+        "collection_list": [
+          "bestsellers",
+          "new-arrivals",
+          "test-2",
+          "test-1"
+        ],
+        "image_ratio": "adapt",
+        "layout": "grid",
+        "style": "style2",
+        "columns_desktop": 4,
+        "columns_mobile": "1",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "image_with_text_overlay_7gjf94": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_fGAHQC": {
+          "type": "subheading",
+          "settings": {
+            "text": "Vense"
+          }
+        },
+        "heading_LLXxrz": {
+          "type": "heading",
+          "settings": {
+            "text": "About Brand",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "text_qxQW6x": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Learn more About Brand and join a community that embraces authenticity, <br\/>craftsmanship, and a passion for delivering unparalleled experiences.<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "button_9hn7Wg": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_fGAHQC",
+        "heading_LLXxrz",
+        "text_qxQW6x",
+        "button_9hn7Wg"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "image": "shopify:\/\/shop_images\/hoodh-ahmed-6mzjJDqYU0g-unsplash.jpg",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_opacity": 48,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "16479477632637c9a7",
+    "46322c5c-3347-49a0-b4b9-a5f2ad634b2c",
+    "collection_list_FaLtCA",
+    "image_with_text_overlay_7gjf94"
+  ]
+}

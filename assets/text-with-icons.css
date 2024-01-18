@@ -1,0 +1,117 @@
+
+
+
+.text-with-icons__inner {
+  padding: 0 15px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media only screen and (min-width: 768px) {
+    .text-with-icons__inner {
+      padding: 0 50px; } }
+
+.text-with-icons {
+  background: var(--color-bg); }
+  .text-with-icons.text-with-icons-has-bg--true {
+    padding: 30px 0; }
+  .text-with-icons.text-left {
+    text-align: left; }
+  .text-with-icons.text-center {
+    text-align: center; }
+  .text-with-icons.text-right {
+    text-align: right; }
+  .text-with-icons__inner {
+    display: grid;
+    grid-gap: 40px 20px;
+    justify-content: center;
+    grid-auto-columns: minmax(250px, 300px); }
+    @media only screen and (min-width: 768px) {
+      .text-with-icons__inner {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 300px)); } }
+  @media only screen and (min-width: 768px) {
+    .text-with-icons.icon-columns-2 .text-with-icons__inner {
+      grid-template-columns: repeat(2, minmax(200px, 300px)); } }
+  @media only screen and (min-width: 768px) {
+    .text-with-icons.icon-columns-3 .text-with-icons__inner {
+      grid-template-columns: repeat(3, minmax(200px, 300px)); } }
+  @media only screen and (min-width: 768px) {
+    .text-with-icons.icon-columns-4 .text-with-icons__inner {
+      grid-template-columns: repeat(2, minmax(200px, 300px)); } }
+  @media only screen and (min-width: 1068px) {
+    .text-with-icons.icon-columns-4 .text-with-icons__inner {
+      grid-template-columns: repeat(4, minmax(200px, 300px)); } }
+  @media only screen and (max-width: 767px) {
+    .text-with-icons.swipe-on-mobile .text-with-icons__inner {
+      overflow-x: auto;
+      overflow-y: hidden;
+      justify-content: flex-start;
+      scroll-snap-type: x mandatory;
+      grid-auto-flow: column;
+      grid-auto-columns: minmax(250px, 300px);
+      grid-template-columns: repeat(auto-fill, minmax(250px, 300px));
+      scrollbar-width: none; }
+      .text-with-icons.swipe-on-mobile .text-with-icons__inner::-webkit-scrollbar {
+        display: none; } }
+  .text-with-icons__block {
+    display: flex;
+    align-items: center;
+    scroll-snap-align: center;
+    scroll-snap-stop: always; }
+    .text-with-icons__block-content {
+      font-size: 0.9375rem; }
+      .text-with-icons__block-content h6 {
+        line-height: 1;
+        margin-bottom: 5px;
+        color: var(--color-heading, --color-accent); }
+      .text-with-icons__block-content p {
+        font-size: inherit;
+        color: var(--color-text, --color-accent); }
+      .text-with-icons__block-content > *:last-child {
+        margin-bottom: 0; }
+  .text-with-icons__icon {
+    flex-shrink: 0; }
+    .text-with-icons__icon svg {
+      width: 100%;
+      height: auto;
+      fill: var(--color-text, --color-accent); }
+    .text-with-icons__icon img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain; }
+  .text-with-icons.icon-left .text-with-icons__icon {
+    margin-right: 25px; }
+  .text-with-icons.icon-top .text-with-icons__block {
+    flex-direction: column; }
+  .text-with-icons.icon-top .text-with-icons__icon {
+    margin-bottom: 30px; }
+  .text-with-icons.icon-top.text-left .text-with-icons__block {
+    align-items: flex-start; }
+  .text-with-icons.icon-top.text-center .text-with-icons__block {
+    align-items: center; }
+  .text-with-icons.icon-top.text-right .text-with-icons__block {
+    align-items: flex-end; }
+  .text-with-icons.icon-right .text-with-icons__block {
+    flex-direction: row-reverse; }
+  .text-with-icons.icon-right .text-with-icons__icon {
+    margin-left: 25px; }
+  .text-with-icons.icon-small .text-with-icons__icon {
+    height: 32px;
+    height: 32px; }
+  .text-with-icons.icon-medium .text-with-icons__icon {
+    height: 48px;
+    width: 48px; }
+  .text-with-icons.icon-large .text-with-icons__icon {
+    height: 64px;
+    width: 64px; }
+  .text-with-icons.icon-xlarge .text-with-icons__icon {
+    height: 80px;
+    width: 80px; }
+  .text-with-icons h6.body-font {
+    font-weight: 600; }
+  .text-with-icons.heading-large h6 {
+    font-size: 20px; }
+  .text-with-icons.heading-medium h6 {
+    font-size: 16px; }
+  .text-with-icons.heading-small h6 {
+    font-size: 14px; }

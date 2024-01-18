@@ -1,0 +1,23 @@
+
+
+
+.spacer {
+  position: relative;
+  height: var(--spacer-mobile, 50px); }
+  .spacer:before, .spacer:after {
+    content: " ";
+    display: table;
+    clear: both; }
+  @media only screen and (min-width: 768px) {
+    .spacer {
+      height: var(--spacer-desktop, 100px); } }
+  .spacer.has-border-separator:before {
+    content: "";
+    height: 1px;
+    display: block;
+    margin: 0 auto;
+    background: var(--color-border);
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0; }

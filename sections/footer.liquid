@@ -1,0 +1,433 @@
+{% liquid
+	assign full_width = section.settings.full_width
+	assign copyright_text = section.settings.copyright_text
+	assign show_language_switcher = section.settings.show_language_switcher
+	assign show_currency_switcher = section.settings.show_currency_switcher
+	assign show_payment_icons = section.settings.show_payment_icons
+%}
+
+<link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'footer.css' | asset_url | stylesheet_tag }}</noscript>
+
+<footer class="footer" id="footer">
+	<div class="row {% if full_width %}full-width-row{% endif %}">
+		{%- for block in section.blocks -%}
+			{% if block.type == 'text' %}
+				{%- liquid
+					assign column_class = 'small-12 medium-4 large-2'
+					case block.settings.column_size
+						when 'medium'
+							assign column_class = 'small-12 medium-3'
+						when 'large'
+							assign column_class = 'small-12 medium-6'
+
+					endcase
+				-%}
+			<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+				<div class="widget widget--text">
+					{%- if block.settings.title != blank -%}
+						<div class="thb-widget-title">{{ block.settings.title }}</div>
+					{%- endif -%}
+					{%- if block.settings.image != blank -%}
+						{% assign image = block.settings.image %}
+						{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+						{%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+					{%- endif -%}
+					{%- if block.settings.text != blank -%}
+						<div class="rte text-size--{{ block.settings.text_size }}">
+							{{ block.settings.text }}
+						</div>
+					{%- endif -%}
+					{%- if block.settings.button_text != blank -%}
+						<a class="text-button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}">{{ block.settings.button_text }}</a>
+					{%- endif -%}
+					{%- if block.settings.show_social_links -%}
+						{%- render 'social-links' -%}
+					{%- endif -%}
+				</div>
+			</div>
+			{% endif %}
+			{%- if block.type == 'menu' -%}
+				{%- liquid
+					assign column_class = 'small-12 medium-4 large-2'
+					case block.settings.column_size
+						when 'medium'
+							assign column_class = 'small-12 medium-3'
+						when 'large'
+							assign column_class = 'small-12 medium-6'
+					endcase
+				-%}
+			<div class="{{ column_class | escape }} columns widget--menu-column" {{ block.shopify_attributes }}>
+				<div class="widget widget--menu">
+					<button class="thb-widget-title collapsible" tabindex="0">{{ block.settings.title }} <span></span></button>
+					{%- if block.settings.menu != blank -%}
+					<ul class="thb-widget-menu">
+					  {% for link in block.settings.menu.links %}
+						  {% assign has_sub_menu = false %}
+						  {% if link.links.size > 0 %}
+						    {% assign has_sub_menu = true %}
+							{% endif %}
+						  <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if link.active %} active{% endif %}">
+						    <a href="{{ link.url }}" title="{{ link.title | escape }}"{%- if link.active %} aria-current="page"{% endif -%}>{{ link.title }}</a>{% if has_sub_menu %}<span class="thb-arrow" tabindex="0">{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}</span>{% endif %}
+						    {% if has_sub_menu %}
+							    <ul class="sub-menu" tabindex="-1">
+						        {% for l in link.links %}
+											{% assign has_sub_menu = false %}
+										  {% if l.links.size > 0 %}
+										    {% assign has_sub_menu = true %}
+											{% endif %}
+							        <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if l.active %} active{% endif %}" role="none">
+							          <a href="{{ l.url }}" title="{{ l.title | escape }}" role="menuitem">{{ l.title }}</a>{% if has_sub_menu %}<span class="thb-arrow" tabindex="0">{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}</span>{% endif %}
+												{% if has_sub_menu %}
+													<ul class="sub-menu" role="menu">
+														{% for sub_link in l.links %}
+															{% assign has_sub_menu = false %}
+															{% if sub_link.links.size > 0 %}
+																{% assign has_sub_menu = true %}
+															{% endif %}
+															<li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if sub_link.active %} active{% endif %}" role="none">
+																<a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" role="menuitem">{{ sub_link.title }}</a>
+															</li>
+														{% endfor %}
+													</ul>
+												{% endif %}
+							        </li>
+										{% endfor %}
+							    </ul>
+						    {% endif %}
+						  </li>
+					  {% endfor %}
+					</ul>
+					{%- endif -%}
+				</div>
+			</div>
+			{%- endif -%}
+			{%- if block.type == 'signup' -%}
+				{%- liquid
+					assign column_class = 'small-12 medium-4 large-2'
+					case block.settings.column_size
+						when 'medium'
+							assign column_class = 'small-12 medium-3'
+						when 'large'
+							assign column_class = 'small-12 medium-6'
+
+					endcase
+				-%}
+				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+					<div class="widget widget--signup">
+						{% if block.settings.title != blank %}
+							<div class="thb-widget-title">{{ block.settings.title }}</div>
+						{% endif %}
+						{% if block.settings.text != blank %}
+							{{ block.settings.text }}
+						{% endif %}
+						{% render 'email-signup-form' %}
+					</div>
+				</div>
+			{%- endif -%}
+			{%- if block.type == 'social' -%}
+				{%- liquid
+					assign column_class = 'small-6 medium-4 large-2'
+					case block.settings.column_size
+						when 'medium'
+							assign column_class = 'small-12 medium-3'
+						when 'large'
+							assign column_class = 'small-12 medium-6'
+
+					endcase
+				-%}
+				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+					<div class="widget widget--social">
+						{% if block.settings.title != blank %}
+							<div class="thb-widget-title">{{ block.settings.title }}</div>
+						{% endif %}
+						{% render 'social-links' %}
+					</div>
+				</div>
+			{%- endif -%}
+			{%- if block.type == 'custom_liquid' -%}
+				{%- liquid
+					assign column_class = 'small-6 medium-4 large-2'
+					case block.settings.column_size
+						when 'medium'
+							assign column_class = 'small-12 medium-3'
+						when 'large'
+							assign column_class = 'small-12 medium-6'
+
+					endcase
+				-%}
+				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+					<div class="widget widget--custom">
+						{% if block.settings.title != blank %}
+							<div class="thb-widget-title">{{ block.settings.title }}</div>
+						{% endif %}
+						{{ block.settings.custom_liquid }}
+					</div>
+				</div>
+			{%- endif -%}
+		{%- endfor -%}
+	</div>
+	<div class="sub-footer">
+		<div class="row {% if full_width %}full-width-row{% endif %}">
+			<div class="small-12 medium-8 columns">
+				{% render 'localization', id: 'FooterLocalization', show_language_switcher: show_language_switcher, show_currency_switcher: show_currency_switcher %}
+			</div>
+			<div class="small-12 medium-4 columns">
+				{%- if show_payment_icons -%}
+				<div class="footer-payment-icons">
+        {%- unless shop.enabled_payment_types == empty -%}
+          {%- for type in shop.enabled_payment_types -%}
+            <figure>{{ type | payment_type_svg_tag: class: 'payment-icons__icon' }}</figure>
+          {%- endfor -%}
+        {%- endunless -%}
+        </div>
+				{%- endif -%}
+			</div>
+			<div class="small-12 columns">
+				<p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}, {{ copyright_text }} {{ powered_by_link }}</p>
+				{%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+          <div class="footer--follow-on-shop">
+            {{ shop | login_button: action: 'follow' }}
+          </div>
+        {%- endif -%}
+			</div>
+		</div>
+	</div>
+</footer>
+
+{% schema %}
+  {
+		"name": "Footer",
+		"settings": [
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"default": false,
+				"label": "Make section full width"
+			},
+      {
+        "type": "text",
+        "id": "copyright_text",
+        "label": "Additional copyright text",
+        "default": "All rights reserved."
+      },
+			{
+        "type": "checkbox",
+        "id": "show_language_switcher",
+        "label": "Enable language switcher",
+        "default": true,
+				"info": "To add a language, go to your [language settings](/admin/settings/languages)."
+      },
+			{
+        "type": "checkbox",
+        "id": "show_currency_switcher",
+        "label": "Enable currency switcher",
+        "default": true,
+				"info": "To add a country/region, go to your [payment settings](/admin/settings/payments)."
+      },
+			{
+        "type": "checkbox",
+        "id": "show_payment_icons",
+        "label": "Show payment icons",
+        "default": true,
+				"info": "By default your theme shows the icons that are associated with the payment gateway you have enabled in the [payment settings](/admin/settings/payments)."
+      },
+			{
+	      "type": "header",
+	      "content": "Follow on Shop",
+	      "info": "To allow customers to follow your store on the Shop app from your storefront, Shop Pay must be enabled. [Learn more](https://help.shopify.com/manual/online-store/themes/customizing-themes/follow-on-shop)"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "enable_follow_on_shop",
+	      "default": true,
+	      "label": "Enable Follow on Shop"
+	    }
+		],
+		"blocks": [
+			{
+	      "type": "@app"
+	    },
+			{
+        "type": "text",
+        "name": "Text",
+				"settings": [
+					{
+						 "type": "select",
+						 "id": "column_size",
+						 "label": "Column size",
+						 "options": [
+							 { "value": "small", "label": "Small" },
+							 { "value": "medium", "label": "Medium" },
+							 { "value": "large", "label": "Large" }
+						 ],
+						 "default": "small"
+					},
+					{
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          },
+					{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image",
+						"info": "240 x 100 px .png recommended."
+          },
+					{
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Add company info here.</p>"
+          },
+					{
+						"type": "select",
+						"id": "text_size",
+						"label": "Text size",
+						"options": [
+							{
+								"value": "small",
+								"label": "Small"
+							},
+							{
+								"value": "medium",
+								"label": "Medium"
+							},
+							{
+								"value": "large",
+								"label": "Large"
+							}
+						],
+						"default": "medium"
+					},
+					{
+            "id": "button_text",
+            "type": "text",
+            "label": "Button label",
+            "default": "Explore",
+						"info": "Leave the label blank to hide the button."
+          },
+          {
+            "id": "button_link",
+            "type": "url",
+            "label": "Button link"
+          },
+					{
+		        "type": "checkbox",
+		        "id": "show_social_links",
+		        "label": "Show social links",
+		        "default": true
+		      }
+				]
+      },
+      {
+        "type": "menu",
+        "name": "Menu",
+				"settings": [
+					{
+						 "type": "select",
+						 "id": "column_size",
+						 "label": "Column size",
+						 "options": [
+							 { "value": "small", "label": "Small" },
+							 { "value": "medium", "label": "Medium" },
+							 { "value": "large", "label": "Large" }
+						 ],
+						 "default": "small"
+					},
+					{
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          },
+					{
+						"type": "link_list",
+						"id": "menu",
+						"default": "footer",
+						"label": "Menu",
+						"info": "Select navigation to display"
+					}
+				]
+      },
+			{
+        "type": "social",
+        "name": "Social links",
+				"settings": [
+					{
+						 "type": "select",
+						 "id": "column_size",
+						 "label": "Column size",
+						 "options": [
+							 { "value": "small", "label": "Small" },
+							 { "value": "medium", "label": "Medium" },
+							 { "value": "large", "label": "Large" }
+						 ],
+						 "default": "small"
+					},
+					{
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          }
+				]
+      },
+			{
+        "type": "signup",
+        "name": "Email signup",
+				"limit": 1,
+				"settings": [
+					{
+						 "type": "select",
+						 "id": "column_size",
+						 "label": "Column size",
+						 "options": [
+							 { "value": "small", "label": "Small" },
+							 { "value": "medium", "label": "Medium" },
+							 { "value": "large", "label": "Large" }
+						 ],
+						 "default": "small"
+					},
+					{
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          },
+					{
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+            "default": "<p>Add a text to attract more customers to <strong>sign up!</strong></p>"
+          }
+				]
+      },
+			{
+        "type": "custom_liquid",
+        "name": "Custom liquid",
+				"settings": [
+					{
+						 "type": "select",
+						 "id": "column_size",
+						 "label": "Column size",
+						 "options": [
+							 { "value": "small", "label": "Small" },
+							 { "value": "medium", "label": "Medium" },
+							 { "value": "large", "label": "Large" }
+						 ],
+						 "default": "small"
+					},
+					{
+            "id": "title",
+            "type": "text",
+            "label": "Title"
+          },
+					{
+						"type": "liquid",
+						"id": "custom_liquid",
+						"label": "Custom liquid",
+						"info": "Add app snippets or other Liquid code to create advanced customizations."
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,19 @@
+<facet-remove class="active-facets">
+	{%- for filter in results.filters -%}
+		{%- for value in filter.active_values -%}
+			<a href="{{ value.url_to_remove }}" class="active-facets__button">
+				{{ value.label | escape }}
+				<span>{% render 'svg-icons' with 'thb-filter-remove' %}</span>
+			</a>
+		{%- endfor -%}
+		{% if filter.type == "price_range" %}
+			{%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
+				<a href="{{ filter.url_to_remove }}" class="active-facets__button">
+					{%- if filter.min_value.value -%}{{ filter.min_value.value | money }}{%- else -%}{{ 0 | money }}{%- endif -%}-{%- if filter.max_value.value -%}{{ filter.max_value.value | money }}{%- else -%}{{ filter.range_max | money }}{%- endif -%}
+					<span>{% render 'svg-icons' with 'thb-filter-remove' %}</span>
+				</a>
+			{%- endif -%}
+		{% endif %}
+	{%- endfor -%}
+	<a href="{{ results_url }}" class="active-facets__button-remove text-button">{{ 'products.facets.clear_all' | t }}</a>
+</facet-remove>

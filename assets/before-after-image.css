@@ -1,0 +1,123 @@
+
+
+
+.before-after-image--container {
+  display: block;
+  position: relative; }
+
+.before-after-image--media {
+  display: block;
+  position: relative;
+  overflow: hidden; }
+  .before-after-image--media:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    background: rgba(var(--color-overlay-rgb), var(--overlay-opacity)); }
+
+.before-after-image--image .thb-placeholder,
+.before-after-image--image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+  .before-after-image--image .thb-placeholder svg,
+  .before-after-image--image img svg {
+    object-fit: contain; }
+
+.before-after-image--image img {
+  object-fit: cover; }
+
+@media only screen and (max-width: 767px) {
+  .before-after-image--image.mobile-height-image {
+    aspect-ratio: var(--image-aspect);
+    min-height: unset; } }
+
+@media only screen and (min-width: 768px) {
+  .before-after-image--image.desktop-height-image {
+    aspect-ratio: var(--image-aspect);
+    min-height: unset; } }
+
+.before-after-image--2 {
+  clip-path: inset(0px 0px 0px var(--percent));
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+  .before-after-image--2 .before-after-image--content {
+    justify-content: flex-end; }
+
+.before-after-image--content {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 15px; }
+  @media only screen and (min-width: 768px) {
+    .before-after-image--content {
+      padding: 30px; } }
+  @media only screen and (min-width: 1068px) {
+    .before-after-image--content {
+      padding: 45px; } }
+  .before-after-image--content-center {
+    align-items: center; }
+  .before-after-image--content-bottom {
+    align-items: flex-end; }
+  .before-after-image--content h4 {
+    color: var(--color-body, #151515); }
+
+.before-after-image--slider {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  left: 0;
+  z-index: 40;
+  transform: translateY(-50%);
+  opacity: 0;
+  height: 54px;
+  cursor: pointer; }
+
+.before-after-image--divider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  width: 2px;
+  left: calc(var(--percent) - 1px);
+  background: var(--color-line, --bg-body);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); }
+  .before-after-image--divider svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 11;
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 20;
+    border-radius: 20px;
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer; }
+
+.before-after-image--mobile {
+  display: block; }
+  @media only screen and (min-width: 768px) {
+    .before-after-image--mobile {
+      display: none; } }
+
+.before-after-image--desktop {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .before-after-image--desktop {
+      display: block; } }

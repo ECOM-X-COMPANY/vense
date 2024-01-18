@@ -1,0 +1,83 @@
+
+
+.scrolling-text--item span {
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+
+.scrolling-text {
+  background-color: var(--color-bg, rgba(var(--color-body-rgb), 0.03));
+  color: var(--color-text, var(--color-accent));
+  position: relative;
+  background-size: cover;
+  display: flex;
+  align-items: center; }
+  .scrolling-text:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 5;
+    pointer-events: none;
+    background: rgba(var(--overlay-color-rgb), var(--overlay-opacity)); }
+  .scrolling-text-uppercase--true {
+    text-transform: uppercase; }
+  .scrolling-text--inner {
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 30px 0;
+    overflow: hidden;
+    position: relative;
+    z-index: 10; }
+    .scrolling-text--inner.direction-left > div {
+      animation: marquee-left var(--marquee-speed) linear infinite; }
+    .scrolling-text--inner.direction-right > div {
+      animation: marquee-right var(--marquee-speed) linear infinite; }
+    .scrolling-text--inner > div {
+      display: flex;
+      align-items: center;
+      flex-shrink: 0; }
+  .scrolling-text--item {
+    display: inline-flex;
+    align-items: center;
+    padding: 0 30px; }
+    .scrolling-text--item.outline-text--true * {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--color-text, var(--color-accent)); }
+  .scrolling-text--link {
+    display: inline-flex;
+    align-items: center;
+    color: var(--color-text, var(--color-accent)); }
+    .scrolling-text--link span {
+      transform-origin: left bottom; }
+    .scrolling-text--link:hover {
+      color: var(--color-text, var(--color-accent)); }
+      .scrolling-text--link:hover span {
+        transform: skew(-10deg, 0); }
+  .scrolling-text--image {
+    margin-right: 40px;
+    object-fit: cover;
+    width: auto; }
+    .scrolling-text--image--small {
+      height: 50px; }
+    .scrolling-text--image--medium {
+      height: 100px; }
+    .scrolling-text--image--large {
+      height: 200px; }
+
+@keyframes marquee-left {
+  0% {
+    transform: translateX(0%); }
+  100% {
+    transform: translateX(-100%); } }
+
+@keyframes marquee-right {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0%); } }

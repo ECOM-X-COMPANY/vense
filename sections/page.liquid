@@ -1,0 +1,69 @@
+{%- liquid
+	assign show_page_title = section.settings.show_page_title
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign section_page = section.settings.page
+-%}
+<div class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="blog-post-detail">
+				{%- if show_page_title -%}
+					<div class="post-title">
+		  			<h1>{{ section.settings.page.title }}</h1>
+					</div>
+				{%- endif -%}
+				{%- if section_page.content != blank -%}
+					<div class="post-content rte">
+						{{ section_page.content }}
+					</div>
+		    {%- else -%}
+		      <div class="thb-placeholder">
+		        {{ 'page' | placeholder_svg_tag: 'page-placeholder' }}
+		      </div>
+		    {%- endif -%}
+			</div>
+		</div>
+	</div>
+</div>
+{{ 'page.css' | asset_url | stylesheet_tag }}
+{% schema %}
+  {
+    "name": "Page",
+    "settings": [
+			{
+	      "type": "page",
+	      "id": "page",
+	      "label": "Page",
+				"info": "Contact pages will not display a contact form."
+	    },
+			{
+				"type": "checkbox",
+				"id": "show_page_title",
+				"default": true,
+				"label": "Show page title"
+			},
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "presets": [
+      {
+        "name": "Page"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,313 @@
+{{- 'multicolumn.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_heading_left = section.settings.heading_left
+	assign section_description = section.settings.description
+	assign full_width = section.settings.full_width
+	assign columns_desktop = section.settings.columns_desktop
+	assign heading_size = section.settings.heading_size
+	assign mobile_swipe = section.settings.mobile_swipe
+	assign image_ratio = section.settings.image_ratio
+	assign display_type = section.settings.display_type
+	assign text_alignment = section.settings.text_alignment
+	assign show_progress_bar = section.settings.show_progress_bar
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	case columns_desktop
+		when 2
+			assign columns_desktop_class = 'medium-6'
+		when 3
+			assign columns_desktop_class = 'medium-4'
+		when 4
+			assign columns_desktop_class = 'medium-3'
+		when 5
+			assign columns_desktop_class = 'medium-1/5 large-1/5'
+		when 6
+			assign columns_desktop_class = 'medium-4 large-2'
+	endcase
+-%}
+<div class="multicolumn text-{{ text_alignment }}{% if mobile_swipe and display_type == 'grid' %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	<div class="row{% if full_width %} full-width-row{% endif %}">
+		<div class="small-12 columns">
+			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
+			<div class="multicolumn__inner display-type--{{ display_type }}">
+				<div class="row align-stretch no-padding {{ display_type }}">
+					{%- for block in section.blocks -%}
+						<div class="multicolumn__column small-12 {{ columns_desktop_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}">
+							{% if block.settings.image != blank %}
+								{%- liquid
+									assign ratio = 1
+									assign max_width = block.settings.image.width | append: 'px'
+
+									if block.settings.retina
+										assign max_width = block.settings.image.width | divided_by: 2 | append: 'px'
+									endif
+									if image_ratio == 'adapt'
+										assign ratio = block.settings.image.aspect_ratio
+									endif
+									if block.settings.image_full_width
+										assign max_width = '100%'
+									endif
+								-%}
+								<figure class="multicolumn__image" style="width: {{ max_width }};">
+									<div class="multicolumn__image--inner aspect-ratio aspect-ratio--{{ image_ratio }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+										{%- render 'responsive-image', image: block.settings.image, sizes: '407x0,814x0', retina: block.settings.retina -%}
+									</div>
+								</figure>
+							{% endif %}
+							{% if block.settings.title != blank %}
+								<h4 class="{{ heading_size }}">{{ block.settings.title | newline_to_br }}</h4>
+							{% endif %}
+							{% if block.settings.text != blank %}
+								<div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+							{% endif %}
+							{% if block.settings.link_label != blank %}
+								<a class="text-button" href="{{ block.settings.link }}"><span>{{ block.settings.link_label }}</span></a>
+							{% endif %}
+						</div>
+					{%- endfor -%}
+					{%- if display_type == 'carousel' -%}
+						<div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+						<div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+					{%- endif -%}
+				</div>
+				{%- if display_type == 'carousel' and show_progress_bar -%}
+				<div class="flickity-progress">
+					<div class="flickity-progress--bar"></div>
+				</div>
+				{%- endif -%}
+			</div>
+
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Multicolumn",
+		"class": "section-multicolumn",
+    "settings": [
+			{
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Multicolumn"
+      },
+			{
+				"type": "checkbox",
+				"id": "heading_left",
+				"default": false,
+				"label": "Left align heading"
+			},
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for this section</p>"
+      },
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": true
+			},
+			{
+				"type": "select",
+				"id": "display_type",
+				"options": [
+					{
+						"value": "grid",
+						"label": "Grid"
+					},
+					{
+						"value": "carousel",
+						"label": "Carousel"
+					}
+				],
+				"default": "grid",
+				"label": "Display type"
+			},
+			{
+	      "type": "select",
+	      "id": "image_ratio",
+	      "options": [
+	        {
+	          "value": "adapt",
+	          "label": "Adapt to image"
+	        },
+	        {
+	          "value": "portrait",
+	          "label": "Portrait"
+	        },
+	        {
+	          "value": "square",
+	          "label": "Square"
+	        },
+	        {
+	          "value": "circle",
+	          "label": "Circle"
+	        }
+	      ],
+	      "default": "adapt",
+	      "label": "Image ratio"
+	    },
+			{
+	      "type": "range",
+	      "id": "columns_desktop",
+	      "min": 2,
+	      "max": 6,
+	      "step": 1,
+	      "default": 4,
+	      "label": "Number of columns on desktop"
+	    },
+			{
+	      "type": "select",
+	      "id": "text_alignment",
+	      "options": [
+	        {
+	          "value": "left",
+	          "label": "Left"
+	        },
+	        {
+	          "value": "center",
+	          "label": "Center"
+	        },
+	        {
+	          "value": "right",
+	          "label": "Right"
+	        }
+	      ],
+	      "default": "left",
+	      "label": "Content alignment"
+	    },
+			{
+				"type": "select",
+				"id": "heading_size",
+				"label": "Content heading size",
+				"options": [
+					{
+						"value": "h3",
+						"label": "Extra Large"
+					},
+					{
+						"value": "h4",
+						"label": "Large"
+					},
+					{
+						"value": "h5",
+						"label": "Medium"
+					},
+					{
+						"value": "h6",
+						"label": "Small"
+					}
+				],
+				"default": "h5"
+			},
+			{
+	      "type": "header",
+	      "content": "Grid"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "mobile_swipe",
+	      "default": false,
+	      "label": "Enable swipe on mobile"
+	    },
+			{
+	      "type": "header",
+	      "content": "Carousel"
+	    },
+			{
+				"type": "checkbox",
+				"id": "show_progress_bar",
+				"label": "Show progress bar",
+				"default": true
+			},
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image",
+						"info": "770 x 770 .jpg recommended."
+					},
+					{
+						"type": "checkbox",
+						"id": "image_full_width",
+						"label": "Fit image to column",
+						"default": false
+					},
+					{
+            "type": "checkbox",
+            "id": "retina",
+            "label": "Enable retina",
+            "default": true,
+            "info": "Image will be displayed at half the size, making it look crisp on retina screens."
+          },
+					{
+						"type": "text",
+						"id": "title",
+						"default": "Column",
+						"label": "Heading"
+					},
+					{
+						"type": "richtext",
+						"id": "text",
+						"default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+						"label": "Description"
+					},
+	        {
+	          "type": "text",
+	          "id": "link_label",
+	          "label": "Link label"
+	        },
+	        {
+	          "type": "url",
+	          "id": "link",
+	          "label": "Link"
+	        }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Multicolumn",
+				"blocks": [
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        }
+	      ]
+      }
+    ]
+  }
+{% endschema %}

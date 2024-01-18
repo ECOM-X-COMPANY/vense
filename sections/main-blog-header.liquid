@@ -1,0 +1,73 @@
+{{- 'blog-header.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign heading = section.settings.heading
+	assign description = section.settings.description
+	assign show_category_list = section.settings.show_category_list
+%}
+<div class="row">
+	<div class="small-12 columns">
+		<div class="blog-header">
+			<div class="blog-header__inner">
+				<h1 class="thb-shop-title">{{ heading }}</h1>
+				{%- if description != '' -%}
+				<div class="rte">
+					{{ description }}
+				</div>
+				{%- endif -%}
+			</div>
+			{% if show_category_list %}
+			<div class="blog-header__tags">
+				<scroll-shadow>
+					<div class="blog-header__tags--inner">
+						{%- liquid
+							assign all = ''
+							if template contains 'blog'
+								unless current_tags
+									assign all = 'active'
+								endunless
+							endif
+						-%}
+						<a href="{{ blog.url | escape }}" title="{{ 'blogs.blog.all' | t | escape }}" class="{{ all }}">{{ 'blogs.blog.all' | t }}</a>
+						{% for single_tag in blog.all_tags %}
+							{%- liquid
+								if current_tags contains single_tag
+									assign selected = "active"
+								else
+									assign selected = ''
+								endif
+							-%}
+							<a href="{{ blog.url | escape }}/tagged/{{ single_tag | handle }}" class="{{ selected }}">{{ single_tag }}</a>
+						{% endfor %}
+					</div>
+				</scroll-shadow>
+			</div>
+			{% endif %}
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+		"name": "Blog header",
+	  "class": "blog-header-section",
+    "settings": [
+			{
+				"type": "text",
+				"id": "heading",
+				"label": "Heading",
+				"default": "Blog posts"
+			},
+			{
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for your blog.</p>"
+      },
+			{
+				"type": "checkbox",
+				"id": "show_category_list",
+				"default": true,
+				"label": "Show category list"
+			}
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,145 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": true
+          }
+        },
+        "9d13a60b-74d6-49dd-8c6d-69f8ada627d7": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div style=\"display:flex;\">\n <p> <img src=\"https:\/\/cdn-icons-png.flaticon.com\/512\/709\/709612.png\" style=\"height:20px; width:20px;\">\n <span style=\"margin-left:5px;\"> <script>\n    let randomNumber = Math.floor(Math.random() * (9 - 3 + 1) + 6);\n    document.write(randomNumber);\n  <\/script> watching this item.\n   <\/span>\n <\/p>\n<\/div>"
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "variant_is_disabled": true,
+            "sizing_guide_text": "Sizing guide",
+            "sizing_guide_icon": "ruler",
+            "sizing_guide_page": "sizing-guide"
+          }
+        },
+        "d1e6b7f8-4f98-45c8-9289-bfe020b31d10": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"estimated-box\">\n        <p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0690\/9067\/2952\/files\/calendar-icon-png-2.webp?v=1671553121\" style=\"height:25px;float:left;margin-right:10px;padding-bottom: 4px;\"\/>\n        Get it between <strong><span id=\"fromDate\"><\/span> - <span id=\"toDate\"><\/span><\/strong><\/p>\n        <p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0690\/9067\/2952\/files\/1670915.png?v=1671553121\" style=\"height:25px;float:left;margin-right:10px;padding-bottom: 4px;\"\/>\n        <a href=\"#\"> {% if product.metafields.custom.free_shipping_days != blank %}\n                                      {{ product.metafields.custom.free_shipping_days }}\n                                  {% else %}\n                                      Shipping time by Local Delivery 1-2 working days\n                                  {% endif %}\n                     <\/a><\/p>\n      <\/div>\n\n<style>\n.estimated-box {\n  padding: 5px;\n  border: 1px solid #000;\n  border-radius: 10px;\n  margin-bottom: 20px;\n}\n  \n.estimated-box p {\n  margin-bottom: 0px;\n  padding: 10px;\n}\n\n  \n<\/style>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
+          "type": "side_panel",
+          "settings": {
+            "side_panel_1_label": "Feeding",
+            "side_panel_1_icon": "serving_dish",
+            "side_panel_1_content": "",
+            "side_panel_1_page": "feeding",
+            "side_panel_2_label": "Delivery",
+            "side_panel_2_icon": "truck",
+            "side_panel_2_content": "",
+            "side_panel_2_page": "delivery",
+            "side_panel_3_label": "Switching to Wildfood",
+            "side_panel_3_icon": "gluten_free",
+            "side_panel_3_content": "",
+            "side_panel_3_page": "switching-to-wildfood"
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "9d13a60b-74d6-49dd-8c6d-69f8ada627d7",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "variant_picker",
+        "d1e6b7f8-4f98-45c8-9289-bfe020b31d10",
+        "buy_buttons",
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "full_width": true,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": true,
+        "media_layout": "grid",
+        "display_slider_pagination": true,
+        "media_aspect_ratio": "adapt",
+        "display_captions": true,
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "16623877721f33fb14": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 90,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16625458859c68803a": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "1662552569cce2536d": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 5,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "heading_left": true,
+        "description": "<p>Combine your style with these products<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "16623877721f33fb14",
+    "16625458859c68803a",
+    "1662552569cce2536d",
+    "product-recommendations"
+  ]
+}

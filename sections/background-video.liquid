@@ -1,0 +1,238 @@
+{%- liquid
+	assign desktop_height = section.settings.desktop_height
+	assign mobile_height = section.settings.mobile_height
+	assign full_width = section.settings.full_width
+	assign fallback_image = section.settings.fallback_image
+	assign overlay_opacity = section.settings.overlay_opacity
+	assign video = section.settings.video
+	assign video_hosted = section.settings.video_hosted
+	assign subheading = section.settings.subheading
+	assign heading = section.settings.heading
+	assign text = section.settings.text
+	assign lightbox_button = section.settings.lightbox_button
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+<div class="row {% if full_width %}full-width-row-full{% endif %}">
+	<div class="small-12 columns">
+		<background-video class="background-video {{ mobile_height }} {{ desktop_height }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+			{%- if fallback_image != blank -%}
+			<div class="background-video__fallback-img">
+				<img data-src="{{ fallback_image | image_url }}" alt="{{ fallback_image.alt | escape }}" width="{{ fallback_image.width }}" height="{{ fallback_image.height }}" class="lazyload{% unless settings.lazy_loading %} no-blur{% endunless %}" />
+				<noscript>
+				<img src="{{ fallback_image | image_url }}" alt="{{ fallback_image.alt | escape }}" width="{{ fallback_image.width }}" height="{{ fallback_image.height }}" />
+				</noscript>
+			</div>
+			{%- endif -%}
+			<div class="background-video__iframe" data-provider="{{ video.type }}">
+				{%- if video_hosted == blank -%}
+					{%- if video != blank -%}
+						{%- if video.type == 'youtube' -%}
+							<iframe data-src="https://www.youtube.com/embed/{{ video.id }}?loop=1&autoplay=1&mute=1&playlist={{ video.id }}&iv_load_policy=3&disablekb=1&controls=0&playsinline=1&enablejsapi=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
+						{%- else -%}
+							<iframe data-src="https://player.vimeo.com/video/{{ video.id }}?background=1" frameborder="0" class="lazyload" allow="autoplay; encrypted-media" allowfullscreen title="{{ section.settings.heading | escape }}" tabindex="-1"></iframe>
+						{%- endif -%}
+					{%- endif -%}
+				{%- else -%}
+					{{ video_hosted | video_tag: autoplay: true, loop: true, controls: false, muted: true }}
+				{%- endif -%}
+			</div>
+			<div class="background-video__overlay" style="--overlay-opacity: {{ overlay_opacity | divided_by: 100.00 }}"></div>
+			<div class="background-video__content-wrap">
+				<div class="background-video__content">
+					{%- if subheading != blank -%}
+					<p class="subheading">{{ subheading }}</p>
+					{%- endif -%}
+					{%- if heading != blank -%}
+					<h3 class="h1">{{ heading | newline_to_br }}</h3>
+					{%- endif -%}
+					{%- if text != blank -%}
+					<p>{{ text }}</p>
+					{%- endif -%}
+					{%- if lightbox_button -%}
+					<modal-opener class="video-lightbox-modal__opener no-js-hidden" data-modal="#VideoLightbox-{{ section.id }}">
+						<button id="VideoLightboxToggle-{{ section.id }}" class="video-lightbox-modal__button" type="button" aria-haspopup="dialog">
+							{% render 'svg-icons' with 'thb-video-play' %}</button>
+					</modal-opener>
+					<a href="{{ video.url }}" class="video-lightbox-modal__button no-js" target="_blank">{% render 'svg-icons' with 'thb-video-play' %}</a>
+					<modal-dialog id="VideoLightbox-{{ section.id }}" class="video-lightbox-modal">
+				    <div role="dialog" aria-label="{{ heading }}" aria-modal="true" class="video-lightbox-modal__content" tabindex="-1">
+							<button id="ModalClose-{{ section.id }}" type="button" class="video-lightbox-modal__toggle" aria-label="{{ 'accessibility.close' | t }}">{% render 'svg-icons' with 'close' %}</button>
+			        <div class="video-lightbox-modal__content-info">
+								{%- if video_hosted == blank -%}
+									{%- if video.type == 'youtube' -%}
+					          <iframe data-src="https://www.youtube.com/embed/{{ video.id }}?enablejsapi=1" class="js-youtube lazyload" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					        {%- else -%}
+					          <iframe data-src="https://player.vimeo.com/video/{{ video.id }}" class="js-vimeo lazyload" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					        {%- endif -%}
+								{%- else -%}
+									{{ video_hosted | video_tag: autoplay: false, loop: false, controls: true }}
+								{%- endif -%}
+			        </div>
+				    </div>
+				  </modal-dialog>
+					{%- endif -%}
+				</div>
+			</div>
+		</background-video>
+	</div>
+</div>
+{{- 'background-video.css' | asset_url | stylesheet_tag -}}
+<script src="{{ 'background-video.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+  {
+    "name": "Background video",
+    "settings": [
+			{
+				"type": "select",
+				"id": "desktop_height",
+				"label": "Desktop height",
+				"options": [
+					{
+						"value": "desktop-height-auto",
+						"label": "Adapt to content"
+					},
+					{
+						"value": "desktop-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "desktop-height-550",
+						"label": "550px"
+					},
+					{
+						"value": "desktop-height-650",
+						"label": "650px"
+					},
+					{
+						"value": "desktop-height-750",
+						"label": "750px"
+					},
+					{
+						"value": "desktop-height-full",
+						"label": "Full screen"
+					}
+				],
+				"default": "desktop-height-650"
+			},
+			{
+				"type": "select",
+				"id": "mobile_height",
+				"label": "Mobile height",
+				"options": [
+					{
+						"value": "mobile-height-auto",
+						"label": "Adapt to content"
+					},
+					{
+						"value": "mobile-height-350",
+						"label": "350px"
+					},
+					{
+						"value": "mobile-height-400",
+						"label": "400px"
+					},
+					{
+						"value": "mobile-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "mobile-height-500",
+						"label": "500px"
+					},
+					{
+						"value": "mobile-height-full",
+						"label": "Full screen"
+					}
+				],
+				"default": "mobile-height-500"
+			},
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": true
+			},
+			{
+				"type": "text",
+				"id": "subheading",
+				"label": "Subheading",
+				"default": "Add a tagline"
+			},
+			{
+        "type": "textarea",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Background video heading"
+      },
+      {
+        "type": "textarea",
+        "id": "text",
+        "label": "Text",
+        "default": "Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review."
+      },
+			{
+				"type": "checkbox",
+				"id": "lightbox_button",
+				"label": "Display lightbox play button",
+				"default": true
+			},
+      {
+				"type": "video_url",
+        "id": "video",
+        "label": "Video URL",
+				"accept": [
+          "youtube",
+          "vimeo"
+        ],
+				"placeholder": "Use a YouTube or Vimeo URL",
+				"default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+				"info": "Video plays in a lightbox."
+      },
+			{
+			  "type": "video",
+			  "id": "video_hosted",
+			  "label": "Shopify-hosted video",
+				"info": "Overrides the Video URL setting."
+			},
+			{
+        "type": "image_picker",
+        "id": "fallback_image",
+        "label": "Fallback image",
+				"info": "1920 x 1080 px .jpg recommended."
+      },
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 5,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 25
+			},
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "presets": [
+      {
+        "name": "Background video"
+      }
+    ]
+  }
+
+{% endschema %}

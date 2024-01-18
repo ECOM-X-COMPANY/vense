@@ -1,0 +1,73 @@
+{{ 'blog.css' | asset_url | stylesheet_tag }}
+{% liquid
+	assign show_date = section.settings.show_date
+	assign show_excerpt = section.settings.show_excerpt
+	assign image_ratio = section.settings.image_ratio
+%}
+{%- paginate blog.articles by 8 -%}
+<div class="section-spacing-bottom">
+	<div class="row">
+		{%- for article in blog.articles -%}
+			{%- if forloop.index == 1 or forloop.index == 5 -%}
+			<div class="small-12 columns">
+				{% render 'blog-post-large', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
+			</div>
+			{%- else -%}
+			<div class="small-12 medium-4 columns">
+				{% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
+			</div>
+			{%- endif -%}
+		{%- endfor -%}
+	</div>
+	{% render 'pagination', paginate: paginate, pagination_type: 'paginated' %}
+</div>
+{%- endpaginate -%}
+
+{% schema %}
+  {
+		"name": "Blog posts",
+	  "class": "blog-section",
+    "settings": [
+			{
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to image"
+          },
+          {
+            "value": "portrait",
+            "label": "Portrait"
+          },
+          {
+            "value": "square",
+            "label": "Square"
+          },
+					{
+            "value": "landscape",
+            "label": "Landscape"
+          }
+        ],
+        "default": "landscape",
+        "label": "Image ratio"
+      },
+			{
+				"type": "checkbox",
+				"id": "show_date",
+				"default": true,
+				"label": "Show date"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_excerpt",
+				"default": true,
+				"label": "Show excerpt"
+			},
+	    {
+	      "type": "paragraph",
+	      "content": "Change excerpts by editing your blog posts. [Learn more](https://help.shopify.com/en/manual/online-store/blogs/writing-blogs#display-an-excerpt-from-a-blog-post)"
+	    }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,252 @@
+<div class="blog-post-detail--sticky"></div>
+{{ 'article.css' | asset_url | stylesheet_tag }}
+<div class="blog-post-detail--wrapper section-spacing">
+		<div class="row">
+			<div class="small-12 columns">
+				<article class="blog-post-detail">
+					{% for block in section.blocks %}
+						{% if block.type == '@app' %}
+							<div class="page-content-width">
+								{% render block %}
+							</div>
+						{% endif %}
+						{% if block.type == 'featured_image' %}
+							<div class="featured-image" {{ block.shopify_attributes }}>
+								{%- liquid
+									case block.settings.image_ratio
+										when 'adapt'
+											assign master_width = article.image.width | append: 'x' | append: article.image.height
+											assign sizes = '375x0' | append: ',' | append: master_width
+										when 'small'
+											assign sizes = '375x160,750x320,1340x450'
+										when 'medium'
+											assign sizes = '320x195,750x390,1340x550'
+										when 'large'
+											assign sizes = '320x230,750x460,1340x690'
+									endcase
+								-%}
+								{%- render 'responsive-image', image: article.image, sizes: sizes -%}
+							</div>
+						{% endif %}
+						{% if block.type == 'title' %}
+							<div class="post-title page-content-width" {{ block.shopify_attributes }}>
+								<div class="post-meta-wrapper">
+									{% if section.settings.article_show_date %}
+									<aside class="post-meta">
+										{{ article.published_at | time_tag: '%b %d, %Y' }}
+									</aside>
+									{% endif %}
+									{% if section.settings.article_show_author %}
+									<aside class="post-author">{{ article.author }}</aside>
+									{% endif %}
+								</div>
+								<h1 class="entry-title">{{ article.title }}</h1>
+								<div class="post-excerpt-container">
+									{%- if block.settings.article_show_excerpt -%}
+									<div class="post-excerpt">
+										<p>{{ article.excerpt_or_content | strip_html | truncatewords: block.settings.excerpt_length }}</p>
+									</div>
+									{%- endif -%}
+									{%- if block.settings.article_show_sharing -%}
+									{% render 'social-share', share_label: true, share_title: article.title, share_permalink: article.url, share_image: article.featured_image %}
+									{%- endif -%}
+								</div>
+							</div>
+						{% endif %}
+						{% if block.type == 'content' %}
+							<div class="post-content page-content-width rte" {{ block.shopify_attributes }}>
+								{{ article.content }}
+							</div>
+						{% endif %}
+						{% if block.type == 'tags' %}
+							{%- if article.tags.size > 0 -%}
+							<footer class="article-tags page-content-width" {{ block.shopify_attributes }}>
+						    {% for tag in article.tags %}
+						      <a href="{{ blog.url | escape }}/tagged/{{ tag | handle }}" class="tag-link">{{ tag }}</a>
+						    {% endfor %}
+						  </footer>
+							{%- endif -%}
+						{% endif %}
+					{% endfor %}
+				</article>
+			</div>
+		</div>
+		{% if blog.comments_enabled? %}
+		{{ 'comments.css' | asset_url | stylesheet_tag }}
+		<div class="row">
+			<div class="small-12 columns">
+				<div class="comments-wrapper page-content-width">
+				  {% if article.comments_count > 0 %}
+						<div class="comments-container page-content-width" id="comments">
+				      <h5 class="comments-title">{{ 'blogs.article.comments_html' | t: count: article.comments_count, title: article.title }}</h5>
+				      <ul class="commentlist">
+				        {% paginate article.comments by 5 %}
+				          {% for comment in article.comments %}
+				            <li class="comment">
+				              <div class="comment-body">
+												<img data-src="https://www.gravatar.com/avatar/{{ comment.email | remove: ' ' | strip_newlines | downcase | md5 }}?s=200" class="avatar lazyload" alt="{{ comment.author | escape }}" width="100" height="100" />
+				                <div class="comment-author">
+				                  <cite class="fn">{{ comment.author }}</cite> — <a href="{{ comment.url }}" class="comment-meta">{{ comment.created_at | date: "%B %d, %Y" }}</a>
+				                </div>
+				                {{ comment.content }}
+				              </div>
+				            </li>
+				          {% endfor %}
+				          {% if paginate.pages > 1 %}
+				            {{ paginate | default_pagination }}
+				          {% endif %}
+				        {% endpaginate %}
+				      </ul>
+				    </div>
+				  {% endif %}
+					<div class="respond-container page-content-width">
+			      <div class="comment-respond">
+			        {% form 'new_comment', article %}
+								{%- liquid
+			            assign post_message = 'blogs.article.success'
+			            if blog.moderated? and comment.status == 'unapproved'
+			              assign post_message = 'blogs.article.success_moderated'
+			            endif
+			          -%}
+								<div class="comment-reply-title--container">
+				          <h5 id="reply-title" class="comment-reply-title">{{ 'blogs.article.comment_form_title' | t }}</h5>
+				          <p class="comment-notes">{{ 'blogs.article.comment_form_note' | t }}.</p>
+								</div>
+			          {% if form.errors %}
+									<div class="form-notification error">
+			              {% render 'svg-icons' with 'thb-error' %} {{ form.errors | default_errors }}
+									</div>
+								{%- elsif form.posted_successfully? -%}
+									<div class="form-notification success">
+										{% render 'svg-icons' with 'thb-success' %} {{ post_message | t }}
+									</div>
+			          {%- endif -%}
+								<div class="comment-form-fields">
+			            <div class="field">
+			              <textarea name="comment[body]" class="full {% if form.errors contains 'body' %}invalid{% endif %}" id="CommentBody" placeholder="{{ 'blogs.article.message' | t }}">{{ form.body }}</textarea>
+										<label>{{ 'blogs.article.message' | t }}</label>
+			            </div>
+			            <div class="field">
+			              <input type="text" class="full {% if form.errors contains 'author' %}invalid{% endif %}" name="comment[author]" id="CommentAuthor" value="{{ form.author }}" autocapitalize="words" placeholder="{{ 'blogs.article.name' | t }}">
+										<label>{{ 'blogs.article.name' | t }}</label>
+			            </div>
+			            <div class="field">
+			              <input type="email" class="full {% if form.errors contains 'email' %}invalid{% endif %}" name="comment[email]" id="CommentEmail" value="{{ form.email }}" autocorrect="off" autocapitalize="off" placeholder="{{ 'blogs.article.email' | t }}">
+										<label>{{ 'blogs.article.email' | t }}</label>
+			            </div>
+			            <input class="button full" type="submit" value="{{ 'blogs.article.post' | t | escape }}">
+								</div>
+			        {% endform %}
+			      </div>
+			    </div>
+				</div>
+		  </div>
+		</div>
+		{% endif %}
+	</div>
+{% schema %}
+  {
+		"name": "Blog post",
+		"class": "article-section",
+    "settings": [
+			{
+				"type": "header",
+				"content": "Settings"
+			},
+			{
+				"type": "checkbox",
+				"id": "article_show_date",
+				"label": "Show date",
+				"default": true
+			},
+			{
+				"type": "checkbox",
+				"id": "article_show_author",
+				"label": "Show author",
+				"default": true
+			}
+    ],
+		"blocks": [
+			{
+	      "type": "@app"
+	    },
+      {
+        "type": "featured_image",
+        "name": "Featured Image",
+	      "limit": 1,
+				"settings": [
+					{
+						"type": "select",
+						"id": "image_ratio",
+						"options": [
+							{
+								"value": "adapt",
+								"label": "Adapt to image"
+							},
+							{
+								"value": "small",
+								"label": "Small"
+							},
+							{
+								"value": "medium",
+								"label": "Medium"
+							},
+							{
+								"value": "large",
+								"label": "Large"
+							}
+						],
+						"default": "medium",
+						"label": "Featured image height"
+					}
+				]
+      },
+			{
+        "type": "title",
+        "name": "Title",
+	      "limit": 1,
+				"settings": [
+					{
+						"type": "checkbox",
+						"id": "article_show_excerpt",
+						"label": "Show excerpt",
+						"default": true
+					},
+					{
+			      "type": "range",
+			      "id": "excerpt_length",
+			      "min": 20,
+			      "max": 50,
+			      "step": 2,
+			      "default": 30,
+			      "label": "Excerpt length"
+			    },
+					{
+						"type": "checkbox",
+						"id": "article_show_sharing",
+						"label": "Show sharing buttons",
+						"default": true
+					},
+					{
+						"type": "paragraph",
+						"content": "If you include a link in social media posts, the page’s featured image will be shown as the preview image. [Learn more](https://help.shopify.com/en/manual/online-store/images/showing-social-media-thumbnail-images)."
+					},
+					{
+						"type": "paragraph",
+						"content": "A store title and description are included with the preview image. [Learn more](https://help.shopify.com/en/manual/promoting-marketing/seo/adding-keywords#set-a-title-and-description-for-your-online-store)."
+					}
+				]
+      },
+			{
+        "type": "content",
+        "name": "Content",
+	      "limit": 1
+      },
+			{
+        "type": "tags",
+        "name": "Tags",
+	      "limit": 1
+      }
+    ]
+  }
+{% endschema %}

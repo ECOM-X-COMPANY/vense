@@ -1,0 +1,66 @@
+{%- liquid
+	assign grid_collection_image = nil
+	assign index_c = index | modulo: 6 | plus: 1
+-%}
+{%- if grid_collection == empty -%}
+	{%- assign grid_collection_url = '#' -%}
+	{%- assign grid_collection_title = 'onboarding.collection_title' | t -%}
+{%- else -%}
+	{%- assign grid_collection_url = grid_collection.url -%}
+	{%- assign grid_collection_title = grid_collection.title -%}
+	{%- if grid_collection.featured_image -%}
+		{%- assign grid_collection_image = grid_collection.featured_image -%}
+	{%- endif -%}
+{%- endif -%}
+{%- liquid
+	assign sizes = '320x320,640x640,960x960,1280x1280'
+	assign media_aspect_percentage = 100 | append: '%'
+  if media_aspect_ratio == 'portrait'
+    assign sizes = '320x400,640x800,960x1200,1280x1600'
+  elsif media_aspect_ratio == 'adapt'
+    assign sizes = '320x0,640x0,960x0,1280x0'
+		assign media_aspect_percentage = 100 | divided_by: grid_collection_image.aspect_ratio | append: '%'
+  endif
+
+	assign mobile_columns_class = 'small-12'
+	if is_carousel
+		if columns_mobile == '2'
+			assign mobile_columns_class = 'small-6'
+		endif
+		assign columns_class = 'medium-6 large-4'
+		case columns_desktop
+			when 2
+				assign columns_class = 'medium-6'
+			when 3
+				assign columns_class = 'medium-4'
+			when 4
+				assign columns_class = 'medium-6 large-3'
+			when 5
+				assign columns_class = 'medium-1/5 large-1/5'
+			when 6
+				assign columns_class = 'medium-3 large-2'
+		endcase
+		assign columns_class = columns_class | append: ' carousel__slide columns'
+	endif
+
+-%}
+<div class="{{ mobile_columns_class }} {{ columns_class }}">
+	<div class="collection-card {{ style }}">
+		<div class="collection-card__image media-aspect-{{ media_aspect_ratio }}" style="--var-media-aspect-ratio: {{ media_aspect_percentage }}">
+			<a href="{{ grid_collection_url }}" class="collection-card__link" title="{{ grid_collection_title | escape }}">
+				{% if grid_collection == empty %}
+					<div class="thb-placeholder">{{ 'collection-' | append: index | placeholder_svg_tag }}</div>
+				{% else %}
+					{% if grid_collection_image %}
+						{%- render 'responsive-image', image: grid_collection.featured_image | image_url, sizes: sizes -%}
+					{% else %}
+						<div class="thb-placeholder">{{ 'collection-' | append: index_c | placeholder_svg_tag }}</div>
+					{% endif %}
+				{% endif %}
+			</a>
+		</div>
+		<div class="collection-card__content">
+			<a href="{{ grid_collection_url }}" class="collection-card__link {% if style == 'style1' %}text-button{% endif %}" title="{{ grid_collection_title | escape }}">{{ grid_collection_title }} {% if style == 'style2' %}{% render 'svg-icons' with 'thb-collection-arrow' %}{% endif %}</a>
+		</div>
+	</div>
+</div>

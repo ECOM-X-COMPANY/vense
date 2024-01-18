@@ -1,0 +1,77 @@
+{% comment %}
+    Renders a list of product's price (regular, sale)
+    Accepts:
+    - product: {Object} Product Liquid object (optional)
+    - use_variant: {Boolean} Renders selected or first variant price instead of overall product pricing (optional)
+    - price_class: {String} Adds a price class to the price element (optional)
+    Usage:
+    {% render 'price', product: product %}
+{% endcomment %}
+{%- liquid
+	if use_variant
+    assign target = product.selected_or_first_available_variant
+  else
+    assign target = product
+  endif
+  assign compare_at_price = target.compare_at_price
+  assign price = target.price | default: 1999
+	assign available = target.available | default: false
+  assign money_price = price | money
+  if settings.currency_code_enabled
+    assign money_price = price | money_with_currency
+  endif
+
+	if target == product and product.price_varies
+    assign money_price = 'products.product.price.from_price_html' | t: price: money_price
+  endif
+
+-%}
+<span class="price">
+	{%- unless product.price_varies == false and product.compare_at_price_varies %}
+		{% if compare_at_price != null and compare_at_price != 0 and price != compare_at_price %}
+			<del>
+				<span class="amount">
+					{% if settings.currency_code_enabled %}
+						{{ compare_at_price | money_with_currency }}
+					{% else %}
+						{{ compare_at_price | money }}
+					{% endif %}
+				</span>
+			</del>
+		{% endif %}
+	{%- endunless -%}
+	<ins><span class="amount">{{ money_price }}</span></ins>
+	<small class="unit-price {% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
+		<span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
+    <span class="unit-price-separator">/</span>
+		<span>
+      {%- if product.selected_or_first_available_variant.unit_price_measurement.reference_value != 1 -%}
+        {{- product.selected_or_first_available_variant.unit_price_measurement.reference_value -}}
+      {%- endif -%}
+      {{ product.selected_or_first_available_variant.unit_price_measurement.reference_unit -}}
+    </span>
+	</small>
+	{%- if show_badges -%}
+		<span class="badges">
+			{%- if compare_at_price > price %}
+			{%- if settings.sale_badge_type == 'save_amount' -%}
+				{%- capture saved_amount -%}{{ compare_at_price | minus: price | money }}{%- endcapture -%}
+			{%- elsif settings.sale_badge_type == 'save_percentage' -%}
+				{%- capture saved_amount -%}{{ compare_at_price | minus: price | times: 100.0 | divided_by: compare_at_price | round }}%{%- endcapture -%}
+			{%- endif -%}
+			<span class="badge onsale">
+				{%- if settings.sale_badge_type == 'sale' -%}
+				{{ 'products.product.on_sale' | t }}
+				{%- else -%}
+				{{ 'products.product.save_html' | t: saved_amount: saved_amount }}
+				{%- endif -%}
+		  </span>
+			{% endif %}
+			{%- if available == false -%}
+		  <span class="badge out-of-stock">
+		    {{ 'products.product.sold_out' | t }}
+		  </span>
+			{% endif %}
+		</span>
+	{% endif %}
+</span>

@@ -1,0 +1,29 @@
+
+
+
+.breadcrumbs-section + .product-section .thb-product-detail {
+  margin-top: 0; }
+
+.breadcrumbs {
+  font-size: 0.75rem;
+  overflow-x: scroll;
+  padding: 15px;
+  display: inline-flex;
+  width: 100%;
+  white-space: nowrap;
+  max-width: 100vw;
+  text-align: left;
+  scrollbar-width: none; }
+  @media only screen and (min-width: 768px) {
+    .breadcrumbs {
+      padding: 20px 50px;
+      overflow-x: hidden; } }
+  .breadcrumbs::-webkit-scrollbar {
+    display: none; }
+  .breadcrumbs i {
+    opacity: 0.2;
+    display: inline-block;
+    margin: 0 8px; }
+  .breadcrumbs a {
+    text-decoration: underline;
+    text-underline-offset: 3px; }

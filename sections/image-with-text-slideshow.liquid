@@ -1,0 +1,316 @@
+{{- 'image-with-text-slideshow.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign mobile_height = section.settings.mobile_height
+	assign content_position = section.settings.content_position
+	assign desktop_height = section.settings.desktop_height
+	assign desktop_image_width = section.settings.desktop_image_width
+	assign desktop_layout = section.settings.layout
+	assign full_width  = section.settings.full_width
+	assign autoplay = section.settings.autoplay
+
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign color_links = section.settings.color_links
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	if autoplay
+		assign autoplay = section.settings.autoplay_length | times: 1000
+	endif
+
+	assign dots = true
+	assign dots_class = 'custom-dots'
+	if section.blocks.size < 2
+		assign dots = false
+		assign dots_class = ''
+	endif
+-%}
+<div class="row{% if full_width %} full-width-row-full{% endif %}">
+	<div class="small-12 columns">
+		<div class="image-with-text-slideshow grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+			<div class="image-with-text-slideshow__image carousel inner-carousel" data-fade="true">
+				{% for block in section.blocks %}
+					<div class="image-with-text-slideshow__image-slide carousel__slide">
+						<div class="image-with-text-slideshow__image-media {{ mobile_height }} {{ desktop_height }}">
+							{% if block.settings.image %}
+								{% assign image = block.settings.image %}
+								{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+								{% assign width = '375x500' | append: ',' | append: master_width %}
+								{%- render 'responsive-image', image: image, sizes: width -%}
+							{% else %}
+								{% assign index = forloop.index | modulo: 2 | plus: 1 %}
+								{{ 'lifestyle-' | append: index | placeholder_svg_tag: 'placeholder_svg_tag' }}
+							{% endif %}
+						</div>
+					</div>
+				{% endfor %}
+			</div>
+
+			<div class="image-with-text-slideshow__content carousel inner-carousel {{ dots_class }}" data-dots="{{ dots }}" data-autoplay="{{ autoplay }}" data-fade="true" style="--color-bg:{{ color_bg }}; --color-text:{{ color_text }}; --color-accent: {{ color_links }}; --color-accent-rgb:  {{ color_links | color_extract: 'red' }}, {{ color_links | color_extract: 'green' }}, {{ color_links | color_extract: 'blue' }}; --dot-speed: {{ autoplay | divided_by: 1000 | append: 's' }}">
+				{% for block in section.blocks %}
+					<div class="image-with-text-slideshow__content-content carousel__slide {{ desktop_height }}" {{ block.shopify_attributes }}>
+						{% if block.settings.heading %}
+							<h3>{{ block.settings.heading | newline_to_br }}</h3>
+						{% endif %}
+						{% if block.settings.content %}
+						<p>{{ block.settings.content | newline_to_br }}</p>
+						{% endif %}
+						{% if block.settings.button_text != blank %}
+							<a class="text-button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}">{{ block.settings.button_text }}</a>
+		        {% endif %}
+					</div>
+				{% endfor %}
+				{%- if section.blocks.size > 1 and dots -%}
+					<ol class="flickity-page-dots">
+						{%- for block in section.blocks -%}
+						<li class="dot" aria-label="{{ forloop.index }}">
+							{%- render 'svg-icons' with 'thb-pagination-dot' -%}
+						</li>
+						{%- endfor -%}
+					</ol>
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Image with text slideshow",
+		"class": "section-image-with-text-slideshow",
+    "settings": [
+			{
+				"type": "select",
+				"id": "mobile_height",
+				"label": "Mobile height",
+				"options": [
+					{
+						"value": "mobile-height-auto",
+						"label": "Adapt to image"
+					},
+					{
+						"value": "mobile-height-300",
+						"label": "300px"
+					},
+					{
+						"value": "mobile-height-350",
+						"label": "350px"
+					},
+					{
+						"value": "mobile-height-400",
+						"label": "400px"
+					},
+					{
+						"value": "mobile-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "mobile-height-500",
+						"label": "500px"
+					},
+					{
+						"value": "mobile-height-full",
+						"label": "Full screen"
+					}
+				],
+				"default": "mobile-height-350"
+			},
+			{
+				"type": "select",
+				"id": "desktop_height",
+				"label": "Desktop height",
+				"options": [
+					{
+						"value": "desktop-height-auto",
+						"label": "Adapt to image"
+					},
+					{
+						"value": "desktop-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "desktop-height-550",
+						"label": "550px"
+					},
+					{
+						"value": "desktop-height-650",
+						"label": "650px"
+					},
+					{
+						"value": "desktop-height-750",
+						"label": "750px"
+					},
+					{
+						"value": "desktop-height-full",
+						"label": "Full screen"
+					}
+				],
+				"default": "desktop-height-650"
+			},
+			{
+				"type": "select",
+				"id": "desktop_image_width",
+				"options": [
+					{
+						"value": "small",
+						"label": "Small"
+					},
+					{
+						"value": "medium",
+						"label": "Medium"
+					},
+					{
+						"value": "large",
+						"label": "Large"
+					}
+				],
+				"default": "medium",
+				"label": "Desktop image width",
+				"info": "Image is automatically optimized for mobile."
+			},
+			{
+	      "type": "select",
+	      "id": "layout",
+	      "options": [
+	        {
+	          "value": "image_first",
+	          "label": "Image first"
+	        },
+	        {
+	          "value": "text_first",
+	          "label": "Image second"
+	        }
+	      ],
+	      "default": "image_first",
+	      "label": "Desktop image placement",
+	      "info": "Image first is the default mobile layout."
+	    },
+			{
+				 "type": "select",
+				 "id": "content_position",
+				 "label": "Content alignment",
+				 "options": [
+					 { "value": "text-center", "label": "Center" },
+					 { "value": "text-left", "label": "Left" },
+					 { "value": "text-right", "label": "Right" }
+				 ],
+				 "default": "text-left"
+			},
+			{
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Make section full width",
+        "default": false
+      },
+			{
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto-rotate slides",
+        "default": true
+      },
+			{
+				"type": "range",
+				"id": "autoplay_length",
+				"min": 3,
+				"max": 10,
+				"step": 1,
+				"unit": "s",
+				"label": "Change slides every",
+				"default": 5
+			},
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+        "type": "color",
+        "id": "color_links",
+        "label": "Links",
+        "default": "#151515"
+      },
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "slide",
+        "name": "Slide",
+        "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image",
+						"info": "1250 x 550 .jpg recommended."
+					},
+          {
+            "type": "textarea",
+            "id": "heading",
+            "label": "Heading",
+            "default": "Slide Heading"
+          },
+          {
+            "type": "textarea",
+            "id": "content",
+            "label": "Description",
+            "default": "Add a descriptive text here for your slide."
+          },
+          {
+            "id": "button_text",
+            "type": "text",
+            "label": "Button label",
+            "default": "Shop Now",
+						"info": "Leave the label blank to hide the button."
+          },
+          {
+            "id": "button_link",
+            "type": "url",
+            "label": "Button link"
+          }
+        ]
+      }
+    ],
+  	"max_blocks": 4,
+    "presets": [
+      {
+        "name": "Image with text slideshow",
+				"blocks": [
+					{
+						"type": "slide"
+					},
+					{
+						"type": "slide"
+					},
+					{
+						"type": "slide"
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

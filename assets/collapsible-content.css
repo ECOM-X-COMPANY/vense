@@ -1,0 +1,75 @@
+
+
+
+.accordion summary span:before {
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+
+.accordion {
+  display: block;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: 25px; }
+  .accordion + .accordion {
+    border-top: 0;
+    margin-top: -25px; }
+  .accordion-container .accordion {
+    max-width: 760px;
+    margin-right: auto;
+    margin-left: auto; }
+    .accordion-container .accordion:last-child {
+      margin-bottom: 0; }
+  .accordion details[open] summary span:before {
+    transform: rotateZ(90deg); }
+  .accordion summary {
+    width: 100%;
+    list-style: none;
+    position: relative;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.02em;
+    line-height: 1;
+    padding: 18px 40px 18px 0;
+    cursor: pointer; }
+    [dir="rtl"] .accordion summary {
+      padding: 18px 0 18px 40px; }
+    .accordion summary span {
+      position: absolute;
+      top: calc(50% - 5.5px);
+      right: 18px;
+      width: 12px;
+      height: 12px;
+      display: block; }
+      [dir="rtl"] .accordion summary span {
+        right: auto;
+        left: 18px; }
+      .accordion summary span:before, .accordion summary span:after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5.5px;
+        left: 0px;
+        background: var(--color-body); }
+      .accordion summary span:before {
+        width: 1px;
+        height: 12px;
+        top: 0px;
+        left: 5.5px;
+        will-change: transform; }
+      .accordion summary span:after {
+        width: 12px;
+        height: 1px; }
+    .accordion summary::-webkit-details-marker {
+      display: none; }
+  .accordion .accordion__content {
+    padding: 0 0 15px 0;
+    font-size: 0.9375rem; }
+    .accordion .accordion__content > *:last-child {
+      margin-bottom: 0; }
+
+.collapsible-content__inner {
+  max-width: 1060px;
+  margin: 0 auto; }
+
+.collapsible-content.heading-uppercase-true .accordion summary {
+  text-transform: uppercase; }

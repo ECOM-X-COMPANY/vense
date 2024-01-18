@@ -1,0 +1,120 @@
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_heading_left = section.settings.heading_left
+	assign section_description = section.settings.description
+	assign full_width = section.settings.full_width
+	assign section_article = section.settings.article
+	assign show_date = section.settings.show_date
+	assign show_excerpt = section.settings.show_excerpt
+	assign image_ratio = section.settings.image_ratio
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+-%}
+<div class="row{% if full_width %} full-width-row{% endif %}">
+	<div class="small-12 columns">
+		<div class="blog-posts section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
+				{% if section_article != blank %}
+		      {% render 'blog-post-large', article: section_article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio, full_width: full_width %}
+				{% else %}
+					{% render 'blog-post-large', article: false, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio, full_width: full_width %}
+		    {% endif %}
+		</div>
+	</div>
+</div>
+{{ 'blog.css' | asset_url | stylesheet_tag }}
+{% schema %}
+  {
+    "name": "Featured blog post",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Featured post"
+      },
+			{
+				"type": "checkbox",
+				"id": "heading_left",
+				"default": false,
+				"label": "Left align heading"
+			},
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for your brand news</p>"
+      },
+			{
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Make section full width",
+        "default": false
+      },
+      {
+         "type": "article",
+         "id": "article",
+         "label": "Article"
+      },
+			{
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to image"
+          },
+          {
+            "value": "portrait",
+            "label": "Portrait"
+          },
+          {
+            "value": "square",
+            "label": "Square"
+          },
+					{
+            "value": "landscape",
+            "label": "Landscape"
+          }
+        ],
+        "default": "landscape",
+        "label": "Image ratio"
+      },
+			{
+				"type": "checkbox",
+				"id": "show_date",
+				"default": true,
+				"label": "Show date"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_excerpt",
+				"default": true,
+				"label": "Show excerpt"
+			},
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "presets": [
+      {
+        "name": "Featured blog post"
+      }
+    ]
+  }
+
+{% endschema %}

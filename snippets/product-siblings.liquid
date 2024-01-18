@@ -1,0 +1,84 @@
+{%- liquid
+  assign metafields = metafields | default: false
+  assign show_siblings = false
+  assign sibs_collection = collections[block.settings.siblings_collection].products
+  assign sibling_color = block.settings.sibling_color | default: product.metafields.theme.sibling_color.value | default: product.metafields.theme.sibling_colour.value | default: product.metafields.theme.siblings_color.value | default: product.metafields.theme.siblings_colour.value | default: product.metafields.theme.siblings_colors.value | default: product.metafields.theme.siblings_colours.value
+
+  if metafields
+    assign sibs_collection = product.metafields.theme.sibling_products.value | default: collections[product.metafields.theme.siblings.value].products
+  endif
+
+  if metafields and sibs_collection != blank
+    assign show_siblings = true
+  elsif metafields == false and sibs_collection.size > 0
+    assign show_siblings = true
+  endif
+
+-%}
+
+{%- if show_siblings -%}
+  <div class="variations variations--siblings" {{ block.shopify_attributes }}>
+    {%- assign title_down = product.title | downcase -%}
+    {%- assign sibling_down = sibling_color | downcase -%}
+    {%- unless title_down contains sibling_down -%}
+      <input type="hidden" form="{{ product_form_id }}" name="properties[{{ 'products.product.siblings.label' | t }}]" value="{{ sibling_color }}">
+    {%- endunless -%}
+    {%- liquid
+      assign custom_colors = settings.color_swatches | newline_to_br | split: '<br />'
+      assign key_array = ''
+      assign val_array = ''
+
+      for color in custom_colors
+        assign key = color | split: ':' | first | rstrip
+        assign value = color | split: ':' | last | lstrip
+        assign key_array = key_array | append: ',' | append: key
+        assign val_array = val_array | append: ',' | append: value
+      endfor
+
+      assign key_array = key_array | remove_first: ',' | strip_newlines | downcase | split: ','
+      assign val_array = val_array | remove_first: ',' | split: ','
+
+      assign variant_image_size = '40'
+      case color_picker_size
+        when 'large'
+          assign variant_image_size = '72'
+        when 'xlarge'
+          assign variant_image_size = '104'
+      endcase
+    -%}
+    {%- if sibs_collection -%}
+      <fieldset class="product-form__input product-form__input--siblings" style="--siblings-margin:{{ block.settings.margin_bottom | append: 'px' }}">
+        <div class="form__label">{{ 'products.product.siblings.label' | t }}: {% if sibling_color != blank -%}<span class="form__label__value">{{ sibling_color }}</span>{%- endif -%}</div>
+
+        {%- for sib_product in sibs_collection limit: 50 -%}
+          {%- liquid
+
+            assign color_value = sib_product.metafields.theme.sibling_color.value | default: sib_product.metafields.theme.sibling_colour.value | default: sib_product.metafields.theme.siblings_color.value | default: sib_product.metafields.theme.siblings_colour.value | default: sib_product.metafields.theme.siblings_colors.value | default: sib_product.metafields.theme.siblings_colours.value
+            assign color_value = color_value | downcase
+
+            for custom_color in key_array
+              if custom_color == color_value
+                assign color_value = val_array[forloop.index0]
+              endif
+            endfor
+
+            assign bg_value = empty
+            if color_value contains '.'
+              assign bg_value = color_value | file_url
+              assign color_value = 'var(--bg-body)'
+            endif
+
+            if settings.sibling_style == 'image'
+              assign bg_value = sib_product.featured_media.preview_image | image_url: width: variant_image_size
+            endif
+          -%}
+          <label class="{%- if sib_product.handle == product.handle -%}active{%- endif %}{%- if sib_product.available == false %} sold-out{%- endif %}" style="--option-color: {{ color_value | downcase | escape }}; {%- if bg_value != empty -%} --option-color-image: url('{{ bg_value | escape }}');{%- endif -%}">
+            <a href="{{ sib_product.url }}" title="{{ sib_product.title | escape }}"></a>
+          </label>
+        {%- endfor -%}
+      </fieldset>
+    {%- endif -%}
+  </div>
+{%- elsif request.design_mode -%}
+  <div {{ block.shopify_attributes }}></div>
+{%- endif -%}

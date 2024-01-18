@@ -1,0 +1,395 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "b6528940-6703-4a4b-a158-fca2fc88e716": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": false,
+            "show_products_rating": true
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "sizing_guide_text": "Sizing guide",
+            "sizing_guide_icon": "ruler",
+            "sizing_guide_page": "sizing-guide"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
+          "type": "side_panel",
+          "settings": {
+            "side_panel_1_label": "Materials",
+            "side_panel_1_icon": "leather",
+            "side_panel_2_label": "Shipping & Returns",
+            "side_panel_2_icon": "box",
+            "side_panel_3_label": "Care Guide",
+            "side_panel_3_icon": "washing"
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "b6528940-6703-4a4b-a158-fca2fc88e716",
+        "title",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "variant_picker",
+        "buy_buttons",
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "full_width": false,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": true,
+        "media_layout": "grid",
+        "media_aspect_ratio": "adapt",
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "16629978649b824198": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1662996982423985b7": {
+      "type": "image-with-text",
+      "blocks": {
+        "2de9ce78-da12-4078-947e-12bf2eaa5055": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "f3a800b2-f98e-464c-af94-0b4dcded80ca": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "2de9ce78-da12-4078-947e-12bf2eaa5055",
+        "f3a800b2-f98e-464c-af94-0b4dcded80ca"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "section_width": "full-width-row",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#fcf6d1",
+        "color_text": "#157642",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16629970202a680414": {
+      "type": "scrolling-text",
+      "blocks": {
+        "5887bba8-2087-412d-bc74-839aa9ba5837": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "b1212462-77eb-4163-b493-a10569918f4e": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "f9f71a5f-b5e5-4c2d-913e-505e115b8288": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "c815f62c-3944-434b-96b6-8bf5aa57a07d": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "5c4d2bc1-109d-48f0-87d1-b293876aae2d": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "5887bba8-2087-412d-bc74-839aa9ba5837",
+        "b1212462-77eb-4163-b493-a10569918f4e",
+        "f9f71a5f-b5e5-4c2d-913e-505e115b8288",
+        "c815f62c-3944-434b-96b6-8bf5aa57a07d",
+        "5c4d2bc1-109d-48f0-87d1-b293876aae2d"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 24,
+        "image_size": "small",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#ff565e",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1662997092a1f3715e": {
+      "type": "image-with-text",
+      "blocks": {
+        "83143297-5015-4815-a804-56eba66cc6f8": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text",
+            "heading_size": "h2"
+          }
+        },
+        "6abf090a-baed-4bcc-bc49-e60bab4f3e47": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "83143297-5015-4815-a804-56eba66cc6f8",
+        "6abf090a-baed-4bcc-bc49-e60bab4f3e47"
+      ],
+      "settings": {
+        "height": "adapt",
+        "desktop_image_width": "large",
+        "section_width": "full-width-row",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#ffeaeb",
+        "color_text": "#e8232c",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1663057882c6788c9e": {
+      "type": "multicolumn",
+      "blocks": {
+        "b60d819f-02f8-4d96-8009-15e805949052": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "3fe3e1fd-db99-414a-9dba-4c49100d31cc": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a9d1ff65-c5dd-4ecc-af66-db77e9fa6f55": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "c640fb03-f7b1-42d0-be51-d54170b3763b": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "a039ea41-08e8-42c2-9d3b-12e1a59acc1a": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "2d8255ad-b7ae-4861-a110-ae25c7c33577": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b60d819f-02f8-4d96-8009-15e805949052",
+        "3fe3e1fd-db99-414a-9dba-4c49100d31cc",
+        "a9d1ff65-c5dd-4ecc-af66-db77e9fa6f55",
+        "c640fb03-f7b1-42d0-be51-d54170b3763b",
+        "a039ea41-08e8-42c2-9d3b-12e1a59acc1a",
+        "2d8255ad-b7ae-4861-a110-ae25c7c33577"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "text_alignment": "left",
+        "heading_size": "h4",
+        "mobile_swipe": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663183806e928ab50": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1663064028d88d9729": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "33cea177-60e2-4190-a2e1-5448323f2850": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "72d734bb-8c38-42f5-a4fc-824cd4f56f29": {
+          "type": "space",
+          "settings": {
+            "height": 16
+          }
+        },
+        "d9d3cd9c-d563-42eb-952e-ed024309dde9": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "33cea177-60e2-4190-a2e1-5448323f2850",
+        "72d734bb-8c38-42f5-a4fc-824cd4f56f29",
+        "d9d3cd9c-d563-42eb-952e-ed024309dde9"
+      ],
+      "settings": {
+        "section_width": "full-width-row",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_width": "small",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 16,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Product recommendations",
+        "heading_left": false,
+        "description": "<p>Product recommendations description<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "16629978649b824198",
+    "1662996982423985b7",
+    "16629970202a680414",
+    "1662997092a1f3715e",
+    "1663057882c6788c9e",
+    "1663183806e928ab50",
+    "1663064028d88d9729",
+    "product-recommendations"
+  ]
+}

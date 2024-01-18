@@ -1,0 +1,16 @@
+{%- assign image_sizes = sizes | split: "," -%}
+{%- capture srcset -%}
+  {%- for size in image_sizes -%}
+    {%- assign small_size = '20x' -%}
+    {%- assign size_array = size | split: "x" -%}
+    {%- assign size_x = size_array[0] | append: 'x' -%}
+    {%- if size_array[1] != "0" -%}
+      {%- assign size_x = size -%}
+      {%- assign small_x = size_array[1] | times: 20 | divided_by: size_array[0] | floor -%}
+      {%- assign small_size = small_size | append: small_x -%}
+    {%- endif -%}
+    {{- image.src | img_url: size_x, crop: 'center' }} {{ size_array[0] }}w,
+  {%- endfor -%}
+{%- endcapture -%}
+{%- assign l = srcset | size | minus: 1 -%}
+<link rel="preload" as="image" href="{{- image.src | img_url: small_size, crop: 'center' -}}" imagesrcset="{{ srcset | slice: 0, l | strip_newlines }}" imagesizes="auto">

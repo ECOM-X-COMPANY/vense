@@ -1,0 +1,125 @@
+{
+  "sections": {
+    "b20d57f6-9be8-4594-9c5d-6deb2ed4bc73": {
+      "type": "vertical-slideshow",
+      "blocks": {
+        "template--18432550076699__b20d57f6-9be8-4594-9c5d-6deb2ed4bc73-1681302269936075c0-1": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about2.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "OUR STORY",
+            "heading": "Early jewelry was often made from materials such as shells, bones, and stones, and was used for both adornment and as a form of currency. In many ancient cultures, jewelry was also believed to have magical or spiritual powers, and was often used in religious rituals",
+            "heading_size": "h2",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "large",
+            "overlay_color": "#696363",
+            "overlay_opacity": 30,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "d2ba1b12-84bf-4c9d-a9be-86754a8170eb": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about003.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/about-m7.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h1-xlarge",
+            "content": "As technology advanced, jewelry became more intricate and was often made from precious metals such as gold and silver, as well as precious gems such as diamonds, rubies, and emeralds. In the Middle Ages, jewelry was often used to display wealth and status, with the most elaborate pieces reserved for royalty and the nobility.",
+            "description_size": "medium",
+            "content_position": "bottom-right",
+            "text_alignment": "left",
+            "content_size": "medium",
+            "overlay_color": "#3b3737",
+            "overlay_opacity": 20,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "de0ad86d-95d0-4bc6-b9c7-f60ce6ef0118": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about004.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "Rings are often used to symbolize love and commitment, with engagement rings and wedding bands being the most well-known examples.",
+            "heading_size": "h2",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "large",
+            "overlay_color": "#6f6c6c",
+            "overlay_opacity": 26,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "37d0de62-092c-4cb6-8ee8-ec36bed455d7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about007.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/about-m08.jpg",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "✲ ✲ ✲",
+            "heading": "“Ever since I’ve been saving money and not spending it on jewelry, I’ve been getting way richer.”",
+            "heading_size": "h2",
+            "content": "— 21 Savage",
+            "description_size": "medium",
+            "content_position": "middle-left",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18432550076699__b20d57f6-9be8-4594-9c5d-6deb2ed4bc73-1681302269936075c0-1",
+        "d2ba1b12-84bf-4c9d-a9be-86754a8170eb",
+        "de0ad86d-95d0-4bc6-b9c7-f60ce6ef0118",
+        "37d0de62-092c-4cb6-8ee8-ec36bed455d7"
+      ],
+      "settings": {
+        "dots": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "b20d57f6-9be8-4594-9c5d-6deb2ed4bc73"
+  ]
+}

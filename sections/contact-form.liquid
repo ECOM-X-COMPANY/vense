@@ -1,0 +1,243 @@
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_description = section.settings.description
+	assign show_phone_number = section.settings.show_phone_number
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign text_blocks = section.blocks | where: "type", "text"
+
+	if section.blocks.size == 0
+		assign form_class = 'contact-form--has-no-blocks'
+	endif
+-%}
+{{- 'contact-form.css' | asset_url | stylesheet_tag -}}
+<div class="contact-form section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	<div class="row">
+		<div class="small-12 columns">
+			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: false %}
+		</div>
+	</div>
+	<div class="row align-center">
+		<div class="small-12 medium-8 columns contact-form--form-column ">
+			{% form 'contact', class: form_class %}
+				{% if form.posted_successfully? %}
+				<div class="form-notification success">
+					{% render 'svg-icons' with 'thb-success' %} {{ 'sections.contact.form.post_success' | t }}
+				</div>
+				{%- elsif form.errors %}
+				<div class="form-notification error">
+					{% render 'svg-icons' with 'thb-error' %} {{ 'sections.contact.form.error_heading' | t }} {{ form.errors | default_errors }}
+				</div>
+				{% endif %}
+				<div class="row no-padding">
+					<div class="small-12 medium-6 columns">
+						<div class="field">
+							<input type="text" id="ContactFormName" name="contact[name]" class="full" placeholder="{{ 'sections.contact.form.name' | t | escape }}">
+							<label for="ContactFormName">{{ 'sections.contact.form.name' | t }}</label>
+						</div>
+					</div>
+					<div class="small-12 medium-6 columns">
+						<div class="field">
+							<input type="email" id="ContactFormEmail" name="contact[email]" class="full" placeholder="{{ 'sections.contact.form.email' | t | escape }}" required>
+							<label for="ContactFormEmail">{{ 'sections.contact.form.email' | t }}</label>
+						</div>
+					</div>
+					{%- if show_phone_number -%}
+					<div class="small-12 medium-12 columns">
+						<div class="field">
+							<input type="tel" id="ContactFormPhone" name="contact[phone]" class="full" placeholder="{{ 'sections.contact.form.phone' | t | escape }}">
+								<label for="ContactFormPhone">{{ 'sections.contact.form.phone' | t }}</label>
+						</div>
+					</div>
+					{%- endif -%}
+					{%- for block in section.blocks -%}
+						{%- liquid
+							assign field_title = block.settings.title
+							if field_title == blank
+								capture field_title
+									echo 'Custom field ' | append: field_index
+								endcapture
+							endif
+						-%}
+						{%- case block.type -%}
+							{%- when 'text_field' -%}
+							<div class="small-12 columns">
+								<div class="field">
+								{%- if block.settings.use_long_text -%}
+									<textarea id="{{ block.id }}" name="contact[{{ field_title | escape }}]" cols="30" rows="10" class="full" aria-label="{{ block.settings.title | escape }}" placeholder="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}></textarea>
+									<label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
+								{%- else -%}
+									<input id="{{ block.id }}" type="text" class="full" name="contact[{{ field_title | escape }}]" aria-label="{{ block.settings.title | escape }}" placeholder="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}>
+									<label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
+								{%- endif -%}
+								</div>
+							</div>
+							{%- assign field_index = field_index | plus: 1 -%}
+						{%- when 'dropdown_field' -%}
+							{%- liquid
+								assign values = block.settings.values | split: ','
+								if values == empty
+									continue
+								endif
+							-%}
+							<div class="small-12 columns">
+								<div class="field select">
+									<select class="full" name="contact[{{ field_title | escape }}]" title="{{ block.settings.title | escape }}" required>
+										<option value="" disabled selected>{{ block.settings.title | escape }}</option>
+										{%- for value in values -%}
+											{%- assign trim_value = value | strip -%}
+											<option value="{{ trim_value | escape }}">{{ trim_value | escape }}</option>
+										{%- endfor -%}
+									</select>
+									<label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
+								</div>
+							</div>
+							{%- assign field_index = field_index | plus: 1 -%}
+						{%- endcase -%}
+					{%- endfor -%}
+					<div class="small-12 medium-12 columns">
+						<div class="field">
+							<textarea rows="10" id="ContactFormMessage" name="contact[body]" class="full" placeholder="{{ 'sections.contact.form.comment' | t | escape }}"></textarea>
+							<label for="ContactFormMessage">{{ 'sections.contact.form.comment' | t }}</label>
+						</div>
+					</div>
+						<div class="small-12 medium-12 columns">
+						<button type="submit" class="button full"><span>{{ 'sections.contact.form.send' | t }}</span></button>
+					</div>
+				</div>
+			{% endform %}
+		</div>
+		{%- if text_blocks.size > 0 -%}
+			<div class="small-12 medium-4 columns contact-form--text-column">
+				{% for block in section.blocks %}
+					{%- if block.type == 'text' -%}
+					<div class="contact-form-block" {{ block.shopify_attributes }}>
+						<strong>{{ block.settings.heading }}</strong>
+						<div class="rte">
+							{{ block.settings.text }}
+						</div>
+					</div>
+					{%- endif -%}
+				{% endfor %}
+			</div>
+		{%- endif -%}
+	</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Contact form",
+		"settings": [
+			{
+				"type": "text",
+				"id": "heading",
+				"label": "Heading",
+				"default": "Contact form"
+			},
+			{
+				"type": "richtext",
+				"id": "description",
+				"label": "Description",
+				"default": "<p>Add a short description for this section</p>"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_phone_number",
+				"default": true,
+				"label": "Show phone number"
+			},
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+		"blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+					{
+						"type": "text",
+						"id": "heading",
+						"label": "Heading",
+						"default": "Heading"
+					},
+					{
+						"type": "richtext",
+						"id": "text",
+						"label": "Content",
+						"default": "<p>Add your store address or<br\/>your store hours</p>"
+					}
+        ]
+      },
+			{
+	      "type": "text_field",
+	      "name": "Text field",
+	      "settings": [
+	        {
+	          "type": "text",
+	          "id": "title",
+	          "label": "Name",
+	          "default": "Custom field"
+	        },
+	        {
+	          "type": "checkbox",
+	          "id": "use_long_text",
+	          "label": "Use long text",
+	          "default": false
+	        },
+	        {
+	          "type": "checkbox",
+	          "id": "is_required",
+	          "label": "Field is required",
+	          "default": false
+	        }
+	      ]
+	    },
+	    {
+	      "type": "dropdown_field",
+	      "name": "Dropdown field",
+	      "settings": [
+	        {
+	          "type": "text",
+	          "id": "title",
+	          "label": "Name",
+	          "default": "Custom field"
+	        },
+	        {
+	          "type": "text",
+	          "id": "values",
+	          "label": "Values",
+	          "info": "Separate each value by a comma.",
+	          "default": "value 1, value 2, value 3"
+	        }
+	      ]
+	    }
+    ],
+    "presets": [
+      {
+        "name": "Contact form",
+				"blocks": [
+					{
+						"type": "text"
+					},
+					{
+						"type": "text"
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

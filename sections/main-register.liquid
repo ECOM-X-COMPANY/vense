@@ -1,0 +1,40 @@
+{{ 'login-register.css' | asset_url | stylesheet_tag }}
+<div class="row">
+	<div class="small-12 columns">
+    <div class="thb-form-container">
+      <div class="thb-register-form">
+        {% form 'create_customer', novalidate: 'novalidate' %}
+					<h4>{{ 'customer.login_page.create_account' | t }}</h4>
+					<p>{{ 'customer.login_page.create_account_description' | t }}</p>
+					{% if form.errors %}
+					<div class="form-notification error">
+						{% render 'svg-icons' with 'thb-error' %} {{ form.errors | default_errors }}
+					</div>
+					{% endif %}
+					<div class="fields">
+            <div class="field">
+              <input type="text" name="customer[first_name]" class="full" value="{% if form.first_name %}{{ form.first_name }}{% endif %}" placeholder="{{ 'customer.login_page.first_name' | t }}" />
+	            <label for="first_name">{{ 'customer.login_page.first_name' | t }}</label>
+            </div>
+            <div class="field">
+              <input type="text" name="customer[last_name]" class="full" value="{% if form.last_name %}{{ form.last_name }}{% endif %}" placeholder="{{ 'customer.login_page.last_name' | t }}" />
+	            <label for="last_name">{{ 'customer.login_page.last_name' | t }}</label>
+            </div>
+					</div>
+          <div class="field">
+            <input type="email" name="customer[email]" class="full {% if form.errors contains 'email' %}invalid{% endif %}" value="" placeholder="{{ 'customer.login_page.email' | t }}" />
+            <label for="email">{{ 'customer.login_page.email' | t }}</label>
+          </div>
+          <div class="field">
+            <input type="password" name="customer[password]" class="full" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
+            <label for="password">{{ 'customer.login_page.password' | t }}</label>
+          </div>
+          <button type="submit" class="button full"><span>{{ 'customer.login_page.submit_register' | t }}</span></button>
+        {% endform %}
+				<div class="switch-login-section">
+					{{ 'customer.login_page.already_have_an_account' | t }} <a href="{{ routes.account_login_url }}" class="text-button">{{ 'customer.login_page.login' | t }}</a>
+				</div>
+      </div>
+    </div>
+  </div>
+</div>

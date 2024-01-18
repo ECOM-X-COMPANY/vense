@@ -1,0 +1,269 @@
+{%- liquid
+	assign mobile_height = section.settings.mobile_height
+	assign desktop_height = section.settings.desktop_height
+	assign map_zoom = section.settings.map_zoom
+	assign map_type = section.settings.map_type
+	assign map_style_select = section.settings.map_style_select
+	assign googlemaps_api_key = section.settings.googlemaps_api_key
+	assign image = section.settings.image
+
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign color_border = section.settings.color_border
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+{%- if googlemaps_api_key != blank -%}
+	<script src='https://maps.google.com/maps/api/js?key={{ section.settings.googlemaps_api_key | escape }}'></script>
+{%- endif -%}
+<google-map class="google-map section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-bg-rgb:{{ color_bg | color_extract: 'red' }}, {{ color_bg | color_extract: 'green' }}, {{ color_bg | color_extract: 'blue' }}; --color-text:{{ color_text }}; --color-border: {{ color_border }}; --color-body: {{ color_text }}">
+	<div class="google-map--container {{ mobile_height | escape }} {{ desktop_height | escape }}">
+	  <div class="google-map--map" data-map-zoom="{{ map_zoom | escape }}" data-map-type="{{ map_type | escape }}" data-map-style="{{ map_style_select | escape }}">
+			{%- if googlemaps_api_key == blank -%}
+				{%- if image != blank -%}
+					{% assign small_width = image.src.height | times: '320' | divided_by: image.src.width %}
+					{% assign master_width = image.src.height | append: 'x' | append: image.src.width %}
+					{% assign width = '640x' | append: small_width | append: ',' | append: master_width %}
+					{% render 'responsive-image', image: image, sizes: width %}
+				{%- else -%}
+					{{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+				{%- endif -%}
+			{%- endif -%}
+	  </div>
+	</div>
+	<div class="google-map--information {{ desktop_height | escape }}">
+		{%- for block in section.blocks -%}
+			{% if block.settings.pin_image %}
+				{% assign pin_image = block.settings.pin_image.src | image_url %}
+				{% capture marker_size %}[{{ block.settings.pin_image.width }},{{ block.settings.pin_image.height }}]{% endcapture %}
+			{% else %}
+				{% assign pin_image = 'pin.png' | asset_url %}
+				{% capture marker_size %}[79,120]{% endcapture %}
+			{% endif %}
+			{% capture pin_json %}{"marker_image":{{ pin_image | json }},"marker_size":{{ marker_size }},"retina_marker":{{ block.settings.pin_retina | json }},"latitude":{{ block.settings.pin_lat }},"longitude":{{ block.settings.pin_long }}}{% endcapture %}
+			<input class="thb-location" type="hidden" data-option="{{ pin_json | escape }}" />
+		{%- endfor -%}
+		<scroll-shadow>
+			<div class="google-map--information--inner">
+				{%- for block in section.blocks -%}
+					{%- liquid
+						capture location_title_default
+						echo "sections.contact.map.location" | t: index: forloop.index
+						endcapture
+					-%}
+					<collapsible-row class="accordion" {{ block.shopify_attributes }}>
+						<details id="Details-{{ block.id }}-{{ section.id }}" {% if forloop.index == 1 %}open{% endif %}>
+							<summary>
+								{{ block.settings.pin_title | default: location_title_default }}
+								<span></span>
+							</summary>
+							<div class="collapsible__content accordion__content rte" id="Accordion-{{ block.id }}-{{ section.id }}">
+								{{ block.settings.pin_desc | newline_to_br }}
+							</div>
+						</details>
+					</collapsible-row>
+				{%- endfor -%}
+			</div>
+		</scroll-shadow>
+	</div>
+</google-map>
+{{ 'map.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'map.js' | asset_url }}" defer></script>
+{% schema %}
+  {
+    "name": "Map",
+    "settings": [
+			{
+				"type": "text",
+				"id": "googlemaps_api_key",
+				"label": "Google maps API key",
+				"info": "You’ll need to [register a Google Maps API Key](https://documentation.fuelthemes.net/kb/map/) to display the map."
+			},
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image",
+				"info": "Displayed if the map isn’t loaded"
+			},
+			{
+				"type": "header",
+				"content": "Map"
+			},
+			{
+				"type": "select",
+				"id": "desktop_height",
+				"label": "Desktop height",
+				"options": [
+					{
+						"value": "desktop-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "desktop-height-550",
+						"label": "550px"
+					},
+					{
+						"value": "desktop-height-650",
+						"label": "650px"
+					}
+				],
+				"default": "desktop-height-450"
+			},
+			{
+				"type": "select",
+				"id": "mobile_height",
+				"label": "Mobile height",
+				"options": [
+					{
+						"value": "mobile-height-350",
+						"label": "350px"
+					},
+					{
+						"value": "mobile-height-400",
+						"label": "400px"
+					},
+					{
+						"value": "mobile-height-450",
+						"label": "450px"
+					}
+				],
+				"default": "mobile-height-350"
+			},
+      {
+        "type": "select",
+        "id": "map_type",
+        "label": "Type",
+        "default": "roadmap",
+        "options": [
+          { "value": "roadmap", "label": "RoadMap" },
+          { "value": "satellite", "label": "Satellite" },
+          { "value": "hybrid", "label": "Hybrid" }
+        ]
+      },
+      {
+				"type": "select",
+        "id": "map_style_select",
+        "label": "Style",
+        "options": [
+          { "value": "default", "label": "Default" },
+          { "value": "retro", "label": "Retro" },
+          { "value": "night", "label": "Night" }
+        ]
+      },
+      {
+        "type": "range",
+        "id": "map_zoom",
+        "min": 0,
+        "max": 20,
+        "step": 1,
+        "label": "Zoom",
+        "default": 0,
+        "info": "Leave at 0 for automatic calculation."
+      },
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+        "type": "color",
+        "id": "color_border",
+        "label": "Borders",
+        "default": "#151515"
+      },
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "pin",
+        "name": "Pin",
+        "settings": [
+          {
+            "type": "header",
+            "content": "Pin image"
+          },
+          {
+            "type": "image_picker",
+            "id": "pin_image",
+            "label": "Image",
+            "info": "80 x 108 px .png recommended."
+          },
+          {
+            "type": "checkbox",
+            "id": "pin_retina",
+            "label": "Retina image",
+            "default": true,
+            "info": "The pin will be shown at half size"
+          },
+          {
+            "type": "header",
+            "content": "Marker settings",
+						"info": "You can learn how to get your marker coordinates at [https://support.google.com/maps/answer/18539?hl=en](https://support.google.com/maps/answer/18539)"
+          },
+          {
+            "id": "pin_lat",
+            "type": "text",
+            "label": "Latitude",
+						"default": "33.9787261",
+						"info": "Latitude coordinate for the marker. Example: 41.40338"
+          },
+          {
+            "id": "pin_long",
+            "type": "text",
+            "label": "Longtitude",
+						"default": "-118.4197832",
+						"info": "Longtitude coordinate for the marker. Example: 29.0023211"
+          },
+          {
+            "id": "pin_title",
+            "type": "text",
+            "label": "Title"
+          },
+          {
+            "id": "pin_desc",
+            "type": "textarea",
+            "label": "Description"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Map",
+				"blocks": [
+	        {
+	          "type": "pin"
+	        }
+	      ]
+      }
+    ]
+  }
+
+{% endschema %}

@@ -1,0 +1,124 @@
+
+
+.featured-collection-list--bg img,
+.featured-collection-list--bg svg {
+  transition: all 1s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+.featured-collection-list--button, .featured-collection-list--button span {
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+
+.section-featured-collection-list .row.full-width-row {
+  padding: 0; }
+  .section-featured-collection-list .row.full-width-row > .columns {
+    padding: 0; }
+
+.featured-collection-list {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  padding: 15px; }
+  @media only screen and (min-width: 768px) {
+    .featured-collection-list {
+      padding: 50px; } }
+  .featured-collection-list--bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 5;
+    pointer-events: none; }
+    .featured-collection-list--bg img,
+    .featured-collection-list--bg svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 10;
+      object-fit: cover;
+      opacity: 0;
+      transform: scale(1.05);
+      will-change: transform, opacity; }
+      .featured-collection-list--bg img.active,
+      .featured-collection-list--bg svg.active {
+        opacity: 1;
+        transform: scale(1); }
+    .featured-collection-list--bg:after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 11;
+      background: rgba(var(--overlay-color-rgb), var(--overlay-opacity)); }
+  .featured-collection-list--inner {
+    display: flex;
+    position: relative;
+    z-index: 20; }
+    .featured-collection-list--inner--content {
+      max-width: 1000px;
+      width: 100%; }
+    .featured-collection-list--inner.content-top-left {
+      justify-content: flex-start;
+      align-items: flex-start; }
+    .featured-collection-list--inner.content-top-center {
+      justify-content: center;
+      align-items: flex-start;
+      text-align: center;
+      margin: 0 auto; }
+    .featured-collection-list--inner.content-top-right {
+      justify-content: flex-end;
+      align-items: flex-start;
+      text-align: right;
+      margin-left: auto; }
+    .featured-collection-list--inner.content-middle-left {
+      justify-content: flex-start;
+      align-items: center; }
+    .featured-collection-list--inner.content-middle-center {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto; }
+    .featured-collection-list--inner.content-middle-right {
+      justify-content: flex-end;
+      align-items: center;
+      text-align: right;
+      margin-left: auto; }
+    .featured-collection-list--inner.content-bottom-left {
+      justify-content: flex-start;
+      align-items: flex-end; }
+    .featured-collection-list--inner.content-bottom-center {
+      justify-content: center;
+      align-items: flex-end;
+      text-align: center;
+      margin: 0 auto; }
+    .featured-collection-list--inner.content-bottom-right {
+      justify-content: flex-end;
+      align-items: flex-end;
+      text-align: right;
+      margin-left: auto; }
+  .featured-collection-list--button {
+    color: var(--color-text, #fff);
+    font-weight: 600;
+    display: inline-flex;
+    line-height: 1.1;
+    text-transform: uppercase; }
+    .featured-collection-list--button div {
+      color: inherit;
+      margin-bottom: 0; }
+    .featured-collection-list--button span {
+      color: inherit;
+      transform-origin: left bottom;
+      margin: 0.2em 0.4em; }
+    .featured-collection-list--button:hover, .featured-collection-list--button.active {
+      color: var(--color-text, #fff); }
+      .featured-collection-list--button:hover span, .featured-collection-list--button.active span {
+        color: inherit;
+        transform: skew(-10deg, 0); }
+    .featured-collection-list--button:not(.active) {
+      -webkit-text-fill-color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: var(--color-text, #fff); }

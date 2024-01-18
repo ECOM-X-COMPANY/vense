@@ -1,0 +1,80 @@
+{%- liquid
+	assign ratio = 1
+	case image_ratio
+		when 'adapt'
+			assign image_sizes = '880x0'
+			if article.image
+				assign ratio = article.image.aspect_ratio
+			endif
+			if full_width
+				assign image_sizes = '1760x0'
+			endif
+		when 'square'
+			assign image_sizes = '880x880,1320x1320'
+			assign ratio = 1
+			if full_width
+				assign image_sizes = '880x880,1320x1320,1760x1760'
+			endif
+		when 'landscape'
+			assign image_sizes = '880x550,1320x825'
+			assign ratio = 1.6
+			if full_width
+				assign image_sizes = '880x550,1320x825,1760x1100'
+			endif
+		when 'portrait'
+			assign image_sizes = '880x1100,880x1650'
+			assign ratio = 0.8
+			if full_width
+				assign image_sizes = '880x1100,880x1650,1760x2200'
+			endif
+	endcase
+-%}
+{%- if article -%}
+<div class="blog-post blog-post--large">
+	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; --ratio-percent-medium: {{ 0.66 | divided_by: ratio | times: 100 }}%;">
+		<a href="{{ article.url }}" title="{{ article.title | escape }}">
+			{%- if article.image -%}
+				{%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
+			{%- endif -%}
+		</a>
+	</figure>
+	<div class="blog-post--content">
+		{% if show_date %}
+		<aside class="post-meta">
+			{{ article.published_at | date: "%B %d %Y" }}
+		</aside>
+		{% endif %}
+		<h5><a href="{{ article.url }}" title="{{ article.title | escape }}">{{ article.title }}</a></h5>
+		{% if show_excerpt %}
+		<div class="post-excerpt">
+			<p>{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
+		</div>
+		{% endif %}
+		<a href="{{ article.url }}" title="{{ article.title | escape }}" class="text-button read-more">{{ 'blogs.article.read_more' | t }}</a>
+	</div>
+</div>
+{%- else -%}
+<div class="blog-post blog-post--large">
+	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; --ratio-percent-medium: {{ 0.66 | divided_by: ratio | times: 100 }}%;">
+		<a href="{{ article.url }}" title="{{ article.title | escape }}">
+			<div class="thb-placeholder">
+				{{ 'lifestyle-1' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+			</div>
+		</a>
+	</figure>
+	<div class="blog-post--content">
+		{% if show_date %}
+		<aside class="post-meta">
+			{{ "today" | date: "%B %d %Y" }}
+		</aside>
+		{% endif %}
+		<h5><a role="link" aria-disabled="true">{{ 'sections.featured_blog.onboarding_title' | t }}</a></h5>
+		{% if show_excerpt %}
+		<div class="post-excerpt">
+			<p>{{ 'sections.featured_blog.onboarding_content' | t }}</p>
+		</div>
+		{% endif %}
+		<a role="link" aria-disabled="true" class="text-button read-more">{{ 'blogs.article.read_more' | t }}</a>
+	</div>
+</div>
+{%- endif -%}

@@ -1,0 +1,43 @@
+{%- assign pick_up_availabilities = product_variant.store_availabilities | where: 'pick_up_enabled', true -%}
+{%- if pick_up_availabilities.size > 0 -%}
+	<div class="pickup-availability-information">
+		{% render 'product-pickup-availability', pick_up_availabilities: pick_up_availabilities %}
+	</div>
+	<div class="side-panel side-availability" id="Pickup-Availability">
+		<div class="side-panel-inner">
+			<div class="side-panel-header">
+				<div>
+					<h4 class="body-font">{{ 'products.product.pickup_availability.heading' | t }}</h4>
+					<side-panel-close class="side-panel-close">{%- render 'svg-icons' with 'close' -%}</side-panel-close>
+				</div>
+			</div>
+			<div class="side-panel-content">
+				<ul class="pickup-availability-list" role="list">
+        {%- for availability in pick_up_availabilities -%}
+          <li class="pickup-availability-list__item">
+            <h6 class="pickup-availability-list__location body-font">
+              {{ availability.location.name }}
+            </h6>
+            <div class="pickup-availability-list__stock">
+              {%- if availability.available -%}
+                {% render 'svg-icons' with 'thb-availability-check' %} {{ 'products.product.pickup_availability.pick_up_available' | t }}, {{ availability.pick_up_time | downcase }}
+              {%- else -%}
+                {% render 'svg-icons' with 'thb-availability-cross' %} {{ 'products.product.pickup_availability.pick_up_unavailable_at_html' | t: location_name: availability.location.name }}
+              {%- endif -%}
+            </div>
+            {%- assign address = availability.location.address -%}
+            <address class="pickup-availability-list__address">
+              {{ address | format_address }}
+            </address>
+            {%- if address.phone.size > 0 -%}
+              <p class="pickup-availability-list__phone pickup-availability-small-text">
+                {{ address.phone }}<br>
+              </p>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+			</div>
+		</div>
+	</div>
+{% endif %}

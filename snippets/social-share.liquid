@@ -1,0 +1,20 @@
+{%- liquid
+	assign share_facebook = settings.social_share_facebook
+	assign share_twitter = settings.social_share_twitter
+	assign share_pinterest = settings.social_share_pinterest
+-%}
+<aside class="share-article">
+	{%- if share_label -%}
+	<label>{{ 'blogs.article.share_this_article' | t }}</label>
+	{%- endif -%}
+  {%- if share_facebook -%}
+  <a href="http://www.facebook.com/sharer.php?u={{ shop.url | append: share_permalink }}" class="facebook social" aria-label="{{ 'social.share' | t }} {{ 'social.links.facebook' | t }}">{% render 'svg-icons' with 'facebook' %}</a>
+  {%- endif %}
+  {%- if share_twitter -%}
+  <a href="https://twitter.com/intent/tweet?text={{ share_title | url_param_escape }}&amp;url={{ shop.url | append: share_permalink }}" class="twitter social" aria-label="{{ 'social.share' | t }} {{ 'social.links.twitter' | t }}">{% render 'svg-icons' with 'twitter' %}</a>
+  {%- endif %}
+  {%- if share_pinterest -%}
+  <a href="http://pinterest.com/pin/create/link/?url={{ shop.url | append: share_permalink }}&amp;media={{ share_image | image_url: width: 1024, height: 1024 }}&amp;description={{ share_title | url_param_escape }}" class="pinterest social" data-pin-no-hover="true" aria-label="{{ 'social.share' | t }} {{ 'social.links.pinterest' | t }}">{% render 'svg-icons' with 'pinterest' %}</a>
+  {%- endif -%}
+</aside>
+<script src="{{ 'social-share.js' | asset_url }}" defer="defer"></script>

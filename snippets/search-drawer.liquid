@@ -1,0 +1,58 @@
+<div class="side-panel search-drawer" tabindex="-1" id="Search-Drawer">
+	<div class="side-panel-inner">
+		<div class="side-panel-header">
+			<div>
+				<form role="search" method="get" class="searchform" action="{{ routes.search_url }}">
+					<fieldset>
+						<label for="side-panel-search-input visually-hidden">{{ 'sections.header.search' | t }}</label>
+						<input id="side-panel-search-input" type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
+					</fieldset>
+				</form>
+				<side-panel-close class="side-panel-close">{%- render 'svg-icons' with 'close' -%}</side-panel-close>
+			</div>
+		</div>
+		{%- if settings.predictive_search_enabled -%}
+		<div class="side-panel-content side-panel-content--has-tabs">
+
+		</div>
+		{%- endif -%}
+		<div class="side-panel-content side-panel-content--initial">
+			<div class="thb-predictive-search">
+				{%- if settings.search_menu != blank -%}
+					<div class="thb-predictive-search--popular">
+						<span class="thb-predictive-search--label">{{ 'sections.header.popular_searches' | t }}</span>
+						<scroll-shadow>
+							<div>
+								{%- for link in settings.search_menu.links -%}
+								<a href="{{ link.url }}" title="{{ link.title | escape }}">{{ link.title }}</a>
+								{%- endfor -%}
+							</div>
+						</scroll-shadow>
+					</div>
+				{%- endif -%}
+				{%- if settings.search_product_collection -%}
+					<div class="thb-predictive-search--promotion">
+						<span class="thb-predictive-search--label">{{ settings.search_product_heading }}</span>
+						<div class="thb-predictive-search--promotion-products">
+							<ul class="products collection row small-up-1 medium-up-2">
+								{%- for product in settings.search_product_collection.products limit: settings.search_product_collection_limit -%}
+									<li class="columns">
+										{% render 'product-card', product_card_product: product %}
+									</li>
+								{%- endfor -%}
+							</ul>
+						</div>
+					</div>
+				{%- endif -%}
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<link rel="stylesheet" href="{{ 'product-grid.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>
+	{{ 'product-grid.css' | asset_url | stylesheet_tag }}
+	{{ 'predictive-search.css' | asset_url | stylesheet_tag }}
+</noscript>

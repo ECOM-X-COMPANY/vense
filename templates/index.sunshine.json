@@ -1,0 +1,646 @@
+{
+  "sections": {
+    "166265915571b359d8": {
+      "type": "image-with-text",
+      "blocks": {
+        "aafb1499-feed-437d-96cb-c54224a4ed7e": {
+          "type": "subheading",
+          "settings": {
+            "text": "OUT NOW"
+          }
+        },
+        "16626591558bfa623a-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Paradise Calling",
+            "heading_size": "h1"
+          }
+        },
+        "16626591558bfa623a-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Perfect to protect yourself during those long days in the sun, this good coverage swimsuit features a keyhole front.<\/p>"
+          }
+        },
+        "ab838a98-f1d4-4333-a95b-8835b603b195": {
+          "type": "space",
+          "settings": {
+            "height": 14
+          }
+        },
+        "dcbbd95d-6217-425d-9a60-e74072277ee1": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop The Collection",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "aafb1499-feed-437d-96cb-c54224a4ed7e",
+        "16626591558bfa623a-1",
+        "16626591558bfa623a-2",
+        "ab838a98-f1d4-4333-a95b-8835b603b195",
+        "dcbbd95d-6217-425d-9a60-e74072277ee1"
+      ],
+      "settings": {
+        "image": "",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row-full",
+        "layout": "text_first",
+        "content_position": "text-center",
+        "color_bg": "#ff451c",
+        "color_text": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16620983071df6eb29": {
+      "type": "text-with-icons",
+      "blocks": {
+        "1662098307788ca717-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "UNREAL COMFORT",
+            "text": ""
+          }
+        },
+        "1662098307788ca717-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "GOOD FOR PLANET",
+            "text": ""
+          }
+        },
+        "1662098307788ca717-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "7 SIZES IN ONE",
+            "text": ""
+          }
+        },
+        "2c4a636c-cb89-4faf-82e6-13a0e7241006": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "image": "",
+            "heading": "UNLIMITED COLORS",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "1662098307788ca717-0",
+        "1662098307788ca717-1",
+        "1662098307788ca717-2",
+        "2c4a636c-cb89-4faf-82e6-13a0e7241006"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "icon_position": "left",
+        "icon_size": "small",
+        "heading_size": "small",
+        "mobile_swipe": true,
+        "color_bg": "#ffffff",
+        "color_heading": "#151515",
+        "color_text": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16627111997fc361a5": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 0,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "166271121710f4ac34": {
+      "type": "rich-text",
+      "blocks": {
+        "69b001a1-8fdc-4cb4-b5b9-3f0b8916a1a5": {
+          "type": "subheading",
+          "settings": {
+            "text": "WELCOME TO SUNSHINE"
+          }
+        },
+        "b32f55b3-0592-4927-aefa-3269895f10d7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Everything necessary is all you got. Excellence in all it’s forms. Fab in the sun. Fashion that flatters. Feel free feel yourself.<\/p>",
+            "size": "text-size-large"
+          }
+        },
+        "79ad5fdb-b8ff-48ef-a444-3afd7061b1a8": {
+          "type": "text-button",
+          "settings": {
+            "link_label": "Learn More",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "69b001a1-8fdc-4cb4-b5b9-3f0b8916a1a5",
+        "b32f55b3-0592-4927-aefa-3269895f10d7",
+        "79ad5fdb-b8ff-48ef-a444-3afd7061b1a8"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16627135115dc334fb": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "collection_list": [
+          "bikinis",
+          "swimwears",
+          "tops",
+          "bottoms",
+          "bras",
+          "bikini-sets"
+        ],
+        "image_ratio": "adapt",
+        "layout": "grid",
+        "style": "style1",
+        "columns_desktop": 6,
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16629148733bdc21c6": {
+      "type": "promotional-banner",
+      "blocks": {
+        "1662914873f53b9bad-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "SAVE UP TO"
+          }
+        },
+        "1662914873f53b9bad-1": {
+          "type": "heading",
+          "settings": {
+            "text": "30% OFF",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "1662914873f53b9bad-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Save up to 30% at the summer sale.<\/p>"
+          }
+        },
+        "1662914873f53b9bad-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "1662914873f53b9bad-0",
+        "1662914873f53b9bad-1",
+        "1662914873f53b9bad-2",
+        "1662914873f53b9bad-3"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "image": "",
+        "image_height": "adapt",
+        "image_width": "split",
+        "frame_border": true,
+        "content_position": "text-center",
+        "split_layout": "image_first",
+        "color_bg": "#ff565e",
+        "color_text": "#ffffff",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1662726498bf238609": {
+      "type": "collection-tabs",
+      "blocks": {
+        "1662726498a857ac3c-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "bikinis"
+          }
+        },
+        "1662726498a857ac3c-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "swimwears"
+          }
+        },
+        "81534227-b9ef-4d02-9449-7a3eb4cb6275": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottoms"
+          }
+        },
+        "a4670ac9-891d-46d9-b4ca-ba8003a039d6": {
+          "type": "collection",
+          "settings": {
+            "collection": "bras"
+          }
+        }
+      },
+      "block_order": [
+        "1662726498a857ac3c-0",
+        "1662726498a857ac3c-1",
+        "81534227-b9ef-4d02-9449-7a3eb4cb6275",
+        "a4670ac9-891d-46d9-b4ca-ba8003a039d6"
+      ],
+      "settings": {
+        "heading": "Weekly New Arrivals",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "product_limit": 6,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "show_progress_bar": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1662985217a7eea735": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 70,
+        "border_separator": false,
+        "border_separator_full": true
+      }
+    },
+    "1662979508daa565a1": {
+      "type": "scrolling-text",
+      "blocks": {
+        "16629795089f7fcb6c-0": {
+          "type": "text",
+          "settings": {
+            "text": "MAKES FASHION SENSE",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "16629795089f7fcb6c-1": {
+          "type": "text",
+          "settings": {
+            "text": "STAR IN A BRA",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "16629795089f7fcb6c-2": {
+          "type": "text",
+          "settings": {
+            "text": "THE BATHING SUIT OF THE FUTURE",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "67a95083-831c-4698-bc86-2cc970e81b88": {
+          "type": "text",
+          "settings": {
+            "text": "WATER INSTINCT",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "16629795089f7fcb6c-0",
+        "16629795089f7fcb6c-1",
+        "16629795089f7fcb6c-2",
+        "67a95083-831c-4698-bc86-2cc970e81b88"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "direction": "right",
+        "speed": "20s",
+        "text_size": 24,
+        "image_size": "large",
+        "color_bg": "#f7ebeb",
+        "color_text": "#f53737",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16627265497203dc3f": {
+      "type": "gallery",
+      "blocks": {
+        "16627265494db87f76-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "",
+            "title": "Look Bold Swim <br>Elegant",
+            "text": "Never satisfied with myself and that is what keeps me going.",
+            "link_label": "Shop The Collection",
+            "link": "",
+            "use_text_button": false
+          }
+        },
+        "16627265494db87f76-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "",
+            "title": "Excellence In All <br>Its Forms",
+            "text": "The swim line that fits all sizes and shapes.",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false
+          }
+        }
+      },
+      "block_order": [
+        "16627265494db87f76-0",
+        "16627265494db87f76-1"
+      ],
+      "settings": {
+        "columns_desktop": 2,
+        "section_width": "full-width-row-full",
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "column_spacing": "none",
+        "heading_size": "h1",
+        "overlay_color": "#000000",
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1662726593f6092a48": {
+      "type": "scrolling-text",
+      "blocks": {
+        "16627265933407d8be-0": {
+          "type": "text",
+          "settings": {
+            "text": "ONLY THE BEST MATERIAL",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "16627265933407d8be-1": {
+          "type": "text",
+          "settings": {
+            "text": "LOVE WHAT YOU WEAR",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "16627265933407d8be-2": {
+          "type": "text",
+          "settings": {
+            "text": "SWIM AS YOU PLEASE",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "b84e18ed-0517-459c-ba23-7a1baea2e70a": {
+          "type": "text",
+          "settings": {
+            "text": "FOR MERMAIDS IN TRAINING",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "16627265933407d8be-0",
+        "16627265933407d8be-1",
+        "16627265933407d8be-2",
+        "b84e18ed-0517-459c-ba23-7a1baea2e70a"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 24,
+        "image_size": "large",
+        "color_bg": "#f7ebeb",
+        "color_text": "#f53737",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1662980259692912cd": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "Featured Collection",
+        "heading_left": false,
+        "description": "<p>Latest swimwear designs for Summer 23<\/p>",
+        "full_width": false,
+        "collection": "swimwears",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "166318317954f5bf7b": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 60,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1663072284d358e121": {
+      "type": "customer-reviews",
+      "blocks": {
+        "16630722846847e615-0": {
+          "type": "review",
+          "settings": {
+            "product_handle": "",
+            "image": "",
+            "stars": "5",
+            "text": "\"I visited their outlet store and they were so nice, helpful, and welcoming. they even threw in a free scrunchie with my purchase. the suit is amazing and so comfortable. I feel so secure in the top and comfortable. I also purchased the swim\/hiking shorts and they are everything.\"",
+            "author": "Nancy Paola"
+          }
+        },
+        "ff3e25ac-ee2a-464e-8e7a-5f2e64bd053d": {
+          "type": "review",
+          "settings": {
+            "product_handle": "",
+            "stars": "4.5",
+            "text": "\"I will probably never buy a swimsuit from anywhere else! Their suits and other apparel are all so cute—I get compliments every single time. Their products are comfortable and uniquely stylish. Could not recommend more highly!\"",
+            "author": "Kimmy Jameson"
+          }
+        },
+        "7b985d86-e852-47d1-91b0-6fdb0ecb08a6": {
+          "type": "review",
+          "settings": {
+            "product_handle": "",
+            "image": "",
+            "stars": "4",
+            "text": "I’ve been a fan since the beginning and have a ton of their suits. I feel the most comfortable when I wear them and I always get compliments! They are such a great company!",
+            "author": "Kate Thomson"
+          }
+        }
+      },
+      "block_order": [
+        "16630722846847e615-0",
+        "ff3e25ac-ee2a-464e-8e7a-5f2e64bd053d",
+        "7b985d86-e852-47d1-91b0-6fdb0ecb08a6"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-550",
+        "full_width": true,
+        "layout": "text_first",
+        "content_position": "text-left",
+        "text_size": "small",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#ffface",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1662981207ffc3903e": {
+      "type": "multicolumn",
+      "blocks": {
+        "166298120739691a69-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": true,
+            "retina": true,
+            "title": "Lookbook",
+            "text": "<p>Check out our fashion lookbook selection for the very best in unique.<\/p>",
+            "link_label": "Go to lookbook",
+            "link": ""
+          }
+        },
+        "166298120739691a69-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": true,
+            "retina": true,
+            "title": "Our Store",
+            "text": "<p>Make it easy for customers to find your boutique by choosing a location that is close-by.<\/p>",
+            "link_label": "Find a store",
+            "link": ""
+          }
+        },
+        "166298120739691a69-2": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": true,
+            "retina": true,
+            "title": "Upgrade Your Bikinis",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post.<\/p>",
+            "link_label": "View collection",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "166298120739691a69-0",
+        "166298120739691a69-1",
+        "166298120739691a69-2"
+      ],
+      "settings": {
+        "heading": "Believe the hype",
+        "heading_left": false,
+        "description": "<p>Everything I do is a matter of heart, body and soul.<\/p>",
+        "full_width": false,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1663183147f5122109": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 80,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1663839007a5a3c697": {
+      "type": "email-signup",
+      "settings": {
+        "heading": "Newsletter",
+        "description": "<p>Add a short description for this section<\/p>",
+        "color_bg": "#fff7ea",
+        "color_text": "#fd5252",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "166265915571b359d8",
+    "16620983071df6eb29",
+    "16627111997fc361a5",
+    "166271121710f4ac34",
+    "16627135115dc334fb",
+    "16629148733bdc21c6",
+    "1662726498bf238609",
+    "1662985217a7eea735",
+    "1662979508daa565a1",
+    "16627265497203dc3f",
+    "1662726593f6092a48",
+    "1662980259692912cd",
+    "166318317954f5bf7b",
+    "1663072284d358e121",
+    "1662981207ffc3903e",
+    "1663183147f5122109",
+    "1663839007a5a3c697"
+  ]
+}

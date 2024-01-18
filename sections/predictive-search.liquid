@@ -1,0 +1,64 @@
+{%- if predictive_search.performed -%}
+	{%- liquid
+		assign predictive_search_products = predictive_search.resources.products
+		assign predictive_search_articles = predictive_search.resources.articles
+		assign predictive_search_queries = predictive_search.resources.queries
+		-%}
+		{%- if predictive_search_queries.size > 0 -%}
+		<div class="thb-predictive-search--popular">
+			<span class="thb-predictive-search--label">{{ 'sections.header.suggestions' | t }}</span>
+			<scroll-shadow>
+				<div>
+					{%- for query in predictive_search_queries -%}
+					<a href="{{ query.url }}" class="predictive-search__item link link--text" tabindex="-1">{{ query.styled_text }}</a>
+					{%- endfor -%}
+				</div>
+			</scroll-shadow>
+		</div>
+		{%- endif -%}
+		<side-panel-content-tabs class="side-panel-content--tabs">
+			{%- if predictive_search_products.size != 0 -%}
+			<button class="tab-active">{{ 'sections.header.products' | t }}</button>
+			{%- endif -%}
+			{%- if predictive_search_articles.size != 0 -%}
+			<button>{{ 'sections.header.articles' | t }}</button>
+			{%- endif -%}
+		</side-panel-content-tabs>
+		<scroll-shadow>
+			<div class="side-panel-content--inner">
+				{%- if predictive_search_products.size != 0 -%}
+				<div class="side-panel-content--tab-panel tab-active">
+					{%- for predictive_product in predictive_search_products -%}
+						{% render 'product-card-small', product_small: predictive_product, predictive_search: predictive_search, quick_add: false %}
+		      {%- endfor -%}
+				</div>
+				{%- endif -%}
+				{%- if predictive_search_articles.size != 0 -%}
+				<div class="side-panel-content--tab-panel{% if predictive_search_products.size == 0 -%} tab-active{%- endif -%}">
+					{%- for predictive_article in predictive_search_articles -%}
+						<div class="product-cart-item">
+							<div class="product-cart-item-image">
+								{% if predictive_article.image %}
+									{%- render 'responsive-image', image: predictive_article.image, sizes: '96x96' -%}
+								{% else %}
+									<div class="thb-placeholder" style="width: 75px; height:75px;">
+										{{ 'image' | placeholder_svg_tag }}
+									</div>
+								{% endif %}
+							</div>
+							<div>
+								<a href="{{ predictive_article.url }}" title="{{ predictive_article.title | escape }}" class="cart-product-link">{{ predictive_article.title | highlight: predictive_search.terms }}</a>
+							</div>
+						</div>
+		      {%- endfor -%}
+				</div>
+				{%- endif -%}
+			</div>
+		</scroll-shadow>
+		<div class="side-panel-content--search-footer">
+			<button class="button full" id="search-results-submit"><span>{{ 'sections.header.view_all_results' | t }}</span></button>
+		</div>
+		<span class="loading-overlay">
+			{%- render 'svg-icons' with 'thb-loading' -%}
+		</span>
+{%- endif -%}

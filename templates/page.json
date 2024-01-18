@@ -1,0 +1,265 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "show_page_title": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "03afdfc6-8355-48a6-b44a-61684b660a94": {
+      "type": "rich-text",
+      "blocks": {
+        "template--20690467324203__03afdfc6-8355-48a6-b44a-61684b660a94-subheading-1": {
+          "type": "subheading",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--20690467324203__03afdfc6-8355-48a6-b44a-61684b660a94-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Love to pets has turned into a life long passion for us",
+            "size": "h1"
+          }
+        },
+        "template--20690467324203__03afdfc6-8355-48a6-b44a-61684b660a94-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "",
+            "size": "text-size-regular"
+          }
+        },
+        "9a347eee-d85e-444f-badb-37fdbc234b8c": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Anastasia. Founder Wildfood<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--20690467324203__03afdfc6-8355-48a6-b44a-61684b660a94-subheading-1",
+        "template--20690467324203__03afdfc6-8355-48a6-b44a-61684b660a94-heading-1",
+        "template--20690467324203__03afdfc6-8355-48a6-b44a-61684b660a94-text-1",
+        "9a347eee-d85e-444f-badb-37fdbc234b8c"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "3e6fda89-4e96-4ad6-b836-d7f59dbf1aad": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20690467324203__3e6fda89-4e96-4ad6-b836-d7f59dbf1aad-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR MISSION",
+            "heading_size": "h3"
+          }
+        },
+        "template--20690467324203__3e6fda89-4e96-4ad6-b836-d7f59dbf1aad-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>Help pets <strong>live healthy and long lives<\/strong> through the use of high-quality, biologically appropriate nutrition<\/h5>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20690467324203__3e6fda89-4e96-4ad6-b836-d7f59dbf1aad-heading-1",
+        "template--20690467324203__3e6fda89-4e96-4ad6-b836-d7f59dbf1aad-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_7141.heic",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "large",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "814799c0-154e-4256-a272-3937fc3291f5": {
+      "type": "image-with-text",
+      "blocks": {
+        "e7c5a38c-0a80-47d9-a285-51c90f22d10a": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR AMBITIOUS GOAL",
+            "heading_size": "h3"
+          }
+        },
+        "bdfa9f67-62d3-4af4-a90c-76a1acb078d6": {
+          "type": "text",
+          "settings": {
+            "text": "<h5>1 000 000 pets that <strong>eat healthy and quality food<\/strong><\/h5>"
+          }
+        }
+      },
+      "block_order": [
+        "e7c5a38c-0a80-47d9-a285-51c90f22d10a",
+        "bdfa9f67-62d3-4af4-a90c-76a1acb078d6"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/28E6BDE4-921C-4D23-A411-B6318D82237D.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "large",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "75fb3093-9b6d-42aa-b9a4-81464cfed338": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--20690467324203__75fb3093-9b6d-42aa-b9a4-81464cfed338-heading-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Our story",
+            "heading_size": "h3"
+          }
+        },
+        "template--20690467324203__75fb3093-9b6d-42aa-b9a4-81464cfed338-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We want to share our story with you. It has all started in our childhood when we used to feed stray animals, build them shelters, and dream about starting a shelter when we grew up. We both grew up surrounded by pets as we always had cats and dogs at home.<\/p><p> <\/p><p>One day our lives changed completely. We fulfilled our dream and finally decided to adopt our first kitten in our adult life together. And that's how we got Stesha.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--20690467324203__75fb3093-9b6d-42aa-b9a4-81464cfed338-heading-1",
+        "template--20690467324203__75fb3093-9b6d-42aa-b9a4-81464cfed338-text-1"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/1058455D-3B96-43D3-9CCC-487C9B77925F_1_201_a.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "aaa05901-acdf-40af-b674-8ca3748e4fd8": {
+      "type": "image-with-text",
+      "blocks": {
+        "fdca4ada-842a-48d7-bc45-1c6c88172acc": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_size": "h3"
+          }
+        },
+        "d020803d-acf9-4524-b6f1-a0d4b6302349": {
+          "type": "text",
+          "settings": {
+            "text": "<p>As I am a nutritionist who follows healthy eating principles in my own life, the main question that arose was: What should we feed our kitten? How do we choose healthy nutrition? Our relatives' pets were fed partly with raw or cooked meat, porridge, and other human food. However, vets and advertisements recommended only premium industrial balanced pet food. So we realized that we couldn't figure out this question without help.<\/p><p>​<\/p><p>We started consulting with vets and pet nutritionists, reading books, and taking courses on pet nutrition. We learned that truly healthy food for pets is based on the BARF (Biologically Appropriate Raw Food) system, and it's almost impossible to buy quality pet food in a store. The only option left was to cook it ourselves.<\/p><p> <\/p><p>After several months, our Stesha and all our friends' pets were eating only healthy and quality food based on the BARF system, which we prepared for them.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "fdca4ada-842a-48d7-bc45-1c6c88172acc",
+        "d020803d-acf9-4524-b6f1-a0d4b6302349"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_8284.heic",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "c53f26f4-61bb-4009-b746-f0cd61738194": {
+      "type": "image-with-text",
+      "blocks": {
+        "71aa3134-87c5-40d1-8a82-6dede99a5f2a": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_size": "h3"
+          }
+        },
+        "2d88a00c-3e3d-43e7-b8bf-22940418ae36": {
+          "type": "text",
+          "settings": {
+            "text": "<p>And that's how our first team and company, Wildfood, was born.<br\/><br\/>From the very beginning, we set our ambitious goal - 1,000,000 pets eating healthy and quality food.<br\/><br\/>Our mission is to help pets live healthy and long lives through quality nutrition. <\/p><p>We know that there are many pet parents like us who are responsible and caring for their pets.<br\/><br\/>We appreciate you for taking care of your pet as a member of your family.<br\/><br\/>We would be happy to save your time and prepare the best balanced diets for your beloved pets.​<br\/><br\/><br\/>Anastasia and Stesha<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "71aa3134-87c5-40d1-8a82-6dede99a5f2a",
+        "2d88a00c-3e3d-43e7-b8bf-22940418ae36"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/IMG_1483.heic",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "03afdfc6-8355-48a6-b44a-61684b660a94",
+    "3e6fda89-4e96-4ad6-b836-d7f59dbf1aad",
+    "814799c0-154e-4256-a272-3937fc3291f5",
+    "75fb3093-9b6d-42aa-b9a4-81464cfed338",
+    "aaa05901-acdf-40af-b674-8ca3748e4fd8",
+    "c53f26f4-61bb-4009-b746-f0cd61738194"
+  ]
+}

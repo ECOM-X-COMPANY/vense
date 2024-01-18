@@ -1,0 +1,517 @@
+{
+  "sections": {
+    "455789b9-f423-4c4f-bbc5-591c60085e60": {
+      "type": "vertical-slideshow",
+      "blocks": {
+        "84830a6b-c9b5-4701-8ed6-777f329062a0": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "",
+            "heading": "Exclusive Designs",
+            "heading_size": "h1-large",
+            "content": "Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#414141",
+            "overlay_opacity": 10,
+            "overlay_gradient": "",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "template--18432547684635__455789b9-f423-4c4f-bbc5-591c60085e60-168051975240d27705-0": {
+          "type": "slide",
+          "settings": {
+            "image": "",
+            "slide_link": "",
+            "video_background": false,
+            "subheading": "EXCEPTIONAL VALUE",
+            "heading": "A locket is more than just a precious keepsake; it’s the key to the memories that make your heart go pitter-patter",
+            "heading_size": "h2",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "large",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "SHOP BRACELETS",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "84830a6b-c9b5-4701-8ed6-777f329062a0",
+        "template--18432547684635__455789b9-f423-4c4f-bbc5-591c60085e60-168051975240d27705-0"
+      ],
+      "settings": {
+        "dots": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "e9ed822b-4c9f-423a-a968-0a3117705a32": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--18432547684635__e9ed822b-4c9f-423a-a968-0a3117705a32-1681232778f3d02786-0": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "Earrings",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--18432547684635__e9ed822b-4c9f-423a-a968-0a3117705a32-1681232778f3d02786-1": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "Rings",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--18432547684635__e9ed822b-4c9f-423a-a968-0a3117705a32-1681232778f3d02786-2": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "Necklaces",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "d2bc5b3d-baca-47de-ac73-2a5bb4782647": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "Bracelets",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "ca6351e7-1717-4ee3-b2db-0585fa560198": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "Jewelry Sets",
+            "link": "#",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547684635__e9ed822b-4c9f-423a-a968-0a3117705a32-1681232778f3d02786-0",
+        "template--18432547684635__e9ed822b-4c9f-423a-a968-0a3117705a32-1681232778f3d02786-1",
+        "template--18432547684635__e9ed822b-4c9f-423a-a968-0a3117705a32-1681232778f3d02786-2",
+        "d2bc5b3d-baca-47de-ac73-2a5bb4782647",
+        "ca6351e7-1717-4ee3-b2db-0585fa560198"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "50s",
+        "text_size": 22,
+        "text_uppercase": true,
+        "image_size": "small",
+        "color_bg": "#ffffff",
+        "color_text": "#c95137",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "a9c42893-29ce-4f91-ab98-4d70923f0460": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 0,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "dcaa7135-4ccc-44f6-8ff3-94d3cde72847": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "97a561df-77ff-415e-98d2-a5e00211d784": {
+      "type": "rich-text",
+      "blocks": {
+        "template--18432547684635__97a561df-77ff-415e-98d2-a5e00211d784-1681195070f0596331-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "EXCLUSIVE RINGS"
+          }
+        },
+        "template--18432547684635__97a561df-77ff-415e-98d2-a5e00211d784-1681195070f0596331-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Designed For Modern Women",
+            "size": "h2"
+          }
+        },
+        "template--18432547684635__97a561df-77ff-415e-98d2-a5e00211d784-1681195070f0596331-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The brand is named after the town her grandma lived. Now based in Bristol, UK, Audrey splits her time between the two countries working directly with over 150 artisans in Kenya, ensuring they receive fair wages, work in safe and healthy environments, and real recognition for their talent all while using eco-friendly materials.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547684635__97a561df-77ff-415e-98d2-a5e00211d784-1681195070f0596331-0",
+        "template--18432547684635__97a561df-77ff-415e-98d2-a5e00211d784-1681195070f0596331-1",
+        "template--18432547684635__97a561df-77ff-415e-98d2-a5e00211d784-1681195070f0596331-2"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "xlarge",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#384135",
+        "color_links": "#433d3b",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "73608b75-145b-415a-b0ed-2260e5dd16b0": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "fabb047a-7356-4434-a057-9d94f0319e8f": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "collection": "rings",
+        "display_type": "grid",
+        "product_limit": 4,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "e17aaa8b-c74f-41c8-b7ec-22aa03521a12": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 5,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "11475166-7359-400d-a2c6-4185daa8d4ae": {
+      "type": "gallery",
+      "blocks": {
+        "template--18432547684635__11475166-7359-400d-a2c6-4185daa8d4ae-1681024933b71c923e-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "THE BEST JEWELRY IN TOWN",
+            "title": "Create timeless pieces with our fine selection of gold and silver jewelry",
+            "text": "",
+            "link_label": "Shop Deals",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "template--18432547684635__11475166-7359-400d-a2c6-4185daa8d4ae-1681024933b71c923e-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "MADE WITH LOVE",
+            "title": "There’s nothing like a beautiful piece of jewelry to give you that extra lift",
+            "text": "",
+            "link_label": "Our Story",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547684635__11475166-7359-400d-a2c6-4185daa8d4ae-1681024933b71c923e-0",
+        "template--18432547684635__11475166-7359-400d-a2c6-4185daa8d4ae-1681024933b71c923e-1"
+      ],
+      "settings": {
+        "columns_desktop": 2,
+        "section_width": "full-width-row",
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "column_spacing": "none",
+        "heading_size": "h3",
+        "overlay_color": "#393939",
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "41b42fa1-4f5f-4e7e-ae17-a7df6469a08c": {
+      "type": "countdown-banner",
+      "settings": {
+        "section_width": "full-width-row",
+        "section_layout": "horizontal",
+        "desktop_height": "desktop-height-auto",
+        "mobile_height": "mobile-height-auto",
+        "subheading": "",
+        "heading": "Spring Sale",
+        "heading_size": "h2",
+        "content": "",
+        "content_size": "medium",
+        "button_text": "Shop Now",
+        "button_link": "",
+        "timer_year": 2023,
+        "timer_month": "06",
+        "timer_day": "01",
+        "timer_hour": "00",
+        "timer_minute": "00",
+        "color_bg": "#f5f3ef",
+        "color_text": "#384135",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "a607f6c2-3a9c-4e37-9846-7f3e6d3b2c90": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1da83e84-dd9c-4c61-a5f8-463aba741b77": {
+      "type": "collection-tabs",
+      "blocks": {
+        "template--18432547684635__1da83e84-dd9c-4c61-a5f8-463aba741b77-16811936285589a71a-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "earrings"
+          }
+        },
+        "template--18432547684635__1da83e84-dd9c-4c61-a5f8-463aba741b77-16811936285589a71a-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "necklaces"
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547684635__1da83e84-dd9c-4c61-a5f8-463aba741b77-16811936285589a71a-0",
+        "template--18432547684635__1da83e84-dd9c-4c61-a5f8-463aba741b77-16811936285589a71a-1"
+      ],
+      "settings": {
+        "heading": "Best Sellers",
+        "heading_left": false,
+        "description": "<p> Each collection is exclusively made in small batches to create as little  as possible.<\/p>",
+        "full_width": true,
+        "product_limit": 6,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "show_progress_bar": false,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "3b2ab110-1479-4a9e-b2c3-ecc39530e82d": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--18432547684635__3b2ab110-1479-4a9e-b2c3-ecc39530e82d-1681117471e7c7a997-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "AFFORDABLE PRICES"
+          }
+        },
+        "6198c4c4-d9dc-494d-97a3-a9e277bd4f90": {
+          "type": "space",
+          "settings": {
+            "height": 10
+          }
+        },
+        "template--18432547684635__3b2ab110-1479-4a9e-b2c3-ecc39530e82d-1681117471e7c7a997-1": {
+          "type": "heading",
+          "settings": {
+            "text": "From semi-precious stones like rose quartz and freshwater pearls to durable chains and component, each piece is crafted with care and attention to detail.",
+            "heading_size": "h3"
+          }
+        },
+        "f428dcf6-f368-4b17-b7e0-6cb55c1cade6": {
+          "type": "space",
+          "settings": {
+            "height": 15
+          }
+        },
+        "4055131c-8dff-4fe0-8b20-1a9aa0387b7b": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547684635__3b2ab110-1479-4a9e-b2c3-ecc39530e82d-1681117471e7c7a997-0",
+        "6198c4c4-d9dc-494d-97a3-a9e277bd4f90",
+        "template--18432547684635__3b2ab110-1479-4a9e-b2c3-ecc39530e82d-1681117471e7c7a997-1",
+        "f428dcf6-f368-4b17-b7e0-6cb55c1cade6",
+        "4055131c-8dff-4fe0-8b20-1a9aa0387b7b"
+      ],
+      "settings": {
+        "image": "",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "small",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#585f56",
+        "color_text": "#eee4d3",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3": {
+      "type": "timeline",
+      "blocks": {
+        "template--18432547684635__69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3-1681288581eefc704f-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "subheading": "QUALITY",
+            "heading": "Bring sparkle to everyday life",
+            "text": "<p>Jewelry has been an important part of human culture for thousands of years, used for both adornment and communication. From ancient Egypt to modern times, jewelry has been a symbol of wealth, power, and status, as well as a way to express personal style and creativity.<\/p>",
+            "link_label": "LEARN MORE",
+            "link": ""
+          }
+        },
+        "template--18432547684635__69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3-1681288581eefc704f-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "subheading": "APPROACH",
+            "heading": "Accessories with soul and style",
+            "text": "<p>As technology advanced, jewelry became more intricate and was often made from precious metals such as gold and silver, as well as precious gems such as diamonds, rubies, and emeralds.<\/p>",
+            "link_label": "LEARN MORE",
+            "link": ""
+          }
+        },
+        "template--18432547684635__69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3-1681288581eefc704f-2": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "subheading": "VISION",
+            "heading": "More than just a piece of jewelry",
+            "text": "<p>Jewelry has a rich history and a variety of meanings and significance. From ancient times to modern-day, jewelry has been used for adornment, communication, and self-expression.<\/p>",
+            "link_label": "LEARN MORE",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--18432547684635__69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3-1681288581eefc704f-0",
+        "template--18432547684635__69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3-1681288581eefc704f-1",
+        "template--18432547684635__69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3-1681288581eefc704f-2"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "text_alignment": "left",
+        "show_progress_bar": false,
+        "color_bg": "#ffffff",
+        "color_text": "#bc7171",
+        "color_bg_box": "rgba(0,0,0,0)",
+        "color_text_box": "#3d332f",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "5e72e62f-3e97-4515-9ea7-62b89601ffbb": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 25,
+        "spacer_desktop": 40,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "8ef60eac-b03f-45ff-a6f5-9e3063c9cfcc": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest News",
+        "heading_left": false,
+        "description": "<p>Add a short description for your brand news<\/p>",
+        "full_width": true,
+        "blog": "news",
+        "post_limit": 4,
+        "columns_desktop": 4,
+        "mobile_swipe": true,
+        "image_ratio": "adapt",
+        "show_date": true,
+        "show_excerpt": true,
+        "show_view_all": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "455789b9-f423-4c4f-bbc5-591c60085e60",
+    "e9ed822b-4c9f-423a-a968-0a3117705a32",
+    "a9c42893-29ce-4f91-ab98-4d70923f0460",
+    "dcaa7135-4ccc-44f6-8ff3-94d3cde72847",
+    "97a561df-77ff-415e-98d2-a5e00211d784",
+    "73608b75-145b-415a-b0ed-2260e5dd16b0",
+    "fabb047a-7356-4434-a057-9d94f0319e8f",
+    "e17aaa8b-c74f-41c8-b7ec-22aa03521a12",
+    "11475166-7359-400d-a2c6-4185daa8d4ae",
+    "41b42fa1-4f5f-4e7e-ae17-a7df6469a08c",
+    "a607f6c2-3a9c-4e37-9846-7f3e6d3b2c90",
+    "1da83e84-dd9c-4c61-a5f8-463aba741b77",
+    "3b2ab110-1479-4a9e-b2c3-ecc39530e82d",
+    "69ea4fe8-c3b9-4b3d-b9b0-1d1dbb7ef1e3",
+    "5e72e62f-3e97-4515-9ea7-62b89601ffbb",
+    "8ef60eac-b03f-45ff-a6f5-9e3063c9cfcc"
+  ]
+}

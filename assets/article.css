@@ -1,0 +1,136 @@
+
+
+
+.blog-post-detail .article-tags .tag-link {
+  display: inline-flex;
+  white-space: nowrap;
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  height: 31px;
+  border-radius: 62px;
+  padding: 0 14px;
+  align-items: center;
+  font-weight: 600;
+  margin: 0 5px;
+  border: 1px solid var(--color-border); }
+  .blog-post-detail .article-tags .tag-link:hover, .blog-post-detail .article-tags .active.tag-link {
+    color: #fff;
+    background: var(--color-accent);
+    border-color: var(--color-accent); }
+
+.blog-post-detail .post-meta-wrapper {
+  font-size: 0.875rem;
+  opacity: 0.6;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 15px; }
+  .blog-post-detail .post-meta-wrapper aside {
+    display: inline-flex;
+    margin: 0 15px 10px 0;
+    position: relative; }
+    .blog-post-detail .post-meta-wrapper aside:after {
+      content: "";
+      display: inline-block;
+      width: 2px;
+      height: 2px;
+      border-radius: 1px;
+      background: var(--color-body);
+      opacity: 0.6;
+      position: absolute;
+      top: 50%;
+      margin-top: -1px;
+      right: -7px; }
+    .blog-post-detail .post-meta-wrapper aside:last-child:after {
+      content: none; }
+
+.blog-post-detail .post-title {
+  margin: 0 auto 40px; }
+  @media only screen and (min-width: 768px) {
+    .blog-post-detail .post-title {
+      margin-bottom: 55px; } }
+  .blog-post-detail .post-title .entry-title {
+    margin-bottom: 30px; }
+
+.blog-post-detail .featured-image {
+  margin-left: -15px;
+  margin-right: -15px;
+  width: calc(100% + 30px);
+  margin-bottom: 35px;
+  text-align: center; }
+  @media only screen and (min-width: 768px) {
+    .blog-post-detail .featured-image {
+      margin-bottom: 55px;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%; } }
+
+.blog-post-detail .post-excerpt-container {
+  display: flex;
+  flex-direction: column; }
+  @media only screen and (min-width: 1068px) {
+    .blog-post-detail .post-excerpt-container {
+      flex-direction: row; } }
+  .blog-post-detail .post-excerpt-container .post-excerpt {
+    max-width: 570px;
+    padding-right: 30px; }
+    [dir="rtl"] .blog-post-detail .post-excerpt-container .post-excerpt {
+      padding-right: 0;
+      padding-left: 30px; }
+    .blog-post-detail .post-excerpt-container .post-excerpt p {
+      margin-bottom: 0; }
+      @media only screen and (min-width: 1068px) {
+        .blog-post-detail .post-excerpt-container .post-excerpt p {
+          font-size: 1.25rem;
+          line-height: 1.875rem; } }
+  .blog-post-detail .post-excerpt-container .share-article {
+    margin-top: 30px; }
+    @media only screen and (min-width: 1068px) {
+      .blog-post-detail .post-excerpt-container .share-article {
+        margin-top: 0;
+        margin-left: auto; }
+        [dir="rtl"] .blog-post-detail .post-excerpt-container .share-article {
+          margin-left: 0;
+          margin-right: auto; } }
+
+.blog-post-detail .post-content {
+  margin-bottom: 30px; }
+  .blog-post-detail .post-content p + h1,
+  .blog-post-detail .post-content p + h2,
+  .blog-post-detail .post-content p + h3,
+  .blog-post-detail .post-content p + h4,
+  .blog-post-detail .post-content p + h5,
+  .blog-post-detail .post-content p + h6 {
+    margin-top: 40px; }
+
+.blog-post-detail .article-tags {
+  margin-top: 30px; }
+  .blog-post-detail .article-tags .tag-link {
+    margin-left: 0; }
+
+.blog-post-detail .share-article {
+  text-align: left; }
+
+.share-article {
+  font-size: 0.8125rem;
+  line-height: 1;
+  margin-bottom: 25px; }
+  .share-article svg {
+    height: 16px;
+    width: auto; }
+    .share-article svg path {
+      fill: var(--color-body); }
+  .share-article label {
+    display: block;
+    font-size: 0.8125rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 14px; }
+  .share-article a {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 14px;
+    width: 24px;
+    height: 24px;
+    white-space: nowrap;
+    color: var(--color-body); }

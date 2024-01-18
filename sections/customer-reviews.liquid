@@ -1,0 +1,326 @@
+{%- liquid
+	assign full_width = section.settings.full_width
+	assign mobile_height = section.settings.mobile_height
+	assign content_position = section.settings.content_position
+	assign desktop_height = section.settings.desktop_height
+	assign desktop_layout = section.settings.layout
+	assign text_size = section.settings.text_size
+	assign autoplay = section.settings.autoplay
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign overlay_color = section.settings.overlay_color
+	assign overlay_opacity = section.settings.overlay_opacity
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	if autoplay
+		assign autoplay = section.settings.autoplay_length | times: 1000
+	endif
+	case mobile_height
+		when 'mobile-height-350'
+			assign mobile_image_height = 350
+		when 'mobile-height-400'
+			assign mobile_image_height = 400
+		when 'mobile-height-450'
+			assign mobile_image_height = 450
+		when 'mobile-height-500'
+			assign mobile_image_height = 500
+		else
+			assign mobile_image_height = 500
+	endcase
+	case desktop_height
+		when 'desktop-height-450'
+			assign desktop_image_height = 450
+		when 'desktop-height-550'
+			assign desktop_image_height = 550
+		when 'desktop-height-650'
+			assign desktop_image_height = 650
+		else
+			assign desktop_image_height = 650
+	endcase
+-%}
+<div class="row{% if full_width %} full-width-row-full{% endif %}">
+	<div class="small-12 columns">
+		<div class="customer-reviews {{ content_position }} {{ desktop_layout }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }}; --color-text:{{ color_text }}; --dot-speed: {{ autoplay | divided_by: 1000 | append: 's' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}; --color-overlay-rgb: {{ overlay_color.rgb | replace: ' ' , ',' }}">
+			<div class="customer-reviews__content carousel" data-autoplay="{{ autoplay }}" data-fade="true">
+				{%- for block in section.blocks -%}
+					<div class="customer-reviews__review carousel__slide {{ desktop_height }}" {{ block.shopify_attributes }}>
+						<div class="customer-reviews__review-content text-{{ text_size }}">
+							{%- if block.settings.stars and block.settings.stars != '' -%}
+								{%- assign delay = '0.1' -%}
+								<div class="star-rating review-animate" style="--star-rating: {{ block.settings.stars }};"></div>
+							{%- endif -%}
+							{%- assign delay = delay | plus: 0.1 -%}
+							<p class="review-animate" style="--delay: {{ delay }}s">{{ block.settings.text | newline_to_br }}</p>
+							{%- if block.settings.author != empty -%}
+							{%- assign delay = delay | plus: 0.1 -%}
+							<div class="customer-reviews__review-author review-animate" style="--delay: {{ delay }}s">
+								{{- block.settings.author -}}
+							</div>
+							{%- endif -%}
+						</div>
+					</div>
+				{%- endfor -%}
+				<div class="customer-reviews__content-nav">
+					<div class="flickity-nav flickity-prev" tabindex="0">{% render 'svg-icons' with 'carousel-prev' %}</div>
+					<div class="flickity-nav flickity-next" tabindex="0">{% render 'svg-icons' with 'carousel-next' %}</div>
+				</div>
+			</div>
+			<div class="customer-reviews__image carousel {{ mobile_height }}" data-fade="true">
+				{%- for block in section.blocks -%}
+					{%- assign review_product = all_products[block.settings.product_handle] -%}
+					<div class="customer-reviews__image-product carousel__slide {{ mobile_height }} {{ desktop_height }}">
+						{%- liquid
+							assign width = '375x' | append: mobile_image_height | append: ',' | append: '720x' | append: desktop_image_height
+						-%}
+						{%- if block.settings.image -%}
+							{%- render 'responsive-image', image: block.settings.image, sizes: width -%}
+						{%- elsif review_product != blank -%}
+							{%- render 'responsive-image', image: review_product.featured_image, sizes: width -%}
+						{%- else -%}
+						<div class="thb-placeholder">
+							{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+						</div>
+						{%- endif -%}
+						{%- if review_product != blank -%}
+							<a href="{{ review_product.url }}" class="button white" target="_blank"><span>{{ review_product.title }}</span></a>
+						{%- endif -%}
+					</div>
+				{%- endfor -%}
+			</div>
+		</div>
+	</div>
+</div>
+{{- 'customer-reviews.css' | asset_url | stylesheet_tag -}}
+{% schema %}
+  {
+    "name": "Customer reviews",
+    "settings": [
+			{
+				"type": "select",
+				"id": "mobile_height",
+				"label": "Mobile height",
+				"options": [
+					{
+						"value": "mobile-height-auto",
+						"label": "Adapt to image"
+					},
+					{
+						"value": "mobile-height-300",
+						"label": "300px"
+					},
+					{
+						"value": "mobile-height-350",
+						"label": "350px"
+					},
+					{
+						"value": "mobile-height-400",
+						"label": "400px"
+					},
+					{
+						"value": "mobile-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "mobile-height-500",
+						"label": "500px"
+					}
+				],
+				"default": "mobile-height-350"
+			},
+			{
+				"type": "select",
+				"id": "desktop_height",
+				"label": "Desktop height",
+				"options": [
+					{
+						"value": "desktop-height-auto",
+						"label": "Adapt to content"
+					},
+					{
+						"value": "desktop-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "desktop-height-550",
+						"label": "550px"
+					},
+					{
+						"value": "desktop-height-650",
+						"label": "650px"
+					}
+				],
+				"default": "desktop-height-650"
+			},
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": false
+			},
+			{
+	      "type": "select",
+	      "id": "layout",
+	      "options": [
+	        {
+	          "value": "image_first",
+	          "label": "Image first"
+	        },
+	        {
+	          "value": "text_first",
+	          "label": "Image second"
+	        }
+	      ],
+	      "default": "image_first",
+	      "label": "Desktop image placement",
+	      "info": "Image first is the default mobile layout."
+	    },
+			{
+				 "type": "select",
+				 "id": "content_position",
+				 "label": "Content alignment",
+				 "options": [
+					 { "value": "text-center", "label": "Center" },
+					 { "value": "text-left", "label": "Left" },
+					 { "value": "text-right", "label": "Right" }
+				 ],
+				 "default": "text-left"
+			},
+			{
+        "type": "select",
+        "id": "text_size",
+        "label": "Text size",
+        "default": "medium",
+        "options": [
+          { "value": "small", "label": "Small" },
+          { "value": "medium", "label": "Medium" },
+          { "value": "large", "label": "Large" }
+        ]
+      },
+			{
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Auto-rotate slides",
+        "default": true
+      },
+			{
+				"type": "range",
+				"id": "autoplay_length",
+				"min": 3,
+				"max": 10,
+				"step": 1,
+				"unit": "s",
+				"label": "Change slides every",
+				"default": 5
+			},
+			{
+        "type": "header",
+        "content": "Colors"
+      },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#FFFACE"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+				"type": "color",
+				"id": "overlay_color",
+				"label": "Overlay",
+				"default": "#000000"
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 0
+			},
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "review",
+        "name": "Review",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product_handle",
+            "label": "Product"
+          },
+					{
+		        "type": "image_picker",
+		        "id": "image",
+		        "label": "Custom image"
+		      },
+					{
+						"type": "select",
+						"id": "stars",
+						"options": [
+							{ "value": "", "label": "None" },
+							{ "value": "3", "label": "3 out of 5" },
+							{ "value": "3.5", "label": "3.5 out of 5" },
+							{ "value": "4", "label": "4 out of 5" },
+							{ "value": "4.5", "label": "4.5 out of 5" },
+							{ "value": "5", "label": "5 out of 5" }
+						],
+						"default": "",
+						"label": "Star rating"
+					},
+          {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text",
+            "default": "Add your customer or client review here to showcase them."
+          },
+          {
+            "id": "author",
+            "type": "text",
+            "label": "Author",
+						"default": "Review author"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Customer reviews",
+				"blocks": [
+					{
+						"type": "review"
+					},
+					{
+						"type": "review"
+					},
+					{
+						"type": "review"
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

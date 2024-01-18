@@ -1,0 +1,148 @@
+{%- liquid
+	assign show_collection_image = section.settings.show_collection_image
+	assign show_collection_description = section.settings.show_collection_description
+	assign show_subcollections = section.settings.show_subcollections
+	assign make_heading_uppercase = section.settings.make_heading_uppercase
+	assign overlay_color = section.settings.overlay_color
+	assign overlay_opacity = section.settings.overlay_opacity
+
+	assign image = collection.featured_image
+	assign title = collection.title
+	assign description = collection.description
+	assign collection_handle = collection.handle
+
+	if section.settings.image and collection.handle == 'all'
+		assign image = section.settings.image
+	endif
+-%}
+{%- if template == 'search' -%}
+	{%- liquid
+		assign show_collection_image = false
+		assign show_subcollections = false
+		assign title = 'search.heading' | t
+	-%}
+	{%- capture description %}
+		{% assign search_phrase = search.terms | replace: '*', '' %}
+		{% if '' != search_phrase %}
+			<p>{{ 'search.results_found' | t: count: search.results_count, key: search_phrase }}</p>
+		{% endif %}
+	{%- endcapture -%}
+{%- endif -%}
+{{ 'collection-banner.css' | asset_url | stylesheet_tag }}
+
+<div class="collection-banner collection-banner--heading-uppercase-{{ make_heading_uppercase }}{% if show_collection_image and image %} collection-banner--has-bg{% endif %}" style="--overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
+	<div class="collection-banner--breadcrumbs">
+		{%- render 'breadcrumbs' -%}
+	</div>
+	<div class="row full-width-row">
+		<div class="small-12 columns">
+			{%- if show_collection_image and image -%}
+			<div class="collection-banner--image">
+				{%- render 'responsive-image', image: image, sizes: '0x350,0x700' -%}
+			</div>
+			{%- endif -%}
+			<div class="collection-banner--content">
+				<h1 class="collection-banner--title">{{ title }}</h1>
+				{% if template == 'search' %}
+					<form role="search" method="get" class="searchform" action="{{ routes.search_url }}">
+						<fieldset>
+							<input type="search" class="search-field" placeholder="{{ 'sections.header.search_for' | t | escape }}" value="{{ search.terms | replace: '*', '' }}" name="q" autocomplete="off">
+							<button type="submit" class="thb-search-submit">{% render 'svg-icons' with 'search' %}</button>
+						</fieldset>
+					</form>
+				{% endif %}
+				{%- if show_collection_description and description != '' -%}
+				<div class="collection-banner--description">
+					<p>{{ description }}</p>
+				</div>
+				{%- endif -%}
+				{%- if show_subcollections and linklists[collection_handle] != empty -%}
+					{%- capture subcollection_links -%}
+					{%- for link in linklists[collection_handle].links -%}
+						{%- assign link_collection = collections[link.handle] -%}
+						{%- if link_collection != blank -%}
+							<a href="{{ link_collection.url }}" title="{{ link_collection.title | escape }}" class="text-button{% if show_collection_image and image %} white{% endif %}">{{ link_collection.title }}</a>
+						{%- endif -%}
+					{%- endfor -%}
+					{%- endcapture -%}
+					{%- if subcollection_links != '' -%}
+					<div class="collection-banner--subcollections">
+						{{ subcollection_links }}
+					</div>
+					{%- endif -%}
+				{%- endif -%}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Collection banner",
+    "settings": [
+			{
+				"type": "header",
+				"content": "Collection page"
+			},
+			{
+	      "type": "checkbox",
+	      "id": "show_collection_image",
+	      "default": true,
+	      "label": "Show collection image"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "show_collection_description",
+	      "default": true,
+	      "label": "Show collection description"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "show_subcollections",
+	      "default": true,
+	      "label": "Show subcollections",
+				"info": "Links to subcollections from your menu will appear here. [Learn more.](https://documentation.fuelthemes.net/kb/how-do-i-add-sub-category-links-inside-main-collection-banner/)"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "make_heading_uppercase",
+	      "default": false,
+	      "label": "Make heading uppercase"
+	    },
+			{
+				"type": "header",
+				"content": "Catalog page"
+			},
+			{
+				"type": "paragraph",
+				"content": "Learn more about [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page)"
+			},
+			{
+        "type": "image_picker",
+        "id": "image",
+        "label": "Catalog image",
+	      "info": "Changes the image for the [catalog page](https://help.shopify.com/en/manual/online-store/themes/themes-by-shopify/vintage-themes/customizing-vintage-themes/change-catalog-page). 1920 x 640 px .jpg recommended."
+      },
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+				"type": "color",
+				"id": "overlay_color",
+				"label": "Overlay",
+				"default": "#000000"
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 20
+			}
+    ]
+  }
+{% endschema %}

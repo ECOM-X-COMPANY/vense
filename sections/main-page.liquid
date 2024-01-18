@@ -1,0 +1,53 @@
+{%- liquid
+	assign show_page_title = section.settings.show_page_title
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+<div class="section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="blog-post-detail">
+				{%- if show_page_title -%}
+				<div class="post-title">
+					<h1>{{ page.title }}</h1>
+				</div>
+				{%- endif -%}
+				<div class="page-content-width rte">
+					{{ page.content }}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{{ 'page.css' | asset_url | stylesheet_tag }}
+{% schema %}
+{
+  "name": "Page",
+  "tag": "section",
+  "class": "section-page",
+	"settings": [
+		{
+			"type": "checkbox",
+			"id": "show_page_title",
+			"default": true,
+			"label": "Show page title"
+		},
+		{
+			"type": "header",
+			"content": "Spacing"
+		},
+		{
+			"type": "checkbox",
+			"id": "disable_top_spacing",
+			"default": false,
+			"label": "Remove top spacing"
+		},
+		{
+			"type": "checkbox",
+			"id": "disable_bottom_spacing",
+			"default": false,
+			"label": "Remove bottom spacing"
+		}
+	]
+}
+{% endschema %}

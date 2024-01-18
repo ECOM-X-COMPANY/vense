@@ -1,0 +1,365 @@
+{{- 'promotional-banner.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign section_width = section.settings.section_width
+	assign image = section.settings.image
+	assign mobile_image = section.settings.mobile_image
+	assign image_height = section.settings.image_height
+	assign image_width = section.settings.image_width
+	assign split_layout = section.settings.split_layout
+	assign content_position = section.settings.content_position
+	assign frame_border = section.settings.frame_border
+
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign overlay_color = section.settings.overlay_color
+	assign overlay_opacity = section.settings.overlay_opacity
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	assign ratio = 1
+	assign mobile_image_ratio = false
+	if image_height == 'adapt' and image != blank
+		assign ratio = image.aspect_ratio
+		if mobile_image
+			assign mobile_image_ratio = true
+			assign mobile_ratio = mobile_image.aspect_ratio
+		endif
+	endif
+
+-%}
+<div class="row {{ section_width }}">
+	<div class="small-12 columns">
+		<div class="promotional-banner layout--{{ image_width }} {{ split_layout }} frame-border--{{ frame_border }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg: {{ color_bg }}; --color-text: {{ color_text }}; --overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }};--solid-button-label: {{ color_bg }};--bg-body: {{ color_bg }}">
+			<div class="promotional-banner--content {{ content_position }}">
+				<div class="promotional-banner--content-inner">
+					{%- for block in section.blocks -%}
+						{%- case block.type -%}
+							{%- when 'subheading' -%}
+								<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+							{%- when 'heading' -%}
+								<h3 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+							{%- when 'text' -%}
+								<div class="rte" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+							{%- when 'button' -%}
+								{% if block.settings.button_text != blank %}
+									<a class="button{% if block.settings.button_outline %} outline{%- endif %}" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}" {{ block.shopify_attributes }}><span>{{ block.settings.button_text }}</span></a>
+								{% endif %}
+							{% when 'space' %}
+		            <div style="height: {{ block.settings.height | append: 'px' }}" {{ block.shopify_attributes }}></div>
+						{%- endcase -%}
+					{%- endfor -%}
+				</div>
+			</div>
+			<div class="promotional-banner--image">
+				<div class="promotional-banner--image-media aspect-ratio aspect-ratio--{{ image_height }} mobile-aspect-ratio--{{ mobile_image_ratio }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%; --ratio-percent--mobile: {{ 1 | divided_by: mobile_ratio | times: 100 }}%">
+					{%- if image -%}
+						{%- liquid
+							assign small_width = image.src.height | times: '375' | divided_by: image.src.width
+							assign master_width = image.src.height | append: 'x' | append: image.src.width
+							assign width = '375x' | append: small_width | append: ',' | append: master_width
+
+							if mobile_image != blank
+								assign class = 'promotional-image--desktop'
+							endif
+						 -%}
+						{%- render 'responsive-image', image: image, sizes: width, class: class -%}
+					{%- else -%}
+						{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+					{%- endif -%}
+					{%- if mobile_image != blank -%}
+						{%- liquid
+							assign small_width = mobile_image.src.height | times: '375' | divided_by: mobile_image.src.width
+							assign master_width = mobile_image.src.height | append: 'x' | append: mobile_image.src.width
+							assign width = '375x' | append: small_width | append: ',' | append: master_width
+						 -%}
+						{%- render 'responsive-image', image: mobile_image, sizes: width, class: 'promotional-image--mobile' -%}
+					{%- endif -%}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Promotional banner",
+		"class": "section-promotional-banner",
+    "settings": [
+			{
+				"type": "select",
+				"id": "section_width",
+				"options": [
+					{
+						"value": "grid",
+						"label": "Grid"
+					},
+					{
+						"value": "full-width-row",
+						"label": "Full width"
+					},
+					{
+						"value": "full-width-row-full",
+						"label": "Full width, no spacing"
+					}
+				],
+				"default": "grid",
+				"label": "Section width"
+			},
+			{
+				"type": "image_picker",
+				"id": "image",
+				"label": "Image"
+			},
+			{
+				"type": "image_picker",
+				"id": "mobile_image",
+				"label": "Mobile image (optional)"
+			},
+			{
+	      "type": "select",
+	      "id": "image_height",
+	      "options": [
+	        {
+	          "value": "adapt",
+	          "label": "Adapt to image"
+	        },
+	        {
+	          "value": "small",
+	          "label": "Small"
+	        },
+	        {
+	          "value": "large",
+	          "label": "Large"
+	        }
+	      ],
+	      "default": "adapt",
+	      "label": "Image height"
+	    },
+			{
+				"type": "select",
+				"id": "image_width",
+				"options": [
+					{
+						"value": "split",
+						"label": "Split"
+					},
+					{
+						"value": "full",
+						"label": "Full"
+					}
+				],
+				"default": "split",
+				"label": "Image width",
+				"info": "Changes the image width."
+			},
+			{
+				"type": "checkbox",
+				"id": "frame_border",
+				"default": true,
+				"label": "Enable frame border"
+			},
+			{
+				 "type": "select",
+				 "id": "content_position",
+				 "label": "Desktop content alignment",
+				 "options": [
+					 { "value": "text-center", "label": "Center" },
+					 { "value": "text-left", "label": "Left" },
+					 { "value": "text-right", "label": "Right" }
+				 ],
+				 "default": "text-left"
+			},
+			{
+	      "type": "header",
+	      "content": "Split"
+	    },
+			{
+	      "type": "select",
+	      "id": "split_layout",
+	      "options": [
+	        {
+	          "value": "image_first",
+	          "label": "Image first"
+	        },
+	        {
+	          "value": "text_first",
+	          "label": "Image second"
+	        }
+	      ],
+	      "default": "image_first",
+	      "label": "Desktop image placement",
+	      "info": "Image first is the default mobile layout."
+	    },
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+				"type": "color",
+				"id": "overlay_color",
+				"label": "Overlay",
+				"default": "#000000"
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 20
+			},
+			{
+				"type": "header",
+				"content": "Spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+			{
+				"type": "subheading",
+				"name": "Subheading",
+				"settings": [
+					{
+						"type": "text",
+						"id": "text",
+						"label": "Text",
+						"default": "Add a tagline"
+					}
+				]
+			},
+			{
+				"type": "heading",
+				"name": "Heading",
+				"settings": [
+					{
+						"type": "text",
+						"id": "text",
+						"label": "Text",
+						"default": "Promotional banner"
+					},
+					{
+						"type": "select",
+						"id": "heading_size",
+						"label": "Size",
+						"options": [
+							{
+								"value": "h2",
+								"label": "Small"
+							},
+							{
+								"value": "h1",
+								"label": "Medium"
+							},
+							{
+								"value": "h1-large",
+								"label": "Large"
+							},
+							{
+								"value": "h1-xlarge",
+								"label": "Extra large"
+							}
+						],
+						"default": "h1"
+					}
+				]
+			},
+			{
+        "type": "text",
+        "name": "Text",
+        "settings": [
+          {
+            "type": "richtext",
+            "id": "text",
+            "label": "Content",
+            "default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+        ]
+      },
+			{
+        "type": "button",
+        "name": "Button",
+        "settings": [
+					{
+						"id": "button_text",
+						"type": "text",
+						"label": "Button label",
+						"default": "Shop Now",
+						"info": "Leave the label blank to hide the button."
+					},
+					{
+						"id": "button_link",
+						"type": "url",
+						"label": "Button link"
+					},
+					{
+		        "type": "checkbox",
+		        "id": "button_outline",
+		        "label": "Use outline button style",
+		        "default": true
+		      }
+        ]
+      },
+      {
+        "type": "space",
+        "name": "Empty space",
+        "settings": [
+          {
+            "type": "range",
+            "id": "height",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "unit": "px",
+            "label": "Height",
+            "default": 50
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Promotional banner",
+				"blocks": [
+					{
+						"type": "subheading"
+					},
+					{
+						"type": "heading"
+					},
+					{
+						"type": "text"
+					},
+					{
+						"type": "button"
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

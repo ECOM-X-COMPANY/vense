@@ -1,0 +1,352 @@
+{{- 'rich-text.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign section_width = section.settings.section_width
+	assign text_width = section.settings.text_width
+	assign text_position = section.settings.text_position
+	assign text_alignment = section.settings.text_alignment
+
+	assign color_bg = section.settings.color_bg | downcase
+	assign color_text = section.settings.color_text
+	assign color_links = section.settings.color_links
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	assign solid_button_label = color_bg
+	if color_bg == 'transparent' or color_bg == 'rgba(0,0,0,0)'
+		assign solid_button_label = '#ffffff'
+	endif
+-%}
+<div class="row {{ section_width }}">
+	<div class="small-12 columns">
+		<div class="rich-text text-{{ text_alignment }} text-position-{{ text_position }} text-width-{{ text_width }} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"style="--color-bg: {{ color_bg }}; --color-text: {{ color_text }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }}; --solid-button-label: {{ solid_button_label }}; --bg-body: {{ color_bg }}; --color-accent: {{ color_links }}; --color-accent-rgb:  {{ color_links | color_extract: 'red' }}, {{ color_links | color_extract: 'green' }}, {{ color_links | color_extract: 'blue' }};">
+			<div class="rich-text__inner">
+				{% for block in section.blocks %}
+					{%- case block.type -%}
+						{%- when 'image' -%}
+							{%- if block.settings.image != blank -%}
+								{%- liquid
+									assign image = block.settings.image
+									assign master_width = image.src.width | append: 'x' | append: image.src.height
+									render 'responsive-image', image: image, sizes: master_width, retina: block.settings.retina
+								-%}
+							{%- else -%}
+								<div class="thb-placeholder">
+									{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+								</div>
+							{%- endif -%}
+						{%- when 'subheading' -%}
+							<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
+						{%- when 'heading' -%}
+							<h3 class="{{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+						{%- when 'text' -%}
+							<div class="rte {{ block.settings.size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
+						{%- when 'button' -%}
+						{% if block.settings.link_label != blank %}
+							<a class="button{% if block.settings.button_outline %} outline{%- endif -%}" href="{{ block.settings.link }}" {{ block.shopify_attributes }}><span>{{ block.settings.link_label }}</span></a>
+						{% endif %}
+						{%- when 'text-button' -%}
+						{% if block.settings.link_label != blank %}
+							<a class="text-button" href="{{ block.settings.link }}" {{ block.shopify_attributes }}>{{ block.settings.link_label }}</a>
+						{% endif %}
+					{%- endcase -%}
+				{% endfor %}
+			</div>
+		</div>
+	</div>
+</div>
+
+{% schema %}
+  {
+    "name": "Rich text",
+    "settings": [
+			{
+				"type": "select",
+				"id": "section_width",
+				"options": [
+					{
+						"value": "grid",
+						"label": "Grid"
+					},
+					{
+						"value": "full-width-row",
+						"label": "Full width"
+					},
+					{
+						"value": "full-width-row-full",
+						"label": "Full width, no spacing"
+					}
+				],
+				"default": "grid",
+				"label": "Section width"
+			},
+			{
+				"type": "select",
+				"id": "text_width",
+				"label": "Content width",
+				"options": [
+					{
+						"value": "small",
+						"label": "Small"
+					},
+					{
+						"value": "medium",
+						"label": "Medium"
+					},
+					{
+						"value": "large",
+						"label": "Large"
+					},
+					{
+						"value": "xlarge",
+						"label": "Extra large"
+					},
+					{
+						"value": "grid",
+						"label": "Grid"
+					}
+				],
+				"default": "medium"
+			},
+			{
+				"type": "select",
+				"id": "text_position",
+				"label": "Content position",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "center",
+						"label": "Center"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "center"
+			},
+			{
+				"type": "select",
+				"id": "text_alignment",
+				"label": "Content alignment",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "center",
+						"label": "Center"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "center"
+			},
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "transparent"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+        "type": "color",
+        "id": "color_links",
+        "label": "Links",
+        "default": "#151515"
+      },
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+		"blocks": [
+			{
+				"type": "image",
+				"name": "Image",
+				"settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					},
+					{
+						"type": "checkbox",
+						"id": "retina",
+						"label": "Enable retina",
+						"default": true,
+						"info": "Image will be displayed at half the size, making it look crisp on retina screens."
+					}
+				]
+			},
+			{
+				"type": "subheading",
+				"name": "Subheading",
+				"settings": [
+					{
+						"type": "text",
+						"id": "text",
+						"label": "Text",
+						"default": "Subheading for this section"
+					}
+				]
+			},
+			{
+				"type": "heading",
+				"name": "Heading",
+				"settings": [
+					{
+						"type": "text",
+						"id": "text",
+						"label": "Text",
+						"default": "Talk about your brand"
+					},
+					{
+		        "type": "select",
+		        "id": "size",
+		        "label": "Size",
+		        "options": [
+		          {
+		            "value": "h1",
+		            "label": "Extra Large"
+		          },
+							{
+		            "value": "h2",
+		            "label": "Large"
+		          },
+							{
+		            "value": "h3",
+		            "label": "Medium"
+		          },
+							{
+		            "value": "h4",
+		            "label": "Small"
+		          }
+		        ],
+		        "default": "h3"
+		      }
+				]
+			},
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+					{
+						"type": "richtext",
+						"id": "text",
+						"label": "Content",
+						"default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>"
+					},
+					{
+		        "type": "select",
+		        "id": "size",
+		        "label": "Size",
+		        "options": [
+							{
+		            "value": "text-size-large",
+		            "label": "Large"
+		          },
+							{
+		            "value": "text-size-regular",
+		            "label": "Medium"
+		          },
+							{
+		            "value": "text-size-small",
+		            "label": "Small"
+		          }
+		        ],
+		        "default": "text-size-regular"
+		      }
+        ]
+      },
+			{
+        "type": "button",
+        "name": "Button",
+        "settings": [
+					{
+						"id": "link_label",
+						"type": "text",
+						"label": "Label",
+						"default": "Learn More",
+						"info": "Leave the label blank to hide the button."
+					},
+					{
+						"id": "link",
+						"type": "url",
+						"label": "Link"
+					},
+					{
+						"type": "checkbox",
+						"id": "button_outline",
+						"label": "Use outline button style",
+						"default": false
+					}
+        ]
+      },
+			{
+        "type": "text-button",
+        "name": "Link",
+        "settings": [
+					{
+						"id": "link_label",
+						"type": "text",
+						"label": "Label",
+						"default": "Learn More",
+						"info": "Leave the label blank to hide the button."
+					},
+					{
+						"id": "link",
+						"type": "url",
+						"label": "Link"
+					}
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Rich text",
+				"blocks": [
+					{
+						"type": "subheading"
+					},
+	        {
+	          "type": "heading"
+	        },
+	        {
+	          "type": "text"
+	        },
+	        {
+	          "type": "button"
+	        }
+	      ]
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,66 @@
+{%- liquid
+	assign ratio = 1
+	case image_ratio
+		when 'adapt'
+			assign image_sizes = '320x0,640x0'
+			if article.image
+				assign ratio = article.image.aspect_ratio
+			endif
+		when 'square'
+			assign image_sizes = '320x320,640x640'
+			assign ratio = 1
+		when 'landscape'
+			assign image_sizes = '320x200,640x400'
+			assign ratio = 1.6
+		when 'portrait'
+			assign image_sizes = '320x400,640x800'
+			assign ratio = 0.8
+	endcase
+-%}
+{%- if article -%}
+<div class="blog-post">
+	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+		<a href="{{ article.url }}" title="{{ article.title | escape }}">
+			{%- if article.image -%}
+				{%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
+			{%- endif -%}
+		</a>
+	</figure>
+	{% if show_date %}
+	<aside class="post-meta">
+		{{ article.published_at | date: "%B %d %Y" }}
+	</aside>
+	{% endif %}
+	<h5><a href="{{ article.url }}" title="{{ article.title | escape }}">{{ article.title }}</a></h5>
+	{% if show_excerpt %}
+	<div class="post-excerpt">
+		<p>{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
+	</div>
+	{% endif %}
+	<a href="{{ article.url }}" title="{{ article.title | escape }}" class="text-button read-more">{{ 'blogs.article.read_more' | t }}</a>
+</div>
+{%- else -%}
+<div class="blog-post">
+	{% if show_image %}
+	<figure class="featured-image aspect-ratio" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
+		<a href="{{ article.url }}" title="{{ article.title | escape }}">
+			<div class="thb-placeholder">
+				{{ 'image' | placeholder_svg_tag }}
+			</div>
+		</a>
+	</figure>
+	{% endif %}
+	{% if show_date %}
+	<aside class="post-meta">
+		{{ "today" | date: "%B %d %Y" }}
+	</aside>
+	{% endif %}
+	<h5><a role="link" aria-disabled="true">{{ 'sections.featured_blog.onboarding_title' | t }}</a></h5>
+	{% if show_excerpt %}
+	<div class="post-excerpt">
+		<p>{{ 'sections.featured_blog.onboarding_content' | t }}</p>
+	</div>
+	{% endif %}
+	<a role="link" aria-disabled="true" class="text-button read-more">{{ 'blogs.article.read_more' | t }}</a>
+</div>
+{%- endif -%}

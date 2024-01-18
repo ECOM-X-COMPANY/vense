@@ -1,0 +1,37 @@
+{%- if paginate.pages > 1 -%}
+{{ 'pagination.css' | asset_url | stylesheet_tag }}
+<pagination-theme class="pagination pagination-type--{{ pagination_type }}" data-section="{{ id }}">
+	<div class="row">
+		<div class="small-12 columns">
+			{%- if pagination_type == 'paginated' -%}
+			<div class="page-numbers nav-links">
+				{%- liquid
+					capture prev_arrow
+						render 'svg-icons' with 'thb-pagination-prev'
+					endcapture
+					capture next_arrow
+						render 'svg-icons' with 'thb-pagination-next'
+					endcapture
+				-%}
+				{{ paginate | default_pagination: next: next_arrow, previous: prev_arrow }}
+			</div>
+			{%- else -%}
+			<button class="load-more button">
+				<span>{{ 'sections.collection_template.load_more' | t }}</span>
+				<span class="loading-overlay">
+					{% render 'svg-icons' with 'thb-loading' %}
+				</span>
+			</button>
+			{%- endif -%}
+		</div>
+	</div>
+	{%- if pagination_type != 'paginated' -%}
+		{%- if pagination_type == 'infinite' -%}
+			<span class="loading-overlay">
+				{% render 'svg-icons' with 'thb-loading' %}
+			</span>
+		{%- endif -%}
+	<script src="{{ 'pagination.js' | asset_url }}" defer></script>
+	{%- endif -%}
+</pagination-theme>
+{%- endif -%}

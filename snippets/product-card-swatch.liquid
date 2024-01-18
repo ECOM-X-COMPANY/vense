@@ -1,0 +1,88 @@
+{%- if settings.show_products_swatches -%}
+	{%- unless product.has_only_default_variant -%}
+		{%- for option in product.options_with_values -%}
+			{% assign option_name = option.name | downcase | escape %}
+			{% if option_name contains 'color' or option_name contains 'colour' or option_name contains 'couleur' or option_name contains 'farbe' %}
+				{%- liquid
+				assign custom_colors = settings.color_swatches | newline_to_br | split: '<br />'
+				assign key_array = ''
+				assign val_array = ''
+
+				for color in custom_colors
+					assign key = color | split: ':' | first | rstrip
+					assign value = color | split: ':' | last | lstrip
+					assign key_array = key_array | append: ',' | append: key
+					assign val_array = val_array | append: ',' | append: value
+				endfor
+
+				assign key_array = key_array | remove_first: ',' | strip_newlines | downcase | split: ','
+				assign val_array = val_array | remove_first: ',' | split: ','
+				-%}
+				{% if option.values.size > 1 %}
+				<div class="product-card-swatches--container no-js-hidden">
+					<div class="product-card-swatches">
+						{%- for value in option.values -%}
+							{%- liquid
+								assign active = ''
+								assign variant_image = blank
+								assign variant_url = ''
+								assign srcset = ''
+
+								for variant in product.variants
+									if variant.title contains value
+										if variant.image.id == product.featured_image.id
+											assign active = 'active'
+										endif
+										if variant.image
+											assign variant_image = variant.image
+										endif
+										assign variant_url = variant.url
+									endif
+								endfor
+								assign image_sizes = sizes | split: ","
+							-%}
+							{%- capture srcset -%}
+								{%- if variant_image != blank -%}
+								  {%- for size in image_sizes -%}
+								    {%- assign small_size = '20x' -%}
+								    {%- assign size_array = size | split: "x" -%}
+								    {%- assign size_x = size_array[0] | append: 'x' -%}
+								    {% if size_array[1] != "0" %}
+								      {%- assign size_x = size -%}
+								      {%- assign small_x = size_array[1] | times: 20 | divided_by: size_array[0] | floor -%}
+								      {%- assign small_size = small_size | append: small_x -%}
+								    {% endif %}
+								    {{- variant_image.src | img_url: size_x, crop: 'center' }} {{ size_array[0] }}w,
+								  {%- endfor -%}
+								{%- endif -%}
+							{%- endcapture -%}
+							{% assign l = srcset | size | minus: 1 %}
+							{%- liquid
+								assign color_value = value | downcase | escape
+
+								for custom_color in key_array
+									if custom_color == color_value
+										assign color_value = val_array[forloop.index0]
+									endif
+								endfor
+
+								assign bg_value = ''
+								if color_value contains '.'
+									assign bg_value = color_value | file_url
+									assign color_value = 'var(--bg-body)'
+								endif
+							-%}
+							<div class="product-card-swatch {{ active }}" style="--option-color: {{ color_value | downcase | escape }}; {%- if bg_value -%} --option-color-image: url('{{ bg_value | escape }}');{%- endif -%}" data-srcset="{{- srcset | slice: 0, l | strip_newlines -}}" data-href="{{ variant_url }}">
+								<span class="visually-hidden" for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+									{{ value }}
+								</span>
+							</div>
+						{%- endfor -%}
+					</div>
+					<div class="product-card-swatches--title">{{ 'products.product.available' | t: count: option.values.size }}</div>
+				</div>
+				{% endif %}
+			{% endif %}
+		{%- endfor -%}
+	{%- endunless -%}
+{%- endif -%}

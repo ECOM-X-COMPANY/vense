@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+
+
+
+.myaccount--header {
+  margin-bottom: 20px; }
+  @media only screen and (min-width: 768px) {
+    .myaccount--header {
+      margin-bottom: 40px; } }
+
+.myaccount--title {
+  margin-bottom: 10px; }
+
+.myaccount--link {
+  display: inline-flex;
+  align-items: center; }
+  .myaccount--link svg {
+    height: 12px;
+    width: auto;
+    margin-right: 5px; }
+
+.myaccount-content table thead {
+  display: none; }
+  @media only screen and (min-width: 768px) {
+    .myaccount-content table thead {
+      display: table-header-group; } }
+
+.myaccount-content table tr {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; }
+  @media only screen and (min-width: 768px) {
+    .myaccount-content table tr {
+      display: table-row; } }
+  @media only screen and (max-width: 767px) {
+    .myaccount-content table tr {
+      border-bottom: 1px solid var(--color-border);
+      padding-bottom: 20px;
+      margin-bottom: 10px; } }
+  .myaccount-content table tr:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .myaccount-content table tr td {
+    display: flex; }
+    @media only screen and (min-width: 768px) {
+      .myaccount-content table tr td {
+        display: table-cell; } }
+    @media only screen and (max-width: 767px) {
+      .myaccount-content table tr td {
+        padding-right: 0;
+        border-bottom: 0;
+        border-top: 0;
+        padding-bottom: 0;
+        text-align: right; } }
+    .myaccount-content table tr td:before {
+      content: attr(data-label);
+      font-size: 0.6875rem;
+      line-height: 26px;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      font-weight: 400;
+      padding-right: 2rem;
+      flex-grow: 1;
+      text-align: left; }
+      @media only screen and (min-width: 768px) {
+        .myaccount-content table tr td:before {
+          display: none; } }
+
+@media only screen and (max-width: 767px) {
+  .myaccount-content table tbody tr td:last-child {
+    padding-bottom: 20px; } }
+
+.myaccount-content table tbody tr td:first-child a {
+  font-weight: 500; }
+
+.myaccount-content table tfoot tr {
+  margin-bottom: 0;
+  padding-bottom: 0; }
+  .myaccount-content table tfoot tr:first-child {
+    border-top: 1px solid var(--color-border); }
+  @media only screen and (max-width: 767px) {
+    .myaccount-content table tfoot tr td {
+      padding-bottom: 10px; } }
+  .myaccount-content table tfoot tr td:first-child {
+    display: none; }
+    @media only screen and (min-width: 768px) {
+      .myaccount-content table tfoot tr td:first-child {
+        display: table-cell; } }
+  .myaccount-content table tfoot tr:last-child td {
+    font-size: 1.0625rem; }
+    .myaccount-content table tfoot tr:last-child td:before  {
+      font-size: 0.8125rem; }
+
+@media only screen and (min-width: 768px) {
+  .myaccount-sidebar {
+    padding-left: 50px; } }
+
+.myaccount-sidebar--address {
+  margin-bottom: 40px; }
+  .myaccount-sidebar--address address {
+    margin-bottom: 30px; }
+
+.customer-addresses .my-address {
+  border: 1px solid var(--color-border);
+  position: relative;
+  padding: 20px;
+  padding-left: 60px;
+  margin-bottom: 20px;
+  height: 100%;
+  max-height: calc(100% - 30px); }
+  @media only screen and (min-width: 768px) {
+    .customer-addresses .my-address {
+      padding: 35px;
+      padding-left: 100px;
+      margin-bottom: 30px; } }
+  @media only screen and (min-width: 1068px) {
+    .customer-addresses .my-address {
+      padding-left: 140px; } }
+  .customer-addresses .my-address .address-default {
+    background: var(--color-body);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -1px;
+    left: -1px; }
+    .customer-addresses .my-address .address-default svg {
+      fill: var(--bg-body); }
+  .customer-addresses .my-address .address-index {
+    position: absolute;
+    top: 21px;
+    line-height: 1;
+    left: 0;
+    font-size: 40px;
+    font-weight: 500;
+    width: 60px;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .customer-addresses .my-address .address-index {
+        font-size: 50px;
+        top: 40px;
+        width: 100px; } }
+    @media only screen and (min-width: 1068px) {
+      .customer-addresses .my-address .address-index {
+        font-size: 64px;
+        width: 140px; } }
+
+.customer-addresses .add-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  padding: 30px;
+  margin-bottom: 20px;
+  height: 100%;
+  background: rgba(16, 58, 58, 0.02);
+  max-height: calc(100% - 30px);
+  cursor: pointer; }
+  .customer-addresses .add-address svg {
+    margin-bottom: 30px; }
+  @media only screen and (min-width: 768px) {
+    .customer-addresses .add-address {
+      padding: 50px;
+      margin-bottom: 30px; }
+      .customer-addresses .add-address svg {
+        width: 60px; } }
+
+#Side-Panel-Add-Address input,
+#Side-Panel-Add-Address textarea,
+#Side-Panel-Add-Address select,
+.side-panel.edit-address input,
+.side-panel.edit-address textarea,
+.side-panel.edit-address select {
+  margin-bottom: 10px; }
+
+#Side-Panel-Add-Address .select-arrow,
+.side-panel.edit-address .select-arrow {
+  margin-top: -8.5px; }
+
+#Side-Panel-Add-Address input[type="checkbox"],
+#Side-Panel-Add-Address input[type="radio"],
+.side-panel.edit-address input[type="checkbox"],
+.side-panel.edit-address input[type="radio"] {
+  margin-bottom: 0; }
+
+#Side-Panel-Add-Address .button,
+.side-panel.edit-address .button {
+  margin-top: 20px; }

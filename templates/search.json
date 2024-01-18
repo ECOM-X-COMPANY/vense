@@ -1,0 +1,34 @@
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": true,
+        "show_collection_description": true,
+        "show_subcollections": true,
+        "make_heading_uppercase": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 20
+      }
+    },
+    "main-search": {
+      "type": "main-search",
+      "settings": {
+        "full_width": true,
+        "products_per_page": 12,
+        "columns_desktop": 4,
+        "pagination_type": "paginated",
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "facets_desktop": "drawer",
+        "image_ratio": "square",
+        "show_date": true,
+        "show_excerpt": false
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "main-search"
+  ]
+}

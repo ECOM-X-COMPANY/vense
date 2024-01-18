@@ -1,0 +1,306 @@
+{
+  "sections": {
+    "1662373200967c613c": {
+      "type": "rich-text",
+      "blocks": {
+        "23c05a65-fd58-4945-b22a-3ebcf7903e48": {
+          "type": "heading",
+          "settings": {
+            "text": "Affordable. Gorgeous and Beauty Which You Deserves",
+            "size": "h1"
+          }
+        },
+        "05722c02-ce4f-461f-a041-3e159cddb760": {
+          "type": "text",
+          "settings": {
+            "text": "<p>What you wear is how you present yourself to the world, especially today when human contacts go so fast. Fashion is instant language. Fashion is made to become unfashionable. I'm an accomplice to helping women get what they want. Being one step ahead of a fashion trend is not so important to me. What matters is to always forge ahead. Beauty is perfect in its imperfections, so you just have to go with the imperfections.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "23c05a65-fd58-4945-b22a-3ebcf7903e48",
+        "05722c02-ce4f-461f-a041-3e159cddb760"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "#ffffff",
+        "color_text": "#1e4e1c",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "aa625e0d-88be-4d75-8df5-30c6ed2a30d5": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 50,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "5bad47dd-05dc-464b-9171-7b1563b93a84": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Unlock your shine - be more attractive",
+            "heading_size": "h2"
+          }
+        },
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>People said making clothes inside out was not proper. I disagreed, because clothes that are inside out are as beautiful as a cathedral. Delete the negative; accentuate the positive! I am especially grateful that I have been able to keep my own style over the decades, in spite of the many changes that have taken place in the world of fashion and in its business.<\/p><p>✹ It's hard to balance everything.<br\/>✹ They have expression, modesty, sex appeal, simplicity.<br\/>✹ In order to be irreplaceable one must always be different.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-1",
+        "template--17027745022267__5bad47dd-05dc-464b-9171-7b1563b93a84-1670399999b1d81fbb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/c14.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row-full",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#fff5e9",
+        "color_text": "#1e4e1c",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "9b5d80c3-a712-486c-be14-8ed726a999d7": {
+      "type": "image-with-text",
+      "blocks": {
+        "template--17027745022267__9b5d80c3-a712-486c-be14-8ed726a999d7-1670399999b1d81fbb-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Self-love comes in all shades of red and pink and brown",
+            "heading_size": "h2"
+          }
+        },
+        "template--17027745022267__9b5d80c3-a712-486c-be14-8ed726a999d7-1670399999b1d81fbb-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>You're only as good as your last collection, which is an enormous pressure. I wish I had invented blue jeans. They have expression, modesty, sex appeal, simplicity - all I hope for in my clothes. First I made a dress because I was pregnant and I wanted to be the most beautiful pregnant woman. Then I made a sweater because I wanted to have one that wasn't like anyone else's. You have to stay true to your heritage; that's what your brand is about. I am convinced that there can be luxury in simplicity.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745022267__9b5d80c3-a712-486c-be14-8ed726a999d7-1670399999b1d81fbb-1",
+        "template--17027745022267__9b5d80c3-a712-486c-be14-8ed726a999d7-1670399999b1d81fbb-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/c15.jpg",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "full-width-row-full",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#fce7f1",
+        "color_text": "#1e4e1c",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "19ffe627-a09d-44d7-9e06-cfde64314179": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo-1.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo2.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo3.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/logo4.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-0",
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-1",
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-2",
+        "template--17027745022267__19ffe627-a09d-44d7-9e06-cfde64314179-16704012079c5969f5-3"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1822cf42-4957-456b-8fb1-a23fb43b4965": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 30,
+        "spacer_desktop": 80,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "631d2483-b75c-4134-9bf3-f659baca6377": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17027745022267__631d2483-b75c-4134-9bf3-f659baca6377-16703999997cbc62e9-1": {
+          "type": "heading",
+          "settings": {
+            "text": "FACE SERUMS",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "template--17027745022267__631d2483-b75c-4134-9bf3-f659baca6377-16703999997cbc62e9-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "VIEW ALL SERUMS",
+            "button_link": "shopify:\/\/collections\/serum",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745022267__631d2483-b75c-4134-9bf3-f659baca6377-16703999997cbc62e9-1",
+        "template--17027745022267__631d2483-b75c-4134-9bf3-f659baca6377-16703999997cbc62e9-3"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/c17.jpg",
+        "image_parallax": true,
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 10,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "681e6a2f-3dea-4971-8c96-6e159bd33136": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "template--17027745022267__681e6a2f-3dea-4971-8c96-6e159bd33136-16703999997cbc62e9-1": {
+          "type": "heading",
+          "settings": {
+            "text": "SKIN CARE",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "template--17027745022267__681e6a2f-3dea-4971-8c96-6e159bd33136-16703999997cbc62e9-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "View all products",
+            "button_link": "shopify:\/\/collections\/skincare",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745022267__681e6a2f-3dea-4971-8c96-6e159bd33136-16703999997cbc62e9-1",
+        "template--17027745022267__681e6a2f-3dea-4971-8c96-6e159bd33136-16703999997cbc62e9-3"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "shopify:\/\/shop_images\/c18.jpg",
+        "image_parallax": true,
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 25,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "930dc7e4-19c7-4cd5-a9c1-3701e252f6af": {
+      "type": "featured-blog-post",
+      "settings": {
+        "heading": "Featured post",
+        "heading_left": false,
+        "description": "<p>Design and style should work toward making you look good and feel good<\/p>",
+        "full_width": true,
+        "article": "news\/whats-new-in-foundations",
+        "image_ratio": "adapt",
+        "show_date": true,
+        "show_excerpt": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "1662373200967c613c",
+    "aa625e0d-88be-4d75-8df5-30c6ed2a30d5",
+    "5bad47dd-05dc-464b-9171-7b1563b93a84",
+    "9b5d80c3-a712-486c-be14-8ed726a999d7",
+    "19ffe627-a09d-44d7-9e06-cfde64314179",
+    "1822cf42-4957-456b-8fb1-a23fb43b4965",
+    "631d2483-b75c-4134-9bf3-f659baca6377",
+    "681e6a2f-3dea-4971-8c96-6e159bd33136",
+    "930dc7e4-19c7-4cd5-a9c1-3701e252f6af"
+  ]
+}

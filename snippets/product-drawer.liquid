@@ -1,0 +1,17 @@
+{% assign template = template | replace: '.', '-' | handle %}
+{% if 'product-quick-view' != template %}
+<link id="Product" rel="stylesheet" href="{{ 'product.css' | asset_url }}" media="print" onload="this.media='all'">
+<div class="side-panel product-drawer" id="Product-Drawer" tabindex="-1">
+	<div class="side-panel-inner">
+		<div class="side-panel-header">
+			<div>
+				<h4>{{ 'products.product.product_drawer.select_options' | t }}</h4>
+				<side-panel-close class="side-panel-close">{%- render 'svg-icons' with 'close' -%}</side-panel-close>
+			</div>
+		</div>
+		<div class="side-panel-content" id="Product-Drawer-Content">
+
+		</div>
+	</div>
+</div>
+{% endif %}

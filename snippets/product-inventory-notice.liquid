@@ -1,0 +1,46 @@
+{%- liquid
+	assign current_variant = product.selected_or_first_available_variant
+	assign inventory_quantity = current_variant.inventory_quantity
+	assign threshold = block.settings.inventory_notice_threshold
+-%}
+<div id="inventory-{{ section.id }}" class="product-inventory-notice--wrapper" {{ block.shopify_attributes }}>
+	{% if current_variant != blank and inventory_quantity > 0 %}
+		{% if block.settings.show_inventory_notice == 'always' or inventory_quantity <= threshold %}
+				{%- liquid
+					assign show_inventory_count = false
+					if block.settings.show_inventory_count == 'always'
+						assign show_inventory_count = true
+					endif
+					if block.settings.show_inventory_count == 'low' and inventory_quantity <= threshold
+						assign show_inventory_count = true
+					endif
+
+					if show_inventory_count
+						if inventory_quantity <= threshold
+							assign notice = 'products.product.inventory.only_x_left' | t: quantity: inventory_quantity
+						else
+							assign notice = 'products.product.inventory.x_units_available' | t: quantity: inventory_quantity
+						endif
+					else
+						if inventory_quantity <= threshold
+							assign notice = 'products.product.inventory.low_stock' | t
+						else
+							assign notice = 'products.product.inventory.in_stock' | t
+						endif
+					endif
+
+					assign notice_percentage = 0.000 | plus: inventory_quantity | divided_by: block.settings.inventory_notice_base | at_most: 1 | at_least: 0
+
+				-%}
+			<div class="product-inventory-notice product-inventory-notice--{% if inventory_quantity <= threshold %}low{% else %}normal{% endif %}">
+				<div class="product-inventory-notice--text">
+					{%- if block.settings.inventory_notice_pulse -%}<div class="product-inventory-notice--pulse"></div>{%- endif %}
+					{{ notice }}
+				</div>
+				{%- if block.settings.inventory_notice_bar -%}
+				<div class="product-inventory-notice--bar" style="--inventory-scale:{{ notice_percentage }}"><span></span></div>
+				{%- endif %}
+			</div>
+		{% endif %}
+	{% endif %}
+</div>

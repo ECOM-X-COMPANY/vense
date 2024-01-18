@@ -1,0 +1,25 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "settings": {
+        "heading": "SHOP BY CATEGORY",
+        "heading_left": false,
+        "description": "<p>Add a short description for your collections<\/p>",
+        "full_width": true,
+        "sort": "date",
+        "image_ratio": "square",
+        "style": "style2",
+        "columns_desktop": 3,
+        "collection_list_pagination_num": 12,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

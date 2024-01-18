@@ -1,0 +1,47 @@
+{%- if section_heading != blank or section_description != blank -%}
+	<div class="section-header section-header-left--{{ section_heading_left }}">
+		<div class="section-header--content">
+			{%- if section_heading -%}
+				<h2 class="h3">{{ section_heading }}</h2>
+			{%- endif -%}
+			{%- if section_description != blank -%}
+				<div class="rte">
+					{{ section_description }}
+				</div>
+			{%- endif -%}
+			{%- if blocks -%}
+			<scroll-shadow>
+				<collection-tabs class="collection-tabs__list" data-target="product-grid-{{ section_id }}">
+					{%- for block in blocks -%}
+						{%- if block.settings.collection != blank -%}
+							<button type="button" data-collection="{{ block.settings.collection.handle }}" class="collection-tabs__list-link{% if forloop.first == true %} active{% endif %}" {{ block.shopify_attributes }}>{{ block.settings.collection.title }}</button>
+						{%- else -%}
+							<button type="button" data-collection="collection-{{ block.id }}" class="collection-tabs__list-link{% if forloop.first == true %} active{% endif %}" {{ block.shopify_attributes }}>Collection {{ forloop.index }}</button>
+						{%- endif -%}
+						{%- unless forloop.last -%} <span>/</span>{%- endunless -%}
+					{%- endfor -%}
+				</collection-tabs>
+			</scroll-shadow>
+			{%- endif -%}
+		</div>
+		{%- if blocks and section_heading_button -%}
+		<div class="section-header--button has--tabs">
+			{%- for block in blocks -%}
+				{%- if block.settings.collection != blank -%}
+					<a class="text-button linked-to-tab{% if forloop.first == true %} active{% endif %}" href="{{ block.settings.collection.url }}">{{ 'sections.featured_collection.shop_collection' | t: collection: block.settings.collection.title }}</a>
+				{%- else -%}
+					<a class="text-button linked-to-tab{% if forloop.first == true %} active{% endif %}" href="#">{{ 'sections.featured_collection.shop_collection' | t: collection: 'Collection' }}</a>
+				{%- endif -%}
+			{%- endfor -%}
+		</div>
+		{%- elsif section_heading_button -%}
+		<div class="section-header--button">
+			<a class="text-button" href="{{ section_heading_button.url }}">{{ 'sections.featured_collection.shop_collection' | t: collection: section_heading_button.title }}</a>
+		</div>
+		{%- elsif section_heading_button_blog -%}
+		<div class="section-header--button">
+			<a class="text-button" href="{{ section_heading_button_blog.url }}">{{ 'sections.featured_blog.view_all' | t }}</a>
+		</div>
+		{%- endif -%}
+	</div>
+{%- endif -%}

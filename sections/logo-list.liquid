@@ -1,0 +1,125 @@
+{{ 'logo-list.css' | asset_url | stylesheet_tag }}
+{% liquid
+	assign section_heading = section.settings.heading
+	assign section_description = section.settings.description
+	assign center_align = section.settings.center_align
+	assign mobile_swipe = section.settings.mobile_swipe
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+%}
+<div class="logo-list logo-list--centered-{{ center_align }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+	{% render 'section-header', section_heading: section_heading, section_description: section_description %}
+	<div class="logo-list__inner{% if mobile_swipe %} swipe-on-mobile{% endif %}" style="--logo-columns: {{ section.settings.columns }}">
+		{% for block in section.blocks %}
+	    <div class="logo-list__logo" {{ block.shopify_attributes }}>
+	      {% if block.settings.link %}<a href="{{ block.settings.link | escape }}" target="_blank">{% endif %}
+	        {% if block.settings.image %}
+	          {% assign image = block.settings.image %}
+						{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+						{%- render 'responsive-image', image: image, sizes: master_width -%}
+					{% else %}
+						{{ 'image' | placeholder_svg_tag: 'placeholder_svg_tag' }}
+	        {% endif %}
+	      {% if block.settings.link %}</a>{% endif %}
+	    </div>
+	  {% endfor %}
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Logo list",
+    "settings": [
+			{
+				"type": "text",
+				"id": "heading",
+				"label": "Heading",
+				"default": "Clients"
+			},
+			{
+				"type": "richtext",
+				"id": "description",
+				"label": "Description",
+				"default": "<p>Add a short description for this section</p>"
+			},
+			{
+        "type": "range",
+        "id": "columns",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "label": "Number of columns on desktop",
+        "default": 5
+      },
+			{
+				"type": "checkbox",
+				"id": "mobile_swipe",
+				"default": true,
+				"label": "Enable swipe on mobile"
+			},
+			{
+				"type": "checkbox",
+				"id": "center_align",
+				"label": "Center align logos",
+				"default": true
+			},
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "logo",
+        "name": "Logo",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Logo",
+						"info": "240 x 100 px .png recommended."
+          },
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Link",
+            "info": "Select an optional link."
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Logo list",
+				"blocks": [
+	        {
+	          "type": "logo"
+	        },
+	        {
+	          "type": "logo"
+	        },
+	        {
+	          "type": "logo"
+	        },
+	        {
+	          "type": "logo"
+	        },
+	        {
+	          "type": "logo"
+	        }
+	      ]
+      }
+    ]
+  }
+{% endschema %}

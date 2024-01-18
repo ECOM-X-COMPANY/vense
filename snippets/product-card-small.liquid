@@ -1,0 +1,34 @@
+<product-card class="product-cart-item">
+	<div class="product-cart-item-image">
+		{% if product_small.featured_image %}
+			{%- render 'responsive-image', image: product_small.featured_image, sizes: '192x0' -%}
+		{% else %}
+			<div class="thb-placeholder" style="height:75px;">
+				{%-
+					liquid
+					capture index
+						cycle '1', '2', '3', '4', '5', '6'
+					endcapture
+				-%}
+				{{ 'product-' | append: index | placeholder_svg_tag }}
+			</div>
+		{% endif %}
+	</div>
+	<div>
+		{%-
+			liquid
+			assign product_title = product_small.title
+			if predictive_search
+				assign product_title = product_title | highlight: predictive_search.terms
+			endif
+		-%}
+		<a href="{{ product_small.url }}" title="{{ product_small.title | escape }}" class="cart-product-link">{{ product_title }}</a>
+		{% render 'product-price', product: product_small %}
+		{% if quick_add %}
+		<quick-view class="product-card-quickview text-button" href="#Product-Drawer" data-product-handle="{{ product_small.handle }}" tabindex="-1">
+			<div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+			<span>{{ 'products.product.quick_view' | t }}</span>
+		</quick-view>
+		{% endif %}
+	</div>
+</product-card>

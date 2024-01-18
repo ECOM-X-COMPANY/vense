@@ -1,0 +1,26 @@
+
+
+
+.contact-form .section-header {
+  padding: 0;
+  margin-left: 0;
+  text-align: left; }
+
+.contact-form .contact-form {
+  max-width: 800px; }
+  .contact-form .contact-form .form-notification {
+    margin-bottom: 15px; }
+  .contact-form .contact-form.contact-form--has-no-blocks {
+    margin: 0 auto; }
+
+.contact-form--text-column strong {
+  display: block;
+  margin-bottom: 10px;
+  line-height: 1; }
+
+.contact-form--text-column .rte {
+  font-size: 0.9375rem;
+  line-height: 1.5rem; }
+
+.contact-form--text-column .contact-form-block {
+  margin-bottom: 35px; }

@@ -1,0 +1,31 @@
+{%- if show_language_switcher or show_currency_switcher -%}
+<div class="thb-localization-forms {{ class }}">
+	{%- form 'localization', id: id -%}
+		{%- if show_language_switcher -%}
+		<div class="select">
+			<label for="thb-language-code-{{ id }}" class="visually-hidden">{{ 'localization.update_country' | t }}</label>
+			<select id="thb-language-code-{{ id }}" name="locale_code" class="thb-language-code resize-select">
+		    {%- for language in localization.available_languages -%}
+		      <option value="{{ language.iso_code }}" {%- if language == localization.language %} selected="selected"{% endif %}>{{- language.endonym_name -}}</option>
+		    {%- endfor -%}
+		  </select>
+			<div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
+		</div>
+		{%- endif -%}
+		{%- if show_currency_switcher -%}
+		<div class="select">
+			<label for="thb-currency-code-{{ id }}" class="visually-hidden">{{ 'localization.update_country' | t }}</label>
+			<select id="thb-currency-code-{{ id }}" name="country_code" class="thb-currency-code resize-select">
+		    {%- for country in localization.available_countries -%}
+		      <option value="{{ country.iso_code }}" {%- if country.iso_code == localization.country.iso_code %} selected="selected"{% endif %}>{{ country.name }} ({{ country.currency.iso_code }} {{ country.currency.symbol }})</option>
+		    {%- endfor -%}
+		  </select>
+			<div class="select-arrow">{%- render 'svg-icons' with 'thb-select' -%}</div>
+		</div>
+		{%- endif -%}
+		<noscript>
+			<button class="text-button">{{ 'localization.update_country' | t }}</button>
+		</noscript>
+	{%- endform -%}
+</div>
+{%- endif -%}

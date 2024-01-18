@@ -1,0 +1,472 @@
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-product": {
+      "type": "main-product",
+      "blocks": {
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
+          "type": "text",
+          "settings": {
+            "text": "{{ product.vendor }}",
+            "text_style": "style_vendor"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": true
+          }
+        },
+        "546f2cee-3532-473a-836f-21f14fde7cfe": {
+          "type": "inventory_level",
+          "settings": {
+            "show_inventory_notice": "always",
+            "show_inventory_count": "always",
+            "inventory_notice_pulse": true,
+            "inventory_notice_bar": true,
+            "inventory_notice_threshold": 10,
+            "inventory_notice_base": 84
+          }
+        },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "variant_is_disabled": true,
+            "sizing_guide_text": "",
+            "sizing_guide_icon": "none",
+            "sizing_guide_page": ""
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "1c29dd76-669f-4b4a-9883-a577855921eb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How to Use",
+            "open": true,
+            "content": "<p>Apply evenly to face as the last part of your morning routine to help protect your skin. It is important to apply 15 minutes prior to UV exposure. Also, see Drug Facts panel(s) on the package. Can be used with Vitamin C Lotion 15% or 30% for added antioxidant benefits.<\/p>",
+            "page": ""
+          }
+        },
+        "0041f1e3-030f-4c9d-ae87-ddb7c2fa4b2b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Ingredients",
+            "open": false,
+            "content": "<p><strong>Active:<\/strong> Titanium Dioxide 4.4% (Sunscreen), Zinc Oxide 14.4% (Sunscreen).<\/p><p><strong>Inactive:<\/strong> Water (Aqua), Caprylic\/Capric Triglyceride, Thermus Thermophillus Ferment, Polyglyceryl-2 Dipolyhydroxystearate, C12-15 Alkyl Benzoate, Dicaprylyl Carbonate, Cyclopentasiloxane, Dimethicone, Polyglyceryl-3 Diisostearate, Hydrogenated Starch Hydrolysate, Glycerin, Butylene Glycol, Aloe Barbadensis Leaf Juice, Betula Alba (White Birch) Bark Extract, Camellia Sinensis (Green Tea) Leaf Extract, Plankton Extract, Beeswax (Cera Alba), Acrylates\/Dimethicone Copolymer<\/p>",
+            "page": ""
+          }
+        },
+        "e49f0a1b-c60d-4e4a-b3c1-100c37771e4a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Other Details",
+            "open": false,
+            "content": "<p>Free delivery is available on all orders over $40. Please see our shipping information page for all available delivery options.<\/p>",
+            "page": ""
+          }
+        },
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
+          "type": "side_panel",
+          "settings": {
+            "side_panel_1_label": "Materials",
+            "side_panel_1_icon": "leather",
+            "side_panel_1_page": "materials",
+            "side_panel_2_label": "Shipping & Returns",
+            "side_panel_2_icon": "box",
+            "side_panel_2_page": "shipping",
+            "side_panel_3_label": "Care Guide",
+            "side_panel_3_icon": "washing",
+            "side_panel_3_page": "care-guide"
+          }
+        },
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
+          "type": "share",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
+        "title",
+        "546f2cee-3532-473a-836f-21f14fde7cfe",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
+        "variant_picker",
+        "buy_buttons",
+        "1c29dd76-669f-4b4a-9883-a577855921eb",
+        "0041f1e3-030f-4c9d-ae87-ddb7c2fa4b2b",
+        "e49f0a1b-c60d-4e4a-b3c1-100c37771e4a",
+        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+      ],
+      "settings": {
+        "full_width": false,
+        "enable_sticky_info": true,
+        "enable_sticky_add_to_cart": true,
+        "show_taxes_included": true,
+        "media_layout": "collage",
+        "display_slider_pagination": true,
+        "media_aspect_ratio": "adapt",
+        "display_captions": true,
+        "hide_variants": false,
+        "lightbox": true,
+        "enable_video_looping": false
+      }
+    },
+    "16623877721f33fb14": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 35,
+        "spacer_desktop": 90,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "b0489ba4-fdb2-4043-8efe-5d9739ec5323": {
+      "type": "background-video",
+      "settings": {
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "full_width": false,
+        "subheading": "ADD A SUBHEADER",
+        "heading": "BACKGROUND VIDEO",
+        "text": "The lightweight gel-cream formula has a pillowy, bouncy feel that blends seamlessly and leaves cheeks dewy, not streaky or chalky",
+        "lightbox_button": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "overlay_opacity": 25,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "f2006113-5255-4733-ba5e-2a112734dc3e": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 40,
+        "spacer_desktop": 80,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "c6d7b417-11dd-4a95-8367-4f6f0eb615a8": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-0": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Sambucus Nigra",
+            "text": "<p>It grows in a variety of conditions including both wet and dry fertile soils, primarily in sunny locations. The plant is widely grown as an ornamental shrub or small tree.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-1": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Vitis Vinifera",
+            "text": "<p>Vitis vinifera, the common grape vine, is a species of flowering plant, native to the Mediterranean region, Central Europe, and southwestern Asia, from Morocco.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-2": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Fragrance",
+            "text": "<p>For an individual chemical or class of chemical compounds to impart a smell or fragrance, it must be sufficiently volatile for transmission via the air to the olfactory system.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-3": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Cocos Nucifera",
+            "text": "<p>The inner flesh of the mature seed, as well as the coconut milk extracted from it, form a regular part of the diets of many people in the tropics and subtropics.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "fa31a1e8-25be-4ea1-a217-5593378d6336": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Citric Acid",
+            "text": "<p>The concentrations of citric acid in citrus fruits range from 0.005 mol\/L for oranges and grapefruits to 0.30 mol\/L in lemons and limes, these values vary within species depending.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-0",
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-1",
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-2",
+        "template--17027745677627__c6d7b417-11dd-4a95-8367-4f6f0eb615a8-16698862611096ccc0-3",
+        "fa31a1e8-25be-4ea1-a217-5593378d6336"
+      ],
+      "settings": {
+        "heading": "Product information",
+        "heading_left": true,
+        "description": "",
+        "full_width": false,
+        "display_type": "carousel",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "left",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "2b3aa16d-fce3-49ff-8751-8618f0a7421d": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "a8d0adcd-64c6-4741-9ec6-41dc0e6d4f4f": {
+      "type": "gallery",
+      "blocks": {
+        "ddd1f3e8-2747-4567-b26e-30f23493a5cf": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "6bdc1221-3d9f-4be8-b482-80341e02abcf": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "94831cdf-9641-4e12-9506-e140c83f2870": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "ddd1f3e8-2747-4567-b26e-30f23493a5cf",
+        "6bdc1221-3d9f-4be8-b482-80341e02abcf",
+        "94831cdf-9641-4e12-9506-e140c83f2870"
+      ],
+      "settings": {
+        "columns_desktop": 3,
+        "section_width": "grid",
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "column_spacing": "large",
+        "heading_size": "h1",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1d9ac32d-5b10-41c7-89b8-56067807f786": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--17027745677627__1d9ac32d-5b10-41c7-89b8-56067807f786-16698862613e3a24a1-0": {
+          "type": "text",
+          "settings": {
+            "text": "YOU ARE A NEW BEAUTY",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--17027745677627__1d9ac32d-5b10-41c7-89b8-56067807f786-16698862613e3a24a1-1": {
+          "type": "text",
+          "settings": {
+            "text": "AGE FLAWLESSLY",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--17027745677627__1d9ac32d-5b10-41c7-89b8-56067807f786-16698862613e3a24a1-2": {
+          "type": "text",
+          "settings": {
+            "text": "BE YOU EVERY DAY",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745677627__1d9ac32d-5b10-41c7-89b8-56067807f786-16698862613e3a24a1-0",
+        "template--17027745677627__1d9ac32d-5b10-41c7-89b8-56067807f786-16698862613e3a24a1-1",
+        "template--17027745677627__1d9ac32d-5b10-41c7-89b8-56067807f786-16698862613e3a24a1-2"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": false,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 32,
+        "text_uppercase": false,
+        "image_size": "small",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#1e4e1c",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "796d9b19-7417-4ca3-b804-7c7c9811c44a": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "129f7137-f081-4054-9ac3-3719aa9c94bb": {
+      "type": "customer-reviews",
+      "blocks": {
+        "3574ae4e-baf9-499d-83b2-4fb0d5c6cd4b": {
+          "type": "review",
+          "settings": {
+            "product_handle": "",
+            "stars": "",
+            "text": "Add your customer or client review here to showcase them.",
+            "author": "Review author"
+          }
+        },
+        "15d956da-4a4b-4c3a-990b-e8ce5fa853e0": {
+          "type": "review",
+          "settings": {
+            "product_handle": "",
+            "stars": "",
+            "text": "Add your customer or client review here to showcase them.",
+            "author": "Review author"
+          }
+        },
+        "2167d66c-c63d-41c3-aa7c-4cb5455519e1": {
+          "type": "review",
+          "settings": {
+            "product_handle": "",
+            "stars": "",
+            "text": "Add your customer or client review here to showcase them.",
+            "author": "Review author"
+          }
+        }
+      },
+      "block_order": [
+        "3574ae4e-baf9-499d-83b2-4fb0d5c6cd4b",
+        "15d956da-4a4b-4c3a-990b-e8ce5fa853e0",
+        "2167d66c-c63d-41c3-aa7c-4cb5455519e1"
+      ],
+      "settings": {
+        "mobile_height": "mobile-height-350",
+        "desktop_height": "desktop-height-550",
+        "full_width": false,
+        "layout": "image_first",
+        "content_position": "text-left",
+        "text_size": "medium",
+        "autoplay": true,
+        "autoplay_length": 5,
+        "color_bg": "#1e4e1c",
+        "color_text": "#fffce2",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16625458859c68803a": {
+      "type": "apps",
+      "settings": {
+      }
+    },
+    "1662552569cce2536d": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 5,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "product-recommendations": {
+      "type": "product-recommendations",
+      "settings": {
+        "heading": "Product recommendations",
+        "heading_left": true,
+        "description": "<p>Product recommendations description<\/p>",
+        "full_width": false,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-product",
+    "16623877721f33fb14",
+    "b0489ba4-fdb2-4043-8efe-5d9739ec5323",
+    "f2006113-5255-4733-ba5e-2a112734dc3e",
+    "c6d7b417-11dd-4a95-8367-4f6f0eb615a8",
+    "2b3aa16d-fce3-49ff-8751-8618f0a7421d",
+    "a8d0adcd-64c6-4741-9ec6-41dc0e6d4f4f",
+    "1d9ac32d-5b10-41c7-89b8-56067807f786",
+    "796d9b19-7417-4ca3-b804-7c7c9811c44a",
+    "129f7137-f081-4054-9ac3-3719aa9c94bb",
+    "16625458859c68803a",
+    "1662552569cce2536d",
+    "product-recommendations"
+  ]
+}

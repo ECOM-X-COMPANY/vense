@@ -1,0 +1,76 @@
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_description = section.settings.description
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+-%}
+<div class="email-signup section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--bg-body:{{ color_bg }}; --color-bg:{{ color_bg }}; --color-text: {{ color_text }}; --color-body-rgb: {{ color_text.rgb | replace: ' ' , ',' }}">
+	<div class="email-signup--inner">
+		{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: false %}
+		{% render 'email-signup-form' %}
+	</div>
+</div>
+{{- 'email-signup.css' | asset_url | stylesheet_tag -}}
+{% schema %}
+  {
+    "name": "Newsletter",
+    "settings": [
+			{
+				"type": "paragraph",
+				"content": "Each email subscription creates a customer account. [Learn more](https://help.shopify.com/en/manual/customers)"
+			},
+			{
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Newsletter"
+      },
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for this section</p>"
+      },
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "presets": [
+      {
+        "name": "Newsletter"
+      }
+    ]
+  }
+{% endschema %}

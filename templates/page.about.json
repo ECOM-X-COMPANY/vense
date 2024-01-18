@@ -1,0 +1,408 @@
+{
+  "sections": {
+    "166161901464a25e50": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "166161901437c6bc67-1": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR STORY",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "166161901437c6bc67-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our Generation are looking to create a clothing brand that is massively focused on being sustainable and ethical.<\/p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "166161901437c6bc67-1",
+        "166161901437c6bc67-2"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 20,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "16616191162185f622": {
+      "type": "rich-text",
+      "blocks": {
+        "1661619116558a03c6-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Establishing our first tailoring shop in London in 1910, we’ve been shaping the fashion industry since our humble beginnings. Today, we focus on curating the best collections of 0–16 kids clothing, from classic Stone Island Junior and Moncler staples to statement pieces from Gucci, Kenzo and Burberry. Home to the freshest drops and exclusives.",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "1661619116558a03c6-1"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "xlarge",
+        "text_position": "center",
+        "text_alignment": "left",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16521210505e7fc635": {
+      "type": "image-with-text",
+      "blocks": {
+        "b1bb057f-62ba-4239-a792-dec2a68621a9": {
+          "type": "image",
+          "settings": {
+            "retina": true
+          }
+        },
+        "35ba44fe-0dfa-463a-920a-d0df404ab526": {
+          "type": "space",
+          "settings": {
+            "height": 48
+          }
+        },
+        "100ac1ce-4a1c-45fd-9648-02b517aa76d1": {
+          "type": "image",
+          "settings": {
+            "retina": true
+          }
+        },
+        "5c23121f-d034-4e43-9da0-f63cca2746e0": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "b1bb057f-62ba-4239-a792-dec2a68621a9",
+        "35ba44fe-0dfa-463a-920a-d0df404ab526",
+        "100ac1ce-4a1c-45fd-9648-02b517aa76d1",
+        "5c23121f-d034-4e43-9da0-f63cca2746e0"
+      ],
+      "settings": {
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16618593470c5f63bd": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "166185934718a0a8c1-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "SUBHEADING"
+          }
+        },
+        "166185934718a0a8c1-1": {
+          "type": "heading",
+          "settings": {
+            "text": "IMAGE WITH TEXT OVERLAY",
+            "heading_size": "h1"
+          }
+        },
+        "166185934718a0a8c1-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>There are only three things I can do - make a dress, decorate a house, and entertain people. You have to stay true to your heritage; that's what your brand is about. Clothes mean nothing until someone lives in them. If you cut a painter's hands off.<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "baa48f62-cde3-466c-9436-e106114464af": {
+          "type": "space",
+          "settings": {
+            "height": 16
+          }
+        },
+        "166185934718a0a8c1-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "LEARN MORE",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "166185934718a0a8c1-0",
+        "166185934718a0a8c1-1",
+        "166185934718a0a8c1-2",
+        "baa48f62-cde3-466c-9436-e106114464af",
+        "166185934718a0a8c1-3"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "overlay_opacity": 40,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16623735222f31e80e": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 5,
+        "spacer_desktop": 10,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "166161906436c7d4d0": {
+      "type": "scrolling-text",
+      "blocks": {
+        "16616190648ddabc05-0": {
+          "type": "text",
+          "settings": {
+            "text": "SUMMER EDIT",
+            "link": "shopify:\/\/collections\/summer-edit",
+            "outline_text": true
+          }
+        },
+        "16616190648ddabc05-1": {
+          "type": "text",
+          "settings": {
+            "text": "ICONIC GOODS",
+            "link": "shopify:\/\/collections\/iconic",
+            "outline_text": false
+          }
+        },
+        "16616190648ddabc05-2": {
+          "type": "text",
+          "settings": {
+            "text": "READY TO WEAR",
+            "link": "shopify:\/\/collections\/ready-to-wear",
+            "outline_text": true
+          }
+        },
+        "234a9f9c-a2b0-4da8-9f1e-e9d2d172071b": {
+          "type": "text",
+          "settings": {
+            "text": "HAUTE COUTURE",
+            "link": "shopify:\/\/collections\/haute-couture",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "16616190648ddabc05-0",
+        "16616190648ddabc05-1",
+        "16616190648ddabc05-2",
+        "234a9f9c-a2b0-4da8-9f1e-e9d2d172071b"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "50s",
+        "text_size": 60,
+        "text_uppercase": false,
+        "image_size": "large",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "overlay_color": "#ffffff",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1662373455c24650d9": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 20,
+        "border_separator": true,
+        "border_separator_full": true
+      }
+    },
+    "1662373200967c613c": {
+      "type": "rich-text",
+      "blocks": {
+        "1662373200dc732b07-1": {
+          "type": "heading",
+          "settings": {
+            "text": "LUXURY MATERIALS",
+            "size": "h3"
+          }
+        },
+        "1662373200dc732b07-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We understand that creating your custom size can feel daunting. But not to worry, it's actually quite easy and completely risk-free. If you're not 100% happy with your fit, we'll remake your first shirt from scratch free of charge or give your money back.<\/p>",
+            "size": "text-size-large"
+          }
+        }
+      },
+      "block_order": [
+        "1662373200dc732b07-1",
+        "1662373200dc732b07-2"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "large",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "16623736356fb1e92f": {
+      "type": "spacer",
+      "disabled": true,
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 25,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1661619131dc23111f": {
+      "type": "text-with-icons",
+      "blocks": {
+        "166161913112fa572a-0": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "heading": "RESPONSIBLE MATERIALS",
+            "text": ""
+          }
+        },
+        "166161913112fa572a-1": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "heading": "LUXURY-GRADE MATERIALS",
+            "text": ""
+          }
+        },
+        "166161913112fa572a-2": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "heading": "LIGHTWEIGHT CLOTH",
+            "text": ""
+          }
+        },
+        "4753b34b-0a98-4cc7-81c5-f7a462d46603": {
+          "type": "icon",
+          "settings": {
+            "icon": "ruler",
+            "heading": "WORLD CLASS CRAFTING",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "166161913112fa572a-0",
+        "166161913112fa572a-1",
+        "166161913112fa572a-2",
+        "4753b34b-0a98-4cc7-81c5-f7a462d46603"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "icon_position": "top",
+        "icon_size": "xlarge",
+        "heading_size": "medium",
+        "mobile_swipe": true,
+        "color_bg": "rgba(0,0,0,0)",
+        "color_heading": "#151515",
+        "color_text": "#103a3a",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1661619177029ffd60": {
+      "type": "gallery",
+      "blocks": {
+        "0d86c2a6-f30c-40b5-9391-99b5bb12959b": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "0e695f58-8205-43ec-8762-4137844e2d33": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "0d86c2a6-f30c-40b5-9391-99b5bb12959b",
+        "0e695f58-8205-43ec-8762-4137844e2d33"
+      ],
+      "settings": {
+        "columns_desktop": 2,
+        "section_width": "full-width-row-full",
+        "mobile_swipe": false,
+        "image_ratio": "landscape",
+        "content_position": "middle-center",
+        "text_alignment": "center",
+        "column_spacing": "none",
+        "heading_size": "h1",
+        "overlay_color": "#000000",
+        "overlay_opacity": 40,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "166161901464a25e50",
+    "16616191162185f622",
+    "16521210505e7fc635",
+    "16618593470c5f63bd",
+    "16623735222f31e80e",
+    "166161906436c7d4d0",
+    "1662373455c24650d9",
+    "1662373200967c613c",
+    "16623736356fb1e92f",
+    "1661619131dc23111f",
+    "1661619177029ffd60"
+  ]
+}

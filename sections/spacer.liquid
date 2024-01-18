@@ -1,0 +1,65 @@
+{{ 'spacer.css' | asset_url | stylesheet_tag }}
+{%- liquid
+	assign spacer_mobile = section.settings.spacer_mobile
+	assign spacer_desktop = section.settings.spacer_desktop
+	assign border_separator = section.settings.border_separator
+	assign border_separator_full = section.settings.border_separator_full
+
+	assign class = 'spacer'
+
+	if border_separator
+		assign class = class | append: ' has-border-separator'
+	endif
+-%}
+<div class="row{% if border_separator_full %} full-width-row-full{%- endif -%}">
+	<div class="small-12 columns">
+		<div class="{{ class }}" style="--spacer-mobile: {{ spacer_mobile | append: 'px' }}; --spacer-desktop: {{ spacer_desktop | append: 'px' }};"></div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Spacer",
+    "settings": [
+			{
+				"type": "range",
+				"id": "spacer_mobile",
+				"min": 0,
+				"max": 200,
+				"step": 5,
+				"unit": "px",
+				"label": "Mobile",
+				"default": 50,
+				"info": "Changes the section height in mobile screens."
+			},
+			{
+				"type": "range",
+				"id": "spacer_desktop",
+				"min": 0,
+				"max": 200,
+				"step": 5,
+				"unit": "px",
+				"label": "Desktop",
+				"default": 100,
+				"info": "Changes the section height in desktop screens."
+			},
+			{
+	      "type": "checkbox",
+	      "id": "border_separator",
+	      "label": "Use border separator",
+	      "default": false
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "border_separator_full",
+	      "label": "Make border full width",
+	      "default": false
+	    }
+    ],
+    "presets": [
+      {
+        "name": "Spacer"
+      }
+    ]
+  }
+
+{% endschema %}

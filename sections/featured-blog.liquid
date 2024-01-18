@@ -1,0 +1,180 @@
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_heading_left = section.settings.heading_left
+	assign section_description = section.settings.description
+	assign full_width = section.settings.full_width
+	assign columns_desktop = section.settings.columns_desktop
+	assign mobile_swipe = section.settings.mobile_swipe
+	assign section_blog = section.settings.blog
+	assign post_limit = section.settings.post_limit
+	assign show_view_all = section.settings.show_view_all
+	assign show_date = section.settings.show_date
+	assign show_excerpt = section.settings.show_excerpt
+	assign image_ratio = section.settings.image_ratio
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign columns_class = 'medium-6 large-4'
+
+	case columns_desktop
+		when 2
+			assign columns_class = 'medium-6'
+		when 3
+			assign columns_class = 'medium-4'
+		when 4
+			assign columns_class = 'medium-6 large-3'
+	endcase
+
+	if section_blog != blank and show_view_all and post_limit < section_blog.articles_count
+		assign section_heading_button_blog = section_blog
+	endif
+
+
+-%}
+<div class="row{% if full_width %} full-width-row{% endif %}">
+	<div class="small-12 columns">
+		<div class="blog-posts{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
+			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left, section_heading_button_blog: section_heading_button_blog %}
+			<div class="row full-width-row no-padding">
+				{% if section_blog and blogs[section_blog].articles.size > 0 %}
+		      {% for article in blogs[section_blog].articles limit: post_limit %}
+		      <div class="small-12 {{ columns_class }} columns">
+						{% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
+		      </div>
+		      {% endfor %}
+				{% else %}
+					{% assign placeholder_array = "1,2,3,4,5,6" | split: ',' %}
+					{% for item in placeholder_array limit: post_limit %}
+						<div class="small-12 {{ columns_class }} columns">
+							{% render 'blog-post', article: false, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
+			      </div>
+					{% endfor %}
+		    {% endif %}
+		  </div>
+		</div>
+	</div>
+</div>
+{{ 'blog.css' | asset_url | stylesheet_tag }}
+{% schema %}
+  {
+    "name": "Blog posts",
+    "settings": [
+      {
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Latest News"
+      },
+			{
+				"type": "checkbox",
+				"id": "heading_left",
+				"default": false,
+				"label": "Left align heading"
+			},
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for your brand news</p>"
+      },
+			{
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Make section full width",
+        "default": true
+      },
+      {
+         "type": "blog",
+         "id": "blog",
+         "label": "Blog"
+      },
+			{
+	      "type": "range",
+	      "id": "post_limit",
+	      "min": 2,
+	      "max": 4,
+	      "step": 1,
+	      "default": 3,
+	      "label": "Number of blog posts to show"
+	    },
+			{
+	      "type": "range",
+	      "id": "columns_desktop",
+	      "min": 2,
+	      "max": 4,
+	      "step": 1,
+	      "default": 3,
+	      "label": "Number of columns on desktop"
+	    },
+			{
+				"type": "checkbox",
+				"id": "mobile_swipe",
+				"default": true,
+				"label": "Enable swipe on mobile"
+			},
+			{
+        "type": "select",
+        "id": "image_ratio",
+        "options": [
+          {
+            "value": "adapt",
+            "label": "Adapt to image"
+          },
+          {
+            "value": "portrait",
+            "label": "Portrait"
+          },
+          {
+            "value": "square",
+            "label": "Square"
+          },
+					{
+            "value": "landscape",
+            "label": "Landscape"
+          }
+        ],
+        "default": "square",
+        "label": "Image ratio"
+      },
+			{
+				"type": "checkbox",
+				"id": "show_date",
+				"default": true,
+				"label": "Show date"
+			},
+			{
+				"type": "checkbox",
+				"id": "show_excerpt",
+				"default": true,
+				"label": "Show excerpt"
+			},
+	    {
+	      "type": "checkbox",
+	      "id": "show_view_all",
+	      "default": true,
+	      "label": "Enable \"View all\" button if blog includes more blog posts than shown"
+	    },
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "presets": [
+      {
+        "name": "Blog posts"
+      }
+    ]
+  }
+
+{% endschema %}

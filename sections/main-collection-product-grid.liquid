@@ -1,0 +1,285 @@
+{{- 'facets.css' | asset_url | stylesheet_tag -}}
+{{- 'product-grid.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign full_width = section.settings.full_width
+	assign enable_filtering = section.settings.enable_filtering
+	assign enable_sorting = section.settings.enable_sorting
+	assign show_counts = section.settings.show_counts
+	assign filter_color_swatches = section.settings.filter_color_swatches
+	assign pagination_type = section.settings.pagination_type
+	assign products_per_page = section.settings.products_per_page
+	assign columns_desktop = section.settings.columns_desktop
+	assign facets_desktop = section.settings.facets_desktop
+
+	unless enable_filtering
+		assign facets_desktop = 'drawer'
+	endunless
+-%}
+{%- for filter in collection.filters limit: 1 -%}{%- endfor -%}{%- comment -%} This is just to get rid of the "this theme does not support filters" message in the shopify admin {%- endcomment -%}
+{%- render 'facets-mobile', results: collection, enable_filtering: enable_filtering, enable_sorting: enable_sorting, show_counts: show_counts, filter_color_swatches: filter_color_swatches -%}
+<div class="row {% if full_width %}full-width-row{% endif %}">
+	<div class="small-12 columns">
+		{%- paginate collection.products by products_per_page -%}
+			<div class="collection-container section-spacing-bottom">
+				<div id="ProductGridContainer">
+					<div class="sidebar-container facets--{{ facets_desktop }} results--{{ collection.products.size }}">
+						{%- if facets_desktop == 'sidebar' -%}
+							{%- render 'facets-desktop', results: collection, enable_filtering: enable_filtering, enable_sorting: enable_sorting, show_counts: show_counts, filter_color_swatches: filter_color_swatches -%}
+						{%- endif -%}
+						<div>
+							{%- render 'facets-bar', results: collection, enable_filtering: enable_filtering, enable_sorting: enable_sorting, facets_desktop: facets_desktop -%}
+							{%- if collection.products.size == 0 -%}
+								<div class="collection-empty collection" id="product-grid" data-id="{{ section.id }}">
+									{% render 'svg-icons' with 'thb-no-products' %}
+									<p>
+										{{ 'sections.collection_template.empty' | t }}<br>
+										{%- if collection.terms -%}
+										{{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url }}
+										{%- endif -%}
+									</p>
+								</div>
+							{%- else -%}
+								<ul id="product-grid" data-id="{{ section.id }}" class="products collection row small-up-2 medium-up-{{ columns_desktop }} pagination--{{ pagination_type }}">
+									{%- for product in collection.products -%}
+										{%- assign product_loop = forloop -%}
+										{%- for block in section.blocks -%}
+											{%- liquid
+												assign display_promotion = false
+												if product_loop.index == block.settings.promotion_position
+													assign display_promotion = true
+												endif
+
+												if block.settings.promotion_collection != blank
+													if collection.handle == block.settings.promotion_collection.handle and product_loop.index == block.settings.promotion_position
+														assign display_promotion = true
+													else
+														assign display_promotion = false
+													endif
+												endif
+											-%}
+											{%- if display_promotion -%}
+												{{- 'gallery.css' | asset_url | stylesheet_tag -}}
+												<li class="promotion-column column promotion-column-width--{{ block.settings.promotion_width }} product-columns-{{ columns_desktop }}">
+													{%- render 'product-promotion', block: block -%}
+												</li>
+											{%- endif -%}
+										{%- endfor -%}
+										<li class="column">
+											{%- render 'product-card', product_card_product: product -%}
+										</li>
+									{%- endfor -%}
+								</ul>
+								{% render 'pagination', paginate: paginate, pagination_type: pagination_type, id: section.id %}
+							{%- endif -%}
+						</div>
+					</div>
+				</div>
+			</div>
+		{%- endpaginate -%}
+	</div>
+</div>
+{%- if enable_filtering or enable_sorting -%}
+{%- if enable_filtering  -%}
+{{ 'nouislider.js' | asset_url | script_tag }}
+{%- endif -%}
+<script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
+
+{% schema %}
+  {
+    "name": "Product grid",
+    "settings": [
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"default": false,
+				"label": "Make section full width"
+			},
+			{
+        "type": "range",
+        "id": "products_per_page",
+        "min": 2,
+        "max": 48,
+        "step": 1,
+        "label": "Number of products",
+        "default": 12
+      },
+			{
+        "type": "range",
+        "id": "columns_desktop",
+        "min": 2,
+        "max": 5,
+        "step": 1,
+        "label": "Number of columns on desktop",
+        "default": 3
+      },
+			{
+	      "type": "select",
+	      "id": "pagination_type",
+	      "options": [
+	        {
+	          "value": "paginated",
+	          "label": "Paginated"
+	        },
+	        {
+	          "value": "loadmore",
+	          "label": "Click to load"
+	        },
+	        {
+	          "value": "infinite",
+	          "label": "Infinite"
+	        }
+	      ],
+	      "default": "paginated",
+	      "label": "Pagination",
+	      "info": "Choose how additional pages of products are navigated."
+	    },
+	    {
+	      "type": "header",
+	      "content": "Filtering and sorting"
+	    },
+	    {
+	      "type": "checkbox",
+	      "id": "enable_filtering",
+	      "default": true,
+	      "label": "Enable filtering",
+	      "info": "Customize [filters](/admin/menus)"
+	    },
+	    {
+	      "type": "checkbox",
+	      "id": "enable_sorting",
+	      "default": true,
+	      "label": "Enable sorting"
+	    },
+			{
+	      "type": "checkbox",
+	      "id": "show_counts",
+	      "default": true,
+	      "label": "Show filter values count"
+	    },
+			{
+				"type": "checkbox",
+				"id": "filter_color_swatches",
+				"default": true,
+				"label": "Show color swatches"
+			},
+			{
+	      "type": "select",
+	      "id": "facets_desktop",
+	      "options": [
+	        {
+	          "value": "sidebar",
+	          "label": "Sidebar"
+	        },
+	        {
+	          "value": "drawer",
+	          "label": "Drawer"
+	        }
+	      ],
+	      "default": "sidebar",
+	      "label": "Desktop position",
+	      "info": "Position of filters on desktop"
+	    }
+    ],
+		"blocks": [
+      {
+        "type": "promotion",
+        "name": "Promotion",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "promotion_collection",
+            "label": "Collection",
+						"info": "Show on specific collection only"
+          },
+					{
+		        "type": "range",
+		        "id": "promotion_position",
+		        "min": 1,
+		        "max": 24,
+		        "step": 1,
+		        "label": "Show in position",
+		        "default": 1
+		      },
+					{
+			      "type": "select",
+			      "id": "promotion_width",
+			      "options": [
+			        {
+			          "value": "1",
+			          "label": "1 column"
+			        },
+			        {
+			          "value": "2",
+			          "label": "2 columns"
+			        }
+			      ],
+			      "default": "1",
+			      "label": "Width"
+			    },
+					{
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+          },
+					{
+						"type": "text",
+						"id": "title",
+						"default": "Promotion",
+						"label": "Heading"
+					},
+					{
+						"type": "textarea",
+						"id": "text",
+						"default": "Advertise a promotion or a sale",
+						"label": "Description"
+					},
+					{
+            "id": "link_label",
+            "type": "text",
+            "label": "Button label",
+            "default": "Explore",
+						"info": "Leave the label blank to hide the button."
+          },
+          {
+            "id": "link",
+            "type": "url",
+            "label": "Button link"
+          },
+					{
+						 "type": "checkbox",
+						 "id": "use_text_button",
+						 "label": "Use text button",
+						 "default": false
+					},
+					{
+            "id": "block_link",
+            "type": "url",
+            "label": "Link",
+						"info": "This will allow you to set a link to the promotion"
+          },
+					{
+			      "type": "header",
+			      "content": "Colors"
+			    },
+					{
+						"type": "color",
+						"id": "overlay_color",
+						"label": "Overlay",
+						"default": "#000000"
+					},
+					{
+						"type": "range",
+						"id": "overlay_opacity",
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"unit": "%",
+						"label": "Overlay opacity",
+						"default": 70
+					}
+				]
+			}
+		]
+  }
+{% endschema %}

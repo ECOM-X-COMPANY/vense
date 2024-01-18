@@ -1,0 +1,36 @@
+
+
+
+.no-js .recipient-checkbox {
+  display: none; }
+
+.js .recipient-fields {
+  display: none; }
+
+.recipient-form > input[type="checkbox"]:checked ~ .recipient-fields {
+  display: block; }
+
+.recipient-form {
+  display: block;
+  margin-bottom: 1rem; }
+  .recipient-form .recipient-fields {
+    padding-top: 1rem; }
+    .recipient-form .recipient-fields .form-notification {
+      margin-bottom: 15px; }
+  .recipient-form .form__message.hidden {
+    display: none; }
+
+.product-form__recipient-error-message-wrapper {
+  margin-top: 10px; }
+  .product-form__recipient-error-message-wrapper .error-message {
+    margin-left: 5px; }
+
+.recipient-form
+> input[type="checkbox"]:not(:checked, :disabled)
+~ .recipient-fields,
+.recipient-email-label {
+  display: none; }
+
+.js .recipient-email-label.required,
+.no-js .recipient-email-label.optional {
+  display: inline; }

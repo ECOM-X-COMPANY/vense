@@ -1,0 +1,238 @@
+{% comment %}
+    Renders facets (filtering and sorting)
+    Accepts:
+    - results: {Object} Collection or Search object
+    - enable_filtering: {Boolean} Show filtering when true
+    - enable_sorting: {Boolean} Show sorting when true
+    - collapse_on_larger_devices: {Boolean} Collapse filtering/sorting into menu on larger devices when true
+    Usage:
+    {% render 'facets', results: collection, enable_filtering: true, enable_sorting: true, collapse_on_larger_devices: false %}
+{% endcomment %}
+
+{%- if enable_filtering -%}
+	{%- unless results.products.size == 0 -%}
+		<facet-filters-form class="facets-desktop-container facets">
+			<form id="FacetFiltersForm" class="facets__form">
+				{%- if results.terms -%}
+		      <input type="hidden" name="q" value="{{ results.terms | escape }}">
+		      <input name="options[prefix]" type="hidden" value="last">
+		    {%- endif -%}
+				{% if results.current_vendor or results.current_type %}
+		      <input type="hidden" name="q" value="{{ results.current_vendor }}{{ results.current_type }}">
+		    {% endif %}
+				<div class="facets__wrapper">
+					{%- for filter in results.filters -%}
+						{% case filter.type %}
+			        {% when 'boolean' or 'list' %}
+							{%- assign label = filter.label | downcase | replace: ' ', '-' | escape -%}
+							<collapsible-row data-index="{{ forloop.index }}">
+								<details class="thb-filter js-filter" open>
+									<summary class="thb-filter-title"><span></span>{{ filter.label | escape }}</summary>
+									<div class="thb-filter-content collapsible__content">
+										{%- if filter.param_name == 'filter.v.availability' -%}
+											<div class="thb-filter-availability">
+												{%- assign value = filter.values[0] -%}
+												<input type="checkbox"
+													name="{{ value.param_name }}"
+													value="{{ value.value }}"
+													class="thb-filter-switch custom-checkbox"
+													id="Filter-{{ label }}-{{ forloop.index }}"
+													{% if value.active %}checked{% endif %}
+													{% if value.count == 0 and value.active == false %}disabled{% endif %}
+												>
+												<label for="Filter-{{ label }}-{{ forloop.index }}">{{ value.label }}</label>
+											</div>
+										{%- else -%}
+											<scroll-shadow>
+												{%- liquid
+													assign slug = filter.label | downcase | escape
+
+													if slug contains 'color' or slug contains 'colour' or slug contains 'couleur' or slug contains 'farbe'
+														if filter_color_swatches
+															assign slug = 'color'
+														else
+															assign slug = ''
+														endif
+													endif
+
+													if filter.presentation == 'swatch'
+														assign slug = 'color'
+													endif
+												-%}
+												<ul class="{{ filter.type | escape }}-{{ slug }}">
+													{%- liquid
+													assign custom_colors = settings.color_swatches | newline_to_br | split: '<br />'
+													assign key_array = ''
+													assign val_array = ''
+
+													for color in custom_colors
+														assign key = color | split: ':' | first | rstrip
+														assign value = color | split: ':' | last | lstrip
+														assign key_array = key_array | append: ',' | append: key
+														assign val_array = val_array | append: ',' | append: value
+													endfor
+
+													assign key_array = key_array | remove_first: ',' | strip_newlines | downcase | split: ','
+													assign val_array = val_array | remove_first: ',' | split: ','
+													
+													assign sorted_values = filter.values
+													# Keep the selected values grouped together when operator is AND
+													if filter.operator == 'AND'
+														assign active_filter_values = filter.values | where: 'active', true
+														assign inactive_filter_values = filter.values | where: 'active', false
+														assign sorted_values = active_filter_values | concat: inactive_filter_values
+													endif
+                          -%}
+								        	{%- for value in sorted_values -%}
+									          <li>
+															<input type="checkbox"
+								                name="{{ value.param_name }}"
+								                value="{{ value.value }}"
+								                id="Filter-{{ label }}-{{ forloop.index }}"
+								                {% if value.active %}checked{% endif %}
+								                {% if value.count == 0 and value.active == false %}disabled{% endif %}
+								              >
+															{%- if filter.presentation == 'swatch' -%}
+																{%- liquid
+																	if value.display.type == 'colors'
+																		assign bg_value = empty
+																		assign size_limit = value.display.value.size | at_most: 4
+																		assign rotation = '0deg'
+																		if size_limit == 2
+																			assign rotation = '45deg'
+																		endif
+
+																		assign angle_increment = 360 | divided_by: size_limit
+																		assign angle = 0
+																	endif
+																	if value.display.type == 'image'
+																		assign bg_value = value.display.value | image_url: width: 40, height: 40
+																	endif
+																-%}
+																{%- capture conic_gradient -%}
+																	{%- for color in value.display.value limit: size_limit -%}
+																		{{ color }} {{ angle }}deg{%- assign angle = angle | plus: angle_increment %} {{ angle }}deg{%- unless forloop.last %}, {%- endunless -%}
+																	{%- endfor -%}
+																{%- endcapture -%}
+																<label
+																	for="Filter-{{ label }}-{{ forloop.index }}"
+																	class="facet-checkbox facet-checkbox--presentation{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+																	style="--option-color-image:{%- if bg_value == empty -%}conic-gradient({{ conic_gradient }}){%- else -%}url('{{ bg_value }}'){%- endif -%};"
+																	data-tooltip="{{ value.label | escape }} ({{ value.count }})"
+																>
+																	{{ value.label | escape }} {% if show_counts -%}<sup class="count">{{ value.count }}</sup>{%- endif -%}
+																</label>
+															{%- else -%}
+																{%- liquid
+																assign color_value = value.value | downcase | escape
+
+																for custom_color in key_array
+																	if custom_color == color_value
+																		assign color_value = val_array[forloop.index0]
+																	endif
+																endfor
+
+																assign bg_value = false
+																if color_value contains '.'
+																	assign bg_value = color_value | file_url
+																	assign color_value = 'var(--bg-body)'
+																endif
+																-%}
+																<label
+																	for="Filter-{{ label }}-{{ forloop.index }}"
+																	class="facet-checkbox{% if value.count == 0 and value.active == false %} facet-checkbox--disabled{% endif %}"
+																	style="--bg-color: {{ color_value | downcase | escape }};{%- if bg_value != blank -%} --option-color-image: url('{{ bg_value | escape }}');{%- endif -%}"
+																	data-tooltip="{{ value.label | escape }} ({{ value.count }})"
+																>
+																	{{ value.label | escape }} {% if show_counts -%}<sup class="count">{{ value.count }}</sup>{%- endif -%}
+																</label>
+															{%- endif -%}
+									          </li>
+													{%- endfor -%}
+								        </ul>
+											</scroll-shadow>
+										{%- endif -%}
+									</div>
+								</details>
+							</collapsible-row>
+							{% when 'price_range' %}
+							<collapsible-row data-index="{{ forloop.index }}">
+								<details class="thb-filter js-filter" data-index="{{ forloop.index }}" open>
+									<summary class="thb-filter-title"><span></span>{{ filter.label | escape }}</summary>
+									<div class="thb-filter-content collapsible__content">
+										<div class="{{ filter.type | escape }} {{ filter.type | escape }}-{{ filter.label | downcase | escape }}">
+												{% liquid
+					                assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,TRY,UYU,VES,VND' | split: ','
+					                assign uses_comma_decimals = false
+					                if currencies_using_comma_decimals contains cart.currency.iso_code
+					                  assign uses_comma_decimals = true
+					                endif
+
+													assign max_value = nil
+													assign min_value = nil
+													if uses_comma_decimals
+														if filter.max_value.value
+															assign max_value = filter.max_value.value | money_without_currency | replace: '.', ''
+														endif
+														if filter.min_value.value
+															assign min_value = filter.min_value.value | money_without_currency | replace: '.', ''
+														endif
+														assign range_max = filter.range_max | money_without_currency | replace: '.', ''
+													else
+														if filter.max_value.value
+															assign max_value = filter.max_value.value | money_without_currency | replace: ',', ''
+														endif
+														if filter.min_value.value
+															assign min_value = filter.min_value.value | money_without_currency | replace: ',', ''
+														endif
+														assign range_max = filter.range_max | money_without_currency | strip_html | replace: ',', '' | divided_by: 1.00
+													endif
+					              %}
+												{%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
+			                  <span class="price-highest">{{ "products.facets.max_price" | t: price: max_price_amount }}</span>
+												<price-slider class="price_slider_wrapper">
+													<div
+														class="price_slider"
+														data-min-value="{{ min_value }}"
+					                  data-min-name="filter.v.price.gte"
+					                  data-min="0"
+					                  data-max-value="{{ max_value }}"
+					                  data-max-name="filter.v.price.lte"
+					                  data-max="{{ range_max }}">
+													</div>
+													<div class="price_slider_amount">
+														<div>
+															<span class="field-currency">{{ cart.currency.symbol }}</span>
+															<input class="field__input field__input_min"
+						                    name="{{ filter.min_value.param_name }}"
+						                    id="Filter-{{ filter.label | escape }}-GTE"
+						                    value="{{ min_value }}"
+						                    type="text"
+																placeholder="0"
+						                  >
+						                  </input>
+														</div>
+														<div>
+															<span class="field-currency">{{ cart.currency.symbol }}</span>
+															<input class="field__input field__input_max"
+						                    name="{{ filter.max_value.param_name }}"
+						                    id="Filter-{{ filter.label | escape }}-LTE"
+						                    value="{{ max_value }}"
+						                    type="text"
+																placeholder="{{ filter.range_max | money_without_currency }}"
+						                  >
+						                  </input>
+														</div>
+													</div>
+												</price-slider>
+											</div>
+									</div>
+								</details>
+							</collapsible-row>
+						{% endcase %}
+					{%- endfor -%}
+				</div>
+			</form>
+		</facet-filters-form>
+	{%- endunless -%}
+{%- endif -%}

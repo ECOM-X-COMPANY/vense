@@ -1,0 +1,91 @@
+
+
+.blog-post .featured-image img {
+  transition: all 1s cubic-bezier(0.104, 0.204, 0.492, 1); }
+
+
+.blog-post {
+  margin-bottom: 50px; }
+  .blog-post .featured-image {
+    margin-bottom: 24px;
+    overflow: hidden;
+    position: relative;
+    height: 0;
+    padding-bottom: var(--ratio-percent); }
+    .blog-post .featured-image > a {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .blog-post .featured-image > a img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+      .blog-post .featured-image > a .thb-placeholder {
+        background: rgba(var(--color-body-rgb), 0.03);
+        width: 100%;
+        height: 100%; }
+        .blog-post .featured-image > a .thb-placeholder svg {
+          fill: var(--color-accent); }
+      .blog-post .featured-image > a:hover img, .blog-post .featured-image > a:focus img {
+        transform: scale(1.05); }
+    .blog-post .featured-image img {
+      display: block;
+      will-change: scale; }
+  .blog-post h5 {
+    margin-bottom: 10px; }
+  .blog-post .post-meta {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--color-body);
+    opacity: 0.6;
+    letter-spacing: 0.1em;
+    margin-bottom: 12px; }
+  .blog-post .post-excerpt {
+    font-size: 0.9375rem; }
+  .blog-post--large {
+    width: 100%;
+    position: relative; }
+    @media only screen and (min-width: 768px) {
+      .blog-post--large .featured-image {
+        width: 100%;
+        max-width: 66%;
+        padding-bottom: var(--ratio-percent-medium); }
+        [dir="rtl"] .blog-post--large .featured-image {
+          margin-right: auto; } }
+  @media only screen and (min-width: 768px) {
+    .blog-post--content {
+      border: 1px solid var(--color-border);
+      padding: 50px;
+      position: absolute;
+      top: 50%;
+      right: 0;
+      background: var(--bg-body);
+      max-width: 500px;
+      transform: translateY(-50%); } }
+  @media only screen and (min-width: 1068px) {
+    .blog-post--content {
+      min-width: 500px;
+      max-width: 100%;
+      width: calc(33.9% + 50px); } }
+
+@media only screen and (max-width: 767px) {
+  .blog-posts.swipe-on-mobile .row {
+    display: grid;
+    grid-gap: 10px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(calc(100vw - 30px), 1fr);
+    overflow-x: auto;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100vw - 30px), 1fr));
+    width: calc(100% + 30px);
+    padding: 0 15px;
+    margin-left: -15px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; }
+    .blog-posts.swipe-on-mobile .row::-webkit-scrollbar {
+      display: none; }
+    .blog-posts.swipe-on-mobile .row .columns {
+      scroll-snap-stop: always;
+      padding: 0; } }

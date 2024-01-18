@@ -1,0 +1,79 @@
+
+
+
+.section-multicolumn {
+  overflow: hidden; }
+
+.multicolumn__column {
+  margin-bottom: 40px; }
+  .multicolumn__column.carousel__slide {
+    margin-bottom: 0; }
+  .multicolumn__column h4 {
+    margin-bottom: 8px; }
+  .multicolumn__column p {
+    margin-bottom: 12px;
+    font-size: 0.9375rem; }
+  .multicolumn__column .text-button {
+    margin-right: 0; }
+
+.multicolumn__image {
+  display: inline-block;
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 28px;
+  max-width: 100%; }
+  .multicolumn__image--inner {
+    position: relative;
+    padding-bottom: var(--ratio-percent); }
+    .multicolumn__image--inner.aspect-ratio--portrait {
+      padding-bottom: 125%; }
+    .multicolumn__image--inner.aspect-ratio--square, .multicolumn__image--inner.aspect-ratio--circle {
+      padding-bottom: 100%; }
+    .multicolumn__image--inner.aspect-ratio--circle {
+      border-radius: 50%; }
+    .multicolumn__image--inner img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+
+@media only screen and (max-width: 767px) {
+  .multicolumn.swipe-on-mobile .row {
+    display: grid;
+    grid-gap: 8px;
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(calc(90vw - 15px), 1fr);
+    overflow-x: auto;
+    grid-template-columns: repeat(auto-fill, minmax(calc(90vw - 15px), 1fr));
+    margin-left: -8px;
+    width: calc(100% + 16px);
+    padding: 0 15px;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; }
+    .multicolumn.swipe-on-mobile .row::-webkit-scrollbar {
+      display: none; }
+    .multicolumn.swipe-on-mobile .row .columns {
+      padding: 0;
+      scroll-snap-stop: always; } }
+
+.multicolumn.swipe-on-mobile .multicolumn__column {
+  margin-bottom: 0; }
+  @media only screen and (max-width: 767px) {
+    .multicolumn.swipe-on-mobile .multicolumn__column {
+      width: calc(90vw - 15px); } }
+
+@media only screen and (max-width: 767px) {
+  .multicolumn__inner.display-type--carousel {
+    overflow: hidden;
+    margin-left: -15px;
+    padding: 0 15px;
+    width: calc(100% + 30px); }
+    .multicolumn__inner.display-type--carousel .multicolumn__column {
+      width: calc(90vw - 15px); }
+    .multicolumn__inner.display-type--carousel .flickity-viewport {
+      overflow: visible; } }
+
+.multicolumn.text-center .rte {
+  padding: 0 15px; }

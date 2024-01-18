@@ -1,0 +1,31 @@
+<div class="pswp no-js-hidden" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="pswp__bg"></div>
+  <div class="pswp__scroll-wrap">
+    <div class="pswp__container">
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+        <div class="pswp__item"></div>
+    </div>
+    <div class="pswp__ui pswp__ui--hidden">
+      <div class="pswp__top-bar">
+				<div class="pswp__button pswp__counter"></div>
+        <button class="pswp__button pswp__button--close" title="Close (Esc)">{% render 'svg-icons' with 'close' %}</button>
+				<div class="pswp__preloader">
+
+        </div>
+      </div>
+
+      <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">{% render 'svg-icons' with 'carousel-prev' %}
+      </button>
+
+      <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">{% render 'svg-icons' with 'carousel-next' %}
+      </button>
+			
+			<div class="pswp__caption">
+          <div class="pswp__caption__center"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="{{ 'photoswipe.min.js' | asset_url }}"></script>
+<script src="{{ 'photoswipe-ui-default.min.js' | asset_url }}"></script>

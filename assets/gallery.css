@@ -1,0 +1,150 @@
+
+
+
+.gallery__inner {
+  display: grid;
+  grid-gap: 0; }
+  @media only screen and (min-width: 768px) {
+    .gallery__inner {
+      grid-template-columns: repeat(var(--gallery-columns), 1fr); } }
+
+.gallery-spacing--none .gallery__inner {
+  grid-gap: 0px;
+  margin: 0 auto; }
+
+.gallery-spacing--small .gallery__inner {
+  grid-gap: 3px;
+  margin: 3px auto; }
+
+.gallery-spacing--medium .gallery__inner {
+  grid-gap: 10px;
+  margin: 10px auto; }
+
+.gallery-spacing--large .gallery__inner {
+  grid-gap: 30px;
+  margin: 30px auto; }
+
+.gallery__item svg {
+  padding: 50px;
+  fill: var(--bg-body, #fff);
+  opacity: 0.5; }
+
+.gallery__item figure {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  height: 0;
+  background: var(--color-accent);
+  padding-bottom: var(--ratio-percent); }
+  .gallery__item figure.aspect-ratio--portrait {
+    padding-bottom: 125%; }
+  .gallery__item figure.aspect-ratio--square {
+    padding-bottom: 100%; }
+  .gallery__item figure.aspect-ratio--landscape {
+    padding-bottom: 75%; }
+  .gallery__item figure img,
+  .gallery__item figure svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    object-fit: cover; }
+  .gallery__item figure:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    background: rgba(var(--overlay-color-rgb), var(--overlay-opacity)); }
+
+.gallery__item-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  display: flex;
+  padding: 30px;
+  color: #fff;
+  display: flex; }
+  @media only screen and (min-width: 1068px) {
+    .gallery__item-content {
+      padding: 45px; } }
+  @media only screen and (min-width: 1440px) {
+    .gallery__item-content {
+      padding: 60px; } }
+  .gallery__item-content.content-top-left {
+    justify-content: flex-start;
+    align-items: flex-start; }
+  .gallery__item-content.content-top-center {
+    justify-content: center;
+    align-items: flex-start; }
+  .gallery__item-content.content-top-right {
+    justify-content: flex-end;
+    align-items: flex-start; }
+  .gallery__item-content.content-middle-left {
+    justify-content: flex-start;
+    align-items: center; }
+  .gallery__item-content.content-middle-center {
+    justify-content: center;
+    align-items: center; }
+  .gallery__item-content.content-middle-right {
+    justify-content: flex-end;
+    align-items: center; }
+  .gallery__item-content.content-bottom-left {
+    justify-content: flex-start;
+    align-items: flex-end; }
+  .gallery__item-content.content-bottom-center {
+    justify-content: center;
+    align-items: flex-end; }
+  .gallery__item-content.content-bottom-right {
+    justify-content: flex-end;
+    align-items: flex-end; }
+  .gallery__item-content h4 {
+    color: inherit;
+    margin-bottom: 8px; }
+    .gallery__item-content h4 + .button {
+      margin-top: 20px; }
+  .gallery__item-content p {
+    margin-bottom: 30px; }
+  .gallery__item-content p.subheading {
+    font-size: 0.75rem;
+    margin-bottom: 15px; }
+  @media only screen and (min-width: 768px) {
+    .gallery__item-content > div {
+      max-width: 90%; } }
+  .gallery__item-content > div > *:last-child {
+    margin-bottom: 0; }
+  .gallery__item-content .button,
+  .gallery__item-content .text-button {
+    position: relative;
+    z-index: 22; }
+  .gallery__item-content-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 21; }
+
+@media only screen and (max-width: 767px) {
+  .gallery.swipe-on-mobile .gallery__inner {
+    grid-auto-flow: column;
+    grid-auto-columns: minmax(calc(90vw - 15px), 1fr);
+    overflow-x: auto;
+    grid-template-columns: repeat(auto-fill, minmax(calc(90vw - 15px), 1fr));
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; }
+    .gallery.swipe-on-mobile .gallery__inner::-webkit-scrollbar {
+      display: none; }
+    .gallery.swipe-on-mobile .gallery__inner .gallery__item {
+      scroll-snap-align: center;
+      scroll-snap-stop: always; }
+    .row:not(.full-width-row-full) .gallery.swipe-on-mobile .gallery__inner {
+      margin: 0 -15px;
+      width: calc(100% + 30px); } }

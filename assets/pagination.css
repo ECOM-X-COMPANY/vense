@@ -1,0 +1,39 @@
+
+
+
+.pagination {
+  display: block;
+  text-align: center;
+  min-height: 42px;
+  position: relative; }
+  .pagination.pagination-type--infinite .button {
+    display: none; }
+  .pagination.pagination-type--infinite[loading="true"] .loading-overlay {
+    display: block; }
+
+.page-numbers {
+  text-align: center; }
+  .page-numbers span {
+    display: inline-flex;
+    vertical-align: middle;
+    color: var(--color-accent); }
+  .page-numbers .page a,
+  .page-numbers .next a,
+  .page-numbers .prev a,
+  .page-numbers .current {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 32px;
+    height: 32px;
+    padding: 0 5px;
+    border-bottom: 1px solid rgba(var(--color-accent-rgb), 0.4);
+    margin: 0 3px;
+    font-size: 0.875rem;
+    line-height: 0; }
+  .page-numbers .page a:hover,
+  .page-numbers .next a:hover,
+  .page-numbers .prev a:hover {
+    border-bottom-color: var(--color-accent); }
+  .page-numbers .current {
+    border-bottom-color: var(--color-accent); }

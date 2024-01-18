@@ -1,0 +1,55 @@
+{
+  "sections": {
+    "1663670702acb57791": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 60,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "main-blog-header": {
+      "type": "main-blog-header",
+      "settings": {
+        "heading": "Blog posts",
+        "description": "<p>Add a short description for your blog.<\/p>",
+        "show_category_list": true
+      }
+    },
+    "main-blog": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "image_ratio": "portrait",
+        "show_date": true,
+        "show_excerpt": true
+      }
+    },
+    "9939ff4a-b359-4cdf-9b9b-f24f7b1ff98f": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest News",
+        "heading_left": false,
+        "description": "<p>Add a short description for your brand news<\/p>",
+        "full_width": true,
+        "blog": "blog",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "image_ratio": "square",
+        "show_date": true,
+        "show_excerpt": true,
+        "show_view_all": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "1663670702acb57791",
+    "main-blog-header",
+    "main-blog",
+    "9939ff4a-b359-4cdf-9b9b-f24f7b1ff98f"
+  ]
+}

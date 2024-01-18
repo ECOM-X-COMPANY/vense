@@ -1,0 +1,682 @@
+{
+  "sections": {
+    "847e4397-8b46-49de-88bf-00e3ff372423": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "9a45ccaa-c214-4321-9927-18db584738bf": {
+          "type": "space",
+          "settings": {
+            "height": 100
+          }
+        },
+        "template--17027746070843__847e4397-8b46-49de-88bf-00e3ff372423-1669292193e8cd30f8-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "SKINCARE ESSENTIALS"
+          }
+        },
+        "template--17027746070843__847e4397-8b46-49de-88bf-00e3ff372423-1669292193e8cd30f8-1": {
+          "type": "heading",
+          "settings": {
+            "text": "A one-way ticket to refreshed skin + fresh breath",
+            "heading_size": "h1-large"
+          }
+        },
+        "95435679-b77d-47f6-ab3a-6fbc670c1e35": {
+          "type": "space",
+          "settings": {
+            "height": 20
+          }
+        },
+        "template--17027746070843__847e4397-8b46-49de-88bf-00e3ff372423-1669292193e8cd30f8-3": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "9a45ccaa-c214-4321-9927-18db584738bf",
+        "template--17027746070843__847e4397-8b46-49de-88bf-00e3ff372423-1669292193e8cd30f8-0",
+        "template--17027746070843__847e4397-8b46-49de-88bf-00e3ff372423-1669292193e8cd30f8-1",
+        "95435679-b77d-47f6-ab3a-6fbc670c1e35",
+        "template--17027746070843__847e4397-8b46-49de-88bf-00e3ff372423-1669292193e8cd30f8-3"
+      ],
+      "settings": {
+        "section_width": "full-width-row-full",
+        "image": "",
+        "image_parallax": true,
+        "desktop_height": "desktop-height-750",
+        "mobile_height": "mobile-height-500",
+        "content_width": "large",
+        "content_position": "middle-left",
+        "text_alignment": "left",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "3f3eaabd-a609-4aaf-be3a-d87c7a7c5e77": {
+      "type": "rich-text",
+      "blocks": {
+        "template--17027746070843__3f3eaabd-a609-4aaf-be3a-d87c7a7c5e77-16692924700069a6a5-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Your skin is alive and needs nutrition to be fit. Our innovative topical formulas are loaded with fat-soluble vitamins and nutrients, designed to stimulate and nourish.",
+            "size": "h2"
+          }
+        },
+        "9700969b-41f2-416a-b2bf-4105147b9ff9": {
+          "type": "text-button",
+          "settings": {
+            "link_label": "REINVENT YOUR SKIN TODAY",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17027746070843__3f3eaabd-a609-4aaf-be3a-d87c7a7c5e77-16692924700069a6a5-1",
+        "9700969b-41f2-416a-b2bf-4105147b9ff9"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "grid",
+        "text_position": "left",
+        "text_alignment": "left",
+        "color_bg": "#ffffff",
+        "color_text": "#1e4e1c",
+        "color_links": "#1e4e1c",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "a6e345fa-3032-4566-90a7-28aefe18ee18": {
+      "type": "collection-list",
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "collection_list": [
+          "skincare",
+          "body",
+          "makeup",
+          "fragrance",
+          "serum",
+          "balms"
+        ],
+        "image_ratio": "adapt",
+        "layout": "grid",
+        "style": "style1",
+        "columns_desktop": 6,
+        "columns_mobile": "2",
+        "show_progress_bar": true,
+        "mobile_swipe": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "4c1aeff4-8f0d-4c36-b255-c9892e33d331": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 10,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "9dd376eb-f2bf-4df1-8ac8-5e268ff6683e": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 70,
+        "spacer_desktop": 100,
+        "border_separator": true,
+        "border_separator_full": false
+      }
+    },
+    "54b05a01-8f42-4b56-9141-8e4a43ef6fbd": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 5,
+        "spacer_desktop": 20,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "9d295610-2e36-4665-8e6a-1cbaac87caa9": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "New Arrivals",
+        "heading_left": true,
+        "description": "<p>Describe your featured collection here<\/p>",
+        "full_width": false,
+        "collection": "frontpage",
+        "display_type": "grid",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "19629d8d-8042-4b72-b0da-a72c227575a1": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 40,
+        "spacer_desktop": 140,
+        "border_separator": true,
+        "border_separator_full": false
+      }
+    },
+    "33da2cec-ab2f-45f1-94e7-66fc543632ba": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 0,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "6804e82d-1fdf-4af4-8e56-a20dcdbc132b": {
+      "type": "layered-images-with-text",
+      "blocks": {
+        "template--17027746070843__6804e82d-1fdf-4af4-8e56-a20dcdbc132b-1670236135b3b7be11-0": {
+          "type": "subheading",
+          "settings": {
+            "text": "try the organic"
+          }
+        },
+        "template--17027746070843__6804e82d-1fdf-4af4-8e56-a20dcdbc132b-1670236135b3b7be11-1": {
+          "type": "heading",
+          "settings": {
+            "text": "Powered by the highest concentration of retinol and botanical extracts, Retinol 1.0 Maximum Strength Refining Night Cream exfoliates skin to reduce the appearance of blemishes and pores while minimizing breakouts.",
+            "heading_size": "h4"
+          }
+        },
+        "ff639212-c80b-4572-afd4-1799509ad895": {
+          "type": "space",
+          "settings": {
+            "height": 14
+          }
+        },
+        "1aacb913-044c-48dc-90f3-cf1c64d67d1e": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17027746070843__6804e82d-1fdf-4af4-8e56-a20dcdbc132b-1670236135b3b7be11-0",
+        "template--17027746070843__6804e82d-1fdf-4af4-8e56-a20dcdbc132b-1670236135b3b7be11-1",
+        "ff639212-c80b-4572-afd4-1799509ad895",
+        "1aacb913-044c-48dc-90f3-cf1c64d67d1e"
+      ],
+      "settings": {
+        "image": "",
+        "image_ratio": "adapt",
+        "image_2": "",
+        "image_ratio_2": "adapt",
+        "image_3": "",
+        "image_ratio_3": "adapt",
+        "full_width": false,
+        "layout": "text_first",
+        "content_alignment": "text-left",
+        "content_position": "top",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "b1f92b44-243e-441c-9d9e-20acc7185a90": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 50,
+        "spacer_desktop": 40,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--17027746070843__9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10-1669292470548147ac-0": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "For a smooth and glowing skin",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--17027746070843__9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10-1669292470548147ac-1": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "One step to flawless beauty",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--17027746070843__9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10-1669292470548147ac-2": {
+          "type": "text",
+          "settings": {
+            "image": "",
+            "text": "Let your skin breath",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17027746070843__9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10-1669292470548147ac-0",
+        "template--17027746070843__9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10-1669292470548147ac-1",
+        "template--17027746070843__9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10-1669292470548147ac-2"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": false,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 34,
+        "text_uppercase": false,
+        "image_size": "small",
+        "color_bg": "#fffce2",
+        "color_text": "#1e4e1c",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "165aed4e-90ed-434d-97ca-616ea4f48f79": {
+      "type": "gallery",
+      "blocks": {
+        "template--17027746070843__165aed4e-90ed-434d-97ca-616ea4f48f79-1670224069d68b9afc-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "CLEANSING BALMS",
+            "title": "Elegance In Every Way",
+            "text": "This modern approach creates the optimal environment to strengthen cell function.",
+            "link_label": "SHOP BALMS",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "template--17027746070843__165aed4e-90ed-434d-97ca-616ea4f48f79-1670224069d68b9afc-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "subheading": "Radiant forever",
+            "title": "Get Glam.. Be Glamorous",
+            "text": "This modern approach creates the optimal environment to strengthen cell function.",
+            "link_label": "SHOP SKINCARE",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17027746070843__165aed4e-90ed-434d-97ca-616ea4f48f79-1670224069d68b9afc-0",
+        "template--17027746070843__165aed4e-90ed-434d-97ca-616ea4f48f79-1670224069d68b9afc-1"
+      ],
+      "settings": {
+        "columns_desktop": 2,
+        "section_width": "grid",
+        "mobile_swipe": false,
+        "image_ratio": "square",
+        "content_position": "top-center",
+        "text_alignment": "center",
+        "column_spacing": "large",
+        "heading_size": "h2",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "5a04b099-91fc-4439-a3c1-777a83de6e06": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 50,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "d71ad642-b939-4099-982e-5ba29c9abd38": {
+      "type": "multicolumn",
+      "blocks": {
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-0": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>The important thing is to take your time and not get stressed. It's useless to send models out on the runway to cry.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-1": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>What you wear is how you present yourself to the world, especially today when human contacts go so fast.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-2": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>We look our best in subdued colors, sophisticated cuts, and a general air of sleek understatement.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-3": {
+          "type": "column",
+          "settings": {
+            "image": "",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>We have got to change our ethics and our financial system and our whole way of understanding the world.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-0",
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-1",
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-2",
+        "template--17027746070843__d71ad642-b939-4099-982e-5ba29c9abd38-167022714991e3fbd3-3"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "d2a286b7-0628-40c1-8d30-9d3f9b892a80": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 20,
+        "spacer_desktop": 50,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "1551d615-db81-45f5-8df8-5e86b2e60089": {
+      "type": "before-after-image",
+      "blocks": {
+        "template--17027746070843__1551d615-db81-45f5-8df8-5e86b2e60089-1670222752bb070754-0": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "Before Moisturizer",
+            "heading_size": "h3",
+            "heading_position": "top",
+            "text_color": "#1e4e1c",
+            "overlay_color": "#df3535",
+            "overlay_opacity": 0
+          }
+        },
+        "template--17027746070843__1551d615-db81-45f5-8df8-5e86b2e60089-1670222752bb070754-1": {
+          "type": "image",
+          "settings": {
+            "image": "",
+            "title": "After Moisturizer",
+            "heading_size": "h3",
+            "heading_position": "bottom",
+            "text_color": "#1e4e1c",
+            "overlay_color": "#000000",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--17027746070843__1551d615-db81-45f5-8df8-5e86b2e60089-1670222752bb070754-0",
+        "template--17027746070843__1551d615-db81-45f5-8df8-5e86b2e60089-1670222752bb070754-1"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-500",
+        "full_width": false,
+        "initial_position": 50,
+        "line_color": "#ffffff",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "6c18904d-1867-4720-9268-e4d9022a47b3": {
+      "type": "featured-product",
+      "blocks": {
+        "80812df5-69de-4ce2-a2b6-0aa42740c3a8": {
+          "type": "sku",
+          "settings": {
+            "sku_style": "style_vendor"
+          }
+        },
+        "template--17027746070843__6c18904d-1867-4720-9268-e4d9022a47b3-1670230011a33445a1-0": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": true
+          }
+        },
+        "c594d4ae-abbb-4e41-9b0c-15ec696f6b61": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "template--17027746070843__6c18904d-1867-4720-9268-e4d9022a47b3-1670230011a33445a1-1": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "color_picker": true,
+            "variant_is_disabled": true,
+            "sizing_guide_text": "Sizing guide",
+            "sizing_guide_icon": "ruler",
+            "sizing_guide_page": ""
+          }
+        },
+        "template--17027746070843__6c18904d-1867-4720-9268-e4d9022a47b3-1670230011a33445a1-2": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_quantity_selector": true,
+            "show_dynamic_checkout": true
+          }
+        },
+        "e7b012e3-9e17-45ab-9c27-05f93fa62e76": {
+          "type": "product_link",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "80812df5-69de-4ce2-a2b6-0aa42740c3a8",
+        "template--17027746070843__6c18904d-1867-4720-9268-e4d9022a47b3-1670230011a33445a1-0",
+        "c594d4ae-abbb-4e41-9b0c-15ec696f6b61",
+        "template--17027746070843__6c18904d-1867-4720-9268-e4d9022a47b3-1670230011a33445a1-1",
+        "template--17027746070843__6c18904d-1867-4720-9268-e4d9022a47b3-1670230011a33445a1-2",
+        "e7b012e3-9e17-45ab-9c27-05f93fa62e76"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_left": false,
+        "description": "",
+        "full_width": false,
+        "product": "hydrating-gel-cream-blush",
+        "show_taxes_included": true,
+        "enable_sticky_info": true,
+        "media_aspect_ratio": "square",
+        "lightbox": true,
+        "enable_video_looping": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "d5ca85ed-adca-4569-b6cc-ff3bc7f8f0a4": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 80,
+        "spacer_desktop": 180,
+        "border_separator": true,
+        "border_separator_full": false
+      }
+    },
+    "c840762c-cc64-4e5a-96bb-013559dc749d": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Latest News",
+        "heading_left": true,
+        "description": "<p>Add a short description for your brand news<\/p>",
+        "full_width": false,
+        "blog": "news",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "mobile_swipe": true,
+        "image_ratio": "adapt",
+        "show_date": true,
+        "show_excerpt": true,
+        "show_view_all": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "fad87f46-62ee-4f4a-9dbc-48c9523be520": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 0,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "16360330-c956-4128-9a71-6e3d0cec5020": {
+      "type": "image-with-text",
+      "blocks": {
+        "023e01ec-ff8b-4fc3-9151-2d8327b85797": {
+          "type": "heading",
+          "settings": {
+            "text": "Frequently Asked Questions",
+            "heading_size": "h3"
+          }
+        },
+        "c991ce10-57aa-4071-bfa7-9224a67821ce": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "How do I choose the right products for my skin?",
+            "open": true,
+            "content": "<p>Your skin deserves a routine as unique as you are. That’s why we’re always chatting with skin care experts and looking into the latest products, treatments and tips to help you create your perfect skin care routine. Whether your skin is sensitive, dry or acne-prone, you’ll find tips for all your concerns.<\/p>",
+            "page": ""
+          }
+        },
+        "d99a5bcc-d243-44d2-b422-8b08b0e42260": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Are the products tested on animals?",
+            "open": false,
+            "content": "<p>Our formulas are vegan, contain no ingredients of animal origin and comply with European regulations which prohibit animal testing.<\/p>",
+            "page": ""
+          }
+        },
+        "dbca8511-ac21-4695-acad-b67bcec70b42": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Can I receive samples?",
+            "open": false,
+            "content": "<p>We do not send samples alone, without placing a prior order. We also offer our products in travel size, ideal for testing their formula over several weeks before buying a larger size!<\/p>",
+            "page": ""
+          }
+        },
+        "a95b593b-7a0d-412f-82ae-5551d503e1c0": {
+          "type": "space",
+          "settings": {
+            "height": 15
+          }
+        }
+      },
+      "block_order": [
+        "023e01ec-ff8b-4fc3-9151-2d8327b85797",
+        "c991ce10-57aa-4071-bfa7-9224a67821ce",
+        "d99a5bcc-d243-44d2-b422-8b08b0e42260",
+        "dbca8511-ac21-4695-acad-b67bcec70b42",
+        "a95b593b-7a0d-412f-82ae-5551d503e1c0"
+      ],
+      "settings": {
+        "image": "",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "height": "large",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "text_first",
+        "content_position": "text-left",
+        "color_bg": "#1e4e1c",
+        "color_text": "#fffce2",
+        "color_border": "#e9e5c1",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "847e4397-8b46-49de-88bf-00e3ff372423",
+    "3f3eaabd-a609-4aaf-be3a-d87c7a7c5e77",
+    "a6e345fa-3032-4566-90a7-28aefe18ee18",
+    "4c1aeff4-8f0d-4c36-b255-c9892e33d331",
+    "9dd376eb-f2bf-4df1-8ac8-5e268ff6683e",
+    "54b05a01-8f42-4b56-9141-8e4a43ef6fbd",
+    "9d295610-2e36-4665-8e6a-1cbaac87caa9",
+    "19629d8d-8042-4b72-b0da-a72c227575a1",
+    "33da2cec-ab2f-45f1-94e7-66fc543632ba",
+    "6804e82d-1fdf-4af4-8e56-a20dcdbc132b",
+    "b1f92b44-243e-441c-9d9e-20acc7185a90",
+    "9a2f0bae-b4cb-4eb7-aab2-26bbf2a11f10",
+    "165aed4e-90ed-434d-97ca-616ea4f48f79",
+    "5a04b099-91fc-4439-a3c1-777a83de6e06",
+    "d71ad642-b939-4099-982e-5ba29c9abd38",
+    "d2a286b7-0628-40c1-8d30-9d3f9b892a80",
+    "1551d615-db81-45f5-8df8-5e86b2e60089",
+    "6c18904d-1867-4720-9268-e4d9022a47b3",
+    "d5ca85ed-adca-4569-b6cc-ff3bc7f8f0a4",
+    "c840762c-cc64-4e5a-96bb-013559dc749d",
+    "fad87f46-62ee-4f4a-9dbc-48c9523be520",
+    "16360330-c956-4128-9a71-6e3d0cec5020"
+  ]
+}

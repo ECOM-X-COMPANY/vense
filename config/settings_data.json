@@ -1,0 +1,1042 @@
+{
+  "current": {
+    "heading_font": "archivo_narrow_n6",
+    "navigation_uppercase": true,
+    "product_title_uppercase": true,
+    "button_uppercase": true,
+    "color_body_bg": "#f9f6ee",
+    "color_accent": "#151515",
+    "outline_button_label": "#151515",
+    "color_dots": "#151515",
+    "section_spacing_desktop": 90,
+    "social_facebook_link": "https:\/\/www.facebook.com\/people\/Wildfood_for_pets\/100088607124174\/?mibextid=LQQJ4d",
+    "social_instagram_link": "https:\/\/www.instagram.com\/wildfood_for_pets",
+    "product_aspect_ratio": "adapt",
+    "products_hover_images_count": 3,
+    "enable_quick_add": true,
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "03563edc-5c33-49b7-b848-878d67e0c6b4": {
+            "type": "text",
+            "settings": {
+              "icon": "ruler",
+              "text": "Add campaign text here.",
+              "link": ""
+            }
+          },
+          "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6": {
+            "type": "text",
+            "settings": {
+              "icon": "ruler",
+              "text": "Add campaign text here.",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "03563edc-5c33-49b7-b848-878d67e0c6b4",
+          "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6"
+        ],
+        "settings": {
+          "announcement_bar": true,
+          "announcement_bar_homepage_only": false,
+          "direction": "left",
+          "speed": "20s"
+        }
+      },
+      "header": {
+        "type": "header",
+        "blocks": {
+          "c947d47d-abab-4f58-b89e-58ad729f6986": {
+            "type": "megamenu",
+            "settings": {
+              "position": "2",
+              "promo_1_heading": "Promotion heading",
+              "promo_1_link_label": "Shop",
+              "promo_1_link": "",
+              "promo_2_heading": "Promotion heading",
+              "promo_2_link_label": "Shop",
+              "promo_2_link": ""
+            }
+          }
+        },
+        "block_order": [
+          "c947d47d-abab-4f58-b89e-58ad729f6986"
+        ],
+        "settings": {
+          "logo_height_range": 24,
+          "logo_height_range_mobile": 24,
+          "style": "style3",
+          "header_shadow": "header--shadow-small",
+          "menu": "main-menu",
+          "transparent_header": true,
+          "show_language_switcher": true,
+          "show_currency_switcher": true,
+          "mobile_secondary_menu": "",
+          "mobile_promo_heading": "Alexandre Vauthier A\/W 22 Haute Couture",
+          "mobile_promo_link_label": "Shop",
+          "mobile_promo_link": "shopify:\/\/collections\/all"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "e9bfbc11-abdf-4291-b821-b57f5c59d29b": {
+            "type": "text",
+            "settings": {
+              "column_size": "large",
+              "title": "",
+              "text": "",
+              "text_size": "medium",
+              "button_text": "",
+              "button_link": "",
+              "show_social_links": true
+            }
+          },
+          "919dfa59-648f-4330-afcc-8bb0c24dab8f": {
+            "type": "text",
+            "settings": {
+              "column_size": "large",
+              "title": "",
+              "text": "<p>Add your store address here<\/p>",
+              "text_size": "large",
+              "button_text": "Add button link",
+              "button_link": "",
+              "show_social_links": false
+            }
+          },
+          "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+            "type": "menu",
+            "settings": {
+              "column_size": "medium",
+              "title": "COMPANY",
+              "menu": ""
+            }
+          },
+          "00a364e5-af4e-4073-871b-4d533bd4da06": {
+            "type": "menu",
+            "settings": {
+              "column_size": "medium",
+              "title": "RESOURCES",
+              "menu": ""
+            }
+          },
+          "a09a8a35-bedc-4119-aa04-3ce886faba9d": {
+            "type": "menu",
+            "settings": {
+              "column_size": "medium",
+              "title": "SUPPORT",
+              "menu": ""
+            }
+          },
+          "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2": {
+            "type": "signup",
+            "settings": {
+              "column_size": "medium",
+              "title": "NEWSLETTER",
+              "text": "<p>Add a short description for this newsletter<\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "e9bfbc11-abdf-4291-b821-b57f5c59d29b",
+          "919dfa59-648f-4330-afcc-8bb0c24dab8f",
+          "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+          "00a364e5-af4e-4073-871b-4d533bd4da06",
+          "a09a8a35-bedc-4119-aa04-3ce886faba9d",
+          "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2"
+        ],
+        "settings": {
+          "full_width": true,
+          "copyright_text": "All rights reserved.",
+          "show_language_switcher": true,
+          "show_currency_switcher": true,
+          "show_payment_icons": true
+        }
+      }
+    },
+    "content_for_index": [
+
+    ]
+  },
+  "presets": {
+    "Default": {
+      "heading_font": "archivo_narrow_n6",
+      "navigation_uppercase": true,
+      "product_title_uppercase": true,
+      "button_uppercase": true,
+      "color_accent": "#151515",
+      "outline_button_label": "#151515",
+      "color_dots": "#151515",
+      "section_spacing_desktop": 90,
+      "product_aspect_ratio": "adapt",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "03563edc-5c33-49b7-b848-878d67e0c6b4": {
+              "type": "text",
+              "settings": {
+                "icon": "ruler",
+                "text": "Add campaign text here.",
+                "link": ""
+              }
+            },
+            "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6": {
+              "type": "text",
+              "settings": {
+                "icon": "ruler",
+                "text": "Add campaign text here.",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "03563edc-5c33-49b7-b848-878d67e0c6b4",
+            "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6"
+          ],
+          "settings": {
+            "announcement_bar": true,
+            "announcement_bar_homepage_only": false,
+            "direction": "left",
+            "speed": "20s"
+          }
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "c947d47d-abab-4f58-b89e-58ad729f6986": {
+              "type": "megamenu",
+              "settings": {
+                "position": "2",
+                "promo_1_heading": "Promotion heading",
+                "promo_1_link_label": "Shop",
+                "promo_1_link": "",
+                "promo_2_heading": "Promotion heading",
+                "promo_2_link_label": "Shop",
+                "promo_2_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "c947d47d-abab-4f58-b89e-58ad729f6986"
+          ],
+          "settings": {
+            "logo_height_range": 24,
+            "logo_height_range_mobile": 24,
+            "style": "style3",
+            "header_shadow": "header--shadow-small",
+            "menu": "main-menu",
+            "transparent_header": true,
+            "mobile_secondary_menu": "",
+            "mobile_promo_heading": "Alexandre Vauthier A\/W 22 Haute Couture",
+            "mobile_promo_link_label": "Shop",
+            "mobile_promo_link": "shopify:\/\/collections\/all",
+            "show_language_switcher": true,
+            "show_currency_switcher": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b": {
+              "type": "text",
+              "settings": {
+                "column_size": "large",
+                "title": "",
+                "text": "",
+                "text_size": "medium",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": true
+              }
+            },
+            "919dfa59-648f-4330-afcc-8bb0c24dab8f": {
+              "type": "text",
+              "settings": {
+                "column_size": "large",
+                "title": "",
+                "text": "<p>Add your store address here<\/p>",
+                "text_size": "large",
+                "button_text": "Add button link",
+                "button_link": "",
+                "show_social_links": false
+              }
+            },
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "COMPANY",
+                "menu": ""
+              }
+            },
+            "00a364e5-af4e-4073-871b-4d533bd4da06": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "RESOURCES",
+                "menu": ""
+              }
+            },
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "SUPPORT",
+                "menu": ""
+              }
+            },
+            "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2": {
+              "type": "signup",
+              "settings": {
+                "column_size": "medium",
+                "title": "NEWSLETTER",
+                "text": "<p>Add a short description for this newsletter<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b",
+            "919dfa59-648f-4330-afcc-8bb0c24dab8f",
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+            "00a364e5-af4e-4073-871b-4d533bd4da06",
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d",
+            "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2"
+          ],
+          "settings": {
+            "full_width": true,
+            "copyright_text": "All rights reserved.",
+            "show_language_switcher": true,
+            "show_currency_switcher": true,
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+
+      ]
+    },
+    "Reinvent": {
+      "heading_font": "hope_sans_n6",
+      "heading_font_scale": 100,
+      "body_font": "twentieth_century_n4",
+      "body_font_scale": 120,
+      "body_font_line_height_scale": 90,
+      "navigation_font_scale": 120,
+      "navigation_uppercase": false,
+      "product_title_font_scale": 110,
+      "product_title_line_height_scale": 80,
+      "product_title_uppercase": false,
+      "button_letter_spacing": 10,
+      "button_uppercase": true,
+      "color_body": "#1e4e1c",
+      "color_accent": "#1e4e1c",
+      "color_border": "#e9e9e9",
+      "color_header_text": "#1e4e1c",
+      "color_header_links": "#1e4e1c",
+      "color_header_links_hover": "#1e4e1c",
+      "color_header_icons": "#1e4e1c",
+      "color_header_border": "#eaeaea",
+      "solid_button_background": "#1e4e1c",
+      "outline_button_label": "#1e4e1c",
+      "color_price": "#1e4e1c",
+      "color_dots": "#151515",
+      "color_inventory_instock": "#3a8437",
+      "color_footer_text": "#1e4e1c",
+      "color_footer_link": "#1e4e1c",
+      "color_footer_link_hover": "#1e4e1c",
+      "color_footer_border": "#1e4e1c",
+      "color_footer_bg": "#e8eee8",
+      "section_spacing_desktop": 90,
+      "button_border_radius": 3,
+      "product_aspect_ratio": "adapt",
+      "products_hover_images_count": 1,
+      "products_hover_dots": false,
+      "enable_quick_view": false,
+      "search_menu": "main-menu",
+      "search_product_collection": "balms",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "03563edc-5c33-49b7-b848-878d67e0c6b4": {
+              "type": "text",
+              "settings": {
+                "icon": "ruler",
+                "text": "Add campaign text here.",
+                "link": ""
+              }
+            },
+            "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6": {
+              "type": "text",
+              "settings": {
+                "icon": "ruler",
+                "text": "Add campaign text here.",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "03563edc-5c33-49b7-b848-878d67e0c6b4",
+            "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6"
+          ],
+          "settings": {
+            "announcement_bar": false,
+            "announcement_bar_homepage_only": false,
+            "direction": "left",
+            "speed": "20s"
+          }
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "c947d47d-abab-4f58-b89e-58ad729f6986": {
+              "type": "megamenu",
+              "settings": {
+                "position": "2",
+                "promo_1_heading": "Promotion heading",
+                "promo_1_link_label": "Shop",
+                "promo_1_link": "",
+                "promo_2_heading": "Promotion heading",
+                "promo_2_link_label": "Shop",
+                "promo_2_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "c947d47d-abab-4f58-b89e-58ad729f6986"
+          ],
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo.png",
+            "logo_height_range": 36,
+            "logo_height_range_mobile": 24,
+            "style": "style4",
+            "header_shadow": "header--shadow-small",
+            "menu": "main-menu",
+            "transparent_header": true,
+            "logo_light": "shopify:\/\/shop_images\/logo-w.png",
+            "show_language_switcher": false,
+            "show_currency_switcher": true,
+            "mobile_secondary_menu": "company",
+            "mobile_promo_heading": "Alexandre Vauthier A\/W 22 Haute Couture",
+            "mobile_promo_link_label": "Shop",
+            "mobile_promo_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "35683700-a4a8-4596-ba5f-8c0314345814": {
+              "type": "signup",
+              "settings": {
+                "column_size": "medium",
+                "title": "NEWSLETTER",
+                "text": "<p>Sign up for our newsletter and receive 10% off your first order!<\/p>"
+              }
+            },
+            "f9e6f4c5-6d79-4c47-9dd0-41a187f487ed": {
+              "type": "text",
+              "settings": {
+                "column_size": "small",
+                "title": "",
+                "text": "<p><\/p>",
+                "text_size": "medium",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": true
+              }
+            },
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+              "type": "menu",
+              "settings": {
+                "column_size": "small",
+                "title": "COMPANY",
+                "menu": "company"
+              }
+            },
+            "00a364e5-af4e-4073-871b-4d533bd4da06": {
+              "type": "menu",
+              "settings": {
+                "column_size": "small",
+                "title": "RESOURCES",
+                "menu": "resources"
+              }
+            },
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d": {
+              "type": "menu",
+              "settings": {
+                "column_size": "small",
+                "title": "SUPPORT",
+                "menu": "support"
+              }
+            }
+          },
+          "block_order": [
+            "35683700-a4a8-4596-ba5f-8c0314345814",
+            "f9e6f4c5-6d79-4c47-9dd0-41a187f487ed",
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+            "00a364e5-af4e-4073-871b-4d533bd4da06",
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d"
+          ],
+          "settings": {
+            "full_width": false,
+            "copyright_text": "All rights reserved.",
+            "show_language_switcher": true,
+            "show_currency_switcher": true,
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+
+      ]
+    },
+    "Sunshine": {
+      "heading_font": "neue_swift_n6",
+      "body_font": "archivo_n4",
+      "product_title_uppercase": false,
+      "color_body": "#363636",
+      "color_accent": "#151515",
+      "color_announcement_bar_bg": "#626262",
+      "outline_button_label": "#151515",
+      "color_footer_border": "#d9d9d9",
+      "color_footer_bg": "#572ece",
+      "section_spacing_desktop": 90,
+      "button_border_radius": 50,
+      "product_content_alignment": "center",
+      "product_aspect_ratio": "adapt",
+      "show_products_vendor": false,
+      "color_swatches": "White: #f3f3f3",
+      "search_menu": "popular-searches",
+      "search_product_heading": "Trending Products",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "e27f3820-429c-4074-8f4e-80e9c2fd6a01": {
+              "type": "text",
+              "settings": {
+                "icon": "none",
+                "text": "Free delivery from £30 and free returns",
+                "link": ""
+              }
+            },
+            "39385368-40fe-4e0e-b3fd-50677f0426dc": {
+              "type": "text",
+              "settings": {
+                "icon": "none",
+                "text": "Returns extended to 60 days",
+                "link": ""
+              }
+            },
+            "137049d9-5696-4f14-8530-d716309ab33b": {
+              "type": "text",
+              "settings": {
+                "icon": "none",
+                "text": "Life-time Guarantee",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "e27f3820-429c-4074-8f4e-80e9c2fd6a01",
+            "39385368-40fe-4e0e-b3fd-50677f0426dc",
+            "137049d9-5696-4f14-8530-d716309ab33b"
+          ],
+          "settings": {
+            "announcement_bar": true,
+            "announcement_bar_homepage_only": false,
+            "direction": "left",
+            "speed": "20s"
+          }
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "c947d47d-abab-4f58-b89e-58ad729f6986": {
+              "type": "megamenu",
+              "settings": {
+                "position": "2",
+                "promo_1_image": "shopify:\/\/shop_images\/promotion2.jpg",
+                "promo_1_heading": "Luxury Bras & Undies",
+                "promo_1_link_label": "Shop now",
+                "promo_1_link": "shopify:\/\/collections\/all",
+                "promo_2_heading": "Promotion heading",
+                "promo_2_link_label": "Shop",
+                "promo_2_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "c947d47d-abab-4f58-b89e-58ad729f6986"
+          ],
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo-2x.png",
+            "logo_height_range": 34,
+            "logo_height_range_mobile": 34,
+            "style": "style1",
+            "header_shadow": "header--shadow-medium",
+            "menu": "main-menu",
+            "transparent_header": false,
+            "mobile_secondary_menu": "company",
+            "mobile_promo_image": "shopify:\/\/shop_images\/promotion2.jpg",
+            "mobile_promo_heading": "LUXURY BRAS & UNDIES",
+            "mobile_promo_link_label": "Shop",
+            "mobile_promo_link": "shopify:\/\/collections\/all",
+            "show_language_switcher": true,
+            "show_currency_switcher": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b": {
+              "type": "text",
+              "settings": {
+                "column_size": "large",
+                "title": "",
+                "image": "shopify:\/\/shop_images\/footer-logo.png",
+                "text": "<p>Beauty is perfect in its imperfections, so you just have to go with the imperfections. Money is the most corrosive aspect of life today because it means that all attention to detail is forgotten. <\/p>",
+                "text_size": "small",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": true
+              }
+            },
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+              "type": "menu",
+              "settings": {
+                "column_size": "small",
+                "title": "COMPANY",
+                "menu": "company"
+              }
+            },
+            "00a364e5-af4e-4073-871b-4d533bd4da06": {
+              "type": "menu",
+              "settings": {
+                "column_size": "small",
+                "title": "RESOURCES",
+                "menu": "resources"
+              }
+            },
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d": {
+              "type": "menu",
+              "settings": {
+                "column_size": "small",
+                "title": "SUPPORT",
+                "menu": "support"
+              }
+            }
+          },
+          "block_order": [
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b",
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+            "00a364e5-af4e-4073-871b-4d533bd4da06",
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d"
+          ],
+          "settings": {
+            "full_width": true,
+            "copyright_text": "All rights reserved.",
+            "show_language_switcher": true,
+            "show_currency_switcher": true,
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+
+      ]
+    },
+    "Mono": {
+      "heading_font": "basic_commercial_n7",
+      "body_font": "archivo_n4",
+      "navigation_uppercase": true,
+      "product_title_uppercase": true,
+      "color_body_bg": "#ececec",
+      "color_body": "#151515",
+      "color_accent": "#846144",
+      "color_border": "#dad4d0",
+      "color_input_border": "#c4c1bf",
+      "color_announcement_bar_bg": "#a47d5c",
+      "color_header_bg": "#2b2825",
+      "color_header_text": "#dad4d0",
+      "color_header_links": "#dad4d0",
+      "color_header_links_hover": "#a47d5c",
+      "color_header_icons": "#dad4d0",
+      "color_header_border": "#44423f",
+      "solid_button_background": "#a47d5c",
+      "solid_button_label": "#ffffff",
+      "outline_button_label": "#a47d5c",
+      "color_dots": "#846144",
+      "color_footer_text": "#c4bfbb",
+      "color_footer_link": "#dad4d0",
+      "color_footer_link_hover": "#a47d5c",
+      "color_footer_bg": "#2a2825",
+      "section_spacing_desktop": 90,
+      "button_border_radius": 6,
+      "product_content_alignment": "center",
+      "product_aspect_ratio": "adapt",
+      "enable_quick_view": false,
+      "search_menu": "company",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "e27f3820-429c-4074-8f4e-80e9c2fd6a01": {
+              "type": "text",
+              "settings": {
+                "icon": "plane",
+                "text": "Free delivery from £30 and free returns",
+                "link": ""
+              }
+            },
+            "39385368-40fe-4e0e-b3fd-50677f0426dc": {
+              "type": "text",
+              "settings": {
+                "icon": "shirt",
+                "text": "Returns extended to 60 days",
+                "link": ""
+              }
+            },
+            "a7fe4519-f983-4691-b129-4418479d3f61": {
+              "type": "text",
+              "settings": {
+                "icon": "ruler",
+                "text": "Life-time Guarantee",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "e27f3820-429c-4074-8f4e-80e9c2fd6a01",
+            "39385368-40fe-4e0e-b3fd-50677f0426dc",
+            "a7fe4519-f983-4691-b129-4418479d3f61"
+          ],
+          "settings": {
+            "announcement_bar": true,
+            "announcement_bar_homepage_only": false,
+            "direction": "left",
+            "speed": "20s"
+          }
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "0b220934-05c8-49f3-81c9-17468e976ff1": {
+              "type": "megamenu",
+              "settings": {
+                "position": "1",
+                "promo_1_heading": "Promotion heading",
+                "promo_1_link_label": "Shop",
+                "promo_1_link": "",
+                "promo_2_heading": "Promotion heading",
+                "promo_2_link_label": "Shop",
+                "promo_2_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "0b220934-05c8-49f3-81c9-17468e976ff1"
+          ],
+          "settings": {
+            "logo": "shopify:\/\/shop_images\/logo.png",
+            "logo_height_range": 24,
+            "logo_height_range_mobile": 24,
+            "style": "style2",
+            "header_shadow": "header--shadow-small",
+            "menu": "main-menu",
+            "transparent_header": false,
+            "mobile_secondary_menu": "",
+            "mobile_promo_image": "shopify:\/\/shop_images\/img21.jpg",
+            "mobile_promo_heading": "Luxury Wallets",
+            "mobile_promo_link_label": "Shop",
+            "mobile_promo_link": "shopify:\/\/collections\/all",
+            "show_language_switcher": true,
+            "show_currency_switcher": true
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b": {
+              "type": "text",
+              "settings": {
+                "column_size": "medium",
+                "title": "",
+                "image": "shopify:\/\/shop_images\/footer-logo.png",
+                "text": "<p>I am not interested in the past, except as the road to the future. I get ideas about what's essential when packing my suitcase.<\/p>",
+                "text_size": "small",
+                "button_text": "Our Story",
+                "button_link": "shopify:\/\/pages\/about",
+                "show_social_links": false
+              }
+            },
+            "74a99fff-56c6-45f4-b511-75e870dd695b": {
+              "type": "text",
+              "settings": {
+                "column_size": "medium",
+                "title": "",
+                "text": "",
+                "text_size": "medium",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": false
+              }
+            },
+            "f7969615-55b7-4df4-bcd9-bf532f650a19": {
+              "type": "text",
+              "settings": {
+                "column_size": "large",
+                "title": "GET IN TOUCH",
+                "text": "<p>8212 E. Glen Creek Street Orchard Park, NY 14127, <br\/>United States of America +1 310 499 7700<\/p>",
+                "text_size": "large",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": true
+              }
+            },
+            "3520df62-a6d4-41cd-a83e-c31d69d631db": {
+              "type": "text",
+              "settings": {
+                "column_size": "medium",
+                "title": "",
+                "text": "",
+                "text_size": "medium",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": false
+              }
+            },
+            "c5b08a2e-9b54-4a21-8a1a-f492ce74aa01": {
+              "type": "text",
+              "settings": {
+                "column_size": "medium",
+                "title": "",
+                "text": "",
+                "text_size": "medium",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": false
+              }
+            },
+            "e4994569-fd9a-4e39-8b2f-200d269ea78a": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "COMPANY",
+                "menu": "company"
+              }
+            },
+            "e459d221-08a5-418b-b9a3-52722c4046c2": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "RESOURCES",
+                "menu": "resources"
+              }
+            }
+          },
+          "block_order": [
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b",
+            "74a99fff-56c6-45f4-b511-75e870dd695b",
+            "f7969615-55b7-4df4-bcd9-bf532f650a19",
+            "3520df62-a6d4-41cd-a83e-c31d69d631db",
+            "c5b08a2e-9b54-4a21-8a1a-f492ce74aa01",
+            "e4994569-fd9a-4e39-8b2f-200d269ea78a",
+            "e459d221-08a5-418b-b9a3-52722c4046c2"
+          ],
+          "settings": {
+            "full_width": false,
+            "copyright_text": "All rights reserved.",
+            "show_language_switcher": true,
+            "show_currency_switcher": true,
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+
+      ]
+    },
+    "Glamour": {
+      "heading_font": "chong_modern_n4",
+      "heading_font_scale": 110,
+      "body_font": "news_gothic_no_2_n4",
+      "navigation_uppercase": true,
+      "product_title_uppercase": true,
+      "button_uppercase": true,
+      "color_body": "#4e423e",
+      "color_accent": "#3d332f",
+      "color_border": "#e9e3e0",
+      "color_header_bg": "#384135",
+      "color_header_text": "#ffffff",
+      "color_header_links": "#ffffff",
+      "color_header_links_hover": "#ffffff",
+      "color_header_icons": "#ffffff",
+      "color_header_border": "#4e584a",
+      "solid_button_background": "#c95137",
+      "outline_button_label": "#35302e",
+      "color_price": "#35302e",
+      "color_dots": "#35302e",
+      "color_footer_border": "#59504c",
+      "color_footer_bg": "#3b3330",
+      "section_spacing_mobile": 30,
+      "section_spacing_desktop": 40,
+      "button_border_radius": 3,
+      "product_aspect_ratio": "adapt",
+      "products_hover_images_count": 1,
+      "products_hover_dots": false,
+      "search_menu": "popular-searches",
+      "search_product_collection": "rings",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "03563edc-5c33-49b7-b848-878d67e0c6b4": {
+              "type": "text",
+              "settings": {
+                "icon": "ruler",
+                "text": "Add campaign text here.",
+                "link": ""
+              }
+            },
+            "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6": {
+              "type": "text",
+              "settings": {
+                "icon": "ruler",
+                "text": "Add campaign text here.",
+                "link": ""
+              }
+            }
+          },
+          "block_order": [
+            "03563edc-5c33-49b7-b848-878d67e0c6b4",
+            "b122c7d9-bfb2-4e2f-9044-8b7d1b325ec6"
+          ],
+          "settings": {
+            "announcement_bar": true,
+            "announcement_bar_homepage_only": false,
+            "direction": "left",
+            "speed": "20s"
+          }
+        },
+        "header": {
+          "type": "header",
+          "blocks": {
+            "c947d47d-abab-4f58-b89e-58ad729f6986": {
+              "type": "megamenu",
+              "settings": {
+                "position": "2",
+                "promo_1_heading": "Promotion heading",
+                "promo_1_link_label": "Shop",
+                "promo_1_link": "",
+                "promo_2_heading": "Promotion heading",
+                "promo_2_link_label": "Shop",
+                "promo_2_link": ""
+              }
+            }
+          },
+          "block_order": [
+            "c947d47d-abab-4f58-b89e-58ad729f6986"
+          ],
+          "settings": {
+            "logo_height_range": 24,
+            "logo_height_range_mobile": 24,
+            "style": "style3",
+            "header_shadow": "header--shadow-small",
+            "menu": "main-menu",
+            "transparent_header": true,
+            "show_language_switcher": true,
+            "show_currency_switcher": true,
+            "mobile_secondary_menu": "",
+            "mobile_promo_heading": "Alexandre Vauthier A\/W 22 Haute Couture",
+            "mobile_promo_link_label": "Shop",
+            "mobile_promo_link": "shopify:\/\/collections\/all"
+          }
+        },
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b": {
+              "type": "text",
+              "settings": {
+                "column_size": "large",
+                "title": "",
+                "text": "",
+                "text_size": "medium",
+                "button_text": "",
+                "button_link": "",
+                "show_social_links": true
+              }
+            },
+            "919dfa59-648f-4330-afcc-8bb0c24dab8f": {
+              "type": "text",
+              "settings": {
+                "column_size": "large",
+                "title": "",
+                "text": "<p>Add your store address here<\/p>",
+                "text_size": "large",
+                "button_text": "Add button link",
+                "button_link": "",
+                "show_social_links": false
+              }
+            },
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "COMPANY",
+                "menu": ""
+              }
+            },
+            "00a364e5-af4e-4073-871b-4d533bd4da06": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "RESOURCES",
+                "menu": ""
+              }
+            },
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d": {
+              "type": "menu",
+              "settings": {
+                "column_size": "medium",
+                "title": "SUPPORT",
+                "menu": ""
+              }
+            },
+            "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2": {
+              "type": "signup",
+              "settings": {
+                "column_size": "medium",
+                "title": "NEWSLETTER",
+                "text": "<p>Add a short description for this newsletter<\/p>"
+              }
+            }
+          },
+          "block_order": [
+            "e9bfbc11-abdf-4291-b821-b57f5c59d29b",
+            "919dfa59-648f-4330-afcc-8bb0c24dab8f",
+            "401e3886-6cb7-4742-8fda-45a0d97a26a3",
+            "00a364e5-af4e-4073-871b-4d533bd4da06",
+            "a09a8a35-bedc-4119-aa04-3ce886faba9d",
+            "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2"
+          ],
+          "settings": {
+            "full_width": true,
+            "copyright_text": "All rights reserved.",
+            "show_language_switcher": true,
+            "show_currency_switcher": true,
+            "show_payment_icons": true
+          }
+        }
+      },
+      "content_for_index": [
+
+      ]
+    }
+  }
+}

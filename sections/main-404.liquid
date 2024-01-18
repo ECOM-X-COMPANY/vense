@@ -1,0 +1,10 @@
+<div class="row">
+	<div class="small-12 columns">
+		<div class="not-found">
+			<h1>{{ 'sections.404.not_found' | t }}</h1>
+			<p>{{ 'sections.404.not_found_description' | t }}</p>
+			<a href="{{ routes.root_url }}" class="button accent2"><span>{{ 'general.continue_shopping' | t }}</span></a>
+		</div>
+	</div>
+</div>
+{{ '404.css' | asset_url | stylesheet_tag }}

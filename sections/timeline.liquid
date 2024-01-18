@@ -1,0 +1,226 @@
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_heading_left = section.settings.heading_left
+	assign section_description = section.settings.description
+	assign full_width = section.settings.full_width
+	assign text_alignment = section.settings.text_alignment
+	assign show_progress_bar = section.settings.show_progress_bar
+
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign color_bg_box = section.settings.color_bg_box
+	assign color_text_box = section.settings.color_text_box
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+-%}
+<div class="timeline section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }}; --bg-body-rgb: {{ color_bg.rgb | replace: ' ' , ',' }}; --color-text:{{ color_text }};--color-text-rgb: {{ color_text.rgb | replace: ' ' , ',' }}; --color-bg-box:{{ color_bg_box }};--color-text-box:{{ color_text_box }};">
+	<div class="row{% if full_width %} full-width-row{% endif %}">
+		<div class="small-12 columns">
+			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
+			<time-line class="timeline--scroll text-{{ text_alignment }}" data-id="{{ section.id }}">
+				<scroll-shadow>
+					<div class="timeline--scroll-container">
+						<div class="timeline--scroll-inner">
+							{%- for block in section.blocks -%}
+								<div class="timeline--slide {% if block.settings.image != blank -%}timeline--slide--has-image{%- endif -%}">
+									{%- if block.settings.image != blank -%}
+										<figure class="timeline-image">
+											{%- render 'responsive-image', image: block.settings.image, sizes: '0x380,0x760' -%}
+										</figure>
+									{%- endif -%}
+									<div class="timeline-content">
+										<div class="timeline-content--inner">
+											{%- if block.settings.heading != blank -%}
+												<h5>{{ block.settings.heading }}</h5>
+											{%- endif -%}
+											{%- if block.settings.text != blank -%}
+												<div class="rte">
+													{{ block.settings.text }}
+												</div>
+											{%- endif -%}
+											{% if block.settings.link_label != blank %}
+												<a class="text-button" href="{{ block.settings.link }}"><span>{{ block.settings.link_label }}</span></a>
+											{% endif %}
+										</div>
+									</div>
+								</div>
+							{%- endfor -%}
+						</div>
+					</div>
+				</scroll-shadow>
+				{%- if show_progress_bar -%}
+				<div class="timeline--scroll-pagination" style="--box-count: {{ section.blocks.size }}">
+					<ul>
+						{%- for block in section.blocks -%}
+							<li data-flex="1"><div><span class="timeline--dot"></span><span class="timeline--label">{{ block.settings.subheading }}</span></div></li>
+						{%- endfor -%}
+					</ul>
+					<div class="timeline--scroll-progress"><span id="time-line-progress-{{ section.id }}"></span></div>
+				</div>
+				{%- endif -%}
+			</time-line>
+		</div>
+	</div>
+</div>
+{{- 'timeline.css' | asset_url | stylesheet_tag -}}
+<script src="{{ 'timeline.js' | asset_url }}" defer></script>
+{% schema %}
+  {
+    "name": "Timeline",
+    "settings": [
+			{
+        "type": "text",
+        "id": "heading",
+        "label": "Heading",
+        "default": "Timeline"
+      },
+			{
+				"type": "checkbox",
+				"id": "heading_left",
+				"default": false,
+				"label": "Left align heading"
+			},
+      {
+        "type": "richtext",
+        "id": "description",
+        "label": "Description",
+        "default": "<p>Add a short description for this section</p>"
+      },
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": true
+			},
+			{
+	      "type": "select",
+	      "id": "text_alignment",
+	      "options": [
+	        {
+	          "value": "left",
+	          "label": "Left"
+	        },
+	        {
+	          "value": "center",
+	          "label": "Center"
+	        },
+	        {
+	          "value": "right",
+	          "label": "Right"
+	        }
+	      ],
+	      "default": "left",
+	      "label": "Content alignment"
+	    },
+			{
+				"type": "checkbox",
+				"id": "show_progress_bar",
+				"label": "Show progress bar",
+				"default": true
+			},
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#ffffff"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+        "type": "color",
+        "id": "color_bg_box",
+        "label": "Box background",
+        "default": "#ffffff"
+      },
+			{
+        "type": "color",
+        "id": "color_text_box",
+        "label": "Box text",
+        "default": "#151515"
+      },
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "column",
+        "name": "Column",
+        "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					},
+					{
+						"type": "text",
+						"id": "subheading",
+						"default": "Label",
+						"label": "Label",
+						"info": "Shows at the timeline bar."
+					},
+					{
+						"type": "text",
+						"id": "heading",
+						"default": "Column",
+						"label": "Heading"
+					},
+					{
+						"type": "richtext",
+						"id": "text",
+						"default": "<p>Pair text with an image to focus on your timeline event.</p>",
+						"label": "Description"
+					},
+	        {
+	          "type": "text",
+	          "id": "link_label",
+	          "label": "Link label"
+	        },
+	        {
+	          "type": "url",
+	          "id": "link",
+	          "label": "Link"
+	        }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Timeline",
+				"blocks": [
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        },
+	        {
+	          "type": "column"
+	        }
+	      ]
+      }
+    ]
+  }
+{% endschema %}

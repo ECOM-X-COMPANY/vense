@@ -1,0 +1,270 @@
+{%- liquid
+	assign desktop_height = section.settings.desktop_height
+	assign mobile_height = section.settings.mobile_height
+	assign full_width = section.settings.full_width
+	assign content_position = section.settings.content_position
+	assign heading_size = section.settings.heading_size
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign color_text = section.settings.color_text
+	assign overlay_color = section.settings.overlay_color
+	assign overlay_opacity = section.settings.overlay_opacity
+
+	case mobile_height
+		when 'mobile-height-350'
+			assign mobile_image_height = 350
+		when 'mobile-height-400'
+			assign mobile_image_height = 400
+		when 'mobile-height-450'
+			assign mobile_image_height = 450
+		when 'mobile-height-500'
+			assign mobile_image_height = 500
+		else
+			assign mobile_image_height = 500
+	endcase
+-%}
+<div class="row{% if full_width %} full-width-row{% endif %}">
+	<div class="small-12 columns">
+		<featured-collection-list class="featured-collection-list section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-text:{{ color_text }}; --overlay-color-rgb: {{ overlay_color | color_extract: 'red' }}, {{ overlay_color | color_extract: 'green' }}, {{ overlay_color | color_extract: 'blue' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}">
+			<div class="featured-collection-list--bg">
+				{%- for block in section.blocks -%}
+					{%- liquid
+						assign image = block.settings.collection.featured_image
+						assign class = 'featured-collection-list--img'
+						assign master_width = image.src.width | append: 'x' | append: image.src.height
+						assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+						if forloop.index == 1
+							assign class = class | append: ' active'
+						endif
+						if block.settings.image != blank
+							assign image = block.settings.image
+							assign master_width = image.src.width | append: 'x' | append: image.src.height
+    					assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+						endif
+					-%}
+					{%- if image != blank -%}
+						{%- render 'responsive-image', image: image | image_url, sizes: width, class: class -%}
+					{%- else -%}
+						{{ 'collection-' | append: forloop.index | placeholder_svg_tag: class }}
+					{%- endif -%}
+				{%- endfor -%}
+			</div>
+			<div class="featured-collection-list--inner content-{{ content_position }} {{ mobile_height }} {{ desktop_height }}">
+				<div class="featured-collection-list--inner--content">
+					{%- for block in section.blocks -%}
+						{%- liquid
+							assign active = ''
+							if forloop.index == 1
+								assign active = 'active'
+							endif
+						-%}
+						{%- if block.settings.collection != blank -%}
+						<a href="{{ block.settings.collection.url }}" class="featured-collection-list--button {{ active }}" {{ block.shopify_attributes }}><span class="{{ heading_size }}">{{ block.settings.collection.title }}</span></a>
+						{%- else -%}
+						<a href="#" class="featured-collection-list--button heading-size--{{ heading_size }} {{ active }}" {{ block.shopify_attributes }}><span class="{{ heading_size }}">{{ 'onboarding.collection_title' | t }}</span></a>
+						{%- endif -%}
+					{%- endfor -%}
+				</div>
+			</div>
+		</featured-collection-list>
+	</div>
+</div>
+{{ 'featured-collection-list.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'featured-collection-list.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+  {
+    "name": "Featured collection list",
+		"class": "section-featured-collection-list",
+    "settings": [
+			{
+				"type": "select",
+				"id": "desktop_height",
+				"label": "Desktop height",
+				"options": [
+					{
+						"value": "desktop-height-auto",
+						"label": "Adapt to content"
+					},
+					{
+						"value": "desktop-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "desktop-height-550",
+						"label": "550px"
+					},
+					{
+						"value": "desktop-height-650",
+						"label": "650px"
+					},
+					{
+						"value": "desktop-height-750",
+						"label": "750px"
+					},
+					{
+						"value": "desktop-height-full",
+						"label": "Full screen"
+					}
+				],
+				"default": "desktop-height-650"
+			},
+			{
+				"type": "select",
+				"id": "mobile_height",
+				"label": "Mobile height",
+				"options": [
+					{
+						"value": "mobile-height-auto",
+						"label": "Adapt to content"
+					},
+					{
+						"value": "mobile-height-350",
+						"label": "350px"
+					},
+					{
+						"value": "mobile-height-400",
+						"label": "400px"
+					},
+					{
+						"value": "mobile-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "mobile-height-500",
+						"label": "500px"
+					},
+					{
+						"value": "mobile-height-full",
+						"label": "Full screen"
+					}
+				],
+				"default": "mobile-height-500"
+			},
+			{
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Make section full width",
+        "default": true
+      },
+			{
+				 "type": "select",
+				 "id": "content_position",
+				 "label": "Content position",
+				 "options": [
+					 { "value": "top-left", "label": "Top left" },
+					 { "value": "top-center", "label": "Top center" },
+					 { "value": "top-right", "label": "Top right" },
+					 { "value": "middle-left", "label": "Middle left" },
+					 { "value": "middle-center", "label": "Middle center" },
+					 { "value": "middle-right", "label": "Middle right" },
+					 { "value": "bottom-left", "label": "Bottom left" },
+					 { "value": "bottom-center", "label": "Bottom center" },
+					 { "value": "bottom-right", "label": "Bottom right" }
+				 ],
+				 "default": "middle-center"
+			},
+			{
+				"type": "select",
+				"id": "heading_size",
+				"label": "Heading size",
+				"options": [
+					{
+						"value": "h2",
+						"label": "Small"
+					},
+					{
+						"value": "h1",
+						"label": "Medium"
+					},
+					{
+						"value": "h1-large",
+						"label": "Large"
+					},
+					{
+						"value": "h1-xlarge",
+						"label": "Extra large"
+					}
+				],
+				"default": "h1"
+			},
+			{
+				"type": "header",
+				"content": "Colors"
+			},
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#ffffff"
+      },
+			{
+				"type": "color",
+				"id": "overlay_color",
+				"label": "Overlay",
+				"default": "#000000"
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 70
+			},
+			{
+        "type": "header",
+        "content": "Spacing"
+      },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+		"blocks": [
+      {
+        "type": "collection",
+        "name": "Collection",
+        "settings": [
+          {
+            "type": "collection",
+            "id": "collection",
+            "label": "Collection"
+          },
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Custom image",
+						"info": "Optional image to use for this collection."
+					}
+				]
+			}
+		],
+    "presets": [
+      {
+        "name": "Featured collection list",
+				"blocks": [
+					{
+						"type": "collection"
+					},
+					{
+						"type": "collection"
+					},
+					{
+						"type": "collection"
+					}
+				]
+      }
+    ]
+  }
+
+{% endschema %}

@@ -1,0 +1,312 @@
+{{- 'before-after-image.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign section_heading = section.settings.heading
+	assign section_description = section.settings.description
+	assign section_heading_left = section.settings.heading_left
+	assign desktop_height = section.settings.desktop_height
+	assign mobile_height = section.settings.mobile_height
+	assign full_width = section.settings.full_width
+	assign initial_position = section.settings.initial_position
+
+	assign line_color = section.settings.line_color
+
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+
+	case mobile_height
+		when 'mobile-height-image'
+			assign mobile_image_height = 0
+		when 'mobile-height-350'
+			assign mobile_image_height = 350
+		when 'mobile-height-400'
+			assign mobile_image_height = 400
+		when 'mobile-height-450'
+			assign mobile_image_height = 450
+		when 'mobile-height-500'
+			assign mobile_image_height = 500
+		else
+			assign mobile_image_height = 500
+	endcase
+-%}
+
+<div class="before-after-image section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--percent:{{ initial_position }}%; --color-line: {{ line_color }};">
+	<div class="row{% if full_width %} full-width-row{% endif %}">
+		<div class="small-12 columns">
+			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
+			<before-after class="before-after-image--container">
+				{%- for block in section.blocks -%}
+					{%- liquid
+						assign image = block.settings.image
+						assign mobile_image = block.settings.mobile_image
+						assign title = block.settings.title
+						assign heading_position = block.settings.heading_position
+						assign heading_size = block.settings.heading_size
+						assign text_color = block.settings.text_color
+						assign overlay_color = block.settings.overlay_color
+						assign overlay_opacity = block.settings.overlay_opacity
+					-%}
+					<div class="before-after-image--media before-after-image--{{ forloop.index }}" style="--color-body: {{ text_color }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }}; --color-overlay-rgb: {{ overlay_color.rgb | replace: ' ' , ',' }};">
+						<div class="before-after-image--image {{ mobile_height }} {{ desktop_height }}" style="--image-aspect: {{ image.aspect_ratio }}">
+							{%- if image -%}
+								{%- liquid
+									assign master_width = image.src.width | append: 'x' | append: image.src.height
+									assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+									assign class = nil
+
+									if mobile_image != blank
+										assign class = 'before-after-image--desktop'
+									endif
+								 -%}
+								{%- render 'responsive-image', image: image, sizes: width, class: class -%}
+							{%- else -%}
+								<div class="thb-placeholder">
+									{{ 'collection-' | append: forloop.index | placeholder_svg_tag: 'placeholder_svg_tag' }}
+								</div>
+							{%- endif -%}
+							{%- if mobile_image != blank -%}
+								{%- liquid
+									assign image = mobile_image
+									assign master_width = image.src.width | append: 'x' | append: image.src.height
+									assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+								 -%}
+								{%- render 'responsive-image', image: image, sizes: width, class: 'before-after-image--mobile' -%}
+							{%- endif -%}
+						</div>
+						<div class="before-after-image--content before-after-image--content-{{ heading_position }}">
+							{%- if title != blank -%}
+								<h4 class="{{ heading_size }}">{{ title }}</h4>
+							{%- endif -%}
+						</div>
+					</div>
+				{%- endfor -%}
+				<div class="before-after-image--divider">{%- render 'svg-icons' with 'thb-before-after-divider' -%}</div>
+				<input type="range" min="0" max="1000" value="{{ initial_position | times: 10 }}" class="before-after-image--slider">
+			</before-after>
+		</div>
+	</div>
+</div>
+<script src="{{ 'before-after-image.js' | asset_url }}" defer="defer"></script>
+{% schema %}
+  {
+    "name": "Before/after image",
+		"class": "section-before-after",
+		"max_blocks": 2,
+    "settings": [
+			{
+				"type": "text",
+				"id": "heading",
+				"label": "Heading",
+				"default": "Image Comparison"
+			},
+			{
+				"type": "checkbox",
+				"id": "heading_left",
+				"default": false,
+				"label": "Left align heading"
+			},
+			{
+				"type": "richtext",
+				"id": "description",
+				"label": "Description",
+				"default": "<p>Add a short description for your image comparison</p>"
+			},
+			{
+				"type": "select",
+				"id": "desktop_height",
+				"label": "Desktop height",
+				"options": [
+					{
+						"value": "desktop-height-image",
+						"label": "Adapt to image"
+					},
+					{
+						"value": "desktop-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "desktop-height-550",
+						"label": "550px"
+					},
+					{
+						"value": "desktop-height-650",
+						"label": "650px"
+					},
+					{
+						"value": "desktop-height-750",
+						"label": "750px"
+					}
+				],
+				"default": "desktop-height-650"
+			},
+			{
+				"type": "select",
+				"id": "mobile_height",
+				"label": "Mobile height",
+				"options": [
+					{
+						"value": "mobile-height-image",
+						"label": "Adapt to image"
+					},
+					{
+						"value": "mobile-height-350",
+						"label": "350px"
+					},
+					{
+						"value": "mobile-height-400",
+						"label": "400px"
+					},
+					{
+						"value": "mobile-height-450",
+						"label": "450px"
+					},
+					{
+						"value": "mobile-height-500",
+						"label": "500px"
+					}
+				],
+				"default": "mobile-height-500"
+			},
+			{
+				"type": "checkbox",
+				"id": "full_width",
+				"label": "Make section full width",
+				"default": true
+			},
+			{
+				"type": "range",
+				"id": "initial_position",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Drag initial position",
+				"default": 50
+			},
+			{
+				"type": "header",
+				"content": "Colors"
+			},
+			{
+				"type": "color",
+				"id": "line_color",
+				"label": "Lines",
+				"default": "#FFFFFF"
+			},
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+    "blocks": [
+      {
+        "type": "image",
+        "name": "Image",
+        "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image",
+						"info": "1340 x 650 .jpg recommended."
+					},
+					{
+						"type": "image_picker",
+						"id": "mobile_image",
+						"label": "Mobile image (optional)"
+					},
+					{
+						"type": "text",
+						"id": "title",
+						"default": "Column",
+						"label": "Heading"
+					},
+					{
+						"type": "select",
+						"id": "heading_size",
+						"label": "Heading size",
+						"options": [
+							{
+								"value": "h1",
+								"label": "Extra large"
+							},
+							{
+								"value": "h2",
+								"label": "Large"
+							},
+							{
+								"value": "h3",
+								"label": "Medium"
+							},
+							{
+								"value": "h4",
+								"label": "Small"
+							}
+						],
+						"default": "h3"
+					},
+					{
+						 "type": "select",
+						 "id": "heading_position",
+						 "label": "Heading position",
+						 "options": [
+							 { "value": "top", "label": "Top" },
+							 { "value": "center", "label": "Center" },
+							 { "value": "bottom", "label": "Bottom" }
+						 ],
+						 "default": "top"
+					},
+					{
+			      "type": "header",
+			      "content": "Colors"
+			    },
+					{
+						"type": "color",
+						"id": "text_color",
+						"label": "Text",
+						"default": "#151515"
+					},
+					{
+						"type": "color",
+						"id": "overlay_color",
+						"label": "Overlay",
+						"default": "#000000"
+					},
+					{
+						"type": "range",
+						"id": "overlay_opacity",
+						"min": 0,
+						"max": 100,
+						"step": 1,
+						"unit": "%",
+						"label": "Overlay opacity",
+						"default": 0
+					}
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Before/after image",
+				"blocks": [
+					{
+						"type": "image"
+					},
+					{
+						"type": "image"
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

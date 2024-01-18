@@ -1,0 +1,26 @@
+
+
+
+.video-section__container {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9; }
+  .video-section__container.video-aspect--16-9 {
+    aspect-ratio: 16/9; }
+  .video-section__container.video-aspect--9-16 {
+    aspect-ratio: 9/16; }
+  .video-section__container.video-aspect--4-3 {
+    aspect-ratio: 4/3; }
+  .video-section__container.video-aspect--3-4 {
+    aspect-ratio: 3/4; }
+  .video-section__container.video-aspect--square {
+    aspect-ratio: 1/1; }
+  .video-section__container iframe,
+  .video-section__container video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover; }

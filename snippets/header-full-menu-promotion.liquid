@@ -1,0 +1,9 @@
+<div class="mega-menu-promotion">
+	{%- if promotion_link != null -%}<a href="{{ promotion_link }}" target="_blank">{%- endif -%}
+		{%- render 'responsive-image', image: promotion_image, sizes: '670x0' -%}
+	{%- if promotion_link != null -%}</a>{%- endif -%}
+	<div class="mega-menu-promotion--cover">
+		{%- if promotion_heading -%}<p class="heading-font">{{ promotion_heading }}</p>{%- endif -%}
+		{%- if promotion_link != null -%}<a href="{{ promotion_link }}" target="_blank" class="text-button white">{{ promotion_link_label }}</a>{%- endif -%}
+	</div>
+</div>

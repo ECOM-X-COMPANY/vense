@@ -1,0 +1,84 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+<div class="section-spacing">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="myaccount--header">
+				<h1 class="myaccount--title">{{ 'customer.account.title' | t }}</h1>
+				<p>
+					<a href="{{ routes.account_logout_url }}" title="{{ 'customer.account.log_out' | t | escape }}" class="myaccount--link">
+		      	{% render 'svg-icons' with 'thb-log-out' %}
+		      	<span class="text-button">{{ 'customer.account.log_out' | t }}</span>
+		    	</a>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+	  <div class="small-12 large-8 columns myaccount-content">
+			<h4>{{ 'customer.orders.title' | t }}</h4>
+			{% paginate customer.orders by 20 %}
+	      {%- if customer.orders.size > 0 -%}
+		      <table class="no-borders">
+		      	<thead>
+		      		<tr>
+								<th id="ColumnOrder" scope="col" role="columnheader">{{ 'customer.orders.order_number' | t }}</th>
+	              <th id="ColumnDate" scope="col" role="columnheader">{{ 'customer.orders.date' | t }}</th>
+	              <th id="ColumnPayment" scope="col" role="columnheader">{{ 'customer.orders.payment_status' | t }}</th>
+	              <th id="ColumnFulfillment" scope="col" role="columnheader">{{ 'customer.orders.fulfillment_status' | t }}</th>
+	              <th id="ColumnTotal" scope="col" role="columnheader">{{ 'customer.orders.total' | t }}</th>
+		      	  </tr>
+		        </thead>
+		        <tbody role="rowgroup">
+		          {% for order in customer.orders %}
+							<tr role="row">
+	              <td
+	                id="RowOrder"
+	                role="cell"
+	                headers="ColumnOrder"
+	                data-label="{{ 'customer.orders.order_number' | t }}"
+	              >
+	                <a href="{{ order.customer_url }}" aria-label="{{ 'customer.orders.order_number_link' | t: number: order.name }}">
+	                  {{ order.name }}
+	                </a>
+	              </td>
+	              <td headers="RowOrder ColumnDate" role="cell" data-label="{{ 'customer.orders.date' | t }}">
+	                {{ order.created_at | time_tag: format: 'date' }}
+	              </td>
+	              <td headers="RowOrder ColumnPayment" role="cell" data-label="{{ 'customer.orders.payment_status' | t }}">
+	                {{ order.financial_status_label }}
+	              </td>
+	              <td headers="RowOrder ColumnFulfillment" role="cell" data-label="{{ 'customer.orders.fulfillment_status' | t }}">
+	                {{ order.fulfillment_status_label }}
+	              </td>
+	              <td headers="RowOrder ColumnTotal" role="cell" data-label="{{ 'customer.orders.total' | t }}">
+	                {{ order.total_price | money_with_currency }}</td>
+	            </tr>
+		          {% endfor %}
+		        </tbody>
+		      </table>
+				{%- else -%}
+	       <p>{{ 'customer.orders.none' | t }}</p>
+	     	{%- endif -%}
+				{% render 'pagination', paginate: paginate, pagination_type: 'paginated' %}
+		 {% endpaginate %}
+	  </div>
+	  <div class="small-12 large-4 columns myaccount-sidebar">
+	    <h4>{{ 'customer.account.details' | t }}</h4>
+			{% if customer.default_address %}
+			<label>{{ 'customer.account.default_address' | t }}</label>
+			<address>
+				{{ customer.default_address.address1 }}<br />
+			{% if customer.default_address.address2 != "" %}
+				{{ customer.default_address.address2 }}<br />
+			{% endif %}
+				{{ customer.default_address.city }}, {% if address.default_address.province_code %}{{ customer.default_address.province_code }}, {% endif %}{{ customer.default_address.country }}<br />
+				{{ customer.default_address.zip }}<br />
+				{{ customer.default_address.phone }}
+			</address>
+			{% endif %}
+			<a href="{{ routes.account_addresses_url }}" class="text-button">
+				{{ 'customer.account.view_addresses' | t }} ({{ customer.addresses_count }})
+			</a>
+	  </div>
+	</div>
+</div>

@@ -1,0 +1,288 @@
+{{- 'scrolling-text.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+	assign height = section.settings.height
+	assign full_width = section.settings.full_width
+	assign bg_image = section.settings.bg_image
+	assign speed = section.settings.speed
+	assign image_size = section.settings.image_size
+	assign text_size = section.settings.text_size
+	assign text_uppercase = section.settings.text_uppercase
+	assign direction = section.settings.direction
+	assign color_bg = section.settings.color_bg
+	assign color_text = section.settings.color_text
+	assign overlay_color = section.settings.overlay_color
+	assign overlay_opacity = section.settings.overlay_opacity
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign size = section.blocks.size | plus: 0
+	case image_size
+		when 'small'
+			assign image_width = '0x100'
+		when 'medium'
+			assign image_width = '0x200'
+		when 'large'
+			assign image_width = '0x400'
+	endcase
+-%}
+<div class="row{% if full_width %} full-width-row-full{% endif %}">
+	<div class="small-12 columns">
+		<div class="scrolling-text scrolling-text-uppercase--{{ text_uppercase }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %} {{ height }}" id="scrolling-text-{{ section.id }}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--overlay-color-rgb: {{ overlay_color.rgb | replace: ' ' , ',' }}; --overlay-opacity: {{ overlay_opacity | divided_by: 100.0 }};">
+		<div class="scrolling-text--inner direction-{{ direction }}" style="--marquee-speed: {{ speed }}">
+			{% capture scrolling_text %}
+			<div>
+				{%- for i in (1..size) -%}
+					{% assign index = i | minus: 1 %}
+					<div class="scrolling-text--item outline-text--{{ section.blocks[index].settings.outline_text }}" {{ section.blocks[index].shopify_attributes }}>
+						{%- if section.blocks[index].settings.link -%}
+							<a href="{{ section.blocks[index].settings.link }}" target="_blank" class="scrolling-text--link">
+						{%- endif -%}
+						{%- if section.blocks[index].settings.image -%}
+						{%- liquid
+							assign class = 'scrolling-text--image scrolling-text--image--' | append: image_size
+							render 'responsive-image', image: section.blocks[index].settings.image, sizes: image_width, class: class -%}
+						{%- endif -%}
+						<span>{{ section.blocks[index].settings.text }}</span>
+						{%- if section.blocks[index].settings.link -%}
+							</a>
+						{%- endif -%}
+					</div>
+				{%- endfor -%}
+			</div>
+			{% endcapture %}
+			{{- scrolling_text }}{{ scrolling_text }}{{ scrolling_text -}}
+		</div>
+		{% style %}
+			{%- if bg_image -%}
+			#scrolling-text-{{ section.id }} {
+				background-image: url({{ bg_image | image_url: width: bg_image.src.width }});
+			}
+			{%- endif -%}
+			#scrolling-text-{{ section.id }}  .scrolling-text--inner {
+				font-size: {{ text_size | append: 'px' }};
+			}
+
+		{% endstyle %}
+	</div>
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Scrolling text",
+		"class": "section-scrolling-text",
+    "settings": [
+			{
+				"type": "image_picker",
+				"id": "bg_image",
+				"label": "Background image"
+			},
+			{
+				"type": "select",
+				"id": "height",
+				"label": "Height",
+				"options": [
+					{
+						"value": "height-auto",
+						"label": "Adapt to content"
+					},
+					{
+						"value": "height-300",
+						"label": "300px"
+					},
+					{
+						"value": "height-350",
+						"label": "350px"
+					},
+					{
+						"value": "height-400",
+						"label": "400px"
+					},
+					{
+						"value": "height-450",
+						"label": "450px"
+					},
+					{
+						"value": "height-full",
+						"label": "Full screen"
+					}
+				],
+				"default": "height-300"
+			},
+			{
+        "type": "checkbox",
+        "id": "full_width",
+        "label": "Make section full width",
+        "default": true
+      },
+			{
+				"type": "select",
+				"id": "direction",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "left",
+				"label": "Direction"
+			},
+			{
+				"type": "select",
+				"id": "speed",
+				"options": [
+					{
+						"value": "10s",
+						"label": "Fast"
+					},
+					{
+						"value": "20s",
+						"label": "Normal"
+					},
+					{
+						"value": "30s",
+						"label": "Slow"
+					},
+					{
+						"value": "50s",
+						"label": "Very slow"
+					}
+				],
+				"default": "20s",
+				"label": "Speed"
+			},
+			{
+        "type": "range",
+        "id": "text_size",
+        "min": 16,
+        "max": 140,
+        "step": 2,
+        "unit": "px",
+        "label": "Text size",
+        "default": 24
+      },
+			{
+				"type": "checkbox",
+				"id": "text_uppercase",
+				"default": false,
+				"label": "Make text uppercase"
+			},
+			{
+				"type": "select",
+				"id": "image_size",
+				"options": [
+					{
+						"value": "small",
+						"label": "Small"
+					},
+					{
+						"value": "medium",
+						"label": "Medium"
+					},
+					{
+						"value": "large",
+						"label": "Large"
+					}
+				],
+				"default": "large",
+				"label": "Image size"
+			},
+			{
+	      "type": "header",
+	      "content": "Colors"
+	    },
+			{
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+        "default": "#f5f3ef"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+        "default": "#151515"
+      },
+			{
+				"type": "color",
+				"id": "overlay_color",
+				"label": "Overlay",
+				"default": "#000000"
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 0
+			},
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+		"blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					},
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Content",
+						"default": "Add campaign text here."
+          },
+					{
+						"id": "link",
+						"type": "url",
+						"label": "Link"
+					},
+					{
+		        "type": "checkbox",
+		        "id": "outline_text",
+		        "label": "Make text outline",
+		        "default": false
+		      }
+				]
+			}
+		],
+    "presets": [
+      {
+        "name": "Scrolling text",
+				"blocks": [
+					{
+						"type": "text"
+					},
+					{
+						"type": "text"
+					},
+					{
+						"type": "text"
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

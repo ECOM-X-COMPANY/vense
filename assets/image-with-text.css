@@ -1,0 +1,99 @@
+
+
+
+.image-with-text {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background: var(--color-bg, #fff); }
+  @media only screen and (min-width: 768px) {
+    .image-with-text {
+      flex-wrap: nowrap; } }
+  .image-with-text.text_first {
+    flex-direction: row-reverse; }
+  .image-with-text__image {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%; }
+    .image-with-text__image svg,
+    .image-with-text__image img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; }
+    .image-with-text__image svg {
+      padding: 50px;
+      fill: var(--bg-body, #fff);
+      opacity: 0.5;
+      background: var(--color-accent); }
+    .image-with-text__image-media {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding-bottom: var(--ratio-percent); }
+      .image-with-text__image-media.aspect-ratio--small {
+        padding-bottom: 75%; }
+      .image-with-text__image-media.aspect-ratio--large {
+        padding-bottom: 100%; }
+      .image-with-text__image-media iframe,
+      .image-with-text__image-media video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
+  .image-with-text__content {
+    width: 100%;
+    flex-grow: 1;
+    padding: 25px; }
+    @media only screen and (min-width: 768px) {
+      .image-with-text__content {
+        padding: 45px; } }
+    @media only screen and (min-width: 1068px) {
+      .image-with-text__content {
+        padding: 70px; } }
+    .image-with-text__content svg {
+      width: 100px;
+      height: 100px;
+      fill: var(--bg-body, #fff);
+      opacity: 0.5;
+      background: var(--color-accent);
+      margin-bottom: 20px; }
+    .image-with-text__content--inner {
+      max-width: 600px;
+      margin: 0 auto; }
+    .image-with-text__content__image {
+      margin-bottom: 30px; }
+    .image-with-text__content p,
+    .image-with-text__content h3 {
+      color: var(--color-text, --color-body); }
+    .image-with-text__content .text-button {
+      color: var(--color-text, --color-body); }
+      .image-with-text__content .text-button:before {
+        background: rgba(var(--color-text-rgb), 0.4); }
+      .image-with-text__content .text-button:after {
+        background: var(--color-text, --color-body); }
+    @media only screen and (min-width: 1068px) {
+      .image-with-text__content .rte.description-size--small {
+        font-size: 0.875rem; } }
+    @media only screen and (min-width: 1068px) {
+      .image-with-text__content .rte.description-size--large {
+        font-size: 1.25rem; } }
+    .image-with-text__content .rte p {
+      font-size: inherit; }
+    .image-with-text__content .accordion summary {
+      color: var(--color-text, --color-body); }
+      .image-with-text__content .accordion summary span:before, .image-with-text__content .accordion summary span:after {
+        background: var(--color-text, --color-body); }
+  @media only screen and (min-width: 768px) {
+    .image-with-text.grid--image-small > .image-with-text__inner {
+      width: 40%; } }
+  @media only screen and (min-width: 768px) {
+    .image-with-text.grid--image-medium > .image-with-text__inner {
+      width: 50%; } }
+  @media only screen and (min-width: 768px) {
+    .image-with-text.grid--image-large > .image-with-text__inner {
+      width: 60%; } }

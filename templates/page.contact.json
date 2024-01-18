@@ -1,0 +1,84 @@
+{
+  "sections": {
+    "1661619382b4020fa2": {
+      "type": "rich-text",
+      "blocks": {
+        "166161938159ca8988-1": {
+          "type": "heading",
+          "settings": {
+            "text": "CONTACT US",
+            "size": "h2"
+          }
+        },
+        "166161938159ca8988-2": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "size": "text-size-regular"
+          }
+        }
+      },
+      "block_order": [
+        "166161938159ca8988-1",
+        "166161938159ca8988-2"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "rgba(0,0,0,0)",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": true
+      }
+    },
+    "1652268757b7c53383": {
+      "type": "contact-form",
+      "settings": {
+        "heading": "",
+        "description": "",
+        "show_phone_number": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "1652081672ff9b3c2c": {
+      "type": "map",
+      "blocks": {
+        "51991586-af35-4d5d-be99-a2f76ab90b27": {
+          "type": "pin",
+          "settings": {
+            "pin_retina": true,
+            "pin_lat": "41.510395",
+            "pin_long": "-87.644287",
+            "pin_title": "PIN HEADING",
+            "pin_desc": "6100 Wilshire Blvd 2nd Floor CA 9004  +1 310 499 7700<br><br><strong>Opening hours<\/strong>\nMonday-Saturday 11am–7pm ET\nSunday 11am–6pm ET"
+          }
+        }
+      },
+      "block_order": [
+        "51991586-af35-4d5d-be99-a2f76ab90b27"
+      ],
+      "settings": {
+        "googlemaps_api_key": "AIzaSyDJAfB-lPigbvz3birQsXS4oxYHi72SX6M",
+        "desktop_height": "desktop-height-550",
+        "mobile_height": "mobile-height-400",
+        "map_type": "roadmap",
+        "map_style_select": "default",
+        "map_zoom": 5,
+        "color_bg": "#f1f1f1",
+        "color_text": "#151515",
+        "color_border": "#d6d6d6",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    }
+  },
+  "order": [
+    "1661619382b4020fa2",
+    "1652268757b7c53383",
+    "1652081672ff9b3c2c"
+  ]
+}

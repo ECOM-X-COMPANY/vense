@@ -1,0 +1,407 @@
+{{ 'text-with-icons.css' | asset_url | stylesheet_tag }}
+{%- liquid
+	assign mobile_swipe = section.settings.mobile_swipe
+	assign text_alignment = section.settings.text_alignment
+	assign icon_position = section.settings.icon_position
+	assign icon_size = section.settings.icon_size
+	assign heading_size = section.settings.heading_size
+	assign color_bg = section.settings.color_bg
+	assign color_heading = section.settings.color_heading
+	assign color_text = section.settings.color_text
+	assign disable_top_spacing = section.settings.disable_top_spacing
+	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
+	assign has_bg = false
+
+	if color_bg != 'rgba(0,0,0,0)'
+		assign has_bg = true
+	endif
+-%}
+<div class="text-with-icons {% if mobile_swipe %} swipe-on-mobile{% endif %} text-{{ text_alignment }} icon-{{ icon_position }} icon-{{ icon_size }} heading-{{ heading_size }} icon-columns-{{ section.blocks.size }} text-with-icons-has-bg--{{ has_bg }} section-spacing {% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-heading: {{ color_heading }};--color-text: {{ color_text }};--color-bg: {{ color_bg }}">
+	<div class="text-with-icons__inner" style="--icon-columns: {{ section.blocks.size }}">
+		{% for block in section.blocks %}
+			<div class="text-with-icons__block {% if block.settings.text != blank %} has-no-content{% endif %}">
+				<div class="text-with-icons__icon">
+					{%- if block.settings.image != blank -%}
+					<img data-src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" class="lazyload" />
+					<noscript>
+					<img src="{{ block.settings.image | image_url }}" alt="{{ block.settings.image.alt | escape }}" width="{{ block.settings.image.width }}" height="{{ block.settings.image.height }}" />
+					</noscript>
+					{%- else -%}
+						{% render 'svg-icons-inline', icon: block.settings.icon %}
+					{%- endif -%}
+				</div>
+				<div class="text-with-icons__block-content">
+					{% if block.settings.heading != blank %}
+					<h6 class="body-font">{{ block.settings.heading }}</h6>
+					{% endif %}
+					{% if block.settings.text != blank %}
+						{{ block.settings.text }}
+					{% endif %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>
+{% schema %}
+  {
+    "name": "Text with icons",
+		"class": "section-text-with-icons",
+		"max_blocks": 4,
+    "settings": [
+			{
+				"type": "select",
+				"id": "text_alignment",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "center",
+						"label": "Center"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "left",
+				"label": "Text alignment"
+			},
+			{
+				"type": "select",
+				"id": "icon_position",
+				"options": [
+					{
+						"value": "left",
+						"label": "Left"
+					},
+					{
+						"value": "top",
+						"label": "Top"
+					},
+					{
+						"value": "right",
+						"label": "Right"
+					}
+				],
+				"default": "left",
+				"label": "Icon position"
+			},
+			{
+				"type": "select",
+				"id": "icon_size",
+				"options": [
+					{
+						"value": "small",
+						"label": "Small"
+					},
+					{
+						"value": "medium",
+						"label": "Medium"
+					},
+					{
+						"value": "large",
+						"label": "Large"
+					},
+					{
+						"value": "xlarge",
+						"label": "X-Large"
+					}
+				],
+				"default": "large",
+				"label": "Icon size"
+			},
+			{
+				"type": "select",
+				"id": "heading_size",
+				"options": [
+					{
+						"value": "small",
+						"label": "Small"
+					},
+					{
+						"value": "medium",
+						"label": "Medium"
+					},
+					{
+						"value": "large",
+						"label": "Large"
+					}
+				],
+				"default": "large",
+				"label": "Heading size"
+			},
+			{
+				"type": "checkbox",
+				"id": "mobile_swipe",
+				"default": true,
+				"label": "Enable swipe on mobile"
+			},
+			{
+        "type": "header",
+        "content": "Colors"
+      },
+      {
+        "type": "color",
+        "id": "color_bg",
+        "label": "Background",
+				"default": "transparent"
+      },
+			{
+        "type": "color",
+        "id": "color_heading",
+        "label": "Heading",
+				"default": "#151515"
+      },
+			{
+        "type": "color",
+        "id": "color_text",
+        "label": "Text",
+				"default": "#151515"
+      },
+			{
+	      "type": "header",
+	      "content": "Spacing"
+	    },
+			{
+				"type": "checkbox",
+				"id": "disable_top_spacing",
+				"default": false,
+				"label": "Remove top spacing"
+			},
+			{
+				"type": "checkbox",
+				"id": "disable_bottom_spacing",
+				"default": false,
+				"label": "Remove bottom spacing"
+			}
+    ],
+		"blocks": [
+      {
+        "type": "icon",
+        "name": "Text",
+        "settings": [
+					{
+						"type": "select",
+						"id": "icon",
+						"options": [
+							{
+								"value": "none",
+								"label": "None"
+							},
+							{
+								"value": "apple",
+								"label": "Apple"
+							},
+							{
+								"value": "banana",
+								"label": "Banana"
+							},
+							{
+								"value": "bottle",
+								"label": "Bottle"
+							},
+							{
+								"value": "box",
+								"label": "Box"
+							},
+							{
+								"value": "carrot",
+								"label": "Carrot"
+							},
+							{
+								"value": "chat_bubble",
+								"label": "Chat bubble"
+							},
+							{
+								"value": "check_mark",
+								"label": "Check mark"
+							},
+							{
+								"value": "clipboard",
+								"label": "Clipboard"
+							},
+							{
+								"value": "dairy",
+								"label": "Dairy"
+							},
+							{
+								"value": "dairy_free",
+								"label": "Dairy free"
+							},
+							{
+								"value": "dryer",
+								"label": "Dryer"
+							},
+							{
+								"value": "eye",
+								"label": "Eye"
+							},
+							{
+								"value": "fire",
+								"label": "Fire"
+							},
+							{
+								"value": "gluten_free",
+								"label": "Gluten free"
+							},
+							{
+								"value": "heart",
+								"label": "Heart"
+							},
+							{
+								"value": "iron",
+								"label": "Iron"
+							},
+							{
+								"value": "leaf",
+								"label": "Leaf"
+							},
+							{
+								"value": "leather",
+								"label": "Leather"
+							},
+							{
+								"value": "lightning_bolt",
+								"label": "Lightning bolt"
+							},
+							{
+								"value": "lipstick",
+								"label": "Lipstick"
+							},
+							{
+								"value": "lock",
+								"label": "Lock"
+							},
+							{
+								"value": "map_pin",
+								"label": "Map pin"
+							},
+							{
+								"value": "nut_free",
+								"label": "Nut free"
+							},
+							{
+								"value": "pants",
+								"label": "Pants"
+							},
+							{
+								"value": "paw_print",
+								"label": "Paw print"
+							},
+							{
+								"value": "pepper",
+								"label": "Pepper"
+							},
+							{
+								"value": "perfume",
+								"label": "Perfume"
+							},
+							{
+								"value": "plane",
+								"label": "Plane"
+							},
+							{
+								"value": "plant",
+								"label": "Plant"
+							},
+							{
+								"value": "price_tag",
+								"label": "Price tag"
+							},
+							{
+								"value": "question_mark",
+								"label": "Question mark"
+							},
+							{
+								"value": "recycle",
+								"label": "Recycle"
+							},
+							{
+								"value": "return",
+								"label": "Return"
+							},
+							{
+								"value": "ruler",
+								"label": "Ruler"
+							},
+							{
+								"value": "serving_dish",
+								"label": "Serving dish"
+							},
+							{
+								"value": "shirt",
+								"label": "Shirt"
+							},
+							{
+								"value": "shoe",
+								"label": "Shoe"
+							},
+							{
+								"value": "silhouette",
+								"label": "Silhouette"
+							},
+							{
+								"value": "snowflake",
+								"label": "Snowflake"
+							},
+							{
+								"value": "star",
+								"label": "Star"
+							},
+							{
+								"value": "stopwatch",
+								"label": "Stopwatch"
+							},
+							{
+								"value": "truck",
+								"label": "Truck"
+							},
+							{
+								"value": "washing",
+								"label": "Washing"
+							}
+						],
+						"default": "ruler",
+						"label": "Icon"
+					},
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image",
+						"info": "Use an image as your icon"
+					},
+          {
+            "type": "text",
+            "id": "heading",
+            "label": "Heading",
+						"default": "Heading"
+          },
+					{
+            "type": "richtext",
+            "id": "text",
+            "label": "Text",
+						"default": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>"
+          }
+				]
+			}
+		],
+    "presets": [
+      {
+        "name": "Text with icons",
+				"blocks": [
+					{
+						"type": "icon"
+					},
+					{
+						"type": "icon"
+					},
+					{
+						"type": "icon"
+					}
+				]
+      }
+    ]
+  }
+{% endschema %}

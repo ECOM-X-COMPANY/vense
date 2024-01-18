@@ -1,0 +1,231 @@
+{%- liquid
+	assign heading_font = settings.heading_font
+	assign body_font = settings.body_font
+	assign body_font_500 = body_font | font_modify: 'weight', '500'
+	assign body_font_bold = body_font | font_modify: 'weight', '600'
+	assign body_font_italic = body_font | font_modify: 'style', 'italic'
+	assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+
+	assign color_body_bg = settings.color_body_bg
+	assign color_body = settings.color_body
+	assign color_accent = settings.color_accent
+	assign color_border = settings.color_border
+	assign color_input_border = settings.color_input_border
+
+	assign color_announcement_bar_text = settings.color_announcement_bar_text
+	assign color_announcement_bar_bg = settings.color_announcement_bar_bg
+
+	assign color_header_bg = settings.color_header_bg
+	assign color_header_text = settings.color_header_text
+	assign color_header_links = settings.color_header_links
+	assign color_header_links_hover = settings.color_header_links_hover
+	assign color_header_icons = settings.color_header_icons
+	assign color_header_border = settings.color_header_border
+
+	assign solid_button_background = settings.solid_button_background
+	assign solid_button_label = settings.solid_button_label
+	assign outline_button_label = settings.outline_button_label
+
+	assign color_price = settings.color_price
+	assign color_stars = settings.color_stars
+	assign color_dots = settings.color_dots
+
+	assign color_inventory_instock = settings.color_inventory_instock
+	assign color_inventory_lowstock = settings.color_inventory_lowstock
+
+	assign section_spacing_mobile = settings.section_spacing_mobile
+	assign section_spacing_desktop = settings.section_spacing_desktop
+
+	assign button_border_radius = settings.button_border_radius
+
+	assign color_badge_text = settings.color_badge_text
+	assign color_badge_soldout = settings.color_badge_soldout
+	assign color_badge_sale = settings.color_badge_sale
+	assign badge_corner_radius = settings.badge_corner_radius
+
+	assign color_footer_text = settings.color_footer_text
+	assign color_footer_link = settings.color_footer_link
+	assign color_footer_link_hover = settings.color_footer_link_hover
+	assign color_footer_border = settings.color_footer_border
+	assign color_footer_bg = settings.color_footer_bg
+-%}
+
+{% style %}
+	{{ body_font | font_face: font_display: 'swap' }}
+
+	{%- if body_font_500 -%}
+	  {{ body_font_500 | font_face: font_display: 'swap' }}
+	{%- endif -%}
+
+	{%- if body_font_bold -%}
+	  {{ body_font_bold | font_face: font_display: 'swap' }}
+	{%- endif -%}
+
+	{%- if body_font_italic -%}
+	  {{ body_font_italic | font_face: font_display: 'swap' }}
+	{%- endif -%}
+
+	{%- if body_font_bold_italic -%}
+	  {{ body_font_bold_italic | font_face: font_display: 'swap' }}
+	{%- endif -%}
+
+	{% if body_font != heading_font %}
+		{{ heading_font | font_face: font_display: 'swap' }}
+		{%- assign heading_font_400 = heading_font | font_modify: 'weight', '400' -%}
+
+		{%- if heading_font_400 -%}
+		  {{ heading_font_400 | font_face: font_display: 'swap' }}
+		{%- endif -%}
+	{%- endif -%}
+
+	h1,h2,h3,h4,h5,h6,
+	.h1,.h2,.h3,.h4,.h5,.h6,
+	.logolink.text-logo,
+	.heading-font,
+	.h1-xlarge,
+	.h1-large,
+	.customer-addresses .my-address .address-index {
+		font-style: {{ heading_font.style }};
+		font-weight: {{ heading_font.weight }};
+		font-family: {{ heading_font.family }}, {{ heading_font.fallback_families }};
+	}
+	body,
+	.body-font,
+	.thb-product-detail .product-title {
+		font-style: {{ body_font.style }};
+		font-weight: {{ body_font.weight }};
+		font-family: {{ body_font.family }}, {{ body_font.fallback_families }};
+	}
+	:root {
+		--font-body-scale: {{ settings.body_font_scale | divided_by: 100.0 }};
+		--font-body-line-height-scale: {{ settings.body_font_line_height_scale | divided_by: 100.0 }};
+		--font-body-letter-spacing: {{ settings.body_font_letter_spacing | divided_by: 1000.0 }}em;
+		--font-announcement-scale: {{ settings.announcement_font_scale | divided_by: 100.0 }};
+		--font-heading-scale: {{ settings.heading_font_scale | divided_by: 100.0 }};
+		--font-heading-line-height-scale: {{ settings.heading_font_line_height_scale | divided_by: 100.0 }};
+		--font-heading-letter-spacing: {{ settings.heading_font_letter_spacing | divided_by: 1000.0 }}em;
+		--font-navigation-scale: {{ settings.navigation_font_scale | divided_by: 100.0 }};
+		--font-product-title-scale: {{ settings.product_title_font_scale | divided_by: 100.0 }};
+		--font-product-title-line-height-scale: {{ settings.product_title_line_height_scale | divided_by: 100.0 }};
+		--button-letter-spacing: {{ settings.button_letter_spacing | divided_by: 1000.0 }}em;
+
+		{%- if color_body_bg -%}
+			--bg-body: {{ color_body_bg }};
+			--bg-body-rgb: {{ color_body_bg.rgb | replace: ' ' , ',' }};
+			--bg-body-darken: {{ color_body_bg | color_darken: 3 }};
+			--payment-terms-background-color: {{ color_body_bg }};
+		{%- endif -%}
+		{%- if color_body -%}
+			--color-body: {{ color_body }};
+		  --color-body-rgb: {{ color_body.rgb | replace: ' ' , ',' }};
+		{%- endif -%}
+		{%- if color_accent -%}
+			--color-accent: {{ color_accent }};
+			--color-accent-rgb: {{ color_accent.rgb | replace: ' ' , ',' }};
+		{%- endif -%}
+		{%- if color_border -%}
+			--color-border: {{ color_border }};
+		{%- endif -%}
+		{%- if color_input_border -%}
+			--color-form-border: {{ color_input_border }};
+		{%- endif -%}
+
+
+		{%- if color_announcement_bar_text -%}
+			--color-announcement-bar-text: {{ color_announcement_bar_text }};
+		{%- endif -%}
+		{%- if color_announcement_bar_bg -%}
+			--color-announcement-bar-bg: {{ color_announcement_bar_bg }};
+		{%- endif -%}
+
+		{%- if color_header_bg -%}
+			--color-header-bg: {{ color_header_bg }};
+			--color-header-bg-rgb: {{ color_header_bg.rgb | replace: ' ' , ',' }};
+		{%- endif -%}
+		{%- if color_header_text -%}
+			--color-header-text: {{ color_header_text }};
+			--color-header-text-rgb: {{ color_header_text.rgb | replace: ' ' , ',' }};
+		{%- endif -%}
+		{%- if color_header_links -%}
+			--color-header-links: {{ color_header_links }};
+		{%- endif -%}
+		{%- if color_header_links_hover -%}
+			--color-header-links-hover: {{ color_header_links_hover }};
+		{%- endif -%}
+		{%- if color_header_icons -%}
+			--color-header-icons: {{ color_header_icons }};
+		{%- endif -%}
+		{%- if color_header_border -%}
+			--color-header-border: {{ color_header_border }};
+		{%- endif -%}
+
+		{%- if solid_button_background -%}
+			--solid-button-background: {{ solid_button_background }};
+		{%- endif -%}
+		{%- if solid_button_label -%}
+			--solid-button-label: {{ solid_button_label }};
+		{%- endif -%}
+		{%- if outline_button_label -%}
+			--outline-button-label: {{ outline_button_label }};
+		{%- endif -%}
+
+		{%- if color_price -%}
+			--color-price: {{ color_price }};
+		{%- endif -%}
+		{%- if color_stars -%}
+			--color-star: {{ color_stars }};
+		{%- endif -%}
+		{%- if color_dots -%}
+			--color-dots: {{ color_dots }};
+		{%- endif -%}
+
+		{%- if color_inventory_instock -%}
+			--color-inventory-instock: {{ color_inventory_instock }};
+		{%- endif -%}
+		{%- if color_inventory_lowstock -%}
+			--color-inventory-lowstock: {{ color_inventory_lowstock }};
+		{%- endif -%}
+
+		{%- if section_spacing_mobile -%}
+			--section-spacing-mobile: {{ section_spacing_mobile | append: 'px' }};
+		{%- endif -%}
+		{%- if section_spacing_desktop -%}
+			--section-spacing-desktop: {{ section_spacing_desktop | append: 'px' }};
+		{%- endif -%}
+
+		{%- if button_border_radius -%}
+			--button-border-radius: {{ button_border_radius | append: 'px' }};
+		{%- endif -%}
+
+		{%- if color_badge_text -%}
+			--color-badge-text: {{ color_badge_text }};
+		{%- endif -%}
+		{%- if color_badge_soldout -%}
+			--color-badge-sold-out: {{ color_badge_soldout }};
+		{%- endif -%}
+		{%- if color_badge_sale -%}
+			--color-badge-sale: {{ color_badge_sale }};
+		{%- endif -%}
+		{%- if badge_corner_radius -%}
+			--badge-corner-radius: {{ badge_corner_radius | append: 'px' }};
+		{%- endif -%}
+
+		{%- if color_footer_text -%}
+			--color-footer-text: {{ color_footer_text }};
+			--color-footer-text-rgb: {{ color_footer_text.rgb | replace: ' ' , ',' }};
+		{%- endif -%}
+		{%- if color_footer_link -%}
+			--color-footer-link: {{ color_footer_link }};
+		{%- endif -%}
+		{%- if color_footer_link_hover -%}
+			--color-footer-link-hover: {{ color_footer_link_hover }};
+		{%- endif -%}
+		{%- if color_footer_border -%}
+			--color-footer-border: {{ color_footer_border }};
+			--color-footer-border-rgb: {{ color_footer_border.rgb | replace: ' ' , ',' }};
+		{%- endif -%}
+		{%- if color_footer_bg -%}
+			--color-footer-bg: {{ color_footer_bg }};
+		{%- endif -%}
+	}
+{% endstyle %}

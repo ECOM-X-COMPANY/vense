@@ -1,0 +1,93 @@
+{
+  "sections": {
+    "9de27e1e-9c24-4334-982b-86e9980a73bd": {
+      "type": "scrolling-text",
+      "blocks": {
+        "template--17027745972539__9de27e1e-9c24-4334-982b-86e9980a73bd-1669829603416565ad-0": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--17027745972539__9de27e1e-9c24-4334-982b-86e9980a73bd-1669829603416565ad-1": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "template--17027745972539__9de27e1e-9c24-4334-982b-86e9980a73bd-1669829603416565ad-2": {
+          "type": "text",
+          "settings": {
+            "text": "{{ collection.title }}",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "template--17027745972539__9de27e1e-9c24-4334-982b-86e9980a73bd-1669829603416565ad-0",
+        "template--17027745972539__9de27e1e-9c24-4334-982b-86e9980a73bd-1669829603416565ad-1",
+        "template--17027745972539__9de27e1e-9c24-4334-982b-86e9980a73bd-1669829603416565ad-2"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 70,
+        "text_uppercase": true,
+        "image_size": "medium",
+        "color_bg": "#fffce2",
+        "color_text": "#1e4e1c",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "13c1fa9b-e669-46a9-8040-f6f0e85ee079": {
+      "type": "spacer",
+      "settings": {
+        "spacer_mobile": 25,
+        "spacer_desktop": 30,
+        "border_separator": false,
+        "border_separator_full": false
+      }
+    },
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "disabled": true,
+      "settings": {
+        "show_collection_image": true,
+        "show_collection_description": true,
+        "show_subcollections": true,
+        "make_heading_uppercase": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 40
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "full_width": true,
+        "products_per_page": 9,
+        "columns_desktop": 3,
+        "pagination_type": "loadmore",
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "show_counts": false,
+        "facets_desktop": "sidebar"
+      }
+    }
+  },
+  "order": [
+    "9de27e1e-9c24-4334-982b-86e9980a73bd",
+    "13c1fa9b-e669-46a9-8040-f6f0e85ee079",
+    "main-collection-banner",
+    "product-grid"
+  ]
+}
