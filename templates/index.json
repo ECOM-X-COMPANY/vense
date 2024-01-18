@@ -210,12 +210,73 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
+    },
+    "gallery_fVYFiT": {
+      "type": "gallery",
+      "blocks": {
+        "image_NmtqBX": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_8Q6AaV": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_a3egdf": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_NmtqBX",
+        "image_8Q6AaV",
+        "image_a3egdf"
+      ],
+      "settings": {
+        "columns_desktop": 3,
+        "section_width": "grid",
+        "mobile_swipe": false,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h2",
+        "overlay_color": "#000000",
+        "overlay_opacity": 70,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
     "16479477632637c9a7",
     "46322c5c-3347-49a0-b4b9-a5f2ad634b2c",
     "collection_list_FaLtCA",
-    "image_with_text_overlay_7gjf94"
+    "image_with_text_overlay_7gjf94",
+    "gallery_fVYFiT"
   ]
 }
