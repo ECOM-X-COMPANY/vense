@@ -215,6 +215,19 @@
     "gallery_fVYFiT": {
       "type": "gallery",
       "blocks": {
+        "image_YXUiLD": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/10.png",
+            "subheading": "",
+            "title": "Sophia",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": true,
+            "block_link": ""
+          }
+        },
         "image_NmtqBX": {
           "type": "image",
           "settings": {
@@ -231,45 +244,35 @@
         "image_8Q6AaV": {
           "type": "image",
           "settings": {
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "image": "shopify:\/\/shop_images\/6.png",
+            "subheading": "",
+            "title": "Mason",
+            "text": "",
+            "link_label": "",
             "link": "",
-            "use_text_button": false,
+            "use_text_button": true,
             "block_link": ""
           }
         },
         "image_a3egdf": {
           "type": "image",
           "settings": {
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "image": "shopify:\/\/shop_images\/7.png",
+            "subheading": "",
+            "title": "Olivia",
+            "text": "",
+            "link_label": "",
             "link": "",
-            "use_text_button": false,
-            "block_link": ""
-          }
-        },
-        "image_YXUiLD": {
-          "type": "image",
-          "settings": {
-            "subheading": "Add a tagline",
-            "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
+            "use_text_button": true,
             "block_link": ""
           }
         }
       },
       "block_order": [
+        "image_YXUiLD",
         "image_NmtqBX",
         "image_8Q6AaV",
-        "image_a3egdf",
-        "image_YXUiLD"
+        "image_a3egdf"
       ],
       "settings": {
         "columns_desktop": 4,
@@ -281,7 +284,7 @@
         "column_spacing": "small",
         "heading_size": "h3",
         "overlay_color": "#000000",
-        "overlay_opacity": 43,
+        "overlay_opacity": 42,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
