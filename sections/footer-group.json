@@ -8,7 +8,7 @@
         "text_drRhnT": {
           "type": "text",
           "settings": {
-            "column_size": "small",
+            "column_size": "large",
             "title": "Vense",
             "text": "<p>Our store offers a wide range of high quality products for the whole family and any occasion. From stylish clothing and accessories to elegant home décor, we pride ourselves on our careful selection of products from global brands.<\/p>",
             "text_size": "small",
@@ -47,6 +47,9 @@
         "401e3886-6cb7-4742-8fda-45a0d97a26a3",
         "menu_qH6Bpd",
         "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2"
+      ],
+      "custom_css": [
+        ".full-width-row {justify-content: space-between;}"
       ],
       "settings": {
         "full_width": true,
