@@ -88,7 +88,7 @@
         "164794776393e76b8e-1"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
+        "desktop_height": "desktop-height-auto",
         "mobile_height": "mobile-height-500",
         "full_width": true,
         "autoplay": true,
