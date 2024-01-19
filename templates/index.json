@@ -88,13 +88,13 @@
         "164794776393e76b8e-1"
       ],
       "settings": {
-        "desktop_height": "desktop-height-auto",
+        "desktop_height": "desktop-height-full",
         "mobile_height": "mobile-height-500",
         "full_width": true,
         "autoplay": true,
         "autoplay_length": 6,
         "transition": "swipe",
-        "disable_top_spacing": false,
+        "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
     },
