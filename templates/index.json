@@ -6,7 +6,7 @@
         "164794776393e76b8e-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/44ab3777a4dede19c4261bb751c8b692.jpg",
+            "image": "shopify:\/\/shop_images\/53279d8bab4ca6ca99a589d663f7cab3.png",
             "slide_link": "",
             "video_background": true,
             "video": "",
@@ -16,7 +16,7 @@
             "content": "LET US ASSIST YOU IN CREATING A GARDEN WHERE NATURE BECOMES YOUR TRUE ALLY IN RELAXATION AND REJUVENATION.",
             "description_size": "small",
             "content_position": "middle-center",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "content_size": "large",
             "overlay_color": "#000000",
             "overlay_opacity": 58,
@@ -94,7 +94,7 @@
         "autoplay": true,
         "autoplay_length": 6,
         "transition": "swipe",
-        "disable_top_spacing": true,
+        "disable_top_spacing": false,
         "disable_bottom_spacing": true
       }
     },
