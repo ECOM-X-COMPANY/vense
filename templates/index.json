@@ -218,12 +218,13 @@
         "image_NmtqBX": {
           "type": "image",
           "settings": {
-            "subheading": "Add a tagline",
+            "image": "shopify:\/\/shop_images\/4.png",
+            "subheading": "",
             "title": "Column",
-            "text": "Pair text with an image to focus on your chosen image",
-            "link_label": "Explore",
+            "text": "",
+            "link_label": "",
             "link": "",
-            "use_text_button": false,
+            "use_text_button": true,
             "block_link": ""
           }
         },
@@ -250,15 +251,28 @@
             "use_text_button": false,
             "block_link": ""
           }
+        },
+        "image_YXUiLD": {
+          "type": "image",
+          "settings": {
+            "subheading": "Add a tagline",
+            "title": "Column",
+            "text": "Pair text with an image to focus on your chosen image",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
         }
       },
       "block_order": [
         "image_NmtqBX",
         "image_8Q6AaV",
-        "image_a3egdf"
+        "image_a3egdf",
+        "image_YXUiLD"
       ],
       "settings": {
-        "columns_desktop": 3,
+        "columns_desktop": 4,
         "section_width": "grid",
         "mobile_swipe": false,
         "image_ratio": "adapt",
