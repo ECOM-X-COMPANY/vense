@@ -220,7 +220,7 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/4.png",
             "subheading": "",
-            "title": "Column",
+            "title": "Ethan",
             "text": "",
             "link_label": "",
             "link": "",
@@ -273,15 +273,15 @@
       ],
       "settings": {
         "columns_desktop": 4,
-        "section_width": "grid",
+        "section_width": "full-width-row",
         "mobile_swipe": false,
-        "image_ratio": "adapt",
+        "image_ratio": "square",
         "content_position": "bottom-left",
         "text_alignment": "left",
         "column_spacing": "small",
-        "heading_size": "h2",
+        "heading_size": "h3",
         "overlay_color": "#000000",
-        "overlay_opacity": 70,
+        "overlay_opacity": 43,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
