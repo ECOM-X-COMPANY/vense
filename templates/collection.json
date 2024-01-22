@@ -24,10 +24,23 @@
         "filter_color_swatches": false,
         "facets_desktop": "sidebar"
       }
+    },
+    "recently_viewed_products_KJ7m6d": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "heading": "Recently viewed products",
+        "heading_left": true,
+        "description": "<p>Describe your recently viewed products here<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
     "main-collection-banner",
-    "product-grid"
+    "product-grid",
+    "recently_viewed_products_KJ7m6d"
   ]
 }
