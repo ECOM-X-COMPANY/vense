@@ -11,7 +11,7 @@
             "video_background": true,
             "video": "",
             "subheading": "Subheading",
-            "heading": "Alluring touches of luxury: Fine Jewelry that reflects your style.",
+            "heading": "Alluring touches of luxury: Fine Jewelry that reflects your style",
             "heading_size": "h1",
             "content": "Bring out the finer things in life: elegant jewelry for special moments.",
             "description_size": "small",
@@ -86,6 +86,9 @@
         "164794776393e76b8e-2",
         "164794776393e76b8e-0",
         "164794776393e76b8e-1"
+      ],
+      "custom_css": [
+        ".h1 {text-transform: uppercase;}"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
