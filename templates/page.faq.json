@@ -27,7 +27,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": false,
@@ -116,11 +116,77 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
+    },
+    "promotional_banner_AxxYUj": {
+      "type": "promotional-banner",
+      "blocks": {
+        "subheading_tbUMTX": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "heading_kTCk8w": {
+          "type": "heading",
+          "settings": {
+            "text": "Promotional banner",
+            "heading_size": "h1"
+          }
+        },
+        "text_7fJHUt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+          }
+        },
+        "button_UkzV97": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_tbUMTX",
+        "heading_kTCk8w",
+        "text_7fJHUt",
+        "button_UkzV97"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "image_height": "adapt",
+        "image_width": "split",
+        "frame_border": true,
+        "content_position": "text-left",
+        "split_layout": "image_first",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 20,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "recently_viewed_products_w3xtfp": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "heading": "Recently viewed products",
+        "heading_left": true,
+        "description": "<p>Describe your recently viewed products here<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
     "16618629918566dc27",
     "166186303682d7c655",
-    "faq"
+    "faq",
+    "promotional_banner_AxxYUj",
+    "recently_viewed_products_w3xtfp"
   ]
 }
