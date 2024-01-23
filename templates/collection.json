@@ -46,52 +46,53 @@
         "facets_desktop": "drawer"
       }
     },
-    "rich_text_M4UGDc": {
-      "type": "rich-text",
+    "image_with_text_overlay_ae9Hxx": {
+      "type": "image-with-text-overlay",
       "blocks": {
-        "subheading_nTwKEL": {
+        "subheading_FPNYjb": {
           "type": "subheading",
           "settings": {
-            "text": "Subheading for this section"
+            "text": "Add a tagline"
           }
         },
-        "heading_38f48V": {
+        "heading_wWzG4j": {
           "type": "heading",
           "settings": {
-            "text": "Talk about your brand",
-            "size": "h3"
+            "text": "Image with text overlay",
+            "heading_size": "h1-xlarge"
           }
         },
-        "text_Q48hPF": {
+        "text_6VNa87": {
           "type": "text",
           "settings": {
-            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
-            "size": "text-size-regular"
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_size": "medium"
           }
         },
-        "button_Xxyand": {
+        "button_9BpPKm": {
           "type": "button",
           "settings": {
-            "link_label": "Learn More",
-            "link": "",
+            "button_text": "Shop Now",
+            "button_link": "",
             "button_outline": false
           }
         }
       },
       "block_order": [
-        "subheading_nTwKEL",
-        "heading_38f48V",
-        "text_Q48hPF",
-        "button_Xxyand"
+        "subheading_FPNYjb",
+        "heading_wWzG4j",
+        "text_6VNa87",
+        "button_9BpPKm"
       ],
       "settings": {
         "section_width": "grid",
-        "text_width": "medium",
-        "text_position": "center",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "bottom-center",
         "text_alignment": "center",
-        "color_bg": "transparent",
-        "color_text": "#151515",
-        "color_links": "#151515",
+        "overlay_opacity": 30,
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
@@ -112,7 +113,7 @@
   "order": [
     "main-collection-banner",
     "product-grid",
-    "rich_text_M4UGDc",
+    "image_with_text_overlay_ae9Hxx",
     "recently_viewed_products_KJ7m6d"
   ]
 }
