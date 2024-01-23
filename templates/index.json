@@ -138,7 +138,7 @@
         "height": "height-auto",
         "full_width": true,
         "direction": "left",
-        "speed": "20s",
+        "speed": "10s",
         "text_size": 24,
         "text_uppercase": true,
         "image_size": "medium",
