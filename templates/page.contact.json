@@ -107,6 +107,7 @@
       "block_order": [
         "51991586-af35-4d5d-be99-a2f76ab90b27"
       ],
+      "disabled": true,
       "settings": {
         "googlemaps_api_key": "AIzaSyDJAfB-lPigbvz3birQsXS4oxYHi72SX6M",
         "desktop_height": "desktop-height-550",
