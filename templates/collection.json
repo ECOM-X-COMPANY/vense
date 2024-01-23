@@ -19,9 +19,9 @@
         "columns_desktop": 4,
         "pagination_type": "infinite",
         "enable_filtering": true,
-        "enable_sorting": false,
+        "enable_sorting": true,
         "show_counts": false,
-        "filter_color_swatches": false,
+        "filter_color_swatches": true,
         "facets_desktop": "sidebar"
       }
     },
