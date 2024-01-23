@@ -5,6 +5,7 @@
       "blocks": {
         "subheading_FK7636": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Add a tagline"
           }
@@ -13,7 +14,7 @@
           "type": "heading",
           "settings": {
             "text": "CONTACT US",
-            "heading_size": "h1"
+            "heading_size": "h1-large"
           }
         },
         "text_xTzjTK": {
