@@ -17,7 +17,7 @@
         "promotion_XfTnXf": {
           "type": "promotion",
           "settings": {
-            "promotion_collection": "new-arrivals",
+            "promotion_collection": "",
             "promotion_position": 1,
             "promotion_width": "1",
             "title": "Promotion",
@@ -46,6 +46,56 @@
         "facets_desktop": "drawer"
       }
     },
+    "rich_text_M4UGDc": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_nTwKEL": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading for this section"
+          }
+        },
+        "heading_38f48V": {
+          "type": "heading",
+          "settings": {
+            "text": "Talk about your brand",
+            "size": "h3"
+          }
+        },
+        "text_Q48hPF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
+            "size": "text-size-regular"
+          }
+        },
+        "button_Xxyand": {
+          "type": "button",
+          "settings": {
+            "link_label": "Learn More",
+            "link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_nTwKEL",
+        "heading_38f48V",
+        "text_Q48hPF",
+        "button_Xxyand"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "recently_viewed_products_KJ7m6d": {
       "type": "recently-viewed-products",
       "settings": {
@@ -62,6 +112,7 @@
   "order": [
     "main-collection-banner",
     "product-grid",
+    "rich_text_M4UGDc",
     "recently_viewed_products_KJ7m6d"
   ]
 }
