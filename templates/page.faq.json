@@ -123,27 +123,27 @@
         "subheading_tbUMTX": {
           "type": "subheading",
           "settings": {
-            "text": "Add a tagline"
+            "text": "Bestsellers"
           }
         },
         "heading_kTCk8w": {
           "type": "heading",
           "settings": {
-            "text": "Promotional banner",
+            "text": "Test 3",
             "heading_size": "h1"
           }
         },
         "text_7fJHUt": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>"
+            "text": "<p>Discover the benefits of Test 1, made with 100% organic ingredients. Enjoy a product that is free from harmful pesticides and chemicals, offering you a healthier and more natural experience. Trust in our commitment to providing you with the best quality organic product on the<br\/> market.<\/p>"
           }
         },
         "button_UkzV97": {
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify:\/\/products\/test-3",
             "button_outline": true
           }
         }
@@ -156,6 +156,7 @@
       ],
       "settings": {
         "section_width": "grid",
+        "image": "shopify:\/\/shop_images\/3q.png",
         "image_height": "adapt",
         "image_width": "split",
         "frame_border": true,
