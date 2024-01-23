@@ -101,6 +101,55 @@
         "disable_bottom_spacing": true
       }
     },
+    "scrolling_text_w6EXfN": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_a8bwCJ": {
+          "type": "text",
+          "settings": {
+            "text": "GET -10% OFF",
+            "link": "",
+            "outline_text": true
+          }
+        },
+        "text_jg6eik": {
+          "type": "text",
+          "settings": {
+            "text": "SALE",
+            "link": "",
+            "outline_text": true
+          }
+        },
+        "text_DGrtqU": {
+          "type": "text",
+          "settings": {
+            "text": "GET -50% OFF",
+            "link": "",
+            "outline_text": true
+          }
+        }
+      },
+      "block_order": [
+        "text_a8bwCJ",
+        "text_jg6eik",
+        "text_DGrtqU"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 24,
+        "text_uppercase": true,
+        "image_size": "medium",
+        "color_bg": "#151515",
+        "color_text": "#f9f6ee",
+        "overlay_color": "#151515",
+        "overlay_opacity": 38,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "46322c5c-3347-49a0-b4b9-a5f2ad634b2c": {
       "type": "collection-tabs",
       "blocks": {
@@ -295,6 +344,7 @@
   },
   "order": [
     "16479477632637c9a7",
+    "scrolling_text_w6EXfN",
     "46322c5c-3347-49a0-b4b9-a5f2ad634b2c",
     "collection_list_FaLtCA",
     "image_with_text_overlay_7gjf94",
