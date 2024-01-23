@@ -108,7 +108,7 @@
           "type": "text",
           "settings": {
             "text": "GET -10% OFF",
-            "link": "",
+            "link": "shopify:\/\/products\/test-1",
             "outline_text": true
           }
         },
@@ -137,7 +137,7 @@
       "settings": {
         "height": "height-auto",
         "full_width": true,
-        "direction": "left",
+        "direction": "right",
         "speed": "10s",
         "text_size": 24,
         "text_uppercase": true,
