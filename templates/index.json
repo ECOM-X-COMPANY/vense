@@ -145,7 +145,7 @@
         "color_bg": "#151515",
         "color_text": "#f9f6ee",
         "overlay_color": "#151515",
-        "overlay_opacity": 38,
+        "overlay_opacity": 0,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
