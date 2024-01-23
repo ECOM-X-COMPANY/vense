@@ -13,6 +13,27 @@
     },
     "product-grid": {
       "type": "main-collection-product-grid",
+      "blocks": {
+        "promotion_XfTnXf": {
+          "type": "promotion",
+          "settings": {
+            "promotion_collection": "new-arrivals",
+            "promotion_position": 1,
+            "promotion_width": "1",
+            "title": "Promotion",
+            "text": "Advertise a promotion or a sale",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70
+          }
+        }
+      },
+      "block_order": [
+        "promotion_XfTnXf"
+      ],
       "settings": {
         "full_width": true,
         "products_per_page": 11,
