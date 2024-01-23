@@ -1,10 +1,54 @@
 {
   "sections": {
+    "image_with_text_overlay_iK988F": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_FK7636": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "heading_9Lfc4b": {
+          "type": "heading",
+          "settings": {
+            "text": "CONTACT US",
+            "heading_size": "h1"
+          }
+        },
+        "text_xTzjTK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Share information about your brand with your customers. Describe a product, make nnouncements, or welcome customers to your store.<\/p>",
+            "description_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_FK7636",
+        "heading_9Lfc4b",
+        "text_xTzjTK"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "image": "shopify:\/\/shop_images\/15.png",
+        "image_parallax": false,
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_opacity": 30,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "1661619382b4020fa2": {
       "type": "rich-text",
       "blocks": {
         "166161938159ca8988-1": {
           "type": "heading",
+          "disabled": true,
           "settings": {
             "text": "CONTACT US",
             "size": "h2"
@@ -12,6 +56,7 @@
         },
         "166161938159ca8988-2": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "size": "text-size-regular"
@@ -61,6 +106,7 @@
       "block_order": [
         "51991586-af35-4d5d-be99-a2f76ab90b27"
       ],
+      "disabled": true,
       "settings": {
         "googlemaps_api_key": "AIzaSyDJAfB-lPigbvz3birQsXS4oxYHi72SX6M",
         "desktop_height": "desktop-height-550",
@@ -74,11 +120,25 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "recently_viewed_products_bNCG8t": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "heading": "Recently viewed products",
+        "heading_left": true,
+        "description": "<p>Describe your recently viewed products here<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
+    "image_with_text_overlay_iK988F",
     "1661619382b4020fa2",
     "1652268757b7c53383",
-    "1652081672ff9b3c2c"
+    "1652081672ff9b3c2c",
+    "recently_viewed_products_bNCG8t"
   ]
 }
