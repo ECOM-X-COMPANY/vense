@@ -31,7 +31,10 @@
           "settings": {
             "picker_type": "button",
             "color_picker": true,
+            "color_picker_size": "regular",
+            "color_picker_use_variants": false,
             "variant_is_disabled": true,
+            "sizing_guide_variant": "Size",
             "sizing_guide_text": "Sizing guide",
             "sizing_guide_icon": "ruler",
             "sizing_guide_page": "sizing-guide"
@@ -89,7 +92,7 @@
         "enable_sticky_info": true,
         "enable_sticky_add_to_cart": true,
         "show_taxes_included": true,
-        "media_layout": "grid",
+        "media_layout": "collage",
         "display_slider_pagination": true,
         "media_aspect_ratio": "adapt",
         "display_captions": true,
