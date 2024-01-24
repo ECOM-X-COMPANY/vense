@@ -27,7 +27,10 @@
           "settings": {
             "picker_type": "button",
             "color_picker": true,
+            "color_picker_size": "regular",
+            "color_picker_use_variants": false,
             "variant_is_disabled": true,
+            "sizing_guide_variant": "Size",
             "sizing_guide_text": "Sizing guide",
             "sizing_guide_icon": "ruler",
             "sizing_guide_page": "sizing-guide"
@@ -47,7 +50,8 @@
             "heading": "Details",
             "open": true,
             "content": "<p>Plastic, bold and colourful jewellery has captured the hearts of It Girls everywhere, integrating their holiday accessories into their everyday looks. Yala’s red beaded necklace pays homage to the cultural jewellery of the Maasai Mara ladies from the BMB Workshop and fits into this latest trend.<\/p>",
-            "page": ""
+            "page": "",
+            "custom_liquid": ""
           }
         },
         "b16fcef7-3316-44a4-9f80-205682253cb5": {
@@ -56,7 +60,8 @@
             "heading": "Shipping",
             "open": false,
             "content": "<p>These techniques can include hand engraving, hand forging, and hand casting, among others. By using these traditional techniques, artisans are able to create pieces that have a unique and authentic look and feel.<\/p>",
-            "page": ""
+            "page": "",
+            "custom_liquid": ""
           }
         },
         "390def07-18af-4bb9-8bf4-c6bf80c6211d": {
@@ -65,7 +70,8 @@
             "heading": "Warranty",
             "open": false,
             "content": "<p>Certified carbon-free products and companies offer several benefits. For one, they help to reduce the overall carbon footprint of society, which is crucial for mitigating the impacts of climate change.<\/p>",
-            "page": ""
+            "page": "",
+            "custom_liquid": ""
           }
         },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
@@ -73,12 +79,15 @@
           "settings": {
             "side_panel_1_label": "Materials",
             "side_panel_1_icon": "leather",
+            "side_panel_1_content": "",
             "side_panel_1_page": "materials",
             "side_panel_2_label": "Shipping & Returns",
             "side_panel_2_icon": "box",
+            "side_panel_2_content": "",
             "side_panel_2_page": "shipping",
             "side_panel_3_label": "Care Guide",
             "side_panel_3_icon": "washing",
+            "side_panel_3_content": "",
             "side_panel_3_page": "care-guide"
           }
         },
@@ -106,7 +115,7 @@
         "show_taxes_included": true,
         "media_layout": "collage",
         "display_slider_pagination": true,
-        "media_aspect_ratio": "adapt",
+        "media_aspect_ratio": "landscape",
         "display_captions": true,
         "hide_variants": false,
         "lightbox": true,
@@ -169,7 +178,6 @@
         "076a1b72-2e63-4936-8d6e-ebf8ae6397bb": {
           "type": "image",
           "settings": {
-            "image": "",
             "retina": true
           }
         }
@@ -283,7 +291,6 @@
       ],
       "settings": {
         "section_width": "full-width-row",
-        "image": "",
         "image_parallax": true,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-450",
@@ -361,7 +368,6 @@
         "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-0": {
           "type": "image",
           "settings": {
-            "image": "",
             "subheading": "",
             "title": "Feel The Glamour",
             "text": "Dipped in 14K gold and featuring three star-studded, this bracelet is an everyday piece that still stands out.",
@@ -374,7 +380,6 @@
         "template--18432547127579__b0d87fdd-e30c-4c3f-b29f-c71a7bf242f5-1681373018c042b41e-1": {
           "type": "image",
           "settings": {
-            "image": "",
             "subheading": "",
             "title": "Unmatched Selection",
             "text": "They can be simple studs or elaborate chandelier earrings, and can be made from a range of materials.",
