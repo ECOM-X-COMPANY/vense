@@ -85,7 +85,8 @@
         "button_9BpPKm"
       ],
       "settings": {
-        "section_width": "grid",
+        "section_width": "full-width-row",
+        "image": "shopify:\/\/shop_images\/mr-autthaporn-pradidpong-2MZwPQ2EMik-unsplash.jpg",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
