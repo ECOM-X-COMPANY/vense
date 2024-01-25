@@ -514,7 +514,7 @@
         "show_excerpt": true,
         "show_view_all": true,
         "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "recently_viewed_products_GFE3RA": {
