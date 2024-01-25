@@ -31,9 +31,9 @@
         "text_xTzjTK"
       ],
       "settings": {
-        "section_width": "grid",
+        "section_width": "full-width-row-full",
         "image": "shopify:\/\/shop_images\/15.png",
-        "image_parallax": false,
+        "image_parallax": true,
         "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-500",
         "content_width": "medium",
