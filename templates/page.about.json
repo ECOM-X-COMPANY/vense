@@ -505,7 +505,7 @@
         "heading_left": false,
         "description": "<p>Add a short description for your brand news<\/p>",
         "full_width": true,
-        "blog": "",
+        "blog": "news",
         "post_limit": 3,
         "columns_desktop": 3,
         "mobile_swipe": true,
