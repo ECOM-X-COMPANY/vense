@@ -29,61 +29,10 @@
             "overlay_color": "#000000",
             "overlay_opacity": 70
           }
-        },
-        "promotion_p6Lpi9": {
-          "type": "promotion",
-          "settings": {
-            "promotion_collection": "",
-            "promotion_position": 1,
-            "promotion_width": "1",
-            "title": "Promotion",
-            "text": "Advertise a promotion or a sale",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70
-          }
-        },
-        "promotion_BRjYnC": {
-          "type": "promotion",
-          "settings": {
-            "promotion_collection": "",
-            "promotion_position": 1,
-            "promotion_width": "1",
-            "title": "Promotion",
-            "text": "Advertise a promotion or a sale",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70
-          }
-        },
-        "promotion_UF39f3": {
-          "type": "promotion",
-          "settings": {
-            "promotion_collection": "",
-            "promotion_position": 1,
-            "promotion_width": "1",
-            "title": "Promotion",
-            "text": "Advertise a promotion or a sale",
-            "link_label": "Explore",
-            "link": "",
-            "use_text_button": false,
-            "block_link": "",
-            "overlay_color": "#000000",
-            "overlay_opacity": 70
-          }
         }
       },
       "block_order": [
-        "promotion_XfTnXf",
-        "promotion_p6Lpi9",
-        "promotion_BRjYnC",
-        "promotion_UF39f3"
+        "promotion_XfTnXf"
       ],
       "settings": {
         "full_width": true,
