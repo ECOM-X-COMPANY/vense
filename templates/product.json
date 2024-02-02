@@ -126,10 +126,13 @@
     },
     "product-recommendations": {
       "type": "product-recommendations",
+      "custom_css": [
+        ".h3{text-align: center;}"
+      ],
       "settings": {
         "heading": "YOU MAY ALSO LIKE",
         "heading_left": true,
-        "description": "<p>Combine your style with these products<\/p>",
+        "description": "",
         "full_width": true,
         "mobile_swipe": true,
         "disable_top_spacing": false,
