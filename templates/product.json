@@ -117,6 +117,7 @@
     },
     "1662552569cce2536d": {
       "type": "spacer",
+      "disabled": true,
       "settings": {
         "spacer_mobile": 0,
         "spacer_desktop": 5,
@@ -127,7 +128,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "custom_css": [
-        ".section-header{width: 100%; text-align: center; display: flex; justify-content: center;}"
+        ".section-header {width: 100%; text-align: center; display: flex; justify-content: center;}"
       ],
       "settings": {
         "heading": "YOU MAY ALSO LIKE",
