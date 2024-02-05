@@ -3925,7 +3925,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     font-weight: 600;
     margin-bottom: 0px; }
 
-.enapSAction a {
+.enapSAction a:after {
   border-radius: 100% !important;
   font-size: 22px !important;
 }
