@@ -128,7 +128,7 @@
     "custom_liquid_DA6yWB": {
       "type": "custom-liquid",
       "custom_css": [
-        ".enapSPrev{border-radius: 100%; font-size: 22px;}"
+
       ],
       "settings": {
         "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
