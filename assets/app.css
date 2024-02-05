@@ -3924,3 +3924,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .section-header h2 {
     font-weight: 600;
     margin-bottom: 0px; }
+
+.enapSPrev {
+  border-radius: 100% !important;
+  font-size: 22px !important;
+}
