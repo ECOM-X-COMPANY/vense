@@ -3934,4 +3934,5 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 #enrm-branding-28930{
   display: none !important;
+  opacity: 0 !important;
 }
