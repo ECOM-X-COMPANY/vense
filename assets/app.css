@@ -3932,3 +3932,6 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .enapSlideOuter .EnaplSPager.enaplSpg > li.enapslideactive a{
   background: #C09E83 !important;;
 }
+#enrm-branding-28930{
+  display: none !important;
+}
