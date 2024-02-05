@@ -125,6 +125,36 @@
         "border_separator_full": true
       }
     },
+    "1707148780981e10aa": {
+      "type": "apps",
+      "blocks": {
+        "lai_product_reviews_lai_product_section_37atNh": {
+          "type": "shopify:\/\/apps\/lai-product-reviews\/blocks\/lai-product-section\/cad3c6c6-329e-4416-ba74-b79359b5b6e1",
+          "disabled": true,
+          "settings": {
+            "lai_product": "",
+            "title": ""
+          }
+        },
+        "lai_product_reviews_lai_home_page_section_HpcgNP": {
+          "type": "shopify:\/\/apps\/lai-product-reviews\/blocks\/lai-home-page-section\/cad3c6c6-329e-4416-ba74-b79359b5b6e1",
+          "settings": {
+            "title": "Reviews",
+            "type_layout": "cardCarousel",
+            "source": "happyPage",
+            "background": "#fff",
+            "width_container": "",
+            "use_default_setting": true
+          }
+        }
+      },
+      "block_order": [
+        "lai_product_reviews_lai_product_section_37atNh",
+        "lai_product_reviews_lai_home_page_section_HpcgNP"
+      ],
+      "settings": {
+      }
+    },
     "1707148459ccb0c152": {
       "type": "apps",
       "blocks": {
@@ -143,6 +173,7 @@
       "block_order": [
         "ryviu_reviews_qa_ryviu_widget_FgqrKt"
       ],
+      "disabled": true,
       "settings": {
       }
     },
@@ -177,6 +208,7 @@
     "16623877721f33fb14",
     "16625458859c68803a",
     "1662552569cce2536d",
+    "1707148780981e10aa",
     "1707148459ccb0c152",
     "custom_liquid_DA6yWB",
     "product-recommendations"
