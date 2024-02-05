@@ -131,7 +131,7 @@
         ".section-header {width: 100%; text-align: center; display: flex; justify-content: center;}"
       ],
       "settings": {
-        "heading": "YOU MAY ALSO LIKE",
+        "heading": "RECENTLY VIEWED",
         "heading_left": true,
         "description": "",
         "full_width": true,
