@@ -125,6 +125,27 @@
         "border_separator_full": true
       }
     },
+    "1707148459ccb0c152": {
+      "type": "apps",
+      "blocks": {
+        "ryviu_reviews_qa_ryviu_widget_FgqrKt": {
+          "type": "shopify:\/\/apps\/ryviu-reviews-qa\/blocks\/ryviu-widget\/807ad6ed-1a6a-4559-abea-ed062858d9da",
+          "settings": {
+            "r_wapper_class": "",
+            "r_max_width": 1920,
+            "r_padding_block": 0,
+            "hide_when_no_reviews": false,
+            "one_col_on_mobile": false,
+            "hide_title_image_form": false
+          }
+        }
+      },
+      "block_order": [
+        "ryviu_reviews_qa_ryviu_widget_FgqrKt"
+      ],
+      "settings": {
+      }
+    },
     "custom_liquid_DA6yWB": {
       "type": "custom-liquid",
       "custom_css": [
@@ -156,6 +177,7 @@
     "16623877721f33fb14",
     "16625458859c68803a",
     "1662552569cce2536d",
+    "1707148459ccb0c152",
     "custom_liquid_DA6yWB",
     "product-recommendations"
   ]
