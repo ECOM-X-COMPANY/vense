@@ -125,6 +125,12 @@
         "border_separator_full": true
       }
     },
+    "custom_liquid_DA6yWB": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
+      }
+    },
     "product-recommendations": {
       "type": "product-recommendations",
       "custom_css": [
@@ -139,12 +145,6 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
-    },
-    "custom_liquid_DA6yWB": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
-      }
     }
   },
   "order": [
@@ -153,7 +153,7 @@
     "16623877721f33fb14",
     "16625458859c68803a",
     "1662552569cce2536d",
-    "product-recommendations",
-    "custom_liquid_DA6yWB"
+    "custom_liquid_DA6yWB",
+    "product-recommendations"
   ]
 }
