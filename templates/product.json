@@ -141,10 +141,10 @@
           "settings": {
             "title": "Reviews",
             "type_layout": "cardCarousel",
-            "source": "happyPage",
+            "source": "homePage",
             "background": "#fff",
             "width_container": "",
-            "use_default_setting": true
+            "use_default_setting": false
           }
         }
       },
