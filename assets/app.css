@@ -3929,3 +3929,6 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   border-radius: 100% !important;
   font-size: 22px !important;
 }
+.enapSlideOuter .EnaplSPager.enaplSpg > li.active a, .enapSlideOuter .EnaplSPager.enaplSpg > li:hover a{
+  background-color: #C09E83;
+}
