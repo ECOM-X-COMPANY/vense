@@ -159,7 +159,15 @@
     },
     "content_for_index": [
 
-    ]
+    ],
+    "blocks": {
+      "14927024384642293474": {
+        "type": "shopify:\/\/apps\/image-slider-pro\/blocks\/embed-js\/187cfdb3-f7ca-4af8-9477-517eb71154e7",
+        "disabled": false,
+        "settings": {
+        }
+      }
+    }
   },
   "presets": {
     "Default": {
