@@ -24,7 +24,7 @@
             "title": "50% OFF",
             "text": "On Selected Products",
             "link_label": "Shop now",
-            "link": "",
+            "link": "shopify:\/\/collections\/all",
             "use_text_button": false,
             "block_link": "",
             "overlay_color": "#074a42",
