@@ -10,9 +10,10 @@
     "color_announcement_bar_bg": "#40495a",
     "color_header_bg": "#d5c6bf",
     "color_header_icons": "#40495a",
+    "solid_button_background": "#151515",
     "outline_button_label": "#151515",
     "color_stars": "#d5c6bf",
-    "color_dots": "#151515",
+    "color_dots": "#40495a",
     "color_footer_text": "#151515",
     "color_footer_link": "#151515",
     "color_footer_link_hover": "#ffffff",
@@ -23,6 +24,7 @@
     "product_aspect_ratio": "adapt",
     "products_hover_images_count": 3,
     "enable_quick_add": true,
+    "color_badge_sale": "#40495a",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
