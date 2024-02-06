@@ -101,46 +101,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "scrolling_text_eVxEDc": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text_PXMXWE": {
-          "type": "text",
-          "settings": {
-            "text": "Future Nature",
-            "link": "",
-            "outline_text": true
-          }
-        },
-        "text_8bT43p": {
-          "type": "text",
-          "settings": {
-            "text": "Future Nature",
-            "link": "",
-            "outline_text": false
-          }
-        }
-      },
-      "block_order": [
-        "text_PXMXWE",
-        "text_8bT43p"
-      ],
-      "settings": {
-        "height": "height-auto",
-        "full_width": true,
-        "direction": "left",
-        "speed": "20s",
-        "text_size": 24,
-        "text_uppercase": true,
-        "image_size": "large",
-        "color_bg": "#d5c6bf",
-        "color_text": "#151515",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "scrolling_text_w6EXfN": {
       "type": "scrolling-text",
       "blocks": {
@@ -261,6 +221,46 @@
         "section_width": "grid",
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
+      }
+    },
+    "scrolling_text_eVxEDc": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_PXMXWE": {
+          "type": "text",
+          "settings": {
+            "text": "Future Nature",
+            "link": "",
+            "outline_text": true
+          }
+        },
+        "text_8bT43p": {
+          "type": "text",
+          "settings": {
+            "text": "Future Nature",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_PXMXWE",
+        "text_8bT43p"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 24,
+        "text_uppercase": true,
+        "image_size": "large",
+        "color_bg": "#d5c6bf",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "image_with_text_bFjfTR": {
@@ -531,10 +531,10 @@
   },
   "order": [
     "16479477632637c9a7",
-    "scrolling_text_eVxEDc",
     "scrolling_text_w6EXfN",
     "46322c5c-3347-49a0-b4b9-a5f2ad634b2c",
     "shop_the_look_q3KkjV",
+    "scrolling_text_eVxEDc",
     "image_with_text_bFjfTR",
     "image_with_text_qUXX4V",
     "collection_list_FaLtCA",
