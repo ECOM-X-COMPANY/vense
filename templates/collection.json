@@ -20,6 +20,7 @@
             "promotion_collection": "",
             "promotion_position": 1,
             "promotion_width": "1",
+            "image": "shopify:\/\/shop_images\/iStock-482556326.webp",
             "title": "50% OFF",
             "text": "On Selected Products",
             "link_label": "Shop now",
@@ -35,7 +36,7 @@
         "promotion_XfTnXf"
       ],
       "custom_css": [
-        ".button{border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}"
+        ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}"
       ],
       "settings": {
         "full_width": true,
