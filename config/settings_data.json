@@ -6,6 +6,7 @@
     "button_uppercase": true,
     "color_body_bg": "#f9f6ee",
     "color_accent": "#151515",
+    "color_announcement_bar_bg": "#40495a",
     "outline_button_label": "#151515",
     "color_dots": "#151515",
     "section_spacing_desktop": 90,
