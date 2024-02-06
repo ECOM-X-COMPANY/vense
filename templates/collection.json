@@ -20,19 +20,22 @@
             "promotion_collection": "",
             "promotion_position": 1,
             "promotion_width": "1",
-            "title": "Promotion",
-            "text": "Advertise a promotion or a sale",
-            "link_label": "Explore",
+            "title": "50% OFF",
+            "text": "On Selected Products",
+            "link_label": "Shop now",
             "link": "",
             "use_text_button": false,
             "block_link": "",
-            "overlay_color": "#000000",
+            "overlay_color": "#074a42",
             "overlay_opacity": 70
           }
         }
       },
       "block_order": [
         "promotion_XfTnXf"
+      ],
+      "custom_css": [
+        ".button{border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}"
       ],
       "settings": {
         "full_width": true,
