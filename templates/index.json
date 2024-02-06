@@ -193,6 +193,16 @@
         "product_NDkreb": {
           "type": "product",
           "settings": {
+            "product_handle": "charm-necklace-gold",
+            "x_position": 30,
+            "y_position": 49,
+            "x_position_mobile": 20,
+            "y_position_mobile": 20
+          }
+        },
+        "product_qp8LgB": {
+          "type": "product",
+          "settings": {
             "product_handle": "",
             "x_position": 20,
             "y_position": 20,
@@ -202,7 +212,8 @@
         }
       },
       "block_order": [
-        "product_NDkreb"
+        "product_NDkreb",
+        "product_qp8LgB"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_6.webp",
