@@ -187,6 +187,30 @@
         "disable_bottom_spacing": true
       }
     },
+    "shop_the_look_q3KkjV": {
+      "type": "shop-the-look",
+      "blocks": {
+        "product_NDkreb": {
+          "type": "product",
+          "settings": {
+            "product_handle": "",
+            "x_position": 20,
+            "y_position": 20,
+            "x_position_mobile": 20,
+            "y_position_mobile": 20
+          }
+        }
+      },
+      "block_order": [
+        "product_NDkreb"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Rectangle_6.webp",
+        "section_width": "grid",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "collection_list_FaLtCA": {
       "type": "collection-list",
       "settings": {
@@ -347,6 +371,7 @@
     "16479477632637c9a7",
     "scrolling_text_w6EXfN",
     "46322c5c-3347-49a0-b4b9-a5f2ad634b2c",
+    "shop_the_look_q3KkjV",
     "collection_list_FaLtCA",
     "image_with_text_overlay_7gjf94",
     "gallery_fVYFiT"
