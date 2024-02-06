@@ -20,6 +20,7 @@
             "promotion_collection": "",
             "promotion_position": 1,
             "promotion_width": "1",
+            "image": "shopify:\/\/shop_images\/iStock-482556326.webp",
             "title": "50% OFF",
             "text": "On Selected Products",
             "link_label": "Shop now",
@@ -27,7 +28,7 @@
             "use_text_button": false,
             "block_link": "",
             "overlay_color": "#074a42",
-            "overlay_opacity": 70
+            "overlay_opacity": 100
           }
         }
       },
