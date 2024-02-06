@@ -232,9 +232,9 @@
         "full_width": true,
         "collection_list": [
           "bestsellers",
-          "new-arrivals",
           "test-2",
-          "aquamarine"
+          "aquamarine",
+          "new"
         ],
         "image_ratio": "adapt",
         "layout": "grid",
