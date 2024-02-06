@@ -8,14 +8,32 @@
         "5b1ab378-833d-4a94-a02e-8325ec1551d0": {
           "type": "text",
           "settings": {
-            "icon": "none",
+            "icon": "truck",
+            "text": "35% OFF + free shipping your first order over $50",
+            "link": ""
+          }
+        },
+        "text_FredaH": {
+          "type": "text",
+          "settings": {
+            "icon": "truck",
+            "text": "35% OFF + free shipping your first order over $50",
+            "link": ""
+          }
+        },
+        "text_DmfBW7": {
+          "type": "text",
+          "settings": {
+            "icon": "truck",
             "text": "35% OFF + free shipping your first order over $50",
             "link": ""
           }
         }
       },
       "block_order": [
-        "5b1ab378-833d-4a94-a02e-8325ec1551d0"
+        "5b1ab378-833d-4a94-a02e-8325ec1551d0",
+        "text_FredaH",
+        "text_DmfBW7"
       ],
       "settings": {
         "announcement_bar": true,
