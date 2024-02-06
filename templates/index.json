@@ -215,6 +215,7 @@
         "product_NDkreb",
         "product_qp8LgB"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_6.webp",
         "section_width": "grid",
