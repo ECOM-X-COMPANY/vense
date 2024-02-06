@@ -234,7 +234,8 @@
           "bestsellers",
           "test-2",
           "aquamarine",
-          "new"
+          "new",
+          "bestsellers-1"
         ],
         "image_ratio": "adapt",
         "layout": "grid",
