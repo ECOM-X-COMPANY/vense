@@ -58,6 +58,7 @@
         },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
           "type": "side_panel",
+          "disabled": true,
           "settings": {
             "side_panel_1_label": "Feeding",
             "side_panel_1_icon": "serving_dish",
@@ -75,6 +76,7 @@
         },
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
           "type": "share",
+          "disabled": true,
           "settings": {
           }
         }
