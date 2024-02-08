@@ -27,6 +27,7 @@
 
 -%}
 <span class="price">
+	<ins><span class="amount">{{ money_price }}</span></ins>
 	{%- unless product.price_varies == false and product.compare_at_price_varies %}
 		{% if compare_at_price != null and compare_at_price != 0 and price != compare_at_price %}
 			<del>
@@ -40,7 +41,7 @@
 			</del>
 		{% endif %}
 	{%- endunless -%}
-	<ins><span class="amount">{{ money_price }}</span></ins>
+
 	<small class="unit-price {% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
 		<span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
     <span class="unit-price-separator">/</span>

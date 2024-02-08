@@ -12,10 +12,34 @@
       {{ block.settings.custom_liquid }}
     {%- when 'title' -%}
       <div class="product-title-container" {{ block.shopify_attributes }}>
+          <div id="product-title__stock">
+              <h2 class="product-title__stock">
+                  {% if product.variants.size > 0 %}
+                      <span class="product-title__quantity"> {{ product.metafields.custom.in_stocks }}</span>
+                  {% endif %}
+                  {% if product.available %}
+                      <span class="product-title__instock">In Stock</span>
+                  {% else %}
+                      <span class="product-title__outstock">Out of Stock</span>
+                  {% endif %}
+              </h2>
+          </div>
         <h1 class="product-title uppercase--{{ block.settings.uppercase }}">{{ product.title }}</h1>
         <div class="product-price-container">
-          <div class="no-js-hidden" id="price-{{ section.id }}">
+            <div class="product-info__price">
+                {% render 'product-price', product: product, use_variant: true %}
+                <div class="product-info_price--discount">
+                    {% assign firstVariant = product.variants.first %}
+                    {% if firstVariant.compare_at_price > firstVariant.price %}
+                        <span>
+                        SAVE {{ firstVariant.compare_at_price | minus: firstVariant.price | times: 100.0 | divided_by: firstVariant.compare_at_price | round: 0 }}% ({{ firstVariant.compare_at_price | minus: firstVariant.price | money }})
+                            </span>
+                    {% endif %}
+                </div>
+            </div>
+          <div class="no-js-hidden price-disable" id="price-{{ section.id }} ">
             {% render 'product-price', product: product, use_variant: true, show_badges: true %}
+
           </div>
           {%- if section.settings.show_taxes_included != blank -%}
             {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
@@ -39,6 +63,31 @@
       </div>
     {%- when 'description' -%}
       <div class="product-short-description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
+        <div class="product-info__divider"></div>
+        <div class="product-info__advantages">
+            <ul>
+                <li>
+                    <p>
+                        {{ "✔  Unrivaled style and elegance" | escape }}
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        {{ "✔  Use of high-quality materials" | escape }}
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        {{ "✔  Lightweight and comfortable to wear" | escape }}
+                    </p>
+                </li>
+                <li>
+                    <p>
+                        {{ "✔  Striking and attractive appearance" | escape }}
+                    </p>
+                </li>
+            </ul>
+        </div>
     {%- when 'inventory_level' -%}
       {% render 'product-inventory-notice', product: product, section: section, block: block %}
     {%- when 'variant_picker' -%}
@@ -106,6 +155,16 @@
             {%- endif -%}
             {% render 'product-option', option_type: option_type, color_picker_size: color_picker_size, color_picker_use_variants: color_picker_use_variants, product: product, option: option, forloop: forloop, product_form_id: product_form_id, sizing_link: sizing_link %}
           {%- endfor -%}
+            <div class="product-info__calendar">
+                <span class="icon"><img width="29" height="29" src="https://cdn.shopify.com/s/files/1/0308/2020/4588/files/calendar.png?v=1699648227" alt="calendar" loading="lazy"></span>
+                {{ "Get it between" }}
+                <strong class="product-info__strong" style="padding-left: 10px; font-weight: 900;"><p id="product-info__strong--date" style=" font-weight: 900;"></p> <p id="product-info__strong--dateadd" style=" font-weight: 900;"></p></strong>
+                <div id="loader-window">Loading...</div>
+            </div>
+            <div class="product-info__delivery">
+                <span class="icon"><img width="29" height="29" src="https://cdn.shopify.com/s/files/1/0857/9671/6854/files/delivery-2.png?v=1707399916" alt="calendar" loading="lazy"></span>
+                {{ "Free shipping and returns" }}
+            </div>
         </div>
         <script type="application/json">
           {{ product.variants | json }}

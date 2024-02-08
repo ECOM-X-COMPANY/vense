@@ -1316,3 +1316,23 @@ document.addEventListener('DOMContentLoaded', () => {
     new FooterMenuToggle();
   }
 });
+
+// Custome date delivery
+document.addEventListener('DOMContentLoaded', function () {
+  const currentDateElement = document.getElementById('product-info__strong--date');
+  const futureDateElement = document.getElementById('product-info__strong--dateadd');
+
+  const today = new Date();
+  const options = { month: 'short', day: 'numeric' };
+  const todayFormatted = today.toLocaleDateString('en-US', options);
+
+  const futureDate = new Date(today);
+  futureDate.setDate(today.getDate() + 5);
+  const futureDateFormatted = futureDate.toLocaleDateString('en-US', options);
+
+  currentDateElement.innerHTML = `<span style="margin-right: 3px;">${todayFormatted}th</span>`;
+  futureDateElement.innerHTML = `<span style="margin-right: 3px;">-</span><span">${futureDateFormatted}st</span>`;
+
+  const loaderWindow = document.getElementById('loader-window');
+  loaderWindow.style.display = 'none';
+});
