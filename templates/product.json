@@ -17,6 +17,7 @@
         },
         "9d13a60b-74d6-49dd-8c6d-69f8ada627d7": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div style=\"display:flex;\">\n <p> <img src=\"https:\/\/cdn-icons-png.flaticon.com\/512\/709\/709612.png\" style=\"height:20px; width:20px;\">\n <span style=\"margin-left:5px;\"> <script>\n    let randomNumber = Math.floor(Math.random() * (9 - 3 + 1) + 6);\n    document.write(randomNumber);\n  <\/script> watching this item.\n   <\/span>\n <\/p>\n<\/div>"
           }
@@ -42,6 +43,7 @@
         },
         "d1e6b7f8-4f98-45c8-9289-bfe020b31d10": {
           "type": "custom_liquid",
+          "disabled": true,
           "settings": {
             "custom_liquid": "<div class=\"estimated-box\">\n        <p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0690\/9067\/2952\/files\/calendar-icon-png-2.webp?v=1671553121\" style=\"height:25px;float:left;margin-right:10px;padding-bottom: 4px;\"\/>\n        Get it between <strong><span id=\"fromDate\"><\/span> - <span id=\"toDate\"><\/span><\/strong><\/p>\n        <p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0690\/9067\/2952\/files\/1670915.png?v=1671553121\" style=\"height:25px;float:left;margin-right:10px;padding-bottom: 4px;\"\/>\n        <a href=\"#\"> {% if product.metafields.custom.free_shipping_days != blank %}\n                                      {{ product.metafields.custom.free_shipping_days }}\n                                  {% else %}\n                                      Shipping time by Local Delivery 1-2 working days\n                                  {% endif %}\n                     <\/a><\/p>\n      <\/div>\n\n<style>\n.estimated-box {\n  padding: 5px;\n  border: 1px solid #000;\n  border-radius: 10px;\n  margin-bottom: 20px;\n}\n  \n.estimated-box p {\n  margin-bottom: 0px;\n  padding: 10px;\n}\n\n  \n<\/style>"
           }
