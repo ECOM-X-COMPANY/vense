@@ -4123,7 +4123,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   background: #40495A !important;
  
 }
-.product-card--add-to-cart-button-simple.outline {
+.product-card--add-to-cart-text {
    color: #fffff !important;
 }
 @media only screen and (max-width: 365px) {
