@@ -4033,6 +4033,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   border-color: inherit !important;
   font-weight: 900 !important;
 }
+.single-add-to-cart-button:hover{
+  color: #000 !important;
+}
 #ProductPopup-variant_picker{
   display: none;
 }
