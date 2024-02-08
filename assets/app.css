@@ -4028,9 +4028,6 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   margin: 26px 0;
 }
 .single-add-to-cart-button {
-  background-color: #D5C6BF !important;
-  color: #ffffff !important;
-  border-color: inherit !important;
   font-weight: 900 !important;
 }
 #ProductPopup-variant_picker{
