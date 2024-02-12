@@ -423,18 +423,19 @@
         "subheading_fGAHQC": {
           "type": "subheading",
           "settings": {
-            "text": "Vense"
+            "text": "Featured items"
           }
         },
         "heading_LLXxrz": {
           "type": "heading",
           "settings": {
-            "text": "About Brand",
+            "text": "Indulge in luxury - explore our collection now",
             "heading_size": "h1-xlarge"
           }
         },
         "text_qxQW6x": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Learn more About Brand and join a community that embraces authenticity, <br\/>craftsmanship, and a passion for delivering unparalleled experiences.<\/p>",
             "description_size": "medium"
@@ -444,7 +445,7 @@
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
-            "button_link": "shopify:\/\/pages\/contact",
+            "button_link": "shopify:\/\/collections\/aquamarine",
             "button_outline": false
           }
         }
@@ -456,8 +457,8 @@
         "button_9hn7Wg"
       ],
       "settings": {
-        "section_width": "grid",
-        "image": "shopify:\/\/shop_images\/hoodh-ahmed-6mzjJDqYU0g-unsplash.jpg",
+        "section_width": "full-width-row",
+        "image": "shopify:\/\/shop_images\/bg1-copyright.jpg",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
