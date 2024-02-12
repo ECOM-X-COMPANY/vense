@@ -222,6 +222,18 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "recently_viewed_products_WyU6wN": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "heading": "Recently viewed",
+        "heading_left": true,
+        "description": "<p>Describe your recently viewed products here<\/p>",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
@@ -234,6 +246,7 @@
     "1707148459ccb0c152",
     "custom_liquid_DA6yWB",
     "1707148780981e10aa",
-    "product-recommendations"
+    "product-recommendations",
+    "recently_viewed_products_WyU6wN"
   ]
 }
