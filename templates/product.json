@@ -227,11 +227,11 @@
       "type": "recently-viewed-products",
       "settings": {
         "heading": "Recently viewed",
-        "heading_left": true,
-        "description": "<p>Describe your recently viewed products here<\/p>",
+        "heading_left": false,
+        "description": "",
         "full_width": true,
         "mobile_swipe": true,
-        "disable_top_spacing": false,
+        "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
     }
