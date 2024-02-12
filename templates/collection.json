@@ -20,15 +20,15 @@
             "promotion_collection": "",
             "promotion_position": 1,
             "promotion_width": "1",
-            "image": "shopify:\/\/shop_images\/iStock-482556326.webp",
-            "title": "50% OFF",
-            "text": "On Selected Products",
+            "image": "shopify:\/\/shop_images\/home-megashop-banner-3.jpg",
+            "title": "Best Diamond Sets 2024",
+            "text": "",
             "link_label": "Shop now",
             "link": "shopify:\/\/collections\/all",
-            "use_text_button": false,
+            "use_text_button": true,
             "block_link": "",
             "overlay_color": "#40495a",
-            "overlay_opacity": 100
+            "overlay_opacity": 50
           }
         }
       },
