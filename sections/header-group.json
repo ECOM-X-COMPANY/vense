@@ -35,6 +35,7 @@
         "text_FredaH",
         "text_DmfBW7"
       ],
+      "disabled": true,
       "settings": {
         "announcement_bar": true,
         "announcement_bar_homepage_only": false,
