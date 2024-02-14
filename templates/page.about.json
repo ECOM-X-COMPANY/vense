@@ -37,6 +37,15 @@
         "disable_bottom_spacing": false
       }
     },
+    "page_QqpNYp": {
+      "type": "page",
+      "settings": {
+        "page": "about-us",
+        "show_page_title": false,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "16616191162185f622": {
       "type": "rich-text",
       "blocks": {
@@ -532,6 +541,7 @@
   },
   "order": [
     "166161901464a25e50",
+    "page_QqpNYp",
     "16616191162185f622",
     "16521210505e7fc635",
     "16618593470c5f63bd",
