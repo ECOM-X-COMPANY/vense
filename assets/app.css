@@ -4126,6 +4126,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   background: #40495A !important;
  
 }
+.CustomButton{
+  background: #d5c6bf;
+}
 
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
