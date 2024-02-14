@@ -423,13 +423,13 @@
         "subheading_fGAHQC": {
           "type": "subheading",
           "settings": {
-            "text": "Featured items"
+            "text": "About brand"
           }
         },
         "heading_LLXxrz": {
           "type": "heading",
           "settings": {
-            "text": "Indulge in luxury - explore our collection now",
+            "text": "The beautiful history of the Vensa brand",
             "heading_size": "h1-large"
           }
         },
@@ -444,8 +444,8 @@
         "button_9hn7Wg": {
           "type": "button",
           "settings": {
-            "button_text": "Shop Now",
-            "button_link": "shopify:\/\/collections\/aquamarine",
+            "button_text": "Learn more",
+            "button_link": "shopify:\/\/pages\/about-us",
             "button_outline": false
           }
         }
