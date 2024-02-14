@@ -2001,7 +2001,12 @@
             "shopify_support_link_text": "Підтримка Shopify"
           }
         }
-      }
+      },
+      "blank": "не може бути пустим",
+      "blocked_address": "Це місце не підтримується.",
+      "credit_card_session_expired": "Термін авторизації кредитної картки закінчився, введіть платіжну інформацію ще раз. З вашої картки кошти не стягнено.",
+      "empty": "не може бути порожнім",
+      "invalid_email": "має бути дійсною електронною адресою"
     },
     "notices": {
       "customer": {
@@ -2093,7 +2098,8 @@
         "view_lines_limit_reached": "Рядки мають бути меншими ніж %{limit}",
         "merchandise_line_transformers": {
           "run_error": "У вашому кошику сталася помилка."
-        }
+        },
+        "gift_card_price_must_be_greater_than_zero": "Продукт пакета «%{name}» не можна додати до кошика."
       },
       "storefront": {
         "invalid_password": "Неправильний пароль, спробуйте ще раз."
@@ -2179,7 +2185,8 @@
       "collections": "Колекції",
       "not_found": "404 Не знайдено",
       "challenge": "Виклик",
-      "checkpoint": "КПП"
+      "checkpoint": "КПП",
+      "search": "Пошук"
     },
     "cart": {
       "discounts_with_count": "%{count} знижок застосовано"
@@ -2206,6 +2213,48 @@
         "two_to_four_hours": "Зазвичай готовий через 4 години",
         "immediately": "Готовий до отримання",
         "next_day": "Готовий до отримання наступного дня"
+      }
+    },
+    "links": {
+      "learn_more": "Вивчайте більше"
+    },
+    "feed": {
+      "more": "більше"
+    },
+    "attributes": {
+      "email": "електронною поштою",
+      "password": "пароль",
+      "password_confirmation": "Підтвердження пароля",
+      "first_name": "ім'я",
+      "last_name": "прізвище",
+      "body": "тіло",
+      "signature": "Адреса"
+    },
+    "addresses": {
+      "zip_code": "ЗІП код",
+      "postal_code": "Поштовий індекс",
+      "postcode": "Поштовий індекс",
+      "pincode": "PIN-код",
+      "region": "Регіон",
+      "prefecture": "Префектура",
+      "province": "Провінція",
+      "state": "Держава",
+      "state_and_territory": "Держава\/територія",
+      "county": "графство",
+      "emirate": "Емірат",
+      "governorate": "Губернаторство",
+      "confirm": "Ви впевнені, що бажаєте видалити цю адресу?"
+    },
+    "collections": {
+      "sorting": {
+        "manual": "Рекомендовані",
+        "best_selling": "Найкращі продажі",
+        "az": "За алфавітом AZ",
+        "za": "За алфавітом ЗА",
+        "price_ascending": "Ціна від низької до високої",
+        "price_descending": "Ціна від високої до низької",
+        "date_ascending": "Дата від старого до нового",
+        "date_descending": "Дата від нового до старого"
       }
     }
   },
@@ -2296,7 +2345,8 @@
           }
         },
         "order_list_column_headers_location": "Місцезнаходження",
-        "removed_company_contact_tooltip": "Вилучено з компанії"
+        "removed_company_contact_tooltip": "Вилучено з компанії",
+        "order_list_column_headers_contact": "контакт"
       },
       "draft_order_details": {
         "draft_order_subtitle": "Підтверджено {{date}} із замовлення {{draftOrderName}}",
@@ -2540,7 +2590,8 @@
         "track_order_with_shop": "Відстежуйте замовлення в магазині",
         "title_header": "Скануйте за допомогою телефону",
         "real_time_delivery_updates": "Shop надішле вам оновлення доставки в реальному часі, щойно ваше замовлення буде відправлено."
-      }
+      },
+      "contact": "контакт"
     },
     "addresses": {
       "add_button": "Додайте адресу",
@@ -3150,9 +3201,45 @@
       "wednesdayAbbreviation": "ми",
       "thursdayAbbreviation": "чт",
       "fridayAbbreviation": "О",
-      "sundayAbbreviation": "Нд"
+      "sundayAbbreviation": "Нд",
+      "showNextMonth": "Показати наступний місяць, {{month}} {{year}}",
+      "showPreviousMonth": "Показати попередній місяць, {{month}} {{year}}",
+      "rangeStart": "Початок діапазону",
+      "inRange": "В діапазоні",
+      "rangeEnd": "Кінець діапазону",
+      "autocompleteOptionsAvailable": {
+        "one": "Доступно {{count}} товар",
+        "other": "Доступні товари {{count}}"
+      },
+      "removeItem": "Видалити {{label}}",
+      "removeTag": "Видалити тег",
+      "month": {
+        "one": "місяць",
+        "other": "місяців"
+      }
     },
-    "enable_javascript": "Щоб переглянути свій обліковий запис, увімкніть JavaScript у налаштуваннях браузера або увійдіть за допомогою іншого браузера."
+    "enable_javascript": "Щоб переглянути свій обліковий запис, увімкніть JavaScript у налаштуваннях браузера або увійдіть за допомогою іншого браузера.",
+    "profile_preview_bar": {
+      "customize_button": "Налаштувати",
+      "hide_bar": "Приховати панель",
+      "navigate_to_admin": "Перейдіть до адміністратора",
+      "close_preview": "Закрити попередній перегляд",
+      "previewing": "Ви переглядаєте:",
+      "saved_at": "Збережено {{date}} о {{time}}",
+      "viewing": "Ви переглядаєте:",
+      "not_available": "Дані профілю недоступні",
+      "actions_button": "Дії"
+    },
+    "settings": {
+      "title": "Налаштування",
+      "loading_accessibility_message": "Завантаження сторінки налаштувань",
+      "log_out_everywhere": {
+        "title": "Вийти всюди",
+        "description": "Якщо ви втратили пристрій або маєте проблеми з безпекою, вийдіть із будь-якого пристрою, щоб забезпечити безпеку свого облікового запису.",
+        "button": "Вийти всюди",
+        "warning_message": "Ви також вийдете з системи на цьому пристрої."
+      }
+    }
   },
   "products": {
     "facets": {
@@ -3482,7 +3569,10 @@
       },
       "terms": "Я згоден з умовами",
       "terms_html": "Я погоджуюся з <a href=\"&lt;span%20class=\" notranslate>умовами використання {{ url }} ' target='_blank'&gt;<\/a>",
-      "terms_confirm": "Ви повинні погодитися з умовами продажу, щоб перевірити"
+      "terms_confirm": "Ви повинні погодитися з умовами продажу, щоб перевірити",
+      "title": "Ваш кошик",
+      "order_summary": "Підсумок Замовлення",
+      "add_notes": "Додайте примітки"
     },
     "collection_template": {
       "empty": "Продукти не знайдено",
@@ -3531,6 +3621,30 @@
       "map": {
         "location": "Розташування {{ index }}"
       }
+    },
+    "header": {
+      "search": "Пошук",
+      "search_for": "Шукайте будь-що",
+      "popular_searches": "ПОПУЛЯРНІ ПОШУКИ",
+      "my_account": "Мій рахунок",
+      "login": "Логін",
+      "cart": "кошик",
+      "products": "Продукти",
+      "articles": "статті",
+      "suggestions": "Пропозиції",
+      "view_all_results": "Переглянути всі результати"
+    },
+    "breadcrumbs": {
+      "home": "додому",
+      "shop": "Магазин",
+      "search": "Пошук",
+      "my_account": "Мій рахунок",
+      "cart": "кошик"
+    },
+    "404": {
+      "not_found": "Сторінку не знайдено",
+      "not_found_description": "Сторінка, яку ви шукали, не існує. Можливо, ви неправильно ввели адресу або сторінку перемістили.",
+      "continue_shopping": "Продовжити покупки"
     }
   }
 }
