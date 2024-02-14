@@ -4127,7 +4127,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
  
 }
 .CustomButton{
-  background: #d5c6bf;
+  background: #d5c6bf !important;
 }
 
 @media only screen and (max-width: 365px) {
