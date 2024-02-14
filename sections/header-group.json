@@ -9,7 +9,7 @@
           "type": "text",
           "settings": {
             "icon": "truck",
-            "text": "35% OFF + free shipping your first order over $50",
+            "text": "Free shipping from $200",
             "link": ""
           }
         },
@@ -17,7 +17,7 @@
           "type": "text",
           "settings": {
             "icon": "truck",
-            "text": "35% OFF + free shipping your first order over $50",
+            "text": "Free shipping from $200",
             "link": ""
           }
         },
@@ -25,7 +25,7 @@
           "type": "text",
           "settings": {
             "icon": "truck",
-            "text": "35% OFF + free shipping your first order over $50",
+            "text": "Free shipping from $200",
             "link": ""
           }
         }
@@ -35,7 +35,6 @@
         "text_FredaH",
         "text_DmfBW7"
       ],
-      "disabled": true,
       "settings": {
         "announcement_bar": true,
         "announcement_bar_homepage_only": false,
