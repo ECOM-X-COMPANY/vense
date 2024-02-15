@@ -27,6 +27,7 @@
     "products_hover_images_count": 3,
     "enable_quick_add": true,
     "color_badge_sale": "#40495a",
+    "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
