@@ -4135,6 +4135,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .totalBox_raw_price_94374a3b{
   color: red !important;
 }
+.totalBox_discounted_price_94374a3b{
+  font-weight: 900 !important;
+}
 .rbr-addBundleBtn-container{
   background-color: #c09e83 !important
 }
