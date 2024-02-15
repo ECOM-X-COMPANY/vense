@@ -4129,7 +4129,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .CustomButton{
   background: #d5c6bf !important;
 }
-
+.rbr-hrDesktop{
+  max-width: inherit !important;
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
