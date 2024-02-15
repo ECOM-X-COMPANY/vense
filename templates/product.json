@@ -105,6 +105,21 @@
         "enable_video_looping": false
       }
     },
+    "1707989959ae719fcb": {
+      "type": "apps",
+      "blocks": {
+        "fast_bundle_fbt_position_fMf9hD": {
+          "type": "shopify:\/\/apps\/fast-bundle\/blocks\/fbt_position\/9e87fbe2-9041-4c23-acf5-322413994cef",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "fast_bundle_fbt_position_fMf9hD"
+      ],
+      "settings": {
+      }
+    },
     "featured_collection_tgax38": {
       "type": "featured-collection",
       "settings": {
@@ -240,6 +255,7 @@
   "order": [
     "breadcrumbs",
     "main-product",
+    "1707989959ae719fcb",
     "featured_collection_tgax38",
     "16623877721f33fb14",
     "16625458859c68803a",
