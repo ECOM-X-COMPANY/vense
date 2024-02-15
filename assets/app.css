@@ -4131,6 +4131,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 .rbr-hrDesktop{
   max-width: inherit !important;
+  padding-left: 14px !important;
 }
 .totalBox_raw_price_94374a3b{
   color: red !important;
