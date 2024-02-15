@@ -122,6 +122,9 @@
     },
     "featured_collection_tgax38": {
       "type": "featured-collection",
+      "custom_css": [
+        ".featured-collection{margin-top: 30px;}"
+      ],
       "settings": {
         "heading": "YOU MIGHT ALSO LIKE",
         "heading_left": false,
