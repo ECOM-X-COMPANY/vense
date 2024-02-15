@@ -4132,6 +4132,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .rbr-hrDesktop{
   max-width: inherit !important;
 }
+.totalBox_raw_price_94374a3b{
+  color: red;
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
