@@ -4142,6 +4142,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .rbr-addBundleBtn-container{
   background-color: #c09e83 !important
 }
+.rbr-poweredBy__container {
+  display: none !important;
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
