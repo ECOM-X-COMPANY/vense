@@ -4133,7 +4133,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   max-width: inherit !important;
 }
 .totalBox_raw_price_94374a3b{
-  color: red;
+  color: red !important;
 }
 .rbr-addBundleBtn-container{
   background-color: #c09e83 !important
