@@ -192,6 +192,19 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "14198427981142892921": {
+        "type": "shopify:\/\/apps\/wishlist-engine\/blocks\/app-embed\/8f7c0857-8e71-463d-a168-8e133094753b",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "1530068250781986104": {
+        "type": "shopify:\/\/apps\/fast-bundle\/blocks\/fast_bundle\/9e87fbe2-9041-4c23-acf5-322413994cef",
+        "disabled": false,
+        "settings": {
+          "home": false
+        }
       }
     }
   },
