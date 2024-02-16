@@ -4145,6 +4145,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .rbr-poweredBy__container {
   display: none !important;
 }
+.product-title__stock--inner{
+  display: flex;
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
