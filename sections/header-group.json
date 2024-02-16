@@ -62,10 +62,17 @@
         "mobile_promo_link_label": "Shop",
         "mobile_promo_link": ""
       }
+    },
+    "custom_liquid_YQ4TLK": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": ""
+      }
     }
   },
   "order": [
     "announcement-bar",
-    "header"
+    "header",
+    "custom_liquid_YQ4TLK"
   ]
 }
