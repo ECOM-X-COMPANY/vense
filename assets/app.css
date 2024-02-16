@@ -4147,6 +4147,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 .product-title__stock--inner{
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
