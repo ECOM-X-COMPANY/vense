@@ -12,7 +12,7 @@
       {{ block.settings.custom_liquid }}
     {%- when 'title' -%}
       <div class="product-title-container" {{ block.shopify_attributes }}>
-          <div id="product-title__stock">
+          <div id="product-title__stock" class="product-title__stock--inner">
               <h2 class="product-title__stock">
                   {% if product.variants.size > 0 %}
                       <span class="product-title__quantity"> {{ product.metafields.custom.in_stocks }}</span>
@@ -23,6 +23,7 @@
                       <span class="product-title__outstock">Out of Stock</span>
                   {% endif %}
               </h2>
+            <div class="wishlist-engine" data-product_id="{{  product.id }}" data-variant_id="{{ product.selected_or_first_available_variant.id }}" data-full_button="false" data-css="true"></div>
           </div>
         <h1 class="product-title uppercase--{{ block.settings.uppercase }}">{{ product.title }}</h1>
         <div class="product-price-container">
