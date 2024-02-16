@@ -211,6 +211,12 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "8814297988395605169": {
+        "type": "shopify:\/\/apps\/adperfect-marketing-platform\/blocks\/app-embed\/8b4a8c56-21b5-437e-95f9-cd5dc65ceb49",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
