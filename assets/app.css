@@ -4153,6 +4153,19 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .custom-navigation{
   align-items: center;
 }
+.h-wishlist-icon{
+  margin-right: 5px;
+}
+.h-wishlist-icon svg{
+ width: 19px;
+  height: 19px;
+}
+.h-wishlist-icon .wishlist-h-count{
+  width: 15px;
+  height: 15px;
+  right: -8px;
+  top: -5px;
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
