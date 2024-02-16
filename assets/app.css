@@ -4154,17 +4154,17 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   align-items: center;
 }
 .h-wishlist-icon{
-  margin-right: 5px;
+  margin-right: 5px !important;
 }
 .h-wishlist-icon svg{
- width: 19px;
-  height: 19px;
+ width: 19px !important;
+  height: 19px !important;
 }
 .h-wishlist-icon .wishlist-h-count{
-  width: 15px;
-  height: 15px;
-  right: -8px;
-  top: -5px;
+  width: 15px !important;
+  height: 15px !important;
+  right: -8px !important;
+  top: -5px !important;
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
