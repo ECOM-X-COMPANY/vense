@@ -1339,20 +1339,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // 
 document.addEventListener('DOMContentLoaded', function() {
+    var currencySelect = document.getElementById('currency-hop-select-element');
     var headerLocalization = document.getElementById('HeaderLocalization');
-    var currencySelect = document.getElementById('currency-hop-selector');
 
-    headerLocalization.addEventListener('change', function() {
-        var selectLanguage = document.getElementById('thb-language-code-HeaderLocalization');
-        if (selectLanguage.value === 'uk') {
-            var currencySelector = document.getElementById('currency-hop-selector');
-            if (currencySelector) {
-                var form = document.getElementById('HeaderLocalization');
-                form.appendChild(currencySelect); // Переміщаємо select в нове місце
-                var event = new Event('change');
-                currencySelect.dispatchEvent(event);
-            }
-        }
-    });
+    if (currencySelect && headerLocalization) {
+        headerLocalization.appendChild(currencySelect);
+    }
 });
 
