@@ -1347,9 +1347,11 @@ document.addEventListener('DOMContentLoaded', function() {
         for (var i = 0; i < options.length; i++) {
             if (options[i].value === 'UA') {
                 options[i].selected = true;
-                currencyElement.dispatchEvent(new Event('change')); // Симулюємо подію зміни валюти
+                var event = new MouseEvent('mousedown', { bubbles: true });
+                currencyElement.dispatchEvent(event); // Симулюємо подію кліку на валютний вибір
                 break;
             }
         }
     });
 });
+
