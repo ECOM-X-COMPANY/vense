@@ -223,6 +223,19 @@
         "disabled": false,
         "settings": {
         }
+      },
+      "17876497450139369438": {
+        "type": "shopify:\/\/apps\/currency-hop\/blocks\/selector-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
+        "disabled": false,
+        "settings": {
+          "color": "#3c4043",
+          "background-color": "#fff",
+          "color-hover": "#174ea6",
+          "background-color-hover": "#F6F9FE",
+          "border-color-focus": "#4285f4",
+          "left": 10,
+          "bottom": 10
+        }
       }
     }
   },
