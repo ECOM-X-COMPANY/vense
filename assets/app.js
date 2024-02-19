@@ -1340,7 +1340,7 @@ document.addEventListener('DOMContentLoaded', function () {
 // 
 document.addEventListener('DOMContentLoaded', function() {
     var headerLocalization = document.getElementById('HeaderLocalization');
-    var currencySelect = document.getElementById('currency-hop-select-element');
+    var currencySelect = document.getElementById('currency-hop-selector');
 
     headerLocalization.addEventListener('change', function() {
         var selectLanguage = document.getElementById('thb-language-code-HeaderLocalization');
