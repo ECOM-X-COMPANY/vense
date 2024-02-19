@@ -206,14 +206,20 @@
           "home": false
         }
       },
-      "13375938897875554821": {
-        "type": "shopify:\/\/apps\/qikify-sales-pop-up\/blocks\/app-embed\/688dd516-1cdc-4008-8329-23089a1c4e24",
+      "8814297988395605169": {
+        "type": "shopify:\/\/apps\/adperfect-marketing-platform\/blocks\/app-embed\/8b4a8c56-21b5-437e-95f9-cd5dc65ceb49",
         "disabled": false,
         "settings": {
         }
       },
-      "8814297988395605169": {
-        "type": "shopify:\/\/apps\/adperfect-marketing-platform\/blocks\/app-embed\/8b4a8c56-21b5-437e-95f9-cd5dc65ceb49",
+      "13375938897875554821": {
+        "type": "shopify:\/\/apps\/qikify-sales-pop-up\/blocks\/app-embed\/688dd516-1cdc-4008-8329-23089a1c4e24",
+        "disabled": true,
+        "settings": {
+        }
+      },
+      "8729531258007514248": {
+        "type": "shopify:\/\/apps\/currency-hop\/blocks\/app-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
         "disabled": false,
         "settings": {
         }
