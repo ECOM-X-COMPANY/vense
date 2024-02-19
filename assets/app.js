@@ -1336,3 +1336,20 @@ document.addEventListener('DOMContentLoaded', function () {
   const loaderWindow = document.getElementById('loader-window');
   loaderWindow.style.display = 'none';
 });
+
+// 
+document.addEventListener('DOMContentLoaded', function() {
+    var languageCodeElement = document.getElementById('thb-language-code-HeaderLocalization');
+    var currencyElement = document.getElementById('currency-hop-select-element');
+
+    languageCodeElement.addEventListener('click', function() {
+        var options = currencyElement.getElementsByTagName('option');
+        for (var i = 0; i < options.length; i++) {
+            if (options[i].value === 'UA') {
+                options[i].selected = true;
+                currencyElement.dispatchEvent(new Event('change')); // Симулюємо подію зміни валюти
+                break;
+            }
+        }
+    });
+});
