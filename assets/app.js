@@ -1340,24 +1340,17 @@ document.addEventListener('DOMContentLoaded', function () {
 // 
 document.addEventListener('DOMContentLoaded', function() {
     var headerLocalization = document.getElementById('HeaderLocalization');
-    
+    var currencySelect = document.getElementById('currency-hop-select-element');
+
     headerLocalization.addEventListener('change', function() {
         var selectLanguage = document.getElementById('thb-language-code-HeaderLocalization');
         if (selectLanguage.value === 'uk') {
             var currencySelector = document.getElementById('currency-hop-selector');
             if (currencySelector) {
-                var currencySelect = currencySelector.querySelector('#currency-hop-select-element');
-                if (currencySelect) {
-                    var options = currencySelect.getElementsByTagName('option');
-                    for (var i = 0; i < options.length; i++) {
-                        if (options[i].value === 'UA') {
-                            options[i].selected = true;
-                            var event = new Event('change');
-                            currencySelect.dispatchEvent(event);
-                            break;
-                        }
-                    }
-                }
+                var form = document.getElementById('HeaderLocalization');
+                form.appendChild(currencySelect); // Переміщаємо select в нове місце
+                var event = new Event('change');
+                currencySelect.dispatchEvent(event);
             }
         }
     });
