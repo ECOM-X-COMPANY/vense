@@ -1337,13 +1337,5 @@ document.addEventListener('DOMContentLoaded', function () {
   loaderWindow.style.display = 'none';
 });
 
-// 
-document.addEventListener('DOMContentLoaded', function() {
-    var currencySelect = document.getElementById('currency-hop-select-element');
-    var headerLocalization = document.getElementById('HeaderLocalization');
 
-    if (currencySelect && headerLocalization) {
-        headerLocalization.appendChild(currencySelect);
-    }
-});
 
