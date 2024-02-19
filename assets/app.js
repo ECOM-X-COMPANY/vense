@@ -1339,17 +1339,25 @@ document.addEventListener('DOMContentLoaded', function () {
 
 // 
 document.addEventListener('DOMContentLoaded', function() {
-    var languageCodeElement = document.getElementById('thb-language-code-HeaderLocalization');
-    var currencyElement = document.getElementById('currency-hop-select-element');
-
-    languageCodeElement.addEventListener('click', function() {
-        var options = currencyElement.getElementsByTagName('option');
-        for (var i = 0; i < options.length; i++) {
-            if (options[i].value === 'UA') {
-                options[i].selected = true;
-                var event = new MouseEvent('mousedown', { bubbles: true });
-                currencyElement.dispatchEvent(event); // Симулюємо подію кліку на валютний вибір
-                break;
+    var headerLocalization = document.getElementById('HeaderLocalization');
+    
+    headerLocalization.addEventListener('change', function() {
+        var selectLanguage = document.getElementById('thb-language-code-HeaderLocalization');
+        if (selectLanguage.value === 'uk') {
+            var currencySelector = document.getElementById('currency-hop-selector');
+            if (currencySelector) {
+                var currencySelect = currencySelector.querySelector('#currency-hop-select-element');
+                if (currencySelect) {
+                    var options = currencySelect.getElementsByTagName('option');
+                    for (var i = 0; i < options.length; i++) {
+                        if (options[i].value === 'UA') {
+                            options[i].selected = true;
+                            var event = new Event('change');
+                            currencySelect.dispatchEvent(event);
+                            break;
+                        }
+                    }
+                }
             }
         }
     });
