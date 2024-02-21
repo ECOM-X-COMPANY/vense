@@ -219,12 +219,6 @@
           "bottom": 10
         }
       },
-      "8729531258007514248": {
-        "type": "shopify:\/\/apps\/currency-hop\/blocks\/app-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "18423266570658624584": {
         "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
         "disabled": true,
@@ -239,6 +233,12 @@
       },
       "13375938897875554821": {
         "type": "shopify:\/\/apps\/qikify-sales-pop-up\/blocks\/app-embed\/688dd516-1cdc-4008-8329-23089a1c4e24",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "8729531258007514248": {
+        "type": "shopify:\/\/apps\/currency-hop\/blocks\/app-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
         "disabled": false,
         "settings": {
         }
