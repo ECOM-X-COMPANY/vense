@@ -4171,6 +4171,13 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .wishlist-fix {
   display: none  !important;
 }
+.qsk-popup__field-button{
+  height: 100% !important;
+  
+}
+.qsk-popup__field-input:placeholder{
+  color: #0000;
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
