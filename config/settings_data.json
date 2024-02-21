@@ -206,19 +206,6 @@
           "home": false
         }
       },
-      "17876497450139369438": {
-        "type": "shopify:\/\/apps\/currency-hop\/blocks\/selector-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
-        "disabled": true,
-        "settings": {
-          "color": "#3c4043",
-          "background-color": "#fff",
-          "color-hover": "#174ea6",
-          "background-color-hover": "#F6F9FE",
-          "border-color-focus": "#4285f4",
-          "left": 10,
-          "bottom": 10
-        }
-      },
       "18423266570658624584": {
         "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
         "disabled": true,
@@ -241,6 +228,19 @@
         "type": "shopify:\/\/apps\/currency-hop\/blocks\/app-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
         "disabled": false,
         "settings": {
+        }
+      },
+      "17876497450139369438": {
+        "type": "shopify:\/\/apps\/currency-hop\/blocks\/selector-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
+        "disabled": false,
+        "settings": {
+          "color": "#3c4043",
+          "background-color": "#ffffff",
+          "color-hover": "#174ea6",
+          "background-color-hover": "#f6f9fe",
+          "border-color-focus": "#4285f4",
+          "left": 10,
+          "bottom": 10
         }
       }
     }
