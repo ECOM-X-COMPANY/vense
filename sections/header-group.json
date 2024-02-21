@@ -55,7 +55,7 @@
         "header_shadow": "header--shadow-small",
         "menu": "main-menu",
         "transparent_header": true,
-        "show_language_switcher": true,
+        "show_language_switcher": false,
         "show_currency_switcher": false,
         "mobile_secondary_menu": "",
         "mobile_promo_heading": "Promotion heading",
