@@ -233,13 +233,13 @@
       },
       "13375938897875554821": {
         "type": "shopify:\/\/apps\/qikify-sales-pop-up\/blocks\/app-embed\/688dd516-1cdc-4008-8329-23089a1c4e24",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
       "8814297988395605169": {
         "type": "shopify:\/\/apps\/adperfect-marketing-platform\/blocks\/app-embed\/8b4a8c56-21b5-437e-95f9-cd5dc65ceb49",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       }
