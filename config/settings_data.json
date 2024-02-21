@@ -226,13 +226,13 @@
       },
       "8729531258007514248": {
         "type": "shopify:\/\/apps\/currency-hop\/blocks\/app-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       },
       "17876497450139369438": {
         "type": "shopify:\/\/apps\/currency-hop\/blocks\/selector-embed\/be4f36dd-24e2-48b9-a665-0234ae3d725f",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "color": "#3c4043",
           "background-color": "#ffffff",
@@ -241,6 +241,12 @@
           "border-color-focus": "#4285f4",
           "left": 10,
           "bottom": 10
+        }
+      },
+      "9670189827046205946": {
+        "type": "shopify:\/\/apps\/hextom-translate-and-currency\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
+        "disabled": false,
+        "settings": {
         }
       }
     }
