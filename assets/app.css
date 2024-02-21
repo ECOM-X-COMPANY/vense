@@ -4178,6 +4178,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .qsk-popup__field-label input::placeholder{
   color: #000 !important;
 }
+.ht-tms__duo-selector__dropdown-wrapper {
+  background: #ffff !important;
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
