@@ -3,7 +3,7 @@
     "main-collection-banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-banner--content{max-width: fit-content;}"
+        ".collection-banner--content {max-width: 900px;}"
       ],
       "settings": {
         "show_collection_image": false,
