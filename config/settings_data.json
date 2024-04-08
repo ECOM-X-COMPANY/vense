@@ -29,7 +29,7 @@
     "show_products_vendor": false,
     "show_products_rating": false,
     "color_badge_sale": "#40495a",
-    "favicon": "shopify:\/\/shop_images\/Vensa_icon_black_1.png",
+    "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
