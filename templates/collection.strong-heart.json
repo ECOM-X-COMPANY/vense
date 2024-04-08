@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "main-collection-banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_image": false,
+        "show_collection_description": true,
+        "show_subcollections": false,
+        "make_heading_uppercase": true,
+        "overlay_color": "#000000",
+        "overlay_opacity": 40
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "blocks": {
+        "promotion_XfTnXf": {
+          "type": "promotion",
+          "settings": {
+            "promotion_collection": "",
+            "promotion_position": 1,
+            "promotion_width": "1",
+            "image": "shopify:\/\/shop_images\/home-megashop-banner-3.jpg",
+            "title": "Best Diamond Sets 2024",
+            "text": "",
+            "link_label": "Shop now",
+            "link": "shopify:\/\/collections\/all",
+            "use_text_button": true,
+            "block_link": "",
+            "overlay_color": "#40495a",
+            "overlay_opacity": 50
+          }
+        }
+      },
+      "block_order": [
+        "promotion_XfTnXf"
+      ],
+      "custom_css": [
+        ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "products_per_page": 11,
+        "columns_desktop": 4,
+        "pagination_type": "infinite",
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "show_counts": false,
+        "filter_color_swatches": true,
+        "facets_desktop": "drawer"
+      }
+    },
+    "image_with_text_overlay_ae9Hxx": {
+      "type": "image-with-text-overlay",
+      "blocks": {
+        "subheading_FPNYjb": {
+          "type": "subheading",
+          "settings": {
+            "text": "Add a tagline"
+          }
+        },
+        "heading_wWzG4j": {
+          "type": "heading",
+          "settings": {
+            "text": "Image with text overlay",
+            "heading_size": "h1-xlarge"
+          }
+        },
+        "text_6VNa87": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "description_size": "medium"
+          }
+        },
+        "button_9BpPKm": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "",
+            "button_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "subheading_FPNYjb",
+        "heading_wWzG4j",
+        "text_6VNa87",
+        "button_9BpPKm"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "image": "shopify:\/\/shop_images\/mr-autthaporn-pradidpong-2MZwPQ2EMik-unsplash.jpg",
+        "image_parallax": true,
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "content_width": "medium",
+        "content_position": "bottom-center",
+        "text_alignment": "center",
+        "overlay_opacity": 30,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "recently_viewed_products_KJ7m6d": {
+      "type": "recently-viewed-products",
+      "settings": {
+        "heading": "Recently viewed products",
+        "heading_left": true,
+        "description": "",
+        "full_width": true,
+        "mobile_swipe": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "main-collection-banner",
+    "product-grid",
+    "image_with_text_overlay_ae9Hxx",
+    "recently_viewed_products_KJ7m6d"
+  ]
+}
