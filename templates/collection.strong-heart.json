@@ -2,6 +2,9 @@
   "sections": {
     "main-collection-banner": {
       "type": "main-collection-banner",
+      "custom_css": [
+        ".collection-banner--content{max-width: 900px;}"
+      ],
       "settings": {
         "show_collection_image": false,
         "show_collection_description": true,
