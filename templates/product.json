@@ -98,7 +98,7 @@
         "show_taxes_included": true,
         "media_layout": "collage",
         "display_slider_pagination": true,
-        "media_aspect_ratio": "square",
+        "media_aspect_ratio": "portrait",
         "display_captions": true,
         "hide_variants": false,
         "lightbox": true,
