@@ -47,6 +47,9 @@
     },
     "header": {
       "type": "header",
+      "custom_css": [
+        ".text-logo{text-transform: uppercase; letter-spacing: 10px; font-family: initial;}"
+      ],
       "settings": {
         "sticky_header": true,
         "logo_height_range": 30,
