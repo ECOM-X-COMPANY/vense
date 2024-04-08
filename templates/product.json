@@ -96,9 +96,9 @@
         "enable_sticky_info": true,
         "enable_sticky_add_to_cart": true,
         "show_taxes_included": true,
-        "media_layout": "list",
+        "media_layout": "collage",
         "display_slider_pagination": true,
-        "media_aspect_ratio": "landscape",
+        "media_aspect_ratio": "adapt",
         "display_captions": true,
         "hide_variants": false,
         "lightbox": true,
@@ -123,7 +123,7 @@
     "featured_collection_tgax38": {
       "type": "featured-collection",
       "custom_css": [
-        ".featured-collection{margin-top: 30px;}"
+        ".featured-collection {margin-top: 30px;}"
       ],
       "settings": {
         "heading": "YOU MIGHT ALSO LIKE",
@@ -210,12 +210,11 @@
         "lai_product_reviews_lai_home_page_section_HpcgNP": {
           "type": "shopify:\/\/apps\/lai-product-reviews\/blocks\/lai-home-page-section\/cad3c6c6-329e-4416-ba74-b79359b5b6e1",
           "settings": {
-            "title": "Reviews",
             "type_layout": "cardCarousel",
             "source": "homePage",
+            "title": "Reviews",
             "background": "#fff",
-            "width_container": "",
-            "use_default_setting": false
+            "width_container": ""
           }
         }
       },
