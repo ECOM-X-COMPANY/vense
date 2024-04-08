@@ -4,7 +4,7 @@
       "type": "main-collection-banner",
       "settings": {
         "show_collection_image": false,
-        "show_collection_description": false,
+        "show_collection_description": true,
         "show_subcollections": false,
         "make_heading_uppercase": true,
         "overlay_color": "#000000",
