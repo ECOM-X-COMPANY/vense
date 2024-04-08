@@ -399,10 +399,10 @@
         "description": "<p>Discover a curated selection of top-quality products as you explore our diverse categories. <\/p>",
         "full_width": true,
         "collection_list": [
-          "test-2",
-          "aquamarine",
-          "new",
-          "bestsellers-1"
+          "strong-heart",
+          "vintage",
+          "venice",
+          "bestsellers"
         ],
         "image_ratio": "adapt",
         "layout": "grid",
