@@ -413,8 +413,8 @@
         "mobile_swipe": true,
         "overlay_color": "#000000",
         "overlay_opacity": 30,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "image_with_text_overlay_7gjf94": {
