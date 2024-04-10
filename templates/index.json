@@ -393,6 +393,9 @@
     },
     "collection_list_FaLtCA": {
       "type": "collection-list",
+      "custom_css": [
+        ".collection-list-section{margin: 30px 0px;}"
+      ],
       "settings": {
         "heading": "Explore Products by Category",
         "heading_left": false,
