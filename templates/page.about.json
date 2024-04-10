@@ -419,31 +419,39 @@
         "subheading_AQdUHX": {
           "type": "subheading",
           "settings": {
-            "text": "Add a tagline"
+            "text": "Wonders of nature"
           }
         },
         "heading_7GcL8G": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "A ring that reflects beauty and chic",
             "heading_size": "h3"
           }
         },
         "text_7yEPAp": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Get closer to nature with elegance and refined natural shapes. The collection of rings was inspired by the wonders of nature, complemented by an extra touch of glamor.<\/p>",
             "description_size": "medium"
+          }
+        },
+        "button_mAY87E": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/ring"
           }
         }
       },
       "block_order": [
         "subheading_AQdUHX",
         "heading_7GcL8G",
-        "text_7yEPAp"
+        "text_7yEPAp",
+        "button_mAY87E"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/1_16ff6b18-b44a-4cdc-9cb3-04d60357cd86.png",
+        "image": "shopify:\/\/shop_images\/Frame_2_d28eaee5-d2bb-4ec2-968f-0c4c7492e87f.png",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
