@@ -319,7 +319,7 @@
         "button_GRNVm9"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/30.webp",
+        "image": "shopify:\/\/shop_images\/Frame_1.png",
         "use_video": false,
         "video": "",
         "video_autoplay": true,
@@ -348,14 +348,14 @@
         "heading_NccMdU": {
           "type": "heading",
           "settings": {
-            "text": "Brooch - The enchanting spirit of pearls",
+            "text": "Brooch - Magical spirit of gold",
             "heading_size": "h3"
           }
         },
         "text_UpKD7J": {
           "type": "text",
           "settings": {
-            "text": "<p>Immerse into the magical power of pearls. The Brooch collection was exquisitely crafted to make you feel confident and enchanting like a mermaid.<\/p>",
+            "text": "<p>Immerse yourself in the magical power of pearls. The STRONG HEART brooch collection collection was exquisitely created to make you feel as confident and charming as a mermaid.<\/p>",
             "description_size": "medium"
           }
         },
@@ -363,7 +363,7 @@
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
-            "button_link": "shopify:\/\/collections\/test-2"
+            "button_link": "shopify:\/\/collections\/strong-heart"
           }
         }
       },
