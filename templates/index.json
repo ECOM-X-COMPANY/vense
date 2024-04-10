@@ -319,6 +319,9 @@
         "text_tafjaJ",
         "button_GRNVm9"
       ],
+      "custom_css": [
+        ".section-image-with-text{margin-top: 30px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_1.png",
         "use_video": false,
