@@ -231,7 +231,7 @@
       ],
       "custom_css": [
         ".h3 {display: none;}",
-        ".section-collection-tabs{margin-top: 15px;}"
+        ".section-collection-tabs {margin-top: 15px;}"
       ],
       "settings": {
         "heading": ".",
@@ -333,7 +333,7 @@
         "color_bg": "#d5c6bf",
         "color_text": "#40495a",
         "color_border": "#151515",
-        "disable_top_spacing": false,
+        "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
     },
