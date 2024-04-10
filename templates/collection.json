@@ -40,7 +40,8 @@
       ],
       "custom_css": [
         ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}",
-        ".facet-checkbox {text-transform: capitalize;}"
+        ".facet-checkbox {text-transform: capitalize;}",
+        ". section-spacing-bottom{margin-bottom: 30px;}"
       ],
       "settings": {
         "full_width": true,
