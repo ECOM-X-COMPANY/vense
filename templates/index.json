@@ -535,6 +535,9 @@
         "image_8Q6AaV",
         "image_a3egdf"
       ],
+      "custom_css": [
+        ".section-gallery{margin-bottom: 30px;}"
+      ],
       "settings": {
         "columns_desktop": 4,
         "section_width": "full-width-row",
