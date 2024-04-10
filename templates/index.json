@@ -546,8 +546,8 @@
         "heading_size": "h3",
         "overlay_color": "#000000",
         "overlay_opacity": 42,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     }
   },
