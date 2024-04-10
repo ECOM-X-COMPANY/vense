@@ -394,7 +394,7 @@
     "collection_list_FaLtCA": {
       "type": "collection-list",
       "custom_css": [
-        ".collection-list-section{margin: 30px 0px;}"
+        ".collection-list-section {margin: 30px 0px;}"
       ],
       "settings": {
         "heading": "Explore Products by Category",
@@ -470,7 +470,7 @@
         "text_alignment": "center",
         "overlay_opacity": 48,
         "disable_top_spacing": true,
-        "disable_bottom_spacing": false
+        "disable_bottom_spacing": true
       }
     },
     "gallery_fVYFiT": {
