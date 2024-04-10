@@ -39,7 +39,8 @@
         "promotion_XfTnXf"
       ],
       "custom_css": [
-        ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}"
+        ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}",
+        ".facet-checkbox{text-transform: capitalize;}"
       ],
       "settings": {
         "full_width": true,
