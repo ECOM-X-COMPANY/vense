@@ -48,10 +48,10 @@
     "header": {
       "type": "header",
       "custom_css": [
-        ".text-logo{text-transform: uppercase; letter-spacing: 10px; font-family: initial;}"
+        ".text-logo {text-transform: uppercase; letter-spacing: 10px; font-family: initial;}"
       ],
       "settings": {
-        "sticky_header": true,
+        "sticky_header": false,
         "logo_height_range": 30,
         "logo_height_range_mobile": 30,
         "style": "style1",
