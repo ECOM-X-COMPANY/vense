@@ -531,6 +531,9 @@
     },
     "featured_blog_HH9Ad8": {
       "type": "featured-blog",
+      "custom_css": [
+        ".blog-posts{margin-top: 30px;}"
+      ],
       "settings": {
         "heading": "Latest News",
         "heading_left": false,
