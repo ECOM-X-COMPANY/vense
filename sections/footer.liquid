@@ -184,7 +184,7 @@
 				{%- endif -%}
 			</div>
 			<div class="small-12 columns">
-				<p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}, {{ copyright_text }} {{ powered_by_link }}</p>
+				<p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}, {{ copyright_text }} <a href="https://ecomx.group">Created by Ecom-X</a></p>
 				{%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
           <div class="footer--follow-on-shop">
             {{ shop | login_button: action: 'follow' }}
