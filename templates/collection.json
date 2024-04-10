@@ -45,7 +45,7 @@
         "full_width": true,
         "products_per_page": 11,
         "columns_desktop": 4,
-        "pagination_type": "infinite",
+        "pagination_type": "loadmore",
         "enable_filtering": true,
         "enable_sorting": true,
         "show_counts": false,
