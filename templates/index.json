@@ -230,7 +230,8 @@
         "template--20690466865451__46322c5c-3347-49a0-b4b9-a5f2ad634b2c-collection-2"
       ],
       "custom_css": [
-        ".h3 {display: none;}"
+        ".h3 {display: none;}",
+        ".section-collection-tabs{margin-top: 15px;}"
       ],
       "settings": {
         "heading": ".",
