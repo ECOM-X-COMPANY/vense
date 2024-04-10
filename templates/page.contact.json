@@ -124,6 +124,9 @@
     },
     "recently_viewed_products_bNCG8t": {
       "type": "recently-viewed-products",
+      "custom_css": [
+        ".product-recommendations{margin-top: 30px;}"
+      ],
       "settings": {
         "heading": "Recently viewed products",
         "heading_left": true,
