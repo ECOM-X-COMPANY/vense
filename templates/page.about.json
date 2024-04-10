@@ -450,6 +450,9 @@
         "text_7yEPAp",
         "button_mAY87E"
       ],
+      "custom_css": [
+        ".section-image-with-text{margin-top: 30px;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_2_d28eaee5-d2bb-4ec2-968f-0c4c7492e87f.png",
         "use_video": false,
@@ -504,6 +507,9 @@
         "heading_dzPaFN",
         "text_MzQzxt",
         "button_8cnfHf"
+      ],
+      "custom_css": [
+
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Rectangle_1.png",
