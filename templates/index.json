@@ -293,14 +293,14 @@
         "heading_Nzw4yf": {
           "type": "heading",
           "settings": {
-            "text": "Aquamarine - Inspired by the divinity of nature",
+            "text": "Bracelet - inspired by the divinity of nature",
             "heading_size": "h3"
           }
         },
         "text_tafjaJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Get closer to nature with sheer elegance and refined natural shapes. The Aquamarine collection was purely inspired by the wonders of nature, enhanced with extra glamor.<\/p>",
+            "text": "<p>Get closer to nature with sheer elegance and refined natural shapes. The Vintage collection was purely inspired by the wonders of nature, enhanced with extra glamor.<\/p>",
             "description_size": "medium"
           }
         },
@@ -308,7 +308,7 @@
           "type": "button",
           "settings": {
             "button_text": "Shop Now",
-            "button_link": "shopify:\/\/collections\/aquamarine"
+            "button_link": "shopify:\/\/collections\/vintage"
           }
         }
       },
