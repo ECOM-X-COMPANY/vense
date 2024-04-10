@@ -474,28 +474,36 @@
         "subheading_4jiTQ7": {
           "type": "subheading",
           "settings": {
-            "text": "Add a tagline"
+            "text": "Wonders of nature necklace"
           }
         },
         "heading_dzPaFN": {
           "type": "heading",
           "settings": {
-            "text": "Image with text",
+            "text": "A necklace that reflects the beauty and chic of your look",
             "heading_size": "h3"
           }
         },
         "text_MzQzxt": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "text": "<p>Deepen your connection with nature through elegance and refined natural beauty. Our collection of necklaces is tinged with the wonders of nature and embellished with a piece of glamor.<\/p>",
             "description_size": "medium"
+          }
+        },
+        "button_8cnfHf": {
+          "type": "button",
+          "settings": {
+            "button_text": "Shop Now",
+            "button_link": "shopify:\/\/collections\/necklace"
           }
         }
       },
       "block_order": [
         "subheading_4jiTQ7",
         "heading_dzPaFN",
-        "text_MzQzxt"
+        "text_MzQzxt",
+        "button_8cnfHf"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/2_3614c923-b15e-4eef-9653-cb6312b5a233.png",
