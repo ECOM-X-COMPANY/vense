@@ -157,7 +157,6 @@
       "disabled": true,
       "settings": {
         "section_width": "grid",
-        "image": "shopify:\/\/shop_images\/3q.png",
         "image_height": "adapt",
         "image_width": "split",
         "frame_border": true,
@@ -179,8 +178,8 @@
         "description": "<p>Describe your recently viewed products here<\/p>",
         "full_width": true,
         "mobile_swipe": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     }
   },
