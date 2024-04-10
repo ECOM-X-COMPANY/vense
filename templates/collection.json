@@ -20,7 +20,7 @@
         "promotion_XfTnXf": {
           "type": "promotion",
           "settings": {
-            "promotion_collection": "",
+            "promotion_collection": "strong-heart",
             "promotion_position": 1,
             "promotion_width": "1",
             "image": "shopify:\/\/shop_images\/home-megashop-banner-3.jpg",
@@ -110,7 +110,7 @@
     "recently_viewed_products_KJ7m6d": {
       "type": "recently-viewed-products",
       "custom_css": [
-        ".product-recommendations{margin-top: 30px;}"
+        ".product-recommendations {margin-top: 30px;}"
       ],
       "settings": {
         "heading": "Recently viewed products",
