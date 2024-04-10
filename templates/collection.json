@@ -40,13 +40,13 @@
       ],
       "custom_css": [
         ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}",
-        ".facet-checkbox{text-transform: capitalize;}"
+        ".facet-checkbox {text-transform: capitalize;}"
       ],
       "settings": {
         "full_width": true,
         "products_per_page": 11,
         "columns_desktop": 4,
-        "pagination_type": "loadmore",
+        "pagination_type": "paginated",
         "enable_filtering": true,
         "enable_sorting": true,
         "show_counts": false,
