@@ -51,7 +51,7 @@
         ".text-logo {text-transform: uppercase; letter-spacing: 10px; font-family: initial;}"
       ],
       "settings": {
-        "sticky_header": false,
+        "sticky_header": true,
         "logo_height_range": 30,
         "logo_height_range_mobile": 30,
         "style": "style1",
