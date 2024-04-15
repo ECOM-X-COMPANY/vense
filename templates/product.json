@@ -92,7 +92,7 @@
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
       "custom_css": [
-        ".swatch-preset-797560 {display: none;}"
+        ".swatch-preset-797560 {}"
       ],
       "settings": {
         "full_width": true,
