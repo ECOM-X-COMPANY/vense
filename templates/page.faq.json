@@ -6,12 +6,13 @@
         "1661862991ee6f499c-1": {
           "type": "heading",
           "settings": {
-            "text": "F.A.Q.",
+            "text": "FAQ",
             "size": "h2"
           }
         },
         "1661862991ee6f499c-2": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.<\/p>",
             "size": "text-size-regular"
