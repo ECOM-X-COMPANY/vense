@@ -50,7 +50,8 @@
         "56d4ccfa-a515-4c26-9e64-c26ec5eea8d2"
       ],
       "custom_css": [
-        ".full-width-row {justify-content: space-between;}"
+        ".full-width-row {justify-content: space-between;}",
+        ".widget img{width: 80px;}"
       ],
       "settings": {
         "full_width": true,
