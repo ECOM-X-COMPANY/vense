@@ -4045,33 +4045,33 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   display: flex;
   align-items: center;
   margin: 0 ;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 17px;
   font-weight: 400;
 }
 
 .product-info__calendar span {
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .product-info__calendar img{
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 .product-info__delivery{
   color: #151515;
   display: flex;
   align-items: center;
   margin: 0 ;
-  font-size: 22px;
-  line-height: 22px;
+  font-size: 17px;
+  line-height: 17px;
   font-weight: 400;
 }
 .product-info__delivery span{
-  margin-right: 15px;
+  margin-right: 10px;
 }
 .product-info__delivery img{
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 .product-info__strong{
   display: flex;
