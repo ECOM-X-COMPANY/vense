@@ -92,7 +92,7 @@
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
       "custom_css": [
-        ".swatch-label-button {display: none;}"
+        ".swatch-label-button,.swatch-view-button {display: none;}"
       ],
       "settings": {
         "full_width": true,
