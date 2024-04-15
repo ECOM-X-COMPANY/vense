@@ -101,7 +101,7 @@
         "media_aspect_ratio": "adapt",
         "display_captions": true,
         "hide_variants": true,
-        "lightbox": true,
+        "lightbox": false,
         "enable_video_looping": false
       }
     },
