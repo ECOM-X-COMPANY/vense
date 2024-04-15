@@ -91,6 +91,9 @@
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
+      "custom_css": [
+        ".swatch-single{display: none;}"
+      ],
       "settings": {
         "full_width": true,
         "enable_sticky_info": true,
