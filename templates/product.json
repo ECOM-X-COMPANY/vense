@@ -99,9 +99,9 @@
         "media_layout": "collage",
         "display_slider_pagination": true,
         "media_aspect_ratio": "adapt",
-        "display_captions": true,
+        "display_captions": false,
         "hide_variants": true,
-        "lightbox": false,
+        "lightbox": true,
         "enable_video_looping": false
       }
     },
