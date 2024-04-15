@@ -5,6 +5,27 @@
       "settings": {
       }
     },
+    "1713177976be003d35": {
+      "type": "apps",
+      "blocks": {
+        "swatch_king_variants_options_product_swatch_block_E7yeqh": {
+          "type": "shopify:\/\/apps\/swatch-king-variants-options\/blocks\/product-swatch-block\/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
+          "settings": {
+          }
+        },
+        "swatch_king_variants_options_stock_alert_block_cWNRgU": {
+          "type": "shopify:\/\/apps\/swatch-king-variants-options\/blocks\/stock-alert-block\/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "swatch_king_variants_options_product_swatch_block_E7yeqh",
+        "swatch_king_variants_options_stock_alert_block_cWNRgU"
+      ],
+      "settings": {
+      }
+    },
     "main-product": {
       "type": "main-product",
       "blocks": {
@@ -260,6 +281,7 @@
   },
   "order": [
     "breadcrumbs",
+    "1713177976be003d35",
     "main-product",
     "1707989959ae719fcb",
     "featured_collection_tgax38",
