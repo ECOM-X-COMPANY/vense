@@ -19,6 +19,7 @@
         },
         "text_xTzjTK": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Share information about your brand with your customers. Describe a product, make nnouncements, or welcome customers to your store.<\/p>",
             "description_size": "medium"
@@ -125,7 +126,7 @@
     "recently_viewed_products_bNCG8t": {
       "type": "recently-viewed-products",
       "custom_css": [
-        ".product-recommendations{margin-top: 30px;}"
+        ".product-recommendations {margin-top: 30px;}"
       ],
       "settings": {
         "heading": "Recently viewed products",
