@@ -52,6 +52,7 @@
       ],
       "settings": {
         "sticky_header": true,
+        "logo": "shopify:\/\/shop_images\/logo_black_1.svg",
         "logo_height_range": 30,
         "logo_height_range_mobile": 30,
         "style": "style1",
