@@ -29,7 +29,6 @@
         },
         "variant_picker": {
           "type": "variant_picker",
-          "disabled": true,
           "settings": {
             "picker_type": "button",
             "color_picker": true,
@@ -127,6 +126,7 @@
         "swatch_king_variants_options_product_swatch_block_E7yeqh",
         "swatch_king_variants_options_stock_alert_block_cWNRgU"
       ],
+      "disabled": true,
       "settings": {
       }
     },
