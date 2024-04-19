@@ -522,7 +522,8 @@
       ],
       "settings": {
         "section_width": "full-width-row",
-        "image": "shopify:\/\/shop_images\/bg1-copyright.jpg",
+        "image": "shopify:\/\/shop_images\/About_Us.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/About_Us-mobile.jpg",
         "image_parallax": false,
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
