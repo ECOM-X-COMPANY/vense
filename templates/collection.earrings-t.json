@@ -29,6 +29,9 @@
       "block_order": [
         "heading_GaP3fb"
       ],
+      "custom_css": [
+        "h3{text-transform: uppercase;}"
+      ],
       "settings": {
         "section_width": "full-width-row",
         "image": "shopify:\/\/shop_images\/7_c3bc45d3-72e4-44d4-9731-4130df4e4328.png",
