@@ -30,6 +30,60 @@
             "button_2_outline": false
           }
         },
+        "slide_VMj8Gm": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_227.png",
+            "mobile_image": "shopify:\/\/shop_images\/Home-mobile-2.jpg",
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "Affordable Luxury",
+            "heading_size": "h1",
+            "content": "Beautiful pieces to pass down for generations",
+            "description_size": "small",
+            "content_position": "middle-left",
+            "text_alignment": "left",
+            "content_size": "large",
+            "overlay_color": "#000000",
+            "overlay_opacity": 11,
+            "overlay_gradient": "linear-gradient(349deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 69%)",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_AeMQrx": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_226.png",
+            "mobile_image": "shopify:\/\/shop_images\/Home-mobile-1.jpg",
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "Affordable Luxury",
+            "heading_size": "h1",
+            "content": "Beautiful pieces to pass down for generations",
+            "description_size": "small",
+            "content_position": "middle-left",
+            "text_alignment": "left",
+            "content_size": "large",
+            "overlay_color": "#000000",
+            "overlay_opacity": 11,
+            "overlay_gradient": "linear-gradient(349deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 69%)",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
         "164794776393e76b8e-0": {
           "type": "slide",
           "disabled": true,
@@ -85,6 +139,8 @@
       },
       "block_order": [
         "164794776393e76b8e-2",
+        "slide_VMj8Gm",
+        "slide_AeMQrx",
         "164794776393e76b8e-0",
         "164794776393e76b8e-1"
       ],
