@@ -29,7 +29,7 @@
         "heading_GaP3fb"
       ],
       "settings": {
-        "section_width": "full-width-row",
+        "section_width": "grid",
         "image": "shopify:\/\/shop_images\/e7063390abf17ad0b52d9b70dcee6d20.jpg",
         "mobile_image": "shopify:\/\/shop_images\/mobile.jpg",
         "image_parallax": false,
