@@ -21,7 +21,7 @@
         "heading_GaP3fb": {
           "type": "heading",
           "settings": {
-            "text": "Earrings",
+            "text": "Brooch",
             "heading_size": "h1-large"
           }
         }
@@ -30,7 +30,7 @@
         "heading_GaP3fb"
       ],
       "custom_css": [
-        "h3{text-transform: uppercase;}"
+        "h3 {text-transform: uppercase;}"
       ],
       "settings": {
         "section_width": "full-width-row",
