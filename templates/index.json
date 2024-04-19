@@ -6,7 +6,7 @@
         "164794776393e76b8e-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/broadcast-hero-gradient.jpg",
+            "image": "shopify:\/\/shop_images\/Frame_226.png",
             "slide_link": "",
             "video_background": true,
             "video": "",
@@ -320,7 +320,7 @@
         "button_GRNVm9"
       ],
       "custom_css": [
-        ".section-image-with-text{margin-top: 30px;}"
+        ".section-image-with-text {margin-top: 30px;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_1.png",
