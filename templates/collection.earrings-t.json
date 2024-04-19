@@ -3,8 +3,8 @@
     "main-collection-banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-banner--content {max-width: 900px;}",
-        ".collection-banner{min-height: 55px;}"
+        ".collection-banner--content {display: none; max-width: 900px;}",
+        ".collection-banner {min-height: 55px;}"
       ],
       "settings": {
         "show_collection_image": false,
