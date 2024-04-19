@@ -20,8 +20,8 @@
         "heading_GaP3fb": {
           "type": "heading",
           "settings": {
-            "text": "Image with text overlay",
-            "heading_size": "h1-xlarge"
+            "text": "Earrings",
+            "heading_size": "h1-large"
           }
         }
       },
@@ -29,13 +29,13 @@
         "heading_GaP3fb"
       ],
       "settings": {
-        "section_width": "full-width-row-full",
+        "section_width": "full-width-row",
         "image": "shopify:\/\/shop_images\/e7063390abf17ad0b52d9b70dcee6d20.jpg",
         "mobile_image": "shopify:\/\/shop_images\/mobile.jpg",
         "image_parallax": false,
-        "desktop_height": "desktop-height-650",
+        "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-500",
-        "content_width": "medium",
+        "content_width": "small",
         "content_position": "middle-center",
         "text_alignment": "center",
         "overlay_opacity": 30,
