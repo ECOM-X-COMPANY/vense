@@ -77,7 +77,7 @@
             "overlay_opacity": 11,
             "overlay_gradient": "linear-gradient(349deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 69%)",
             "button_1_text": "SHOP NOW",
-            "button_1_link": "shopify:\/\/collections",
+            "button_1_link": "shopify:\/\/collections\/necklace",
             "button_1_outline": true,
             "button_2_text": "",
             "button_2_link": "",
