@@ -91,7 +91,7 @@
         ".h1 {text-transform: uppercase;}"
       ],
       "settings": {
-        "desktop_height": "desktop-height-image",
+        "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
         "full_width": true,
         "autoplay": true,
