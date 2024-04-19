@@ -25,7 +25,8 @@
       ],
       "settings": {
         "section_width": "full-width-row-full",
-        "image": "shopify:\/\/shop_images\/segal-jewelry-NsH-CvU0deg-unsplash.jpg",
+        "image": "shopify:\/\/shop_images\/Our_Story.jpg",
+        "mobile_image": "shopify:\/\/shop_images\/Our_Story-mobile.jpg",
         "image_parallax": false,
         "desktop_height": "desktop-height-550",
         "mobile_height": "mobile-height-500",
@@ -532,7 +533,7 @@
     "featured_blog_HH9Ad8": {
       "type": "featured-blog",
       "custom_css": [
-        ".blog-posts{margin-top: 30px;}"
+        ".blog-posts {margin-top: 30px;}"
       ],
       "settings": {
         "heading": "Latest News",
