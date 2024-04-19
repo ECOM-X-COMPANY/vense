@@ -7,6 +7,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_226.png",
+            "mobile_image": "shopify:\/\/shop_images\/Home-mobile-1.jpg",
             "slide_link": "",
             "video_background": true,
             "video": "",
