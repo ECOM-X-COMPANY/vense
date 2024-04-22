@@ -22,11 +22,6 @@
             "custom_liquid": "<div style=\"display:flex;\">\n <p> <img src=\"https:\/\/cdn-icons-png.flaticon.com\/512\/709\/709612.png\" style=\"height:20px; width:20px;\">\n <span style=\"margin-left:5px;\"> <script>\n    let randomNumber = Math.floor(Math.random() * (9 - 3 + 1) + 6);\n    document.write(randomNumber);\n  <\/script> watching this item.\n   <\/span>\n <\/p>\n<\/div>"
           }
         },
-        "0b3e272b-c86a-4dba-946c-c6912251371c": {
-          "type": "description",
-          "settings": {
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -62,6 +57,11 @@
             "show_gift_card_recipient": false
           }
         },
+        "0b3e272b-c86a-4dba-946c-c6912251371c": {
+          "type": "description",
+          "settings": {
+          }
+        },
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
           "type": "side_panel",
           "disabled": true,
@@ -90,11 +90,11 @@
       "block_order": [
         "title",
         "9d13a60b-74d6-49dd-8c6d-69f8ada627d7",
-        "0b3e272b-c86a-4dba-946c-c6912251371c",
         "variant_picker",
         "d1e6b7f8-4f98-45c8-9289-bfe020b31d10",
         "custom_liquid_x7Hg4h",
         "buy_buttons",
+        "0b3e272b-c86a-4dba-946c-c6912251371c",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
