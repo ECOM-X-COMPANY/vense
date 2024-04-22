@@ -30,7 +30,7 @@
         "heading_GaP3fb"
       ],
       "custom_css": [
-        "h3{text-transform: uppercase;}"
+        "h3 {text-transform: uppercase;}"
       ],
       "settings": {
         "section_width": "full-width-row",
@@ -126,6 +126,7 @@
         "text_6VNa87",
         "button_9BpPKm"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "grid",
         "image": "shopify:\/\/shop_images\/mr-autthaporn-pradidpong-2MZwPQ2EMik-unsplash.jpg",
