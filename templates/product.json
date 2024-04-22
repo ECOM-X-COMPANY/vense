@@ -15,6 +15,12 @@
             "show_products_rating": true
           }
         },
+        "custom_liquid_DdjYD3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product-info__divider\"><\/div>\n        <div class=\"product-info__advantages\">\n            <ul>\n                <li>\n                    <p>\n                        {{ \"✔  Handcraft \" | escape }}\n                    <\/p>\n                <\/li>\n                <li>\n                    <p>\n                        {{ \"✔  Not allergenic\" | escape }}\n                    <\/p>\n                <\/li>\n                <li>\n                    <p>\n                        {{ \"✔  Elegant day and night\" | escape }}\n                    <\/p>\n                <\/li>\n            <\/ul>\n        <\/div>"
+          }
+        },
         "9d13a60b-74d6-49dd-8c6d-69f8ada627d7": {
           "type": "custom_liquid",
           "disabled": true,
@@ -85,16 +91,11 @@
           "disabled": true,
           "settings": {
           }
-        },
-        "custom_liquid_DdjYD3": {
-          "type": "custom_liquid",
-          "settings": {
-            "custom_liquid": ""
-          }
         }
       },
       "block_order": [
         "title",
+        "custom_liquid_DdjYD3",
         "9d13a60b-74d6-49dd-8c6d-69f8ada627d7",
         "variant_picker",
         "d1e6b7f8-4f98-45c8-9289-bfe020b31d10",
@@ -102,8 +103,7 @@
         "buy_buttons",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
-        "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
-        "custom_liquid_DdjYD3"
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
       "custom_css": [
         "#swatch-option1 {display: none;}"
