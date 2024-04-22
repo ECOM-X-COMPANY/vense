@@ -4204,3 +4204,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   text-decoration: underline;
   opacity: 0.6;
 }
+
+#tiny-tabs-global-wrapper{
+  margin-top: 30px;
+}
