@@ -4187,3 +4187,20 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   }
 
 }
+
+.product-info__calendar--box {
+  margin-top: 50px;
+}
+.product-info__calendar {
+  margin: 10px 0;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-info__calendar span {
+  margin-right: 25px;
+}
+.product-info__calendar a {
+  text-decoration: underline;
+  opacity: 0.6;
+}
