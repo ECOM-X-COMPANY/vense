@@ -109,6 +109,15 @@
             "content": "<p>We care about your comfort, we have pendants that can be adjusted in length (long or in the portrait zone, worn as a strap or wrapped with a bracelet). We leave room for your imagination!<\/p>",
             "page": ""
           }
+        },
+        "collapsible_tab_jxbKYi": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Is it handmade?",
+            "open": false,
+            "content": "<p>VENSA is a full-cycle handmade jewelry! Every piece of our collection goes from metal casting to hand polishing with the utmost attention to detail to create perfect pieces. <br\/>For us, it is not just a production facility, but a real workshop, where every stage of production is carried out with love and care. Each piece of jewelry is about uniqueness, taste, and quality.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -118,7 +127,8 @@
         "d8b3ed5d-d5cf-4b20-9bed-893f2be8497f",
         "5f34dba8-15e0-4aac-91f7-5a103657361d",
         "fa2985e2-4983-462b-80c8-596d4ae47540",
-        "collapsible_tab_7ncm4t"
+        "collapsible_tab_7ncm4t",
+        "collapsible_tab_jxbKYi"
       ],
       "settings": {
         "heading": "",
