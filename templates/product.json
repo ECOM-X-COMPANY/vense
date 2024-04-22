@@ -219,6 +219,32 @@
       "settings": {
       }
     },
+    "rich_text_7meRNU": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_6XArkK": {
+          "type": "heading",
+          "settings": {
+            "text": "OUR CLIENTS",
+            "size": "h3"
+          }
+        }
+      },
+      "block_order": [
+        "heading_6XArkK"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "custom_liquid_DA6yWB": {
       "type": "custom-liquid",
       "custom_css": [
@@ -296,6 +322,7 @@
     "16625458859c68803a",
     "1662552569cce2536d",
     "1707148459ccb0c152",
+    "rich_text_7meRNU",
     "custom_liquid_DA6yWB",
     "1707148780981e10aa",
     "product-recommendations",
