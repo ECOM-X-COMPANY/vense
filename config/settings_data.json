@@ -247,12 +247,6 @@
           "bottom": 10
         }
       },
-      "9670189827046205946": {
-        "type": "shopify:\/\/apps\/hextom-translate-and-currency\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
-        "disabled": false,
-        "settings": {
-        }
-      },
       "17920835415960095625": {
         "type": "shopify:\/\/apps\/swatch-king-variants-options\/blocks\/variant-swatch-king\/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
         "disabled": false,
@@ -269,6 +263,12 @@
         "settings": {
           "css_selector": "",
           "custom_css": ""
+        }
+      },
+      "9670189827046205946": {
+        "type": "shopify:\/\/apps\/hextom-translate-and-currency\/blocks\/app-block\/b927a799-be04-4b97-9efb-5c8f0290a68e",
+        "disabled": true,
+        "settings": {
         }
       }
     }
