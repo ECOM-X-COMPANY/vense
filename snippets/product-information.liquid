@@ -64,26 +64,7 @@
       </div>
     {%- when 'description' -%}
       <div class="product-short-description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
-        <div class="product-info__divider"></div>
-        <div class="product-info__advantages">
-            <ul>
-                <li>
-                    <p>
-                        {{ "✔  Handcraft " | escape }}
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        {{ "✔  Not allergenic" | escape }}
-                    </p>
-                </li>
-                <li>
-                    <p>
-                        {{ "✔  Elegant day and night" | escape }}
-                    </p>
-                </li>
-            </ul>
-        </div>
+       
     {%- when 'inventory_level' -%}
       {% render 'product-inventory-notice', product: product, section: section, block: block %}
     {%- when 'variant_picker' -%}
