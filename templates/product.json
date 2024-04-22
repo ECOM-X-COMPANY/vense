@@ -85,6 +85,12 @@
           "disabled": true,
           "settings": {
           }
+        },
+        "custom_liquid_DdjYD3": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": ""
+          }
         }
       },
       "block_order": [
@@ -96,7 +102,8 @@
         "buy_buttons",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
-        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+        "4fd23485-293f-46a0-8a4c-34d0e25ea41b",
+        "custom_liquid_DdjYD3"
       ],
       "custom_css": [
         "#swatch-option1 {display: none;}"
@@ -238,7 +245,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": true,
