@@ -100,6 +100,15 @@
             "content": "<p>Our assortment includes bicolor jewelry that combines 2 colors of metal. Suitable for any type, for different shoes, accessories. And most importantly, you don't need to think about what color handbag to choose.<\/p>",
             "page": ""
           }
+        },
+        "collapsible_tab_7ncm4t": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Can I choose a universal piece of jewelry?",
+            "open": false,
+            "content": "<p>We care about your comfort, we have pendants that can be adjusted in length (long or in the portrait zone, worn as a strap or wrapped with a bracelet). We leave room for your imagination!<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -108,7 +117,8 @@
         "72f09ca5-4337-4a0b-bcd2-0a7af9183034",
         "d8b3ed5d-d5cf-4b20-9bed-893f2be8497f",
         "5f34dba8-15e0-4aac-91f7-5a103657361d",
-        "fa2985e2-4983-462b-80c8-596d4ae47540"
+        "fa2985e2-4983-462b-80c8-596d4ae47540",
+        "collapsible_tab_7ncm4t"
       ],
       "settings": {
         "heading": "",
