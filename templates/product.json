@@ -48,6 +48,12 @@
             "custom_liquid": "<div class=\"estimated-box\">\n        <p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0690\/9067\/2952\/files\/calendar-icon-png-2.webp?v=1671553121\" style=\"height:25px;float:left;margin-right:10px;padding-bottom: 4px;\"\/>\n        Get it between <strong><span id=\"fromDate\"><\/span> - <span id=\"toDate\"><\/span><\/strong><\/p>\n        <p> <img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0690\/9067\/2952\/files\/1670915.png?v=1671553121\" style=\"height:25px;float:left;margin-right:10px;padding-bottom: 4px;\"\/>\n        <a href=\"#\"> {% if product.metafields.custom.free_shipping_days != blank %}\n                                      {{ product.metafields.custom.free_shipping_days }}\n                                  {% else %}\n                                      Shipping time by Local Delivery 1-2 working days\n                                  {% endif %}\n                     <\/a><\/p>\n      <\/div>\n\n<style>\n.estimated-box {\n  padding: 5px;\n  border: 1px solid #000;\n  border-radius: 10px;\n  margin-bottom: 20px;\n}\n  \n.estimated-box p {\n  margin-bottom: 0px;\n  padding: 10px;\n}\n\n  \n<\/style>"
           }
         },
+        "custom_liquid_x7Hg4h": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<div class=\"product-info__calendar--box\">\n                    <div class=\"product-info__calendar flex items-center\">\n                      <span class=\"icon\"><img width=\"29\" height=\"29\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0308\/2020\/4588\/files\/calendar.png?v=1699648227\" alt=\"calendar\" loading=\"lazy\"><\/span>\n                      {{ \"Made to order. Estimated to ship by\" }} \n                        {% assign current_date = 'now' | date: '%Y-%m-%d' %}\n                        {% assign future_date = current_date | date: '%s' | plus: 345600 | date: '%Y-%m-%d' %}\n\n                        <strong class=\"product-info__strong\" style=\"padding-left: 10px; font-weight: 900;\">\n                          {{ future_date | date: '%B %d' }}\n                        <\/strong>\n                     \n                    <\/div>\n                    <div class=\"product-info__calendar flex items-center\">\n                      <span class=\"icon\"><img width=\"29\" height=\"29\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0843\/4119\/5071\/files\/delivery.png?v=1700461187\" alt=\"calendar\" loading=\"lazy\"><\/span>\n                      <a href=\"\/pages\/shipping-information\">\n                        {{ \"Free shipping and returns\" }} \n                      <\/a>\n                    <\/div>\n                  <\/div>"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -87,6 +93,7 @@
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "variant_picker",
         "d1e6b7f8-4f98-45c8-9289-bfe020b31d10",
+        "custom_liquid_x7Hg4h",
         "buy_buttons",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
