@@ -614,6 +614,12 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "custom_liquid_CbP7zA": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
+      }
     }
   },
   "order": [
@@ -626,6 +632,7 @@
     "image_with_text_qUXX4V",
     "collection_list_FaLtCA",
     "image_with_text_overlay_7gjf94",
-    "gallery_fVYFiT"
+    "gallery_fVYFiT",
+    "custom_liquid_CbP7zA"
   ]
 }
