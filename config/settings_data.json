@@ -297,9 +297,9 @@
           "custom_position_spacing_left": "20",
           "custom_switcher_font_size": "14px",
           "custom_switcher_border_width": 1,
-          "custom_switcher_text_color": "#5c5c5c",
-          "custom_switcher_background_color": "#ffffff",
-          "custom_switcher_border_color": "#000000"
+          "custom_switcher_text_color": "#444444",
+          "custom_switcher_background_color": "#d5c6bf",
+          "custom_switcher_border_color": "#939393"
         }
       }
     }
