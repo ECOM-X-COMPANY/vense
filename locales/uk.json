@@ -3591,14 +3591,14 @@
         "free_shipping_applied_at_checkout": "Під час оплати буде застосовано БЕЗКОШТОВНУ доставку",
         "spend_more_for_free_shipping_html": "Витратьте ще <span>{{ amount }}<\/span> на БЕЗКОШТОВНУ доставку."
       },
-      "title": "кошик",
+      "title": "Кошик",
       "view_cart": "Переглянути кошик",
       "checkout": "Перевірити",
       "cart_empty": "Ваш кошик зараз порожній.",
       "start_shopping": "Почати покупки",
       "you_may_also_like": "Вам також може сподобатися",
       "add_order_note": "Додати примітку до замовлення",
-      "save": "зберегти"
+      "save": "Зберегти"
     },
     "meta": {
       "page": "Сторінка",
