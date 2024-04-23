@@ -291,7 +291,7 @@
           "mobile_switcher_relative_position": "before",
           "header_switcher_border_width": 0,
           "switcher_viewport_position": "top-right",
-          "custom_position_spacing_top": "50",
+          "custom_position_spacing_top": "60",
           "custom_position_spacing_right": "150",
           "custom_position_spacing_bottom": "20",
           "custom_position_spacing_left": "20",
