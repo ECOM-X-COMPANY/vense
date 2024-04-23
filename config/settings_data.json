@@ -277,7 +277,7 @@
         "settings": {
           "enable_language_switcher": true,
           "enable_country_region_switcher": false,
-          "use_modal_dialog": false,
+          "use_modal_dialog": true,
           "use_currency_for_region": true,
           "switcher_position": "custom",
           "show_flags": true,
@@ -300,6 +300,12 @@
           "custom_switcher_text_color": "#5c5c5c",
           "custom_switcher_background_color": "#ffffff",
           "custom_switcher_border_color": "#000000"
+        }
+      },
+      "12793297677437526120": {
+        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/custom_translations\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": false,
+        "settings": {
         }
       }
     }
