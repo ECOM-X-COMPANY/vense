@@ -286,7 +286,7 @@
           "countries_filter": "",
           "custom_css": "",
           "header_switcher_reference_element": ".thb-secondary-area",
-          "header_switcher_relative_position": "before",
+          "header_switcher_relative_position": "in-element",
           "mobile_menu_switcher_reference_element": "",
           "mobile_switcher_relative_position": "before",
           "header_switcher_border_width": 0,
