@@ -3695,7 +3695,7 @@
       "taxes_included_and_shipping_policy_html": "З податком. <a href=\"&lt;span%20class='notranslate'&gt;{{%20link%20}}&lt;\/span&gt;\">Вартість доставки<\/a> розраховується при оформленні замовлення.",
       "taxes_and_shipping_at_checkout": "Податки та вартість доставки розраховуються під час оформлення замовлення",
       "headings": {
-        "product": "Продукт",
+        "product": "Товар",
         "price": "Ціна",
         "total": "Всього",
         "quantity": "Кількість"
