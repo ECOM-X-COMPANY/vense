@@ -2349,11 +2349,11 @@
       "more": "Детальніше"
     },
     "attributes": {
-      "email": "електронною поштою",
+      "email": "електронна пошта",
       "password": "пароль",
       "password_confirmation": "Підтвердження пароля",
       "first_name": "ім'я",
-      "last_name": "прізвище",
+      "last_name": "Прізвище",
       "body": "тіло",
       "signature": "Адреса"
     },
