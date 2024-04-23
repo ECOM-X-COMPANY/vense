@@ -2358,16 +2358,16 @@
       "signature": "Адреса"
     },
     "addresses": {
-      "zip_code": "ЗІП код",
-      "postal_code": "Поштовий індекс",
-      "postcode": "Поштовий індекс",
+      "zip_code": "Поштовий індекс",
+      "postal_code": "Поштовий код",
+      "postcode": "Індекс",
       "pincode": "PIN-код",
       "region": "Регіон",
       "prefecture": "Префектура",
       "province": "Провінція",
       "state": "Держава",
       "state_and_territory": "Держава\/територія",
-      "county": "графство",
+      "county": "Округ",
       "emirate": "Емірат",
       "governorate": "Губернаторство",
       "confirm": "Ви впевнені, що бажаєте видалити цю адресу?"
