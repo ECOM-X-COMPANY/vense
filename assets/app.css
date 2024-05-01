@@ -4181,6 +4181,15 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .ht-tms__duo-selector__dropdown-wrapper {
   background: #ffff !important;
 }
+
+
+@media only screen and (max-width: 430px) {
+
+.product-info__calendar {
+
+  font-size: 15px;
+}
+}
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
     font-size: 12px !important;
