@@ -271,6 +271,12 @@
         "settings": {
         }
       },
+      "12793297677437526120": {
+        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/custom_translations\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": true,
+        "settings": {
+        }
+      },
       "8765772171712610185": {
         "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/language_switcher\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
         "disabled": false,
@@ -284,7 +290,7 @@
           "language_label": "language-name",
           "language_country_mapping": "",
           "countries_filter": "",
-          "custom_css": "",
+          "custom_css": "@media only screen and (max-width: 430px) {\n .tl-custom-position.top-right {\n  top: 101px;\n  right: 6px;\n  bottom: auto;\n  left: auto;\n}\n}",
           "header_switcher_reference_element": ".thb-secondary-area",
           "header_switcher_relative_position": "after",
           "mobile_menu_switcher_reference_element": "",
