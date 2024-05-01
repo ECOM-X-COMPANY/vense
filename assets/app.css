@@ -4183,17 +4183,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 
-@media only screen and (max-width: 430px) {
-.product-info__calendar {
-  font-size: 15px;
-}
-}
-@media only screen and (max-width: 365px) {
-  .product-info_price--discount span{
-    font-size: 12px !important;
-  }
 
-}
 
 .product-info__calendar--box {
   margin-top: 20px;
@@ -4214,4 +4204,15 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 #tiny-tabs-global-wrapper{
   margin-top: 30px;
+}
+@media only screen and (max-width: 430px) {
+.product-info__calendar {
+  font-size: 15px;
+}
+}
+@media only screen and (max-width: 365px) {
+  .product-info_price--discount span{
+    font-size: 12px !important;
+  }
+
 }
