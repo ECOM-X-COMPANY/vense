@@ -3,8 +3,8 @@
     "advantage_1": "Handcraf",
     "advantage_2": "Not allergenic",
     "advantage_3": "Elegant day and night",
-    "calendar_image_url": "Free shipping and returns",
-    "delivery_text": "Made to order. Estimated to ship by",
+    "free_shipping_text": "Free shipping and returns",
+    "made_to_order_text": "Made to order. Estimated to ship by",
     "heading_font": "montserrat_n7",
     "body_font": "montserrat_n4",
     "navigation_uppercase": true,
@@ -37,6 +37,8 @@
     "color_swatches": "Black Gold: #BFA75D\nBlack Silver: #71706e",
     "lazy_loading": false,
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
+    "calendar_image_url": "Free shipping and returns",
+    "delivery_text": "Made to order. Estimated to ship by",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
