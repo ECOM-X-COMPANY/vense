@@ -60,6 +60,17 @@
     ]
   },
   {
+    "name": "Text for the Buy Now, Pay Later Button",
+    "settings": [
+      {
+        "type": "text",
+        "id": "buy_now_text",
+        "label": "Text for the 'Buy Now, Pay Later' button",
+        "default": "Buy now, pay later"
+      }
+    ]
+  },
+  {
     "name": "Typography",
     "settings": [
       {
