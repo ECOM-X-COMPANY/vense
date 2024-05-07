@@ -631,7 +631,7 @@
         "heading_hL49hE"
       ],
       "custom_css": [
-        ".rich-text {padding-top: 10px;}"
+        ".rich-text {padding-top: 30px;}"
       ],
       "settings": {
         "section_width": "grid",
