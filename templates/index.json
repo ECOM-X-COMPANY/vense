@@ -630,6 +630,9 @@
       "block_order": [
         "heading_hL49hE"
       ],
+      "custom_css": [
+        ".rich-text{padding-top: 10px;}"
+      ],
       "settings": {
         "section_width": "grid",
         "text_width": "medium",
