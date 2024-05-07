@@ -616,6 +616,32 @@
         "disable_bottom_spacing": true
       }
     },
+    "rich_text_BGDWCq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_hL49hE": {
+          "type": "heading",
+          "settings": {
+            "text": "Our girls",
+            "size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_hL49hE"
+      ],
+      "settings": {
+        "section_width": "grid",
+        "text_width": "medium",
+        "text_position": "center",
+        "text_alignment": "center",
+        "color_bg": "transparent",
+        "color_text": "#151515",
+        "color_links": "#151515",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "custom_liquid_CbP7zA": {
       "type": "custom-liquid",
       "settings": {
@@ -634,6 +660,7 @@
     "collection_list_FaLtCA",
     "image_with_text_overlay_7gjf94",
     "gallery_fVYFiT",
+    "rich_text_BGDWCq",
     "custom_liquid_CbP7zA"
   ]
 }
