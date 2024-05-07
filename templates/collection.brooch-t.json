@@ -74,7 +74,8 @@
       "custom_css": [
         ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}",
         ".facet-checkbox {text-transform: capitalize;}",
-        ".section-spacing-bottom {margin-bottom: 30px;}"
+        ".section-spacing-bottom {margin-bottom: 30px;}",
+        ".facets__form{margin-top: 10px;}"
       ],
       "settings": {
         "full_width": true,
