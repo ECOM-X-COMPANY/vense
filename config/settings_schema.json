@@ -28,17 +28,17 @@
     ]
   },
   {
-    "name": "Product Calendar Delivery",
+    "name": "Product Info Texts",
     "settings": [
       {
         "type": "text",
-        "id": "calendar_image_url",
-        "label": "Calendar Image URL"
+        "id": "free_shipping_text",
+        "label": "Text for Free Shipping"
       },
       {
         "type": "text",
-        "id": "delivery_text",
-        "label": "Delivery Text"
+        "id": "made_to_order_text",
+        "label": "Text for Made to Order"
       }
     ]
   },
