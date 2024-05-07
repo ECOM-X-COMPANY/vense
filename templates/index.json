@@ -645,7 +645,7 @@
     "custom_liquid_CbP7zA": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
+        "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>\n\n<style>\n#enrm-branding-28930{\ndisplay: none;\n<\/style>"
       }
     }
   },
