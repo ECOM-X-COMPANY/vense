@@ -18,9 +18,9 @@
                       <span class="product-title__quantity"> {{ product.metafields.custom.in_stocks }}</span>
                   {% endif %}
                   {% if product.available %}
-                      <span class="product-title__instock">In Stock</span>
+                     <span class="product-title__instock">{{ settings.instock_text }}</span>
                   {% else %}
-                      <span class="product-title__outstock">Out of Stock</span>
+                    <span class="product-title__outstock">{{ settings.outstock_text }}</span>
                   {% endif %}
               </h2>
             <div class="wishlist-engine" data-product_id="{{  product.id }}" data-variant_id="{{ product.selected_or_first_available_variant.id }}" data-full_button="false" data-css="true"></div>
