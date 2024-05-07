@@ -28,6 +28,21 @@
     ]
   },
   {
+    "name": "Product Calendar Delivery",
+    "settings": [
+      {
+        "type": "text",
+        "id": "calendar_image_url",
+        "label": "Calendar Image URL"
+      },
+      {
+        "type": "text",
+        "id": "delivery_text",
+        "label": "Delivery Text"
+      }
+    ]
+  },
+  {
     "name": "Typography",
     "settings": [
       {
