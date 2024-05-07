@@ -4205,9 +4205,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 #tiny-tabs-global-wrapper{
   margin-top: 30px;
 }
-#enrm-branding-28930{
-  display: none !important;
-}
+
 @media only screen and (max-width: 430px) {
 .product-info__calendar {
   font-size: 15px;
