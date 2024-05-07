@@ -43,6 +43,23 @@
     ]
   },
   {
+    "name": "Instock & Outstock Settings",
+    "settings": [
+      {
+        "type": "text",
+        "id": "instock_text",
+        "label": "Text for In Stock products",
+        "default": "In Stock"
+      },
+      {
+        "type": "text",
+        "id": "outstock_text",
+        "label": "Text for Out of Stock products",
+        "default": "Out of Stock"
+      }
+    ]
+  },
+  {
     "name": "Typography",
     "settings": [
       {
