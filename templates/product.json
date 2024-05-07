@@ -18,7 +18,7 @@
         "custom_liquid_DdjYD3": {
           "type": "custom_liquid",
           "settings": {
-            "custom_liquid": "<div class=\"product-info__divider\"><\/div>\n        <div class=\"product-info__advantages\">\n            <ul>\n                <li>\n                    <p>\n                        {{ \"✔  Handcraft \" | escape }}\n                    <\/p>\n                <\/li>\n                <li>\n                    <p>\n                        {{ \"✔  Not allergenic\" | escape }}\n                    <\/p>\n                <\/li>\n                <li>\n                    <p>\n                        {{ \"✔  Elegant day and night\" | escape }}\n                    <\/p>\n                <\/li>\n            <\/ul>\n        <\/div>"
+            "custom_liquid": "<div class=\"product-info__divider\"><\/div>\n<div class=\"product-info__advantages\">\n    <ul>\n        <li>\n            <p>✔ {{ settings.product_advantages.advantage_1 }}<\/p>\n        <\/li>\n        <li>\n            <p>✔ {{ settings.product_advantages.advantage_2 }}<\/p>\n        <\/li>\n        <li>\n            <p>✔ {{ settings.product_advantages.advantage_3 }}<\/p>\n        <\/li>\n    <\/ul>\n<\/div>"
           }
         },
         "9d13a60b-74d6-49dd-8c6d-69f8ada627d7": {
