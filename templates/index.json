@@ -622,8 +622,8 @@
         "heading_hL49hE": {
           "type": "heading",
           "settings": {
-            "text": "Our girls",
-            "size": "h2"
+            "text": "OUR GIRLS",
+            "size": "h3"
           }
         }
       },
@@ -631,7 +631,7 @@
         "heading_hL49hE"
       ],
       "custom_css": [
-        ".rich-text{padding-top: 10px;}"
+        ".rich-text {padding-top: 10px;}"
       ],
       "settings": {
         "section_width": "grid",
