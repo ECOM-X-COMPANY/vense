@@ -45,6 +45,7 @@
         "template--20690467324203__03afdfc6-8355-48a6-b44a-61684b660a94-text-1",
         "9a347eee-d85e-444f-badb-37fdbc234b8c"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "grid",
         "text_width": "medium",
@@ -70,7 +71,8 @@
         "template--20690467324203__3e6fda89-4e96-4ad6-b836-d7f59dbf1aad-text-1": {
           "type": "text",
           "settings": {
-            "text": "<h5>Help pets <strong>live healthy and long lives<\/strong> through the use of high-quality, biologically appropriate nutrition<\/h5>"
+            "text": "<h5>Help pets <strong>live healthy and long lives<\/strong> through the use of high-quality, biologically appropriate nutrition<\/h5>",
+            "description_size": "medium"
           }
         }
       },
@@ -78,8 +80,8 @@
         "template--20690467324203__3e6fda89-4e96-4ad6-b836-d7f59dbf1aad-heading-1",
         "template--20690467324203__3e6fda89-4e96-4ad6-b836-d7f59dbf1aad-text-1"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_7141.heic",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -109,7 +111,8 @@
         "bdfa9f67-62d3-4af4-a90c-76a1acb078d6": {
           "type": "text",
           "settings": {
-            "text": "<h5>1 000 000 pets that <strong>eat healthy and quality food<\/strong><\/h5>"
+            "text": "<h5>1 000 000 pets that <strong>eat healthy and quality food<\/strong><\/h5>",
+            "description_size": "medium"
           }
         }
       },
@@ -117,8 +120,8 @@
         "e7c5a38c-0a80-47d9-a285-51c90f22d10a",
         "bdfa9f67-62d3-4af4-a90c-76a1acb078d6"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/28E6BDE4-921C-4D23-A411-B6318D82237D.jpg",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -148,7 +151,8 @@
         "template--20690467324203__75fb3093-9b6d-42aa-b9a4-81464cfed338-text-1": {
           "type": "text",
           "settings": {
-            "text": "<p>We want to share our story with you. It has all started in our childhood when we used to feed stray animals, build them shelters, and dream about starting a shelter when we grew up. We both grew up surrounded by pets as we always had cats and dogs at home.<\/p><p> <\/p><p>One day our lives changed completely. We fulfilled our dream and finally decided to adopt our first kitten in our adult life together. And that's how we got Stesha.<\/p>"
+            "text": "<p>We want to share our story with you. It has all started in our childhood when we used to feed stray animals, build them shelters, and dream about starting a shelter when we grew up. We both grew up surrounded by pets as we always had cats and dogs at home.<\/p><p> <\/p><p>One day our lives changed completely. We fulfilled our dream and finally decided to adopt our first kitten in our adult life together. And that's how we got Stesha.<\/p>",
+            "description_size": "medium"
           }
         }
       },
@@ -156,8 +160,8 @@
         "template--20690467324203__75fb3093-9b6d-42aa-b9a4-81464cfed338-heading-1",
         "template--20690467324203__75fb3093-9b6d-42aa-b9a4-81464cfed338-text-1"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/1058455D-3B96-43D3-9CCC-487C9B77925F_1_201_a.jpg",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -187,7 +191,8 @@
         "d020803d-acf9-4524-b6f1-a0d4b6302349": {
           "type": "text",
           "settings": {
-            "text": "<p>As I am a nutritionist who follows healthy eating principles in my own life, the main question that arose was: What should we feed our kitten? How do we choose healthy nutrition? Our relatives' pets were fed partly with raw or cooked meat, porridge, and other human food. However, vets and advertisements recommended only premium industrial balanced pet food. So we realized that we couldn't figure out this question without help.<\/p><p>​<\/p><p>We started consulting with vets and pet nutritionists, reading books, and taking courses on pet nutrition. We learned that truly healthy food for pets is based on the BARF (Biologically Appropriate Raw Food) system, and it's almost impossible to buy quality pet food in a store. The only option left was to cook it ourselves.<\/p><p> <\/p><p>After several months, our Stesha and all our friends' pets were eating only healthy and quality food based on the BARF system, which we prepared for them.<\/p>"
+            "text": "<p>As I am a nutritionist who follows healthy eating principles in my own life, the main question that arose was: What should we feed our kitten? How do we choose healthy nutrition? Our relatives' pets were fed partly with raw or cooked meat, porridge, and other human food. However, vets and advertisements recommended only premium industrial balanced pet food. So we realized that we couldn't figure out this question without help.<\/p><p>​<\/p><p>We started consulting with vets and pet nutritionists, reading books, and taking courses on pet nutrition. We learned that truly healthy food for pets is based on the BARF (Biologically Appropriate Raw Food) system, and it's almost impossible to buy quality pet food in a store. The only option left was to cook it ourselves.<\/p><p> <\/p><p>After several months, our Stesha and all our friends' pets were eating only healthy and quality food based on the BARF system, which we prepared for them.<\/p>",
+            "description_size": "medium"
           }
         }
       },
@@ -195,8 +200,8 @@
         "fdca4ada-842a-48d7-bc45-1c6c88172acc",
         "d020803d-acf9-4524-b6f1-a0d4b6302349"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_8284.heic",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -226,7 +231,8 @@
         "2d88a00c-3e3d-43e7-b8bf-22940418ae36": {
           "type": "text",
           "settings": {
-            "text": "<p>And that's how our first team and company, Wildfood, was born.<br\/><br\/>From the very beginning, we set our ambitious goal - 1,000,000 pets eating healthy and quality food.<br\/><br\/>Our mission is to help pets live healthy and long lives through quality nutrition. <\/p><p>We know that there are many pet parents like us who are responsible and caring for their pets.<br\/><br\/>We appreciate you for taking care of your pet as a member of your family.<br\/><br\/>We would be happy to save your time and prepare the best balanced diets for your beloved pets.​<br\/><br\/><br\/>Anastasia and Stesha<\/p>"
+            "text": "<p>And that's how our first team and company, Wildfood, was born.<br\/><br\/>From the very beginning, we set our ambitious goal - 1,000,000 pets eating healthy and quality food.<br\/><br\/>Our mission is to help pets live healthy and long lives through quality nutrition. <\/p><p>We know that there are many pet parents like us who are responsible and caring for their pets.<br\/><br\/>We appreciate you for taking care of your pet as a member of your family.<br\/><br\/>We would be happy to save your time and prepare the best balanced diets for your beloved pets.​<br\/><br\/><br\/>Anastasia and Stesha<\/p>",
+            "description_size": "medium"
           }
         }
       },
@@ -234,8 +240,8 @@
         "71aa3134-87c5-40d1-8a82-6dede99a5f2a",
         "2d88a00c-3e3d-43e7-b8bf-22940418ae36"
       ],
+      "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/IMG_1483.heic",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
@@ -251,6 +257,153 @@
         "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
+    },
+    "gallery_fbXiwy": {
+      "type": "gallery",
+      "blocks": {
+        "image_V6x3iq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frame-241-1713781044-66263934260af.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_CRYjL9": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frame-240-1713781024-6626392024702.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_4479hw": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frame-239-1713780987-662638fba15a5.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_7TEyNA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frame-237-1713780984-662638f8a0c2a.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_wFLFK3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frame-238-1713780980-662638f482672.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_FezDgU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_245.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_mRVAVA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_4800.jpg",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_wrQqFc": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_244.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        },
+        "image_A7NFDx": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/frame-241-1713781044-66263934260af.png",
+            "subheading": "",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "use_text_button": false,
+            "block_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_V6x3iq",
+        "image_CRYjL9",
+        "image_4479hw",
+        "image_7TEyNA",
+        "image_wFLFK3",
+        "image_FezDgU",
+        "image_mRVAVA",
+        "image_wrQqFc",
+        "image_A7NFDx"
+      ],
+      "settings": {
+        "columns_desktop": 3,
+        "section_width": "grid",
+        "mobile_swipe": true,
+        "image_ratio": "adapt",
+        "content_position": "bottom-left",
+        "text_alignment": "left",
+        "column_spacing": "small",
+        "heading_size": "h2",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
@@ -260,6 +413,7 @@
     "814799c0-154e-4256-a272-3937fc3291f5",
     "75fb3093-9b6d-42aa-b9a4-81464cfed338",
     "aaa05901-acdf-40af-b674-8ca3748e4fd8",
-    "c53f26f4-61bb-4009-b746-f0cd61738194"
+    "c53f26f4-61bb-4009-b746-f0cd61738194",
+    "gallery_fbXiwy"
   ]
 }
