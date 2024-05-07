@@ -55,7 +55,7 @@
         "type": "text",
         "id": "outstock_text",
         "label": "Text for Out of Stock products",
-        "default": "Out of Stock"
+        "default": "Out Stock"
       }
     ]
   },
