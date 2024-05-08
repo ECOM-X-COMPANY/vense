@@ -306,8 +306,8 @@
         "slide_TmHPVW"
       ],
       "custom_css": [
-        ".slideshow {display: block;}",
-        "@media only screen and (max-width: 430px) {.slideshow {display: none; }"
+        ".slideshow {display: block; }",
+        "@media only screen and (max-width: 430px) {.slideshow{display: none; }}"
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
