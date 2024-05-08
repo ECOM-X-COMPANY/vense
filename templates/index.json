@@ -144,6 +144,7 @@
         "164794776393e76b8e-0",
         "164794776393e76b8e-1"
       ],
+      "disabled": true,
       "custom_css": [
         ".h1 {text-transform: uppercase;}"
       ],
