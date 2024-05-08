@@ -146,7 +146,9 @@
         "164794776393e76b8e-1"
       ],
       "custom_css": [
-        ".h1 {text-transform: uppercase;}"
+        ".h1 {text-transform: uppercase;}",
+        ".slideshow {display: none;}",
+        "@media only screen and (max-width: 430px) {.slideshow {display: block;}}"
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
