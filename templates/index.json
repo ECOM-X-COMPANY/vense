@@ -158,6 +158,161 @@
         "disable_bottom_spacing": true
       }
     },
+    "slideshow_eHRJ6n": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_qk7jhg": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_226.png",
+            "mobile_image": "shopify:\/\/shop_images\/Home-mobile-1.jpg",
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "Affordable Luxury",
+            "heading_size": "h1",
+            "content": "Beautiful pieces to pass down for generations",
+            "description_size": "small",
+            "content_position": "middle-left",
+            "text_alignment": "left",
+            "content_size": "large",
+            "overlay_color": "#000000",
+            "overlay_opacity": 11,
+            "overlay_gradient": "linear-gradient(349deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 69%)",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_wHQhND": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_227.png",
+            "mobile_image": "shopify:\/\/shop_images\/Home-mobile-2.jpg",
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "Your style with our sparkling rings!",
+            "heading_size": "h1",
+            "content": "Emphasize your personality and elegance with our charming rings",
+            "description_size": "small",
+            "content_position": "middle-left",
+            "text_alignment": "left",
+            "content_size": "large",
+            "overlay_color": "#000000",
+            "overlay_opacity": 11,
+            "overlay_gradient": "linear-gradient(349deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 69%)",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections\/ring",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_RnCQw7": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_228.png",
+            "mobile_image": "shopify:\/\/shop_images\/Home-mobile-3.jpg",
+            "slide_link": "",
+            "video_background": true,
+            "video": "",
+            "subheading": "",
+            "heading": "Elegant necklaces that will emphasize your style",
+            "heading_size": "h1",
+            "content": "Choose a unique design that will emphasize your style and attract the attention of others",
+            "description_size": "small",
+            "content_position": "middle-left",
+            "text_alignment": "left",
+            "content_size": "large",
+            "overlay_color": "#000000",
+            "overlay_opacity": 11,
+            "overlay_gradient": "linear-gradient(349deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 69%)",
+            "button_1_text": "SHOP NOW",
+            "button_1_link": "shopify:\/\/collections\/necklace",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_CLGbzw": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "Gently cooked and RAW collections",
+            "heading_size": "h1",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 35,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "Shop now",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_TmHPVW": {
+          "type": "slide",
+          "disabled": true,
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "",
+            "subheading": "",
+            "heading": "Like 5-STARS restaurant",
+            "heading_size": "h1-xlarge",
+            "content": "Tasty\nHealthy\nRecommended",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 45,
+            "overlay_gradient": "",
+            "button_1_text": "Shop NOW",
+            "button_1_link": "",
+            "button_1_outline": false,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_qk7jhg",
+        "slide_wHQhND",
+        "slide_RnCQw7",
+        "slide_CLGbzw",
+        "slide_TmHPVW"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 6,
+        "transition": "swipe",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "scrolling_text_eVxEDc": {
       "type": "scrolling-text",
       "blocks": {
@@ -638,7 +793,7 @@
         "text_width": "medium",
         "text_position": "center",
         "text_alignment": "center",
-        "color_bg": "transparent",
+        "color_bg": "rgba(0,0,0,0)",
         "color_text": "#151515",
         "color_links": "#151515",
         "disable_top_spacing": false,
@@ -654,6 +809,7 @@
   },
   "order": [
     "16479477632637c9a7",
+    "slideshow_eHRJ6n",
     "scrolling_text_eVxEDc",
     "scrolling_text_w6EXfN",
     "46322c5c-3347-49a0-b4b9-a5f2ad634b2c",
