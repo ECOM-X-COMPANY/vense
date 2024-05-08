@@ -148,7 +148,7 @@
       "custom_css": [
         ".h1 {text-transform: uppercase;}",
         ".slideshow {display: none;}",
-        "@media only screen and (max-width: 430px) {.slideshow {display: block;}}"
+        "@media only screen and (max-width: 430px) {.slideshow {display: block; }}"
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
@@ -304,6 +304,10 @@
         "slide_RnCQw7",
         "slide_CLGbzw",
         "slide_TmHPVW"
+      ],
+      "custom_css": [
+        ".slideshow {display: block;}",
+        "@media only screen and (max-width: 430px) {.slideshow {display: none; }"
       ],
       "settings": {
         "desktop_height": "desktop-height-650",
