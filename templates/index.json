@@ -6,11 +6,10 @@
         "164794776393e76b8e-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Frame_226.png",
-            "mobile_image": "shopify:\/\/shop_images\/Home-mobile-1.jpg",
             "slide_link": "",
             "video_background": true,
             "video": "",
+            "video_hosted": "shopify:\/\/files\/videos\/IMG_8855_2.mov",
             "subheading": "",
             "heading": "Affordable Luxury",
             "heading_size": "h1",
@@ -32,6 +31,7 @@
         },
         "slide_VMj8Gm": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_227.png",
             "mobile_image": "shopify:\/\/shop_images\/Home-mobile-2.jpg",
@@ -59,6 +59,7 @@
         },
         "slide_AeMQrx": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_228.png",
             "mobile_image": "shopify:\/\/shop_images\/Home-mobile-3.jpg",
@@ -144,7 +145,6 @@
         "164794776393e76b8e-0",
         "164794776393e76b8e-1"
       ],
-      "disabled": true,
       "custom_css": [
         ".h1 {text-transform: uppercase;}"
       ],
