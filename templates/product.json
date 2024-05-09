@@ -169,7 +169,7 @@
         "heading_left": false,
         "description": "",
         "full_width": true,
-        "collection": "new",
+        "collection": "new-arrivals",
         "display_type": "carousel",
         "product_limit": 4,
         "columns_desktop": 4,
