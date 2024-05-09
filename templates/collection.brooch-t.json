@@ -50,6 +50,22 @@
     "product-grid": {
       "type": "main-collection-product-grid",
       "blocks": {
+        "promotion_4mYVYC": {
+          "type": "promotion",
+          "settings": {
+            "promotion_collection": "",
+            "promotion_position": 1,
+            "promotion_width": "1",
+            "title": "Promotion",
+            "text": "Advertise a promotion or a sale",
+            "link_label": "Explore",
+            "link": "",
+            "use_text_button": false,
+            "block_link": "",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70
+          }
+        },
         "promotion_XfTnXf": {
           "type": "promotion",
           "settings": {
@@ -69,13 +85,14 @@
         }
       },
       "block_order": [
+        "promotion_4mYVYC",
         "promotion_XfTnXf"
       ],
       "custom_css": [
         ".button {border: 1px solid #ffff; background: transparent; color: #ffff; border-radius: 50px;}",
         ".facet-checkbox {text-transform: capitalize;}",
         ".section-spacing-bottom {margin-bottom: 30px;}",
-        ".facets__form{margin-top: 10px;}"
+        ".facets__form {margin-top: 10px;}"
       ],
       "settings": {
         "full_width": true,
