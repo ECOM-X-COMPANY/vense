@@ -4208,6 +4208,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .sc-gift-card button{
   background: #D5C6BF !important;
 }
+.sc-card-options .sc-card-option__value.sc-card-option__value--selected{
+  border: 2px solid #D5C6BF !important;
+}
 
 @media only screen and (max-width: 430px) {
 .product-info__calendar {
