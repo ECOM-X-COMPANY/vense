@@ -321,9 +321,9 @@
         "settings": {
         }
       },
-      "17442089763355273418": {
-        "type": "shopify:\/\/apps\/vify-gift-cards\/blocks\/gift-card-issue\/43d9e0cc-139a-4d15-b0b8-63f2863afb32",
-        "disabled": true,
+      "15493114679298500990": {
+        "type": "shopify:\/\/apps\/gift-card-hero-all-in-one\/blocks\/app-embed\/57babc6a-ae2b-46cf-b565-dd8395b0276b",
+        "disabled": false,
         "settings": {
         }
       }
