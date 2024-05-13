@@ -4206,7 +4206,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   margin-top: 30px;
 }
 .sc-gift-card button{
-  background: red !important;
+  background: #D5C6BF !important;
 }
 
 @media only screen and (max-width: 430px) {
