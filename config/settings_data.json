@@ -323,7 +323,7 @@
       },
       "17442089763355273418": {
         "type": "shopify:\/\/apps\/vify-gift-cards\/blocks\/gift-card-issue\/43d9e0cc-139a-4d15-b0b8-63f2863afb32",
-        "disabled": false,
+        "disabled": true,
         "settings": {
         }
       }
