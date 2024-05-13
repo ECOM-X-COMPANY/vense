@@ -4214,6 +4214,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .sc-card-tabs .sc-card-tab.sc-card-tab--active{
    border: 2px solid #D5C6BF !important;
 }
+.sc-card-preview{
+   border: 2px solid #D5C6BF !important;
+}
 
 @media only screen and (max-width: 430px) {
 .product-info__calendar {
