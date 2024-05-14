@@ -3,7 +3,8 @@
     "main-collection-banner": {
       "type": "main-collection-banner",
       "custom_css": [
-        ".collection-banner--content {max-width: 800px;}"
+        ".collection-banner--content {max-width: 800px;}",
+        "@media only screen and (max-width: 430px) {.collection-banner--description p{font-size: 12px; line-height: 18px; }}"
       ],
       "settings": {
         "show_collection_image": false,
