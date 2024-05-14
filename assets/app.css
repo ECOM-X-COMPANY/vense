@@ -4254,7 +4254,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     padding-top: 0px;
   }
   [data-section-id="template--22449186799926__recently_viewed_products_KJ7m6d"]{
-    margin-top: 0px;
+    margin-top: 0px !important;
   }
 }
 @media only screen and (max-width: 365px) {
