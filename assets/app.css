@@ -4248,7 +4248,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     margin-top: 10px !important;
   }
   .featured-collection{
-    margin-top: 10px;
+    margin-top: 10px !important;
   }
 }
 @media only screen and (max-width: 365px) {
