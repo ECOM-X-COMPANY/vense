@@ -4236,10 +4236,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     padding: 48px 0 !important;
   }
   .footer{
-    padding-bottom: 0px;
+    padding-bottom: 0px !important;
   }
   .footer-payment-icons {
-  margin-bottom: 10px;
+  margin-bottom: 10px !important;
 }
 }
 @media only screen and (max-width: 365px) {
