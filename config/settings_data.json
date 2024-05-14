@@ -37,6 +37,8 @@
     "color_swatches": "Black Gold: #BFA75D\nBlack Silver: #71706e",
     "lazy_loading": false,
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
+    "checkout_logo_image": "shopify:\/\/shop_images\/logo_black_1.svg",
+    "checkout_logo_position": "center",
     "calendar_image_url": "Free shipping and returns",
     "delivery_text": "Made to order. Estimated to ship by",
     "sections": {
