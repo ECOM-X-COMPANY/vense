@@ -14,7 +14,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row{% endif %}">
 	<div class="small-12 columns">
-		<product-recommendations class="product-recommendations {% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit=4">
+		<product-recommendations data-section-id="{{ section.id }}" class="product-recommendations {% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product_id }}&limit=4">
 			{% if recommendations.performed and recommendations.products_count > 0 %}
 				{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
 				<ul class="products collection row small-up-1 medium-up-4 no-padding">
