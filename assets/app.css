@@ -4230,6 +4230,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     font-size: 12px !important;
     line-height: 18px !important;
   }
+  .collection-banner--content{
+    padding: 48px 0;
+  }
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
