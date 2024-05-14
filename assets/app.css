@@ -4222,6 +4222,11 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .product-info__calendar {
   font-size: 15px;
 }
+  .collection-banner--content p{
+    margin-top: 7px;
+  font-size: 12px;
+  line-height: 18px;
+  }
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
