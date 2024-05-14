@@ -4238,6 +4238,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .footer{
     padding-bottom: 0px;
   }
+  .footer-payment-icons {
+  margin-bottom: 10px;
+}
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
