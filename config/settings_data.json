@@ -40,6 +40,7 @@
     "checkout_logo_image": "shopify:\/\/shop_images\/logo_black_1.svg",
     "checkout_logo_position": "center",
     "checkout_body_background_color": "#d5c6bf",
+    "checkout_sidebar_background_color": "#d5c6bf",
     "calendar_image_url": "Free shipping and returns",
     "delivery_text": "Made to order. Estimated to ship by",
     "sections": {
