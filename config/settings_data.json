@@ -42,6 +42,7 @@
     "checkout_body_background_color": "#d5c6bf",
     "checkout_input_background_color_mode": "transparent",
     "checkout_sidebar_background_color": "#d5c6bf",
+    "checkout_accent_color": "#40495a",
     "checkout_button_color": "#c09e83",
     "calendar_image_url": "Free shipping and returns",
     "delivery_text": "Made to order. Estimated to ship by",
