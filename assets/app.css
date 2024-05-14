@@ -4226,6 +4226,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     font-size: 24px;
   line-height: 27px;
   }
+    .collection-banner--description p {
+    font-size: 12px;
+    line-height: 18px;
+  }
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
