@@ -4244,6 +4244,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .footer .widget {
   margin-bottom: 5px !important;
 }
+   .footer .widget--menu-column + .columns:not(.widget--menu-column) {
+    margin-top: 10px !important;
+  }
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
