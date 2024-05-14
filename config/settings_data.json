@@ -39,6 +39,7 @@
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo_black_1.svg",
     "checkout_logo_position": "center",
+    "checkout_body_background_image": "shopify:\/\/shop_images\/9.png",
     "checkout_body_background_color": "#d5c6bf",
     "checkout_input_background_color_mode": "transparent",
     "checkout_sidebar_background_color": "#d5c6bf",
