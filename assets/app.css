@@ -4227,8 +4227,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   line-height: 27px;
   }
     .collection-banner--description p {
-    font-size: 12px;
-    line-height: 18px;
+    font-size: 12px !important;
+    line-height: 18px !important;
   }
 }
 @media only screen and (max-width: 365px) {
