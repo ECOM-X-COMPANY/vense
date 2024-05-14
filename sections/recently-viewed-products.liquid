@@ -10,7 +10,7 @@
 -%}
 <div class="row{% if full_width %} full-width-row{% endif %}">
 	<div class="small-12 columns">
-		<recently-viewed-products class="product-recommendations recently-viewed-products {% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" data-product-handle="{{ product.handle }}">
+		<recently-viewed-products data-section-id="{{ section.id }}" class="product-recommendations recently-viewed-products {% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing-padding{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" data-product-handle="{{ product.handle }}">
 			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
 			<ul class="products collection row small-up-1 medium-up-4 no-padding">
 			</ul>
