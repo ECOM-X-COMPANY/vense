@@ -4235,6 +4235,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .collection-banner--content{
     padding: 48px 0 !important;
   }
+  .footer{
+    padding-bottom: 0px;
+  }
 }
 @media only screen and (max-width: 365px) {
   .product-info_price--discount span{
