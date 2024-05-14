@@ -4231,7 +4231,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     line-height: 18px !important;
   }
   .collection-banner--content{
-    padding: 48px 0;
+    padding: 48px 0 !important;
   }
 }
 @media only screen and (max-width: 365px) {
