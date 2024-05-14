@@ -4220,9 +4220,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .enapSAction > a{
   z-index: 9 !important;
 }
-[dir="ltr"] .QT4by{
-  background: red !important;
-}
+
 @media only screen and (max-width: 430px) {
 .product-info__calendar {
   font-size: 15px;
