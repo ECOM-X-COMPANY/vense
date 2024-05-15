@@ -899,6 +899,9 @@
         "column_miPcNP",
         "column_nnDTNf"
       ],
+      "custom_css": [
+        ".multicolumn__column{max-width: 350px;}"
+      ],
       "settings": {
         "heading": "OUR GIRS",
         "heading_left": false,
