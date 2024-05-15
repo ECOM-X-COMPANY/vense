@@ -900,7 +900,8 @@
         "column_nnDTNf"
       ],
       "custom_css": [
-        ".multicolumn__column{max-width: 350px;}"
+        ".multicolumn__column {max-width: 350px;}",
+        ".multicolumn{padding-top: 30px;}"
       ],
       "settings": {
         "heading": "OUR GIRS",
