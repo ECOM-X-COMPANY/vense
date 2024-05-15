@@ -316,7 +316,7 @@
           "language_label": "language-code",
           "language_country_mapping": "",
           "countries_filter": "",
-          "custom_css": ".tl-currency {\n  display: none !important;\n}\n@media (max-width: 1067px) {\n.tl-selection .tl-selection {\n\tdisplay: none;\n}",
+          "custom_css": ".tl-currency {\n  display: none !important;\n}\n@media (max-width: 989px) {\n\t.tl-switcher-container.desktop {\n\t\tdisplay: none !important;\n}",
           "header_switcher_reference_element": ".custom-navigation",
           "header_switcher_relative_position": "before",
           "mobile_menu_switcher_reference_element": ".mobile-menu",
