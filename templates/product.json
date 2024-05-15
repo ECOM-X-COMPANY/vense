@@ -267,7 +267,8 @@
       "custom_css": [
         ".multicolumn__column {max-width: 350px;}",
         ".multicolumn {padding-top: 20px;}",
-        ".section-header {margin-bottom: 20px;}"
+        ".section-header {margin-bottom: 20px;}",
+        ".flickity-progress {margin-top: 0px;}"
       ],
       "settings": {
         "heading": "OUR GIRS",
