@@ -240,6 +240,7 @@
       "block_order": [
         "heading_6XArkK"
       ],
+      "disabled": true,
       "settings": {
         "section_width": "grid",
         "text_width": "medium",
@@ -254,11 +255,87 @@
     },
     "custom_liquid_DA6yWB": {
       "type": "custom-liquid",
+      "disabled": true,
       "custom_css": [
 
       ],
       "settings": {
         "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
+      }
+    },
+    "multicolumn_YhwLGQ": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_e8PXpP": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_7aXhMW": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Ne8EjL": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_YgTmLU": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_e8PXpP",
+        "column_7aXhMW",
+        "column_Ne8EjL",
+        "column_YgTmLU"
+      ],
+      "custom_css": [
+        ".multicolumn__column {max-width: 350px;}",
+        ".multicolumn {padding-top: 20px;}",
+        ".section-header {margin-bottom: 20px;}"
+      ],
+      "settings": {
+        "heading": "OUR GIRS",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "carousel",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "text_alignment": "center",
+        "heading_size": "h3",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     },
     "1707148780981e10aa": {
@@ -331,6 +408,7 @@
     "1707148459ccb0c152",
     "rich_text_7meRNU",
     "custom_liquid_DA6yWB",
+    "multicolumn_YhwLGQ",
     "1707148780981e10aa",
     "product-recommendations",
     "recently_viewed_products_WyU6wN"
