@@ -269,53 +269,83 @@
         "column_e8PXpP": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0145.jpg",
             "image_full_width": false,
             "retina": true,
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/our-girls"
           }
         },
-        "column_7aXhMW": {
+        "column_Ltdf84": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0668.jpg",
             "image_full_width": false,
             "retina": true,
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/our-girls"
           }
         },
-        "column_Ne8EjL": {
+        "column_rpQfNE": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0145.jpg",
             "image_full_width": false,
             "retina": true,
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/our-girls"
           }
         },
-        "column_YgTmLU": {
+        "column_AT8Wzp": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0669.jpg",
             "image_full_width": false,
             "retina": true,
-            "title": "Column",
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "title": "",
+            "text": "",
             "link_label": "",
-            "link": ""
+            "link": "shopify:\/\/pages\/our-girls"
+          }
+        },
+        "column_DANrWD": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0145.jpg",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
+        },
+        "column_RQVdXp": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_0145.jpg",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
           }
         }
       },
       "block_order": [
         "column_e8PXpP",
-        "column_7aXhMW",
-        "column_Ne8EjL",
-        "column_YgTmLU"
+        "column_Ltdf84",
+        "column_rpQfNE",
+        "column_AT8Wzp",
+        "column_DANrWD",
+        "column_RQVdXp"
       ],
       "custom_css": [
         ".multicolumn__column {max-width: 350px;}",
@@ -328,7 +358,7 @@
         "description": "",
         "full_width": true,
         "display_type": "carousel",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "columns_desktop": 6,
         "text_alignment": "center",
         "heading_size": "h3",
