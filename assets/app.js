@@ -1338,4 +1338,18 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+//
+document.addEventListener('DOMContentLoaded', function() {
+    const dataSetId = 'template--21949597483318__multicolumn_b6eC6U';
+    const column = document.querySelector(`[data-set-id="${dataSetId}"] .multicolumn__column`);
+    const link = document.querySelector('.text-button');
+
+    if (column && link) {
+        column.addEventListener('click', function() {
+            link.click();
+        });
+    }
+});
+
+
 
