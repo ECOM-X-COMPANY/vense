@@ -316,7 +316,7 @@
           "language_label": "language-name",
           "language_country_mapping": "",
           "countries_filter": "",
-          "custom_css": "@media only screen and (max-width: 430px) \n.custom-navigation {",
+          "custom_css": "@media only screen and (max-width: 430px) \n.tl-currency {\n  display: none !important;\n}",
           "header_switcher_reference_element": ".custom-navigation",
           "header_switcher_relative_position": "in-element-prepend",
           "mobile_menu_switcher_reference_element": "",
