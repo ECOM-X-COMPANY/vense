@@ -901,8 +901,8 @@
       ],
       "custom_css": [
         ".multicolumn__column {max-width: 350px;}",
-        ".multicolumn {padding-top: 30px;}",
-        ".section-header{margin-bottom: 10px;}"
+        ".multicolumn {padding-top: 20px;}",
+        ".section-header {margin-bottom: 20px;}"
       ],
       "settings": {
         "heading": "OUR GIRS",
