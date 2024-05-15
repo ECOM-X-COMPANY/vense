@@ -285,12 +285,6 @@
         "settings": {
         }
       },
-      "12793297677437526120": {
-        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/custom_translations\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "6986766168588894248": {
         "type": "shopify:\/\/apps\/preorder-now-wolf\/blocks\/app-embed\/7ee1d740-e67b-4ea8-b0c9-1f62cb8777ec",
         "disabled": false,
@@ -332,6 +326,12 @@
           "custom_switcher_text_color": "#444444",
           "custom_switcher_background_color": "#d5c6bf",
           "custom_switcher_border_color": "#939393"
+        }
+      },
+      "12793297677437526120": {
+        "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/custom_translations\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
+        "disabled": false,
+        "settings": {
         }
       }
     }
