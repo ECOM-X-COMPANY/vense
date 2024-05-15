@@ -877,6 +877,18 @@
             "link_label": "",
             "link": "shopify:\/\/pages\/our-girls"
           }
+        },
+        "column_nnDTNf": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_7290.heic",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
         }
       },
       "block_order": [
@@ -884,7 +896,8 @@
         "column_3DiVdn",
         "column_DRpmDn",
         "column_jQiFjH",
-        "column_miPcNP"
+        "column_miPcNP",
+        "column_nnDTNf"
       ],
       "settings": {
         "heading": "OUR GIRS",
