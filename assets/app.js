@@ -1338,7 +1338,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-//
+// When you click on the multi-column, you go to the Our Girls page
 document.addEventListener('DOMContentLoaded', function() {
     const dataSetId = 'template--21949597483318__multicolumn_b6eC6U';
     const column = document.querySelector(`[data-set-id="${dataSetId}"] .multicolumn__column`);
