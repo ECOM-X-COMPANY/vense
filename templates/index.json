@@ -821,7 +821,7 @@
         "column_yR7x3X": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMG_4800.jpg",
+            "image": "shopify:\/\/shop_images\/IMG_0145.jpg",
             "image_full_width": false,
             "retina": true,
             "title": "",
@@ -833,7 +833,7 @@
         "column_3DiVdn": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/12132.png",
+            "image": "shopify:\/\/shop_images\/IMG_0668.jpg",
             "image_full_width": false,
             "retina": true,
             "title": "",
@@ -845,7 +845,7 @@
         "column_DRpmDn": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image": "shopify:\/\/shop_images\/IMG_0669.jpg",
             "image_full_width": false,
             "retina": true,
             "title": "",
@@ -857,7 +857,19 @@
         "column_jQiFjH": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image": "shopify:\/\/shop_images\/IMG_4800_da654f8d-1a44-4e2d-82ed-4073f0cfcf3c.jpg",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
+        },
+        "column_miPcNP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMG_6716.jpg",
             "image_full_width": false,
             "retina": true,
             "title": "",
@@ -871,7 +883,8 @@
         "column_yR7x3X",
         "column_3DiVdn",
         "column_DRpmDn",
-        "column_jQiFjH"
+        "column_jQiFjH",
+        "column_miPcNP"
       ],
       "settings": {
         "heading": "OUR GIRS",
