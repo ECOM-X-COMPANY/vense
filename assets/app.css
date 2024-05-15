@@ -4226,6 +4226,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .sewp-header{
   background: #40495A !important;
 }
+.wishlist-cart{
+   background: #c09e83 !important;
+}
 @media only screen and (max-width: 430px) {
 .product-info__calendar {
   font-size: 15px;
