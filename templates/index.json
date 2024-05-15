@@ -903,7 +903,8 @@
         ".multicolumn__column {max-width: 350px;}",
         ".multicolumn {padding-top: 20px;}",
         ".section-header {margin-bottom: 20px;}",
-        ".flickity-progress {margin-top: 0px;}"
+        ".flickity-progress {margin-top: 0px;}",
+        ".text-button{display: none;}"
       ],
       "settings": {
         "heading": "OUR GIRLS",
