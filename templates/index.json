@@ -812,6 +812,41 @@
       "settings": {
         "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
       }
+    },
+    "multicolumn_b6eC6U": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_yR7x3X": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
+        }
+      },
+      "block_order": [
+        "column_yR7x3X"
+      ],
+      "settings": {
+        "heading": "Multicolumn",
+        "heading_left": false,
+        "description": "",
+        "full_width": true,
+        "display_type": "carousel",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "text_alignment": "center",
+        "heading_size": "h4",
+        "mobile_swipe": false,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
     }
   },
   "order": [
@@ -827,6 +862,7 @@
     "image_with_text_overlay_7gjf94",
     "gallery_fVYFiT",
     "rich_text_BGDWCq",
-    "custom_liquid_CbP7zA"
+    "custom_liquid_CbP7zA",
+    "multicolumn_b6eC6U"
   ]
 }
