@@ -879,7 +879,7 @@
         "description": "",
         "full_width": true,
         "display_type": "carousel",
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "columns_desktop": 6,
         "text_alignment": "center",
         "heading_size": "h4",
