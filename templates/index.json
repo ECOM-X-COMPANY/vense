@@ -838,7 +838,7 @@
             "retina": true,
             "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Our Girls",
             "link": "shopify:\/\/pages\/our-girls"
           }
         },
@@ -850,7 +850,7 @@
             "retina": true,
             "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Our Girls",
             "link": "shopify:\/\/pages\/our-girls"
           }
         },
@@ -862,7 +862,7 @@
             "retina": true,
             "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Our Girls",
             "link": "shopify:\/\/pages\/our-girls"
           }
         },
@@ -878,6 +878,17 @@
             "link": "shopify:\/\/pages\/our-girls"
           }
         },
+        "column_bqhLGx": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "Our Girls",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
+        },
         "column_nnDTNf": {
           "type": "column",
           "settings": {
@@ -886,7 +897,7 @@
             "retina": true,
             "title": "",
             "text": "",
-            "link_label": "",
+            "link_label": "Our Girls",
             "link": "shopify:\/\/pages\/our-girls"
           }
         }
@@ -897,6 +908,7 @@
         "column_DRpmDn",
         "column_jQiFjH",
         "column_miPcNP",
+        "column_bqhLGx",
         "column_nnDTNf"
       ],
       "custom_css": [
@@ -904,7 +916,7 @@
         ".multicolumn {padding-top: 20px;}",
         ".section-header {margin-bottom: 20px;}",
         ".flickity-progress {margin-top: 0px;}",
-        ".text-button{display: none;}"
+        ".text-button {display: none;}"
       ],
       "settings": {
         "heading": "OUR GIRLS",
