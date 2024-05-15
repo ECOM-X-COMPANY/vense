@@ -792,6 +792,7 @@
       "block_order": [
         "heading_hL49hE"
       ],
+      "disabled": true,
       "custom_css": [
         ".rich-text {padding-top: 30px;}"
       ],
@@ -809,6 +810,7 @@
     },
     "custom_liquid_CbP7zA": {
       "type": "custom-liquid",
+      "disabled": true,
       "settings": {
         "custom_liquid": "<div id=\"enap-slider-28930\"><\/div>"
       }
