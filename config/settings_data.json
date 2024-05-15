@@ -313,7 +313,7 @@
           "use_currency_for_region": true,
           "switcher_position": "header",
           "show_flags": true,
-          "language_label": "language-name",
+          "language_label": "language-code",
           "language_country_mapping": "",
           "countries_filter": "",
           "custom_css": ".tl-currency {\n  display: none !important;\n}",
