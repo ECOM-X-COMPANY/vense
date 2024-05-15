@@ -620,7 +620,7 @@
         ".collection-list-section {margin: 30px 0px;}"
       ],
       "settings": {
-        "heading": "Explore Products by Category",
+        "heading": "Explore Products by Collections",
         "heading_left": false,
         "description": "<p>Discover a curated selection of top-quality products as you explore our diverse categories. <\/p>",
         "full_width": true,
