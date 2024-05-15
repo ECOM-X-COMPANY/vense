@@ -291,6 +291,18 @@
         "settings": {
         }
       },
+      "6986766168588894248": {
+        "type": "shopify:\/\/apps\/preorder-now-wolf\/blocks\/app-embed\/7ee1d740-e67b-4ea8-b0c9-1f62cb8777ec",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "15493114679298500990": {
+        "type": "shopify:\/\/apps\/gift-card-hero-all-in-one\/blocks\/app-embed\/57babc6a-ae2b-46cf-b565-dd8395b0276b",
+        "disabled": false,
+        "settings": {
+        }
+      },
       "8765772171712610185": {
         "type": "shopify:\/\/apps\/t-lab-ai-language-translate\/blocks\/language_switcher\/b5b83690-efd4-434d-8c6a-a5cef4019faf",
         "disabled": false,
@@ -299,7 +311,7 @@
           "enable_country_region_switcher": true,
           "use_modal_dialog": false,
           "use_currency_for_region": true,
-          "switcher_position": "custom",
+          "switcher_position": "header",
           "show_flags": true,
           "language_label": "language-name",
           "language_country_mapping": "",
@@ -320,18 +332,6 @@
           "custom_switcher_text_color": "#444444",
           "custom_switcher_background_color": "#d5c6bf",
           "custom_switcher_border_color": "#939393"
-        }
-      },
-      "6986766168588894248": {
-        "type": "shopify:\/\/apps\/preorder-now-wolf\/blocks\/app-embed\/7ee1d740-e67b-4ea8-b0c9-1f62cb8777ec",
-        "disabled": false,
-        "settings": {
-        }
-      },
-      "15493114679298500990": {
-        "type": "shopify:\/\/apps\/gift-card-hero-all-in-one\/blocks\/app-embed\/57babc6a-ae2b-46cf-b565-dd8395b0276b",
-        "disabled": false,
-        "settings": {
         }
       }
     }
