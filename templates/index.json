@@ -457,7 +457,7 @@
         "heading_left": false,
         "description": "",
         "full_width": true,
-        "product_limit": 10,
+        "product_limit": 4,
         "columns_desktop": 4,
         "show_view_all": false,
         "show_progress_bar": true,
