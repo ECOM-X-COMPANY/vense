@@ -317,7 +317,7 @@
           "language_country_mapping": "",
           "countries_filter": "",
           "custom_css": ".tl-currency {\n  display: none !important;\n}",
-          "header_switcher_reference_element": ".h-wishlist-icon svg",
+          "header_switcher_reference_element": ".custom-navigation",
           "header_switcher_relative_position": "before",
           "mobile_menu_switcher_reference_element": "",
           "mobile_switcher_relative_position": "after",
