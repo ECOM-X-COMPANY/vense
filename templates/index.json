@@ -827,22 +827,61 @@
             "link_label": "",
             "link": "shopify:\/\/pages\/our-girls"
           }
+        },
+        "column_3DiVdn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/12132.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
+        },
+        "column_DRpmDn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
+        },
+        "column_jQiFjH": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/1.jpg",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "shopify:\/\/pages\/our-girls"
+          }
         }
       },
       "block_order": [
-        "column_yR7x3X"
+        "column_yR7x3X",
+        "column_3DiVdn",
+        "column_DRpmDn",
+        "column_jQiFjH"
       ],
       "settings": {
-        "heading": "Multicolumn",
+        "heading": "OUR GIRS",
         "heading_left": false,
         "description": "",
         "full_width": true,
         "display_type": "carousel",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "columns_desktop": 6,
         "text_alignment": "center",
         "heading_size": "h4",
-        "mobile_swipe": false,
+        "mobile_swipe": true,
         "show_progress_bar": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
