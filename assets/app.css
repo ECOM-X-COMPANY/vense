@@ -4229,6 +4229,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .wishlist-cart{
    background: #c09e83 !important;
   font-weight: 900 !important;
+  height: 40px !important;
 }
 @media only screen and (max-width: 430px) {
 .product-info__calendar {
