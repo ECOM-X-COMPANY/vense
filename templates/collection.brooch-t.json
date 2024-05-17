@@ -68,6 +68,7 @@
         },
         "promotion_XfTnXf": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "promotion_collection": "",
             "promotion_position": 1,
