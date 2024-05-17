@@ -52,6 +52,7 @@
       "blocks": {
         "promotion_4mYVYC": {
           "type": "promotion",
+          "disabled": true,
           "settings": {
             "promotion_collection": "",
             "promotion_position": 1,
