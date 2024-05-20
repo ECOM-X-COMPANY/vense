@@ -337,30 +337,6 @@
           "custom_switcher_border_color": "#939393"
         }
       },
-      "3902840701207322667": {
-        "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-vintage-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
-        "disabled": true,
-        "settings": {
-          "product-callout-status": false,
-          "product-button-status": false,
-          "flyout-button-status": false,
-          "flyout-position": "after-checkout-button",
-          "cart-button-status": false,
-          "cart-position": "after-checkout-button",
-          "button-text-long": "Get it paid for you with",
-          "button-text-medium": "Get it paid for with",
-          "button-text-short": "Get it paid",
-          "theme": "blue",
-          "button-colour": "#000000",
-          "button-height": 52,
-          "border-radius": 0,
-          "margin-top": 10,
-          "margin-bottom": 10,
-          "callout-theme": "blue",
-          "modal-theme": "dark",
-          "modal-icon": "shirt"
-        }
-      },
       "13735747256200043642": {
         "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-global-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
         "disabled": true,
@@ -431,6 +407,30 @@
           "margin-bottom": 10,
           "width": 100,
           "alignment": "center"
+        }
+      },
+      "3902840701207322667": {
+        "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-vintage-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+        "disabled": false,
+        "settings": {
+          "product-callout-status": true,
+          "product-button-status": true,
+          "flyout-button-status": false,
+          "flyout-position": "after-checkout-button",
+          "cart-button-status": false,
+          "cart-position": "after-checkout-button",
+          "button-text-long": "Get it paid for you with",
+          "button-text-medium": "Get it paid for with",
+          "button-text-short": "Get it paid",
+          "theme": "blue",
+          "button-colour": "#000000",
+          "button-height": 52,
+          "border-radius": 0,
+          "margin-top": 10,
+          "margin-bottom": 10,
+          "callout-theme": "blue",
+          "modal-theme": "dark",
+          "modal-icon": "shirt"
         }
       }
     }
