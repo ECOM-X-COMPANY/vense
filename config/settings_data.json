@@ -419,7 +419,7 @@
           "button-text-long": "Get it paid for you with",
           "button-text-medium": "Get it paid for with",
           "button-text-short": "Get it paid",
-          "theme": "blue",
+          "theme": "vanilla",
           "button-colour": "#000000",
           "button-background-colour": "rgba(0,0,0,0)",
           "button-height": 52,
