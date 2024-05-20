@@ -15,6 +15,14 @@
             "show_products_rating": true
           }
         },
+        "youpay_cart_sharing_youpay_callout_eKRHJe": {
+          "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-callout\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+          "settings": {
+            "badgeTheme": "badge",
+            "modalTheme": "dark",
+            "modalIcon": "shirt"
+          }
+        },
         "youpay_cart_sharing_youpay_button_Xyzjg8": {
           "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-button\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
           "disabled": true,
@@ -113,6 +121,7 @@
       },
       "block_order": [
         "title",
+        "youpay_cart_sharing_youpay_callout_eKRHJe",
         "youpay_cart_sharing_youpay_button_Xyzjg8",
         "custom_liquid_DdjYD3",
         "9d13a60b-74d6-49dd-8c6d-69f8ada627d7",
