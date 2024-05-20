@@ -15,6 +15,23 @@
             "show_products_rating": true
           }
         },
+        "youpay_cart_sharing_youpay_button_Xyzjg8": {
+          "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-button\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+          "settings": {
+            "button-text-long": "Get it paid for you with",
+            "button-text-medium": "Get it paid for with",
+            "button-text-short": "Get it paid",
+            "theme": "blue",
+            "button-colour": "#000000",
+            "button-background-colour": "rgba(0,0,0,0)",
+            "button-height": 52,
+            "border-radius": 0,
+            "margin-top": 10,
+            "margin-bottom": 10,
+            "width": 100,
+            "alignment": "center"
+          }
+        },
         "custom_liquid_DdjYD3": {
           "type": "custom_liquid",
           "settings": {
@@ -95,6 +112,7 @@
       },
       "block_order": [
         "title",
+        "youpay_cart_sharing_youpay_button_Xyzjg8",
         "custom_liquid_DdjYD3",
         "9d13a60b-74d6-49dd-8c6d-69f8ada627d7",
         "variant_picker",
