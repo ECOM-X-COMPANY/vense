@@ -35,6 +35,7 @@
     "show_products_rating": false,
     "color_badge_sale": "#40495a",
     "color_swatches": "Black Gold: #BFA75D\nBlack Silver: #71706e",
+    "cart_drawer_notes": false,
     "lazy_loading": true,
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
     "checkout_logo_image": "shopify:\/\/shop_images\/logo_black_1.svg",
