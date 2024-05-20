@@ -17,6 +17,7 @@
         },
         "youpay_cart_sharing_youpay_button_Xyzjg8": {
           "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-button\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
+          "disabled": true,
           "settings": {
             "button-text-long": "Get it paid for you with",
             "button-text-medium": "Get it paid for with",
