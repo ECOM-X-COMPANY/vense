@@ -430,7 +430,7 @@
         "settings": {
           "gwp-status": true,
           "gwp-product": "0",
-          "gwp-cart-total-minimum": "0"
+          "gwp-cart-total-minimum": "40"
         }
       }
     }
