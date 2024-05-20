@@ -415,7 +415,7 @@
       },
       "6593136046357153830": {
         "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-flyout-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "flyout-button-status": true,
           "flyout-position": "after-checkout-button",
