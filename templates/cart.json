@@ -2,8 +2,11 @@
   "sections": {
     "main-cart": {
       "type": "main-cart",
+      "custom_css": [
+        ".cart-policy-text{display: none;}"
+      ],
       "settings": {
-        "cart_notes_enable": true
+        "cart_notes_enable": false
       }
     },
     "product-recommendations": {
@@ -20,10 +23,11 @@
     },
     "recently-viewed-products": {
       "type": "recently-viewed-products",
+      "disabled": true,
       "settings": {
         "heading": "Recently viewed products",
         "heading_left": false,
-        "description": "<p>Describe your recently viewed products here<\/p>",
+        "description": "",
         "full_width": true,
         "mobile_swipe": true,
         "disable_top_spacing": false,
