@@ -3,7 +3,7 @@
     "main-cart": {
       "type": "main-cart",
       "custom_css": [
-        ".cart-policy-text{display: none;}"
+        ".cart-policy-text {display: none;}"
       ],
       "settings": {
         "cart_notes_enable": false
@@ -14,7 +14,7 @@
       "settings": {
         "heading": "You may also like",
         "heading_left": false,
-        "description": "<p>Describe your featured collection here<\/p>",
+        "description": "",
         "full_width": true,
         "mobile_swipe": true,
         "disable_top_spacing": true,
