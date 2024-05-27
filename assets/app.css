@@ -4280,15 +4280,15 @@ a[title="E-Gift Cards"] {
 }
 
 a[title="E-Gift Cards"]::before {
-  content: "New";
-  background-color: #ff0000; /* Колір фону бейджа */
-  color: #ffffff; /* Колір тексту бейджа */
-  padding: 2px 8px; /* Відступи всередині бейджа */
-  border-radius: 12px; /* Закруглення кутів бейджа */
-  font-size: 12px; /* Розмір тексту */
-  font-weight: bold; /* Жирність тексту */
-  position: absolute; /* Абсолютне позиціонування */
-  top: -10px; /* Розміщення над посиланням */
-  right: -10px; /* Розміщення з правого краю */
+  content: "GIFT";
+  background-color: #ff0000; 
+  color: #ffffff; 
+  padding: 2px 8px; 
+  border-radius: 12px; 
+  font-size: 7px; 
+  font-weight: 900; 
+  position: absolute; 
+  top: -13px; 
+  right: -4px; 
   display: inline-block;
 }
