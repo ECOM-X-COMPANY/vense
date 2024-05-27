@@ -538,7 +538,7 @@
       "settings": {
         "heading": "Latest News",
         "heading_left": false,
-        "description": "<p>Add a short description for your brand news<\/p>",
+        "description": "",
         "full_width": true,
         "blog": "news",
         "post_limit": 3,
