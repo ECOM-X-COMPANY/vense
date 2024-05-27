@@ -115,7 +115,7 @@
         ".product-recommendations {margin-top: 30px;}"
       ],
       "settings": {
-        "heading": "Recently viewed products",
+        "heading": "Recommendations based on your views",
         "heading_left": true,
         "description": "",
         "full_width": true,
