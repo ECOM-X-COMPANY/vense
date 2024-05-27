@@ -134,7 +134,8 @@
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
       ],
       "custom_css": [
-        "#swatch-option1 {display: none;}"
+        "#swatch-option1 {display: none;}",
+        ".add_to_cart_holder {margin-bottom: 12px;}"
       ],
       "settings": {
         "full_width": true,
