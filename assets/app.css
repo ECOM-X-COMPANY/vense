@@ -4275,20 +4275,4 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 }
 
-a[title="E-Gift Cards"] {
-  position: relative; /* Встановлення відносного позиціонування для батьківського елемента */
-}
 
-a[title="E-Gift Cards"]::before {
-  content: "GIFT";
-  background-color: #ff0000; 
-  color: #ffffff; 
-  padding: 2px 8px; 
-  border-radius: 12px; 
-  font-size: 7px; 
-  font-weight: 900; 
-  position: absolute; 
-  top: -13px; 
-  right: -4px; 
-  display: inline-block;
-}
