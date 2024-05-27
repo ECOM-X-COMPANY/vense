@@ -412,14 +412,14 @@
       },
       "7420477900589326039": {
         "type": "shopify:\/\/apps\/youpay-cart-sharing\/blocks\/youpay-product-settings\/96cbed91-f0be-45a9-92ad-cc2d2e43f2b7",
-        "disabled": true,
+        "disabled": false,
         "settings": {
           "product-callout-status": true,
           "product-button-status": true,
           "button-text-long": "Get it paid for you with",
           "button-text-medium": "Get it paid for with",
           "button-text-short": "Get it paid",
-          "theme": "blue",
+          "theme": "vanilla",
           "button-colour": "#000000",
           "button-background-colour": "rgba(0,0,0,0)",
           "button-height": 52,
