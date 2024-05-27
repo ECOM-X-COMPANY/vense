@@ -12,7 +12,7 @@
     "product-recommendations": {
       "type": "product-recommendations",
       "settings": {
-        "heading": "You may also like",
+        "heading": "Now in demand is the following",
         "heading_left": false,
         "description": "",
         "full_width": true,
