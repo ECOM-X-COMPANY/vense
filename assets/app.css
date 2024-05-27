@@ -4276,7 +4276,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 a[title="E-Gift Cards"]::before {
-  content: "New";
+ content: "New";
   background-color: #ff0000; /* Колір фону бейджа */
   color: #ffffff; /* Колір тексту бейджа */
   padding: 2px 8px; /* Відступи всередині бейджа */
@@ -4285,4 +4285,10 @@ a[title="E-Gift Cards"]::before {
   font-weight: bold; /* Жирність тексту */
   margin-right: 8px; /* Відступ справа */
   display: inline-block;
+  animation: blink 1s step-start infinite;
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }
