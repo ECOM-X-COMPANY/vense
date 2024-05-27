@@ -4274,3 +4274,15 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   }
 
 }
+
+a[title="E-Gift Cards"]::before {
+  content: "New";
+  background-color: #ff0000; /* Колір фону бейджа */
+  color: #ffffff; /* Колір тексту бейджа */
+  padding: 2px 8px; /* Відступи всередині бейджа */
+  border-radius: 12px; /* Закруглення кутів бейджа */
+  font-size: 12px; /* Розмір тексту */
+  font-weight: bold; /* Жирність тексту */
+  margin-right: 8px; /* Відступ справа */
+  display: inline-block;
+}
