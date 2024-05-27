@@ -37,9 +37,7 @@
 			        <li class="{%- if l.active %}active{% endif %}{% if has_sub_menu %} menu-item-has-children{%- endif -%}" role="none" {% if has_sub_menu %}data-item-title="{{ l.title | escape }}"{% endif %}>
 			          <a href="{{ l.url }}" title="{{ l.title | escape }}" role="menuitem">
 									{{- l.title -}}
-                           {%- if link.title == "E-Gift Cards" -%}
-            <span class="badge">New</span>
-          {%- endif -%}
+                        
 									{%- if has_sub_menu -%}{%- render 'svg-icons' with 'thb-dropdown-right' -%}{%- endif -%}
 								</a>
 								{%- if has_sub_menu -%}
