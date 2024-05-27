@@ -4289,14 +4289,6 @@ a[title="E-Gift Cards"]::before {
   font-weight: bold; /* Жирність тексту */
   position: absolute; /* Абсолютне позиціонування */
   top: -10px; /* Розміщення над посиланням */
-  right: 0; /* Розміщення з правого краю */
+  right: -10px; /* Розміщення з правого краю */
   display: inline-block;
-  animation: blink 1s step-start infinite; /* Анімація для миготіння */
-}
-
-/* Анімація миготіння */
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
 }
