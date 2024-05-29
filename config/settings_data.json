@@ -39,6 +39,8 @@
     "cart_drawer": true,
     "cart_drawer_notes": false,
     "cart_drawer_checkout_button": true,
+    "free_shipping": true,
+    "free_shipping_minimum": "190",
     "currency_code_enabled": false,
     "lazy_loading": true,
     "favicon": "shopify:\/\/shop_images\/favicon-32x32.png",
