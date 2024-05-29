@@ -4277,7 +4277,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .cart-policy-text{
   display: none;
 }
-.cart-drawer-buttons button{
+.cart-drawer-buttons form{
   width: 100%;
 }
 
