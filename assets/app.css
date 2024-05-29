@@ -2400,7 +2400,7 @@ h6,
         stroke: var(--color-header-links-hover, --color-accent2); }
   .thb-full-menu > li {
     display: inline-flex;
-    padding: 0 15px;
+    padding: 0 11px;
     align-items: center; }
     .thb-full-menu > li > a {
       margin: 10px 0;
