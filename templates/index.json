@@ -506,6 +506,7 @@
       "blocks": {
         "subheading_pUmdPF": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Wonders of nature"
           }
@@ -513,14 +514,14 @@
         "heading_Nzw4yf": {
           "type": "heading",
           "settings": {
-            "text": "Bracelet - inspired by the divinity of nature",
+            "text": "Our bracelets are minimalist and elegant!",
             "heading_size": "h3"
           }
         },
         "text_tafjaJ": {
           "type": "text",
           "settings": {
-            "text": "<p>Get closer to nature with sheer elegance and refined natural shapes. The Vintage collection was purely inspired by the wonders of nature, enhanced with extra glamor.<\/p>",
+            "text": "<p>The bracelet category encompasses a wide range of jewelry that varies in style, materials, and purpose. Our minimalist bracelets stand out for their simplicity and versatility, making them the perfect complement to various outfits.<\/p>",
             "description_size": "medium"
           }
         },
@@ -564,6 +565,7 @@
       "blocks": {
         "subheading_fUtbXV": {
           "type": "subheading",
+          "disabled": true,
           "settings": {
             "text": "Wonders of nature"
           }
@@ -571,14 +573,14 @@
         "heading_NccMdU": {
           "type": "heading",
           "settings": {
-            "text": "Brooch - Magical spirit of gold",
+            "text": "Our brooches are romantic and feminine!",
             "heading_size": "h3"
           }
         },
         "text_UpKD7J": {
           "type": "text",
           "settings": {
-            "text": "<p>Immerse yourself in the magical power of pearls. The STRONG HEART brooch collection collection was exquisitely created to make you feel as confident and charming as a mermaid.<\/p>",
+            "text": "<p>Brooches are an essential accessory that can greatly diversify your wardrobe. They perfectly complement both casual and business styles, adding touches of romance and femininity.<\/p>",
             "description_size": "medium"
           }
         },
