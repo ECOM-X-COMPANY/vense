@@ -1,0 +1,19 @@
+.cart-progress-bar {
+    margin-bottom: 20px;
+  }
+  
+  .progress {
+    height: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 20px;
+    background-color: #ff0000;
+  }
+  
