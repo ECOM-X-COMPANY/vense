@@ -11,6 +11,7 @@
 				<h4 class="body-font">{{ 'general.cart_drawer.title' | t }}</h4>
 				<side-panel-close class="side-panel-close">{%- render 'svg-icons' with 'close' -%}</side-panel-close>
 			</div>
+          {% render "snippet-progres-bar" %}
 		</div>
 		<div class="side-panel-content">
 			{%- if cart != empty -%}
