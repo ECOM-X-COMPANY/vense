@@ -3591,7 +3591,7 @@
     "cart_drawer": {
       "free_shipping": {
         "free_shipping_applied_at_checkout": "Витратьте ще <span>{{ amount }}<\/span> на БЕЗКОШТОВНУ доставку.",
-        "spend_more_for_free_shipping_html": "Витрачати ще <span>{{ amount }}<\/span> на БЕЗКОШТОВНУ доставку."
+        "spend_more_for_free_shipping_html": "Витрачати ще <span>{{ test }}<\/span> на БЕЗКОШТОВНУ доставку."
       },
       "title": "Кошик",
       "view_cart": "Переглянути кошик",
