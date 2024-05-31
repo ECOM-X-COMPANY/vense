@@ -3590,7 +3590,7 @@
   "general": {
     "cart_drawer": {
       "free_shipping": {
-        "free_shipping_applied_at_checkout": "Під час  оплати буде застосовано БЕЗКОШТОВНУ доставку",
+        "free_shipping_applied_at_checkout": "Під час  оплати буде застосовано <span>{{ amount }}<\/span> БЕЗКОШТОВНУ доставку",
         "spend_more_for_free_shipping_html": "Витрачати ще <span>{{ amount }}<\/span> на БЕЗКОШТОВНУ доставку."
       },
       "title": "Кошик",
