@@ -4231,6 +4231,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-weight: 900 !important;
   height: 40px !important;
 }
+.figcaption{
+  display: none;
+}
 @media only screen and (max-width: 430px) {
 .product-info__calendar {
   font-size: 15px;
