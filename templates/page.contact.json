@@ -131,7 +131,7 @@
       "settings": {
         "heading": "Recently viewed products",
         "heading_left": true,
-        "description": "<p>Describe your recently viewed products here<\/p>",
+        "description": "",
         "full_width": true,
         "mobile_swipe": true,
         "disable_top_spacing": true,
