@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "general": {
     "continue_shopping": "Continue shopping",
@@ -12,8 +21,8 @@
       "add_order_note": "Add order note",
       "save": "Save",
       "free_shipping": {
-        "spend_more_for_free_shipping_html": "Spend <span>{{ amount }}<\/span> more for FREE shipping.",
-        "free_shipping_applied_at_checkout": "FREE shipping will be applied at  checkout"
+        "spend_more_for_free_shipping_html": "Spend <span>{{ amount }}<\/span> and get $10 SHIPPING",
+        "free_shipping_applied_at_checkout": "Delivery of $10 will be applied at checkout"
       }
     },
     "meta": {
