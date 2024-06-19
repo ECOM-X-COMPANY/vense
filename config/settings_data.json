@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "advantage_1": "Handcraf",
@@ -316,11 +325,10 @@
         "settings": {
           "enable_language_switcher": true,
           "enable_country_region_switcher": true,
-          "use_modal_dialog": false,
           "use_currency_for_region": true,
           "switcher_position": "header",
           "show_flags": true,
-          "language_label": "language-code",
+          "use_modal_dialog": false,
           "language_country_mapping": "",
           "countries_filter": "",
           "custom_css": ".tl-selection.tl-currency {\n  display: none !important;\n}\n.tl-selection .tl-label {\n  font-size: 15px;\n}\n.thb-header-mobile-left {\n  align-items: center;\n}\n.mobile .tl-selection .tl-label {\n  display: none;\n}\n.tl-switcher-container.desktop{\n    margin-right: 5px;\n  }\n@media (max-width:1067px) {\n.tl-switcher-container.desktop{\n    display: none !Important;\n  }\n}",
@@ -330,10 +338,6 @@
           "mobile_switcher_relative_position": "after",
           "header_switcher_border_width": 0,
           "switcher_viewport_position": "top-right",
-          "custom_position_spacing_top": "64",
-          "custom_position_spacing_right": "156",
-          "custom_position_spacing_bottom": "20",
-          "custom_position_spacing_left": "20",
           "custom_switcher_font_size": "14px",
           "custom_switcher_border_width": 1,
           "custom_switcher_text_color": "#444444",
