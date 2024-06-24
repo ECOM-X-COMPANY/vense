@@ -21,7 +21,7 @@
       "add_order_note": "Add order note",
       "save": "Save",
       "free_shipping": {
-        "spend_more_for_free_shipping_html": "Spend <span>{{amount}}<\/span> and get FREE SHIPPING",
+        "spend_more_for_free_shipping_html": "Delivery is 10$. For free delivery, buy on<span>{{amount}}<\/span>",
         "free_shipping_applied_at_checkout": "Free shipping applied at checkout"
       }
     },
