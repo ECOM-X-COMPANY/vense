@@ -44,7 +44,7 @@
     "show_products_rating": false,
     "color_badge_sale": "#40495a",
     "sibling_style": "swatch",
-    "color_swatches": "Black Gold: #BFA75D\nBlack Silver: #71706e\nGold: #D49A06",
+    "color_swatches": "Black Gold: #BFA75D\nBlack Silver: #71706e\nGold: #ffd700",
     "cart_terms_conditions_enable": false,
     "cart_drawer": true,
     "cart_drawer_notes": false,
