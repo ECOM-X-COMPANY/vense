@@ -42,7 +42,7 @@
     "products_hover_images_count": 3,
     "enable_quick_add": false,
     "show_products_vendor": false,
-    "show_products_swatches": true,
+    "show_products_swatches": false,
     "show_products_rating": false,
     "color_badge_sale": "#40495a",
     "sibling_style": "swatch",
