@@ -449,6 +449,12 @@
         "disabled": true,
         "settings": {
         }
+      },
+      "11038922299930075240": {
+        "type": "shopify:\/\/apps\/notify-me-back-in-stock-alerts\/blocks\/app-embed\/efd73fb9-4943-460f-9877-08a22c111961",
+        "disabled": false,
+        "settings": {
+        }
       }
     }
   },
