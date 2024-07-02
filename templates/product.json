@@ -100,6 +100,7 @@
         },
         "notify_me_back_in_stock_alerts_app_block_7k68mM": {
           "type": "shopify:\/\/apps\/notify-me-back-in-stock-alerts\/blocks\/app-block\/efd73fb9-4943-460f-9877-08a22c111961",
+          "disabled": true,
           "settings": {
           }
         },
