@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "breadcrumbs": {
@@ -89,6 +98,11 @@
             "show_gift_card_recipient": false
           }
         },
+        "notify_me_back_in_stock_alerts_app_block_7k68mM": {
+          "type": "shopify:\/\/apps\/notify-me-back-in-stock-alerts\/blocks\/app-block\/efd73fb9-4943-460f-9877-08a22c111961",
+          "settings": {
+          }
+        },
         "0b3e272b-c86a-4dba-946c-c6912251371c": {
           "type": "description",
           "settings": {
@@ -129,6 +143,7 @@
         "d1e6b7f8-4f98-45c8-9289-bfe020b31d10",
         "custom_liquid_x7Hg4h",
         "buy_buttons",
+        "notify_me_back_in_stock_alerts_app_block_7k68mM",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
         "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
@@ -153,22 +168,6 @@
     },
     "1713177976be003d35": {
       "type": "apps",
-      "blocks": {
-        "swatch_king_variants_options_product_swatch_block_E7yeqh": {
-          "type": "shopify:\/\/apps\/swatch-king-variants-options\/blocks\/product-swatch-block\/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
-          "settings": {
-          }
-        },
-        "swatch_king_variants_options_stock_alert_block_cWNRgU": {
-          "type": "shopify:\/\/apps\/swatch-king-variants-options\/blocks\/stock-alert-block\/0850b1e4-ba30-4a0d-a8f4-f9a939276d7d",
-          "settings": {
-          }
-        }
-      },
-      "block_order": [
-        "swatch_king_variants_options_product_swatch_block_E7yeqh",
-        "swatch_king_variants_options_stock_alert_block_cWNRgU"
-      ],
       "disabled": true,
       "settings": {
       }
