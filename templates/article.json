@@ -50,7 +50,7 @@
         "tags"
       ],
       "custom_css": [
-        ".blog-post-detail--wrapper{margin-bottom: 25px;}"
+        ".blog-post-detail--wrapper {margin-bottom: 25px;}"
       ],
       "settings": {
         "article_show_date": true,
@@ -98,6 +98,9 @@
         "column_NnEJcW",
         "column_nXaWhJ",
         "column_FATgXr"
+      ],
+      "custom_css": [
+        ".custom-col-mult {background: #d5c6bf; padding: 35px 0px;}"
       ],
       "settings": {
         "heading": "Universal Guidelines",
