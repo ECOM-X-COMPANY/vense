@@ -102,6 +102,7 @@
         "column_nXaWhJ",
         "column_FATgXr"
       ],
+      "disabled": true,
       "custom_css": [
         ".custom-col-mult {background: #d5c6bf; padding: 35px 15px;}",
         ".h3 {text-transform: uppercase;}",
