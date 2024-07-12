@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "breadcrumbs": {
@@ -11,11 +20,15 @@
         "title": {
           "type": "title",
           "settings": {
+            "article_show_excerpt": true,
+            "excerpt_length": 30,
+            "article_show_sharing": true
           }
         },
         "featured_image": {
           "type": "featured_image",
           "settings": {
+            "image_ratio": "medium"
           }
         },
         "content": {
@@ -25,6 +38,7 @@
         },
         "tags": {
           "type": "tags",
+          "disabled": true,
           "settings": {
           }
         }
@@ -39,10 +53,69 @@
         "article_show_date": true,
         "article_show_author": true
       }
+    },
+    "multicolumn_h9NKFe": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NnEJcW": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nXaWhJ": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FATgXr": {
+          "type": "column",
+          "settings": {
+            "image_full_width": false,
+            "retina": true,
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NnEJcW",
+        "column_nXaWhJ",
+        "column_FATgXr"
+      ],
+      "settings": {
+        "heading": "Universal Guidelines",
+        "heading_left": false,
+        "description": "<p>How to match necklines with jewellery<\/p>",
+        "full_width": true,
+        "display_type": "grid",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
     "breadcrumbs",
-    "main-article"
+    "main-article",
+    "multicolumn_h9NKFe"
   ]
 }
