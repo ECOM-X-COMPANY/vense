@@ -29,7 +29,7 @@
 -%}
 <div data-set-id="{{ section.id }}" class="multicolumn text-{{ text_alignment }}{% if mobile_swipe and display_type == 'grid' %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
 	<div class="row{% if full_width %} full-width-row{% endif %}">
-		<div class="small-12 columns">
+		<div class="small-12 columns custom-col-mult">
 			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
 			<div class="multicolumn__inner display-type--{{ display_type }}">
 				<div class="row align-stretch no-padding {{ display_type }}">
