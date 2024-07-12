@@ -104,12 +104,12 @@
       ],
       "custom_css": [
         ".custom-col-mult {background: #d5c6bf; padding: 35px 15px;}",
-        ".h3{text-transform: uppercase;}"
+        ".h3 {text-transform: uppercase;}"
       ],
       "settings": {
         "heading": "Universal Guidelines",
         "heading_left": false,
-        "description": "<p>How to match necklines with jewellery<\/p>",
+        "description": "<p>HOW TO MATCH NECKLINES WITH JEWELLERY<\/p>",
         "full_width": true,
         "display_type": "grid",
         "image_ratio": "portrait",
