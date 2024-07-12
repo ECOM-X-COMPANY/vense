@@ -63,7 +63,7 @@
         "column_NnEJcW": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_a49fe6c7-8187-4388-beb5-2277e1aab517.png",
+            "image": "shopify:\/\/shop_images\/Frame_346.png",
             "image_full_width": false,
             "retina": true,
             "title": "",
@@ -75,7 +75,7 @@
         "column_nXaWhJ": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_69adff8a-c110-44de-8c09-0b05f7c16a20.png",
+            "image": "shopify:\/\/shop_images\/Frame_347.png",
             "image_full_width": false,
             "retina": true,
             "title": "",
@@ -87,7 +87,7 @@
         "column_FATgXr": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/1_5f181e77-74b0-4a7b-9200-ffc027d07282.png",
+            "image": "shopify:\/\/shop_images\/Frame_348.png",
             "image_full_width": false,
             "retina": true,
             "title": "",
@@ -111,7 +111,7 @@
         "description": "<p>How to match necklines with jewellery<\/p>",
         "full_width": true,
         "display_type": "grid",
-        "image_ratio": "adapt",
+        "image_ratio": "portrait",
         "columns_desktop": 3,
         "text_alignment": "center",
         "heading_size": "h5",
