@@ -104,7 +104,8 @@
       ],
       "custom_css": [
         ".custom-col-mult {background: #d5c6bf; padding: 35px 15px;}",
-        ".h3 {text-transform: uppercase;}"
+        ".h3 {text-transform: uppercase;}",
+        ".multicolumn__image{margin-bottom: 15px;}"
       ],
       "settings": {
         "heading": "Universal Guidelines",
