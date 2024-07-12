@@ -1,0 +1,135 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-article": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "article_show_excerpt": true,
+            "excerpt_length": 30,
+            "article_show_sharing": true
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_ratio": "medium"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "tags": {
+          "type": "tags",
+          "disabled": true,
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "featured_image",
+        "content",
+        "tags"
+      ],
+      "custom_css": [
+        ".blog-post-detail--wrapper {margin-bottom: 25px;}"
+      ],
+      "settings": {
+        "article_show_date": true,
+        "article_show_author": true
+      }
+    },
+    "multicolumn_h9NKFe": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_NnEJcW": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_346.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>the jewellery should fill the empty space in the neckline<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nXaWhJ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_347.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>place the jewellery below or above the neckline<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_FATgXr": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_348.png",
+            "image_full_width": false,
+            "retina": true,
+            "title": "",
+            "text": "<p>the decoration follows the shape of the neckline<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_NnEJcW",
+        "column_nXaWhJ",
+        "column_FATgXr"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".custom-col-mult {background: #d5c6bf; padding: 35px 15px;}",
+        ".h3 {text-transform: uppercase;}",
+        ".multicolumn__image {margin-bottom: 15px;}",
+        ".multicolumn__column p {font-size: 20px; line-height: 25px; text-wrap: balanced; width: 385px; margin: 0 auto;}",
+        "@media only screen and (max-width: 430px) {.multicolumn__column p {width: 100%; }}"
+      ],
+      "settings": {
+        "heading": "Universal Guidelines",
+        "heading_left": false,
+        "description": "<p>HOW TO MATCH NECKLINES WITH JEWELLERY<\/p>",
+        "full_width": true,
+        "display_type": "grid",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "text_alignment": "center",
+        "heading_size": "h5",
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-article",
+    "multicolumn_h9NKFe"
+  ]
+}
