@@ -49,6 +49,9 @@
         "content",
         "tags"
       ],
+      "custom_css": [
+        ".blog-post-detail--wrapper{margin-bottom: 25px;}"
+      ],
       "settings": {
         "article_show_date": true,
         "article_show_author": true
