@@ -106,7 +106,7 @@
         ".custom-col-mult {background: #d5c6bf; padding: 35px 15px;}",
         ".h3 {text-transform: uppercase;}",
         ".multicolumn__image {margin-bottom: 15px;}",
-        ".multicolumn__column p{font-size: 20px; line-height: 25px; text-wrap: balanced;}"
+        ".multicolumn__column p {font-size: 20px; line-height: 25px; text-wrap: balanced; width: 385px; margin: 0 auto;}"
       ],
       "settings": {
         "heading": "Universal Guidelines",
