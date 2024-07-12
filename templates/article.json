@@ -103,7 +103,7 @@
         "column_FATgXr"
       ],
       "custom_css": [
-        ".custom-col-mult {background: #d5c6bf; padding: 35px 0px;}"
+        ".custom-col-mult {background: #d5c6bf; padding: 35px 15px;}"
       ],
       "settings": {
         "heading": "Universal Guidelines",
