@@ -214,7 +214,7 @@
         "video_autoplay": true,
         "video_controls": true,
         "height": "adapt",
-        "desktop_image_width": "medium",
+        "desktop_image_width": "small",
         "section_width": "full-width-row",
         "layout": "image_first",
         "content_position": "text-left",
