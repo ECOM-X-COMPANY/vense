@@ -53,8 +53,8 @@
         ".blog-post-detail--wrapper {margin-bottom: 25px;}"
       ],
       "settings": {
-        "article_show_date": true,
-        "article_show_author": true
+        "article_show_date": false,
+        "article_show_author": false
       }
     },
     "multicolumn_h9NKFe": {
