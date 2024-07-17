@@ -32,7 +32,7 @@
       "type": "main-blog",
       "settings": {
         "image_ratio": "adapt",
-        "show_date": true,
+        "show_date": false,
         "show_excerpt": true
       }
     },
