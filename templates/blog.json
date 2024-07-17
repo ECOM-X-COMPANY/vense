@@ -1,7 +1,17 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "1663670702acb57791": {
       "type": "spacer",
+      "disabled": true,
       "settings": {
         "spacer_mobile": 20,
         "spacer_desktop": 60,
@@ -11,6 +21,7 @@
     },
     "main-blog-header": {
       "type": "main-blog-header",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "description": "<p>Add a short description for your blog.<\/p>",
@@ -19,15 +30,15 @@
     },
     "main-blog": {
       "type": "main-blog",
-      "disabled": true,
       "settings": {
-        "image_ratio": "portrait",
+        "image_ratio": "adapt",
         "show_date": true,
         "show_excerpt": true
       }
     },
     "9939ff4a-b359-4cdf-9b9b-f24f7b1ff98f": {
       "type": "featured-blog",
+      "disabled": true,
       "settings": {
         "heading": "Latest News",
         "heading_left": false,
