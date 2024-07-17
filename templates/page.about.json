@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "166161901464a25e50": {
@@ -548,7 +557,7 @@
         "mobile_swipe": true,
         "image_ratio": "square",
         "show_date": true,
-        "show_excerpt": true,
+        "show_excerpt": false,
         "show_view_all": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
