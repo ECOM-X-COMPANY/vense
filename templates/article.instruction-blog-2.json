@@ -204,6 +204,9 @@
         "heading_BALBJ4",
         "text_cUz9Dn"
       ],
+      "custom_css": [
+        "h3{text-transform: uppercase;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_349.png",
         "use_video": false,
