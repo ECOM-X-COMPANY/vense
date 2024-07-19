@@ -236,6 +236,9 @@
         "heading_cBgaVb",
         "text_JtJ99J"
       ],
+      "custom_css": [
+        ".image-with-text__content--inner {min-height: 526px; display: flex; flex-direction: column; justify-content: space-between;}"
+      ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_238.png",
         "use_video": false,
