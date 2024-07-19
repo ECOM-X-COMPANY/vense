@@ -4297,7 +4297,7 @@ position: relative;
 .custom-deescription--size p{
   padding-left: 20px !important;
 }
-[image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text,[image-with-text-custom="template--21949598007606__image_with_text_HB4JDn"]  .custom-title-image-text{
+[image-with-text-custom="template--21949598007606__image_with_text_49Tp9t"].custom-title-image-text,[image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text,[image-with-text-custom="template--21949598007606__image_with_text_HB4JDn"]  .custom-title-image-text{
   position: relative;
 }
 [image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text:after{
@@ -4312,6 +4312,15 @@ position: relative;
 [image-with-text-custom="template--21949598007606__image_with_text_HB4JDn"] .custom-title-image-text:after{
     position: absolute;
   content: "( 02 )";
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+  right: 0;
+  top: 0;
+}
+[image-with-text-custom="template--21949598007606__image_with_text_49Tp9t"].custom-title-image-text:after{
+    position: absolute;
+  content: "( 03 )";
   color: black;
   font-size: 40px;
   font-weight: 500;
