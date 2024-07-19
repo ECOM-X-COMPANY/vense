@@ -149,7 +149,7 @@
         "columns_desktop": 3,
         "text_alignment": "center",
         "heading_size": "h5",
-        "mobile_swipe": true,
+        "mobile_swipe": false,
         "show_progress_bar": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
