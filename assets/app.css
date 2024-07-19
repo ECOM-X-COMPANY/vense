@@ -4283,4 +4283,15 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .cart-drawer-buttons form{
   width: 100%;
 }
+.custom-deescription--size strong{
+position: relative;
+  font-weight: 900;
+}
+.custom-deescription--size strong:before{
+  position: absolute;
+  content:"+";
+  left: -10%;
+  top: -25%;
+  
+}
 
