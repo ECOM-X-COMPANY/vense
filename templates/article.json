@@ -134,6 +134,7 @@
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/Frame_237.png",
+            "mobile_image": "shopify:\/\/shop_images\/246.png",
             "slide_link": "",
             "video_background": false,
             "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
@@ -162,7 +163,7 @@
       ],
       "settings": {
         "desktop_height": "desktop-height-450",
-        "mobile_height": "mobile-height-500",
+        "mobile_height": "mobile-height-400",
         "full_width": false,
         "autoplay": true,
         "autoplay_length": 5,
