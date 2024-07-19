@@ -144,7 +144,7 @@
         "heading_left": false,
         "description": "<p>HOW TO MATCH NECKLINES WITH JEWELLERY<\/p>",
         "full_width": true,
-        "display_type": "carousel",
+        "display_type": "grid",
         "image_ratio": "portrait",
         "columns_desktop": 3,
         "text_alignment": "center",
