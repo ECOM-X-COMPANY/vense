@@ -4331,3 +4331,8 @@ position: relative;
   color: #40495A;
 }
 
+@media only screen and (max-width: 430px) {
+ [image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .image-with-text__content--inner,[image-with-text-custom="template--21949598007606__image_with_text_HB4JDn"] .image-with-text__content--inner, [image-with-text-custom="template--21949598007606__image_with_text_49Tp9t"] .image-with-text__content--inner{
+   max-height: auto;
+ }
+}
