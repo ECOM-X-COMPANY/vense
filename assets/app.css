@@ -4294,4 +4294,6 @@ position: relative;
   top: -25%;
   font-weight: 400;
 }
-
+.custom-deescription--size p{
+  padding-left: 20px !important;
+}
