@@ -4297,6 +4297,9 @@ position: relative;
 .custom-deescription--size p{
   padding-left: 20px !important;
 }
+[image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .image-with-text__content--inner,[image-with-text-custom="template--21949598007606__image_with_text_HB4JDn"] .image-with-text__content--inner, [image-with-text-custom="template--21949598007606__image_with_text_49Tp9t"] .image-with-text__content--inner{
+   max-height: 526px;
+ }
 [image-with-text-custom="template--21949598007606__image_with_text_49Tp9t"] .custom-title-image-text,[image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text,[image-with-text-custom="template--21949598007606__image_with_text_HB4JDn"]  .custom-title-image-text{
   position: relative;
 }
