@@ -214,7 +214,7 @@
       "settings": {
         "desktop_height": "desktop-height-650",
         "mobile_height": "mobile-height-500",
-        "full_width": true,
+        "full_width": false,
         "autoplay": true,
         "autoplay_length": 5,
         "transition": "swipe",
