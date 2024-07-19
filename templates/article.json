@@ -254,6 +254,49 @@
         "color_text": "#151515",
         "color_border": "#e2e2e2",
         "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
+    "image_with_text_49Tp9t": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_yeHVab": {
+          "type": "heading",
+          "settings": {
+            "text": "STYLING TECHNIQUE",
+            "heading_size": "h1"
+          }
+        },
+        "text_WajPDd": {
+          "type": "text",
+          "settings": {
+            "text": "<h6>JEWELRY OVER CLOTHING<\/h6>",
+            "description_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "heading_yeHVab",
+        "text_WajPDd"
+      ],
+      "custom_css": [
+        ".image-with-text__content--inner {min-height: 526px; display: flex; flex-direction: column; justify-content: space-between;}"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Frame_239.png",
+        "use_video": false,
+        "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+        "video_autoplay": true,
+        "video_controls": true,
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "section_width": "grid",
+        "layout": "image_first",
+        "content_position": "text-left",
+        "color_bg": "#d5c6bf",
+        "color_text": "#151515",
+        "color_border": "#e2e2e2",
+        "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
     }
@@ -264,6 +307,7 @@
     "multicolumn_h9NKFe",
     "slideshow_7zd6Yh",
     "image_with_text_MfgnGC",
-    "image_with_text_HB4JDn"
+    "image_with_text_HB4JDn",
+    "image_with_text_49Tp9t"
   ]
 }
