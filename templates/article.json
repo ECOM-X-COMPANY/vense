@@ -161,6 +161,51 @@
       "block_order": [
         "slide_7iwWaY"
       ],
+      "disabled": true,
+      "settings": {
+        "desktop_height": "desktop-height-450",
+        "mobile_height": "mobile-height-450",
+        "full_width": false,
+        "autoplay": false,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
+    },
+    "slideshow_PLAKHg": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_rwg6fB": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/desktop.png",
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "how to make an image unexpected and interesting with the help of jewelry",
+            "heading": "STYLISTIC TECHNIQUES",
+            "heading_size": "h1-xlarge",
+            "content": "",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "overlay_gradient": "",
+            "button_1_text": "",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_rwg6fB"
+      ],
       "settings": {
         "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-450",
@@ -307,6 +352,7 @@
     "main-article",
     "multicolumn_h9NKFe",
     "slideshow_7zd6Yh",
+    "slideshow_PLAKHg",
     "image_with_text_MfgnGC",
     "image_with_text_HB4JDn",
     "image_with_text_49Tp9t"
