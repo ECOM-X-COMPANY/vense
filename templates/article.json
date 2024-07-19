@@ -184,8 +184,8 @@
         "text_EfhrU7": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
-            "description_size": "medium"
+            "text": "<h6>COMPLETE THE LOOK WITH AN ANKLE BRACELET<\/h6>",
+            "description_size": "large"
           }
         }
       },
