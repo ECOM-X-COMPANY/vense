@@ -270,7 +270,7 @@
         "text_WajPDd": {
           "type": "text",
           "settings": {
-            "text": "<h6>JEWELRY OVER CLOTHING<\/h6>",
+            "text": "<h6>A COMBINATION OF TWO OR THREE JEWELRY PIECES OF DIFFERENT LENGTHS AND STYLES<\/h6>",
             "description_size": "large"
           }
         }
@@ -283,7 +283,7 @@
         ".image-with-text__content--inner {min-height: 526px; display: flex; flex-direction: column; justify-content: space-between;}"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/Frame_239.png",
+        "image": "shopify:\/\/shop_images\/Frame_240.png",
         "use_video": false,
         "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
         "video_autoplay": true,
