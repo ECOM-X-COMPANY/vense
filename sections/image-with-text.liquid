@@ -35,7 +35,7 @@
 	endif
 -%}
 <div class="row {{ section_width }}">
-	<div class="small-12 columns">
+	<div image-with-text-custom="{{ section.id }}" class="small-12 columns">
 		<div class="image-with-text grid--image-{{ desktop_image_width }} {{ desktop_layout }} {{ content_position }} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}" style="--color-bg:{{ color_bg }};--color-text:{{ color_text }};--color-text-rgb: {{ color_text | color_extract: 'red' }}, {{ color_text | color_extract: 'green' }}, {{ color_text | color_extract: 'blue' }}; --solid-button-background: {{ color_text }}; --outline-button-label: {{ color_text }};--solid-button-label: {{ color_bg }};--bg-body: {{ color_bg }};--color-border: {{ color_border }}">
 			<div class="image-with-text__image image-with-text__inner">
 				<div class="image-with-text__image-media aspect-ratio aspect-ratio--{{ height }}" style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;">
