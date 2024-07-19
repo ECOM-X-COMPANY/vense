@@ -4297,3 +4297,9 @@ position: relative;
 .custom-deescription--size p{
   padding-left: 20px !important;
 }
+
+[image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text:after{
+  content: "( 01 )";
+  font-size: 40px;
+  font-weight: 900;
+}
