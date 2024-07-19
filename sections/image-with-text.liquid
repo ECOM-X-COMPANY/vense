@@ -79,7 +79,7 @@
 							{%- when 'subheading' -%}
 								<p class="subheading" {{ block.shopify_attributes }}>{{ block.settings.text }}</p>
 							{%- when 'heading' -%}
-								<h3 class="{{ block.settings.heading_size }}" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
+								<h3 class="{{ block.settings.heading_size }} custom-title-image-text" {{ block.shopify_attributes }}>{{ block.settings.text | newline_to_br }}</h3>
 							{%- when 'text' -%}
 								<div class="custom-deescription--size rte description-size--{{ block.settings.description_size }}" {{ block.shopify_attributes }}>{{ block.settings.text }}</div>
 							{%- when 'button' -%}
