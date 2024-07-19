@@ -4290,8 +4290,8 @@ position: relative;
 .custom-deescription--size strong:before{
   position: absolute;
   content:"+";
-  left: -10%;
-  top: -25%;
+  left: -8%;
+  top: -23%;
   font-weight: 400;
 }
 .custom-deescription--size p{
