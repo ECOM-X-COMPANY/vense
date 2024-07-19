@@ -4303,7 +4303,7 @@ position: relative;
 [image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text:after{
     position: absolute;
   content: "( 01 )";
-  color: black;
+  color: #151515;
   font-size: 40px;
   font-weight: 500;
   right: 0;
@@ -4312,7 +4312,7 @@ position: relative;
 [image-with-text-custom="template--21949598007606__image_with_text_HB4JDn"] .custom-title-image-text:after{
     position: absolute;
   content: "( 02 )";
-  color: black;
+   color: #151515;
   font-size: 40px;
   font-weight: 500;
   right: 0;
@@ -4321,7 +4321,7 @@ position: relative;
 [image-with-text-custom="template--21949598007606__image_with_text_49Tp9t"] .custom-title-image-text:after{
     position: absolute;
   content: "( 03 )";
-  color: black;
+    color: #151515;
   font-size: 40px;
   font-weight: 500;
   right: 0;
