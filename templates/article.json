@@ -237,7 +237,7 @@
         "text_JtJ99J"
       ],
       "custom_css": [
-        ".image-with-text__content--inner {min-height: 526px; display: flex; flex-direction: column; justify-content: space-between;}"
+
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_239.png",
