@@ -4303,8 +4303,9 @@ position: relative;
 [image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text:after{
     position: absolute;
   content: "( 01 )";
+  color: #40495A;
   font-size: 40px;
-  font-weight: 900;
+  font-weight: 500;
   right: 0;
   top: 0;
 }
