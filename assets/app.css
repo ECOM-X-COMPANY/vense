@@ -4303,7 +4303,7 @@ position: relative;
 [image-with-text-custom="template--21949598007606__image_with_text_MfgnGC"] .custom-title-image-text:after{
     position: absolute;
   content: "( 01 )";
-  color: #40495A;
+  color: black;
   font-size: 40px;
   font-weight: 500;
   right: 0;
