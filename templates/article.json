@@ -194,8 +194,7 @@
         "text_EfhrU7"
       ],
       "custom_css": [
-        ".image-with-text__content--inner {min-height: 600px; display: flex; flex-direction: column; justify-content: space-between;}",
-        ".image-with-text__content image-with-text__inner {padding-top: 0px !important;}"
+        ".image-with-text__content--inner {min-height: 600px; display: flex; flex-direction: column; justify-content: space-between;}"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/Frame_238.png",
