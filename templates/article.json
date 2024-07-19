@@ -206,6 +206,9 @@
       "block_order": [
         "slide_rwg6fB"
       ],
+      "custom_css": [
+        ".subheading, h1 {color: #40495a;}"
+      ],
       "settings": {
         "desktop_height": "desktop-height-450",
         "mobile_height": "mobile-height-450",
