@@ -49,6 +49,7 @@
         "content",
         "tags"
       ],
+      "disabled": true,
       "custom_css": [
         ".blog-post-detail--wrapper {margin-bottom: 25px;}"
       ],
@@ -125,11 +126,107 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
       }
+    },
+    "slideshow_7zd6Yh": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_arRmpT": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0,0,0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_7iwWaY": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0,0,0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        },
+        "slide_hbNWen": {
+          "type": "slide",
+          "settings": {
+            "slide_link": "",
+            "video_background": false,
+            "video": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+            "subheading": "Add a tagline",
+            "heading": "Slide Heading",
+            "heading_size": "h1-xlarge",
+            "content": "Add descriptive text for your slide here.",
+            "description_size": "medium",
+            "content_position": "middle-center",
+            "text_alignment": "center",
+            "content_size": "medium",
+            "overlay_color": "#000000",
+            "overlay_opacity": 70,
+            "overlay_gradient": "linear-gradient(180deg, rgba(0,0,0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
+            "button_1_text": "Shop Now",
+            "button_1_link": "",
+            "button_1_outline": true,
+            "button_2_text": "Shop Now",
+            "button_2_link": "",
+            "button_2_outline": false
+          }
+        }
+      },
+      "block_order": [
+        "slide_arRmpT",
+        "slide_7iwWaY",
+        "slide_hbNWen"
+      ],
+      "settings": {
+        "desktop_height": "desktop-height-650",
+        "mobile_height": "mobile-height-500",
+        "full_width": true,
+        "autoplay": true,
+        "autoplay_length": 5,
+        "transition": "swipe",
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
     "breadcrumbs",
     "main-article",
-    "multicolumn_h9NKFe"
+    "multicolumn_h9NKFe",
+    "slideshow_7zd6Yh"
   ]
 }
