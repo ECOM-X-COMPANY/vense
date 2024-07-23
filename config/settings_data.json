@@ -435,7 +435,7 @@
         "disabled": false,
         "settings": {
           "enable_language_switcher": true,
-          "enable_country_region_switcher": true,
+          "enable_country_region_switcher": false,
           "use_currency_for_region": false,
           "switcher_position": "header",
           "show_flags": true,
