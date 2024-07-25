@@ -243,12 +243,6 @@
           "home": false
         }
       },
-      "18423266570658624584": {
-        "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
-        "disabled": true,
-        "settings": {
-        }
-      },
       "8814297988395605169": {
         "type": "shopify:\/\/apps\/adperfect-marketing-platform\/blocks\/app-embed\/8b4a8c56-21b5-437e-95f9-cd5dc65ceb49",
         "disabled": true,
@@ -458,6 +452,12 @@
           "custom_switcher_text_color": "#444444",
           "custom_switcher_background_color": "#d5c6bf",
           "custom_switcher_border_color": "#939393"
+        }
+      },
+      "18423266570658624584": {
+        "type": "shopify:\/\/apps\/best-currency-converter\/blocks\/doubly\/267afa86-a419-4d5b-a61b-556038e7294d",
+        "disabled": false,
+        "settings": {
         }
       }
     }
