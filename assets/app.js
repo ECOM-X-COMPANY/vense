@@ -1356,36 +1356,39 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //
 document.addEventListener('DOMContentLoaded', function() {
-    // Знаходимо елемент з ID 'tiny-tabs-title-2'
     let tab = document.getElementById('tiny-tabs-title-2');
     let tabContent = document.getElementById(tab.getAttribute('aria-controls'));
 
     if (tab) {
-        // Встановлюємо активний стан для цієї вкладки і її контенту
-        tab.classList.add('tab-active');
-        tab.setAttribute('aria-expanded', 'true');
-        tab.setAttribute('aria-selected', 'true');
-        
-        if (tabContent) {
-            tabContent.style.display = 'block';
+        // Функція для встановлення активного стану
+        function setActiveTab() {
+            tab.classList.add('tab-active');
+            tab.setAttribute('aria-expanded', 'true');
+            tab.setAttribute('aria-selected', 'true');
+            if (tabContent) {
+                tabContent.style.display = 'block';
+            }
         }
 
-        // Додаємо обробник подій до всіх вкладок, щоб постійно активувати потрібну
-        let tabs = document.querySelectorAll('.tiny-tabs-title');
-        tabs.forEach(function(t) {
-            t.addEventListener('click', function() {
-                // Перевіряємо, чи поточна вкладка не є активною
-                if (t !== tab) {
-                    tab.classList.add('tab-active');
-                    tab.setAttribute('aria-expanded', 'true');
-                    tab.setAttribute('aria-selected', 'true');
+        // Викликаємо функцію активації на старті
+        setActiveTab();
 
-                    if (tabContent) {
-                        tabContent.style.display = 'block';
+        // Створюємо MutationObserver, щоб спостерігати за змінами в класах елемента
+        let observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+                if (mutation.attributeName === 'class') {
+                    if (!tab.classList.contains('tab-active')) {
+                        setActiveTab();
                     }
                 }
             });
         });
+
+        // Налаштовуємо спостереження за змінами класів
+        observer.observe(tab, { attributes: true });
+
+        // Можливо, також потрібно буде відслідковувати зміни в інших вкладках
+        // та застосовувати наші зміни за необхідності.
     }
 });
 
