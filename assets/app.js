@@ -1354,43 +1354,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-//
-document.addEventListener('DOMContentLoaded', function() {
-    let tab = document.getElementById('tiny-tabs-title-2');
-    let tabContent = document.getElementById(tab.getAttribute('aria-controls'));
-
-    if (tab) {
-        // Функція для встановлення активного стану
-        function setActiveTab() {
-            tab.classList.add('tab-active');
-            tab.setAttribute('aria-expanded', 'true');
-            tab.setAttribute('aria-selected', 'true');
-            if (tabContent) {
-                tabContent.style.display = 'block';
-            }
-        }
-
-        // Викликаємо функцію активації на старті
-        setActiveTab();
-
-        // Створюємо MutationObserver, щоб спостерігати за змінами в класах елемента
-        let observer = new MutationObserver(function(mutations) {
-            mutations.forEach(function(mutation) {
-                if (mutation.attributeName === 'class') {
-                    if (!tab.classList.contains('tab-active')) {
-                        setActiveTab();
-                    }
-                }
-            });
-        });
-
-        // Налаштовуємо спостереження за змінами класів
-        observer.observe(tab, { attributes: true });
-
-        // Можливо, також потрібно буде відслідковувати зміни в інших вкладках
-        // та застосовувати наші зміни за необхідності.
-    }
-});
 
 
 
