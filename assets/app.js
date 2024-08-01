@@ -1356,12 +1356,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //
 document.addEventListener('DOMContentLoaded', function() {
-    setInterval(function() {
+    // Примусово додаємо клас 'tab-active' елементу з ID 'tiny-tabs-title-2'
+    function ensureTabActive() {
         let tab = document.getElementById('tiny-tabs-title-2');
-        if (tab && !tab.classList.contains('tab-active')) {
+        if (tab) {
             tab.classList.add('tab-active');
         }
-    }, 1000); // Перевіряти кожну секунду
+    }
+
+    // Викликаємо відразу після завантаження сторінки
+    ensureTabActive();
+
+    // Додаємо обробник на всі вкладки, щоб при їх зміні знову встановлювати клас
+    let tabs = document.querySelectorAll('.tiny-tabs-title');
+    tabs.forEach(function(tab) {
+        tab.addEventListener('click', function() {
+            setTimeout(ensureTabActive, 10); // Затримка для завершення інших скриптів
+        });
+    });
 });
 
 
