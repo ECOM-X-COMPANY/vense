@@ -1356,10 +1356,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //
 document.addEventListener('DOMContentLoaded', function() {
-    let tab = document.getElementById('tiny-tabs-title-2');
-    if (tab && !tab.classList.contains('tab-active')) {
-        tab.classList.add('tab-active');
-    }
+    setInterval(function() {
+        let tab = document.getElementById('tiny-tabs-title-2');
+        if (tab && !tab.classList.contains('tab-active')) {
+            tab.classList.add('tab-active');
+        }
+    }, 1000); // Перевіряти кожну секунду
 });
 
 
