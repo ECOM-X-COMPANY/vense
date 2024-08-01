@@ -1354,4 +1354,11 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//
+document.addEventListener('DOMContentLoaded', function() {
+    let tab = document.getElementById('tiny-tabs-title-2');
+    if (tab) {
+        tab.classList.add('tab-active');
+    }
+});
 
