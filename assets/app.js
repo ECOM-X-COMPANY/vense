@@ -1356,24 +1356,38 @@ document.addEventListener('DOMContentLoaded', function() {
 
 //
 document.addEventListener('DOMContentLoaded', function() {
-    // Примусово додаємо клас 'tab-active' елементу з ID 'tiny-tabs-title-2'
-    function ensureTabActive() {
-        let tab = document.getElementById('tiny-tabs-title-2');
-        if (tab) {
-            tab.classList.add('tab-active');
+    // Знаходимо елемент з ID 'tiny-tabs-title-2'
+    let tab = document.getElementById('tiny-tabs-title-2');
+    let tabContent = document.getElementById(tab.getAttribute('aria-controls'));
+
+    if (tab) {
+        // Встановлюємо активний стан для цієї вкладки і її контенту
+        tab.classList.add('tab-active');
+        tab.setAttribute('aria-expanded', 'true');
+        tab.setAttribute('aria-selected', 'true');
+        
+        if (tabContent) {
+            tabContent.style.display = 'block';
         }
-    }
 
-    // Викликаємо відразу після завантаження сторінки
-    ensureTabActive();
+        // Додаємо обробник подій до всіх вкладок, щоб постійно активувати потрібну
+        let tabs = document.querySelectorAll('.tiny-tabs-title');
+        tabs.forEach(function(t) {
+            t.addEventListener('click', function() {
+                // Перевіряємо, чи поточна вкладка не є активною
+                if (t !== tab) {
+                    tab.classList.add('tab-active');
+                    tab.setAttribute('aria-expanded', 'true');
+                    tab.setAttribute('aria-selected', 'true');
 
-    // Додаємо обробник на всі вкладки, щоб при їх зміні знову встановлювати клас
-    let tabs = document.querySelectorAll('.tiny-tabs-title');
-    tabs.forEach(function(tab) {
-        tab.addEventListener('click', function() {
-            setTimeout(ensureTabActive, 10); // Затримка для завершення інших скриптів
+                    if (tabContent) {
+                        tabContent.style.display = 'block';
+                    }
+                }
+            });
         });
-    });
+    }
 });
+
 
 
